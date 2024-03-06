@@ -6,7 +6,7 @@ The two quick start guides should ideally introduce most users to all features n
 
 This quick start uses a very simple and minimalistic example datset with only 5 samples and 4 OTUs.
 
-. Download  link:example_data/example_data1.en.xlsx[example_data_1].
+. Download  link:../example_data/example_data1.en.xlsx[example_data_1].
 . Save the file to your computer.
 . (Optional) Briefly explore the structure of the example data in Excel or another app (or see detailed explanations in the section XXX ).
 ** The *OTU_table* sheet in the template is the OTU table. Column headers are the IDs of the 5 samples in the dataset. Row names are IDs of the 4 OTUs. Cells contain sequence read counts.
