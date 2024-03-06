@@ -39,15 +39,11 @@ There is a full glossary in the end of the document. The list here contains some
 * Darwin Core archive (DwC-A): A standardized format for sharing biodiversity data – a ZIP file that contains one or more data files along with a descriptor file that explains how the data files are organized.
 * Endpoint: In the context of GBIF, an "endpoint" refers to a URL or web address where a DwC-A can be accessed through the internet, and indexed by GBIF.
 
-== Quick Start Guides
+== Simple Quick Start Guide
 
-The two quick start guides should ideally introduce most users to all features necessary to know for being able to adapt own or existing datasets to process in the tool. Start with the simple and then move to the advanced.
+The two quick start guides should ideally introduce most users to all features necessary to know for being able to adapt own or existing datasets to process in the tool. Start with the simple and then move to the advanced. This [.underline]#simple# quick start guide handles the processing of a minimal example dataset  with only essential explanation. It requires little or no prior knowledge about eDNA data, GBIF and DarwinCore. The intention is to familiarize the user with THE_TOOL to get basic ideas of how to adapt real datasets for processing in the tool. We recommend to follow the advanced quick start guide as the next step.
 
-=== Simple Quick Start Guide
-
-This [.underline]#simple# quick start guide handles the processing of a minimal example dataset  with only essential explanation. It requires little or no prior knowledge about eDNA data, GBIF and DarwinCore. The intention is to familiarize the user with THE_TOOL to get basic ideas of how to adapt real datasets for processing in the tool. We recommend to follow the advanced quick start guide as the next step.
-
-==== Simple example dataset [[q1_test_data]]
+==== Simple example dataset
 
 This quick start uses a very simple and minimalistic example datset with only 5 samples and 4 OTUs.
 
@@ -77,14 +73,14 @@ This opens the first step of the data processing.
 
 image::process_step_1.png[]
 
-. Drag the `example_data_1.xlsx` to the upload area, or click and select the file.
+. Drag the example dataset to the upload area, or click and select the file.
 . Give the dataset a nickname (e.g. "my_first_test")
 . Press *Start Upload*.
 +
 A green icon will indicate that the data looks OK according to some very basic data checks.
 . Press *Proceed*
 
-==== Map terms (step 2) [[q1_mapping]]
+==== Map terms (step 2)
 
 On this page you tell the tool what the fields in the uploaded data mean. As this test dataset already uses Darwin Core terms for the fields, no manual mapping is needed.
 
@@ -162,7 +158,7 @@ This [.underline]#advanced# quick start guide handles the processing of a realis
 
 NOTE: Some comments and notes are not repeated from the simple quick start.
 
-==== Download example dataset
+==== Advanced example dataset
 
 This quick start quide uses a slightly modified version of a real dataset. It is from a eDNA metabarcoding study where DNA was extracted from sea water samples and amplified and sequenced for the 12S gene region. This version has been modified slightly from the original [xxx] to be able to illustrate some features in the tool and workflow, by adding fictional data and some errors.
 
@@ -174,9 +170,9 @@ This quick start quide uses a slightly modified version of a real dataset. It is
 NOTE: there is a more detailed description of this example dataset here [XXX].
 
 ** The *OTU_table* sheet in the template is the OTU table. Column headers _(BAR.1, BAR.2, BAR.3, ..._) are the IDs of the 69(70) samples in the dataset. Row names (_ASV_1, ASV_2, ASV_3, ..._) are IDs of the 563 OTUs (here ASVs). Cells contain sequence read counts.
-** The *Taxonomy* sheet contains the IDs of the 563 OTUs referring to the rownames in the *OTU_table* sheet, and OTU data: The sequence, and taxonomic information derived from comparing the sequences against NCBI GenBank. Some fields are using DwC terms others are not yet standardised.
+** The *Taxonomy* sheet contains the IDs of the 563 OTUs referring to the rownames in the *OTU_table* along with the sequence, and taxonomic information derived from comparing the sequences against NCBI GenBank. NB: Some fields are using DwC terms others are not yet standardised.
 ** The *Samples* sheet contains the IDs of the 69 samples referring to the column names in the *OTU_table* sheet, and some sample metadata: spatiotemporal data, date, etc. Some fields are using DwC terms others are not yet standardised.
-** The *Study* sheet contain "sample information" that are the same for the whole dataset - e.g.: primer information, sequencing platform.
+** The *Study* sheet contain "sample/OTU information" that is the same for the whole dataset - e.g.: primer information, sequencing platform.
 
 ==== Log into THE_TOOL
 
@@ -188,7 +184,7 @@ NOTE: there is a more detailed description of this example dataset here [XXX].
 
 image::img/process_step_1.png[]
 
-. Drag the <<q1_test_data,test data>> to the upload area, or click and select the file.
+. Drag the example dataset to the upload area, or click and select the file.
 . Give the dataset a nickname (e.g. "my_advanced_test")
 . Press *Start Upload*.
 +
@@ -308,10 +304,10 @@ Here the data can be explored to check that everything is OK. The options in thi
 
 On this page, dataset metadata (dataset description, persons and affiliations, etc.) is added in a minimalistic form.
 
-TIP: toggle the "Show help" to get guidance text for the fields.
+TIP: toggle "Show help" to get guidance text for the fields.
 
 . Add a meaningful title (e.g. “Fish and other vertebrates detected in sea water from the sea around Galapagos Islands, Ecuador; inferred from 12S DNA metabarcoding data with primers targeting elasmobranch.”).
-. Select a licence.
+. Select a licence (e.g. CC0).
 . Give as rich a dataset description as you can (here just add some random text as you please).
 . Add contact information - minimum is email and orcid.
 +
@@ -340,18 +336,11 @@ Be sure to check the best practices from the Detailed User Guide below.
 NOTE: If you end up with a dataset suitable for publication to GBIF.org, go to <<publishing_to_gbif>>.
 
 
-== Detailed User Guide
+=== Data structure and preparation
 
-In this section you can find detailed user instructions for each of the steps from preparation of data, upload and processing.
+In this section you will find detailed information and best practices on how to prepare and structure datasets for uploading and processing.
 
 NOTE: illustrations (screenshots) may be slighlty different from what you see in the online tool, as THE_TOOL is still being developed and improved.
-
-The first XXX sections (Data preparation, Dataset templates and Example datasets) handle information and best practices on how to prepare and structure datasets for uploading and processing.
-
-
-The following XXX sections (User interface, Upload, Mapping, Processing, Reviewing, Adding Metadata, Export) instruct on the use of the different sections of THE_TOOL.
-
-=== Data structure and preparation
 
 ==== The OTU table
 
@@ -491,12 +480,11 @@ You need to prepare:
 
 NOTE: THE_TOOL uses a simple form for providing this dataset metadata. This is intentional as we do not wish the demotivate users by confronting them with a form with many options only marginally relevant for DNA metabarcoding data. If you chose to publish the processed data through an IPT, you will have the possibility of adding metadata there.
 
-
 ==== Required and recommended fields [[recommended]]
 
 This section contains a list of required and recommended fields. These tables are modified/specialized version of tables xxx in the dna-publishing guide xxx specifically for when using THE_TOOL. 
 
-When using THE_TOOL it is not important to know whether the fields you are using are from Occurrence Core or the dna-derived extension. But it is important to know in which table to put the information. The "Placement" column explains in which table or file to put the field. A lot of the required and recommended fields are automatically handled/calculated, and the same column informs about this also.
+When using THE_TOOL it is not important to know whether the fields you are using are from Occurrence Core or the dna-derived extension. But it is important to know in which table to put the fields and associated values. The *Placement* column explains where to provide each field. A lot of the required and recommended fields are automatically handled/calculated, and do should not be provided by the user – *Placement* informs about this also.
 
 NOTE: many of the fields relating to taxonomy/sequences (e.g. primers, reference database) should be possible to give as global values in the *Study* table. If you find that this is not the case, you may be dealing with a mixed dataset, with sequences from more than one primer set (e.g. COI and 16S sequences from the same set of samples). We recommend to publish such datasets separately.
 
@@ -604,13 +592,13 @@ https://github.com/terrimporter/CO1Classifier
 | 60.545207
 | The geographic latitude (in decimal degrees, using the spatial reference system given in geodeticDatum) of the geographic centre of a Location. Positive values are north of the Equator, negative values are south of it. Legal values lie between -90 and 90, inclusive.
 | Highly recommended
-| *Samples* or *Study*
+| *Samples* (or *Study*)
 
 | term:dwc[decimalLongitude]
 | 24.174556
 | The geographic longitude (in decimal degrees, using the spatial reference system given in geodeticDatum) of the geographic centre of a Location. Positive values are east of the Greenwich Meridian, negative values are west of it. Legal values lie between -180 and 180, inclusive.
 | Highly recommended
-| *Samples* or *Study*
+| *Samples* (or *Study*)
 
 // The [.break-all]#ASV:…# is to allow the identifier to be broken at any character, rather than stretching the text cell.
 | term:dwc[taxonID]
@@ -806,22 +794,6 @@ Three/four tsv (or csv) files *OTU_table.tsv*, *Taxonomy.tsv*, *Samples.tsv*, an
 ==== Data template 4 – TSV format with fasta file
 
 Three/four tsv (or csv) files *OTU_table.tsv*, *Taxonomy.tsv*, *Samples.tsv*, and (optionally) *Study.tsv* containing study-wide global values. Instead of having the sequences in the *Taxonomy.tsv*, a fasta file (*seqs.fasta*) is provided. The *OTU_table.tsv* can have samples as either columns or rows. The fasta file must have fasta headers corresponding to the OTU IDs used in the *OTU_table.tsv* and in the *Taxonomy.tsv*.
-
-=== Example Datasets
-
-=== User interface
-
-=== Upload
-
-=== Mapping
-
-=== Processing
-
-=== Reviewing
-
-=== Adding Metadata
-
-=== Export
 
 === 
 

@@ -1,0 +1,15 @@
+== Detailed user guide
+
+=== User interface
+
+=== Upload
+
+=== Mapping
+
+=== Processing
+
+=== Reviewing
+
+=== Adding Metadata
+
+=== Export

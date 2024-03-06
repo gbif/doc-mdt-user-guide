@@ -1,0 +1,17 @@
+=== Dataset Templates
+
+==== Data template 1 – Excel workbook
+
+A workbook with three/four sheets: *OTU_table*, *Taxonomy*, *Samples* and (optionally) *Study*. The latter (*Study*) contains study-wide global values. The *OTU_table* must have samples as columns and OTUs as rows.
+
+==== Data template 2 – Excel workbook with fasta file
+
+A workbook with three/four sheets: *OTU_table*, *Taxonomy*, *Samples* and (optionally) *Study*. The latter (*Study*) contains study-wide global values. Instead of having the sequences in the *Taxonomy* sheet, a fasta file (*seqs.fasta*) is provided. The *OTU_table* must have samples as columns and OTUs as rows. The fasta file must have fasta headers corresponding to the OTU IDs used in the *OTU_table* sheet and in the *Taxonomy* sheet.
+
+==== Data template 3 – TSV format
+
+Three/four tsv (or csv) files *OTU_table.tsv*, *Taxonomy.tsv*, *Samples.tsv*, and (optionally) *Study.tsv* containing study-wide global values. The OTU table can have samples as either columns or rows.
+
+==== Data template 4 – TSV format with fasta file
+
+Three/four tsv (or csv) files *OTU_table.tsv*, *Taxonomy.tsv*, *Samples.tsv*, and (optionally) *Study.tsv* containing study-wide global values. Instead of having the sequences in the *Taxonomy.tsv*, a fasta file (*seqs.fasta*) is provided. The *OTU_table.tsv* can have samples as either columns or rows. The fasta file must have fasta headers corresponding to the OTU IDs used in the *OTU_table.tsv* and in the *Taxonomy.tsv*.

@@ -7,17 +7,10 @@ endif::backend-html5[]
 
 === Suggested citation
 
-Frøslev TG, Jeppesen TS. The guide to THE_TOOL. GBIF Secretariat: Copenhagen. 
+The guide to THE_TOOL. GBIF Secretariat: Copenhagen. 
 // Uncomment once a DOI is assigned
 //https://doi.org/10.EXAMPLE/EXAMPLE
 
-=== Authors
-
-https://orcid.org/0000-0002-3530-013X[Tobias G Frøslev] & https://orcid.org/0000-0003-1691-239X[Thomas S Jeppesen]
-
-=== Contributors
-
-XXX
 
 === Licence
 
@@ -29,14 +22,6 @@ The document _Guide to THE_TOOL_ is licensed under https://creativecommons.org/l
 // Uncomment once a DOI is assigned
 //https://doi.org/10.EXAMPLE/EXAMPLE
 
-=== Document control
-
-First edition, April 2020
-
-// include reference to provenance if possible/relevant
-https://doi.org/10.EXAMPLE/2ND-EXAMPLE[Second edition], March 2015, by Due Autore and https://orcid.org/0000-0000-0000-0000[Troisième Auteur].
-
-Originally based on an earlier publication, _Towards establishing the special guide to something_.
 
 === Cover image
 

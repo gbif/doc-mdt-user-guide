@@ -14,21 +14,25 @@ endif::backend-html5[]
 
 :sectnums!:
 
-include::colophon.en.adoc[]
+include::introduction.adoc[]
 
-include::preface.en.adoc[]
+include::simple_quick_start.adoc[]
 
-:sectnums:
+include::advanced_quick_start.adoc[]
 
-include::100.en.adoc[]
+include::data_preparation_structure.adoc[]
 
-include::200.en.adoc[]
+include::processing_dataset.adoc[]
 
-:sectnums!:
+include::dataset_templates.adoc[]
 
-include::afterword.en.adoc[]
+include::example_datasets.adoc[]
 
-include::appa.en.adoc[]
+include::detailed_user_guide.adoc[]
+
+include::publishing.adoc[]
+
+include::faq.adoc[]
 
 include::glossary.en.adoc[]
 
