@@ -33,6 +33,7 @@ With THE_TOOL there is provided number of dataset templates. They all contain 3-
 * *Study*: this (optional) fourth table contain only two columns (term, value). This table can be used for metadata (terms) with values that are the same for the whole dataset ("global values") – often that would be things like: target gene, primer information, sequencing platform, pipeline, extraction procedure, etc.
 * *Seqs.fasta*: this (optional) file may contain the sequences of the OTUs instead of having them as a field in the *Taxonomy* table. 
 
+
 === Preparing a dataset
 
 ==== Basic checks

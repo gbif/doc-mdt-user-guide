@@ -1,5 +1,5 @@
-= GBIF Document Template
-Author One <communication@gbif.org>; Author Two
+= "THE_TOOL" - The GBIF DNA metabarcoding data converter
+<DNA@gbif.org>
 :toc: left
 :toclevels: 3
 :numbered:
