@@ -1,4 +1,4 @@
-= User Guide for "THE_TOOL" - The GBIF DNA metabarcoding data converter, in prep.
+= User Guide for "THE_TOOL" - the GBIF DNA metabarcoding data converter (in prep.)
 <DNA@gbif.org>
 :toc: left
 :toclevels: 3
