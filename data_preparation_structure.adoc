@@ -133,6 +133,7 @@ image:img/fasta_file.png[]
 Before starting the data upload and processing in THE_TOOL it is a good idea to prepare a dataset description, collect information on the people you need to associate with the data, etc.
 
 You need to prepare:
+
 * A dataset title. Choose something descriptive. Examples:
 ** XXX 
 ** XXX
@@ -148,7 +149,7 @@ You need to prepare:
 * Be sure to designate one of the persons (you?) as the contact person. This is the person that will be contacted if e.g. users find issues in the data. This person needs to be registered with email and ORCID.
 * Associated ressources ???
 
-NOTE: THE_TOOL uses a simple web form for providing dataset metadata. This is intentional as we do not wish the demotivate users by confronting them with a web form with many options only marginally relevant for DNA metabarcoding data. If you chose to publish the processed data through an IPT, you will have the possibility of adding more/other dataset metadata there.
+NOTE: THE_TOOL uses a very minimalistic web form for providing dataset metadata. This is intentional as we do not wish the demotivate users by confronting them with a web form with many options only marginally relevant for DNA metabarcoding data. If you chose to publish the processed data through an IPT, you will have the possibility of adding more/other dataset metadata there.
 
 === Required and recommended fields
 
