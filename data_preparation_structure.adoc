@@ -4,28 +4,23 @@ In this section you will find detailed information and best practices on how to 
 
 NOTE: illustrations (screenshots) may be slighlty different from what you see in the online tool, as THE_TOOL is still being developed and improved.
 
-=== The OTU table
+=== The OTU table as a familiar community data format
 
 The tool accepts data in a format familiar to the eDNA metabarcoding community - the OTU table.
 
-The OTU table is a specialized version of a species/site matrix, which is a standard way to organize data in biodiveristy and ecology studies, summarizing the presence and abundance of different organisms across various samples. In an OTU table each row represents a unique OTU, and each column represents a different sample or site, with the cell values indicating the count of sequencing reads of the OTUs in each sample. An OTU table may also have OTUs as columns and samples as rows. Here, we are using the term OTU broadly to cover also ASVs and other types of representative sequences resulting from bioinformatic processing of raw sequencing data from DNA metabarcoding.
+The OTU table is a specialized version of a species/site matrix, which is a standard way to organize data in biodiveristy and ecology studies, summarizing the presence and abundance of different organisms across various samples. In an OTU table each row represents a unique OTU, and each column represents a different sample or site, with the cell values indicating the count of sequencing reads of the OTUs in each sample. An OTU table may also have OTUs as columns and samples as rows (i.e. transposed conpared to the above description).
 
 The two dimensions (columns and rows) of the central OTU table is most often associated with two other tables:
+* A table with metadata relating to the samples/sites – e.g. geographical position and sampling date, pH, salinity, habitat type, sample age, etc. – that allows the user analyse how community compositional measures (betadiversity) correlate with geography, environment, etc. 
+* A table relating to the OTUs – at least the sequence, but likely also inferred taxonomy, and maybe inferred ecological traits of these taxa – that allows the user to evaluate taxonomic or functional differences between samples.
 
-* One relating to the samples, e.g. geographical position and sampling date.
-* One relating to the OTUs: at least the sequence, but likely also taxonomy.
-
-image::img/OTU_table_all_filed.png[]
-.The OTU table (example dataset 1). A minimalistic example of an *OTU_table* with 5 samples (Sample_A, Sample_B,..) as columns and 4 OTUs (OTU_001, OTU_002,..) as rows. Green boxes and arrow indicate the linking of the OTUs by their IDs to second table *Taxonomy* with taxonomic/sequence data data. Blue boxes and arrow indicate the the linling of samples by their IDs to the third table *Samples* with and sample metadata. The optional *Study* and *Seqs.fasta* are explained below. 
-
-NOTE: 
-It is commonly seen that an OTU_table with OTUs as rows has taxonomic information of the OTUs (sequence, kingdom, phylum, etc) added as extra columns. More rarely we see that sample metadata (position, sampling date, soil ph, etc) is added as extra columns to an OTU_table having samples as rows.
+NOTE:  It is commonly seen that an OTU table (with OTUs as rows) has the taxonomic information (sequence, kingdom, phylum, etc) added as extra columns. Also we see sample metadata (position, sampling date, soil ph, etc) added as extra columns to an OTU table (with samples as rows). We recommend to with with a clean OTU_table only containing read counts of OTUs in samples, and have the associated Sample and OTU metadate in separate tables linked by OTU and sample IDs.
 
 Most analysed datasets from DNA metabarcoding will be possible to fit into this three-table format.
 
-To be able to publish biodiversity data in GBIF, the data needs to be formatted as a list of occurrences. As this reshaping can be error prone and complicated, THE_TOOL has been build to automate this process. In other terms we use the OTU table as a publishing model, targeting a familiar data format of this research community. 
+THE_TOOL uses the OTU table as a publishing model, targeting a familiar data format of this research community, and reshapes the data into a format that can be published to GBIF. 
 
-With THE_TOOL there is provided number of dataset templates. They all contain 3-4 tables (as sheets in an Excel workbook or as separate tsv/csv files) and potentially a separate file with the sequences:
+THE_TOOL accepts some variation around the OTU table data structure, and a handful of dataset templates are provided. They all contain the three tables mentioned above (as sheets in an Excel workbook or as separate tsv/csv files). To make redundant data entry unnecessary, the templates also include a fourth table for metadata with values that are the same for the whole dataset ("global values"). The tamples also accept that the sequences are provided in a separate txt file (a fasta file.)
 
 * *OTU_table*: The table (matrix) of sequence read counts of each OTU in each sample
 * *Taxonomy*: a table of the sequences and potentially their taxonomy, and rarely much more, as relevant metadata (sequencing platform, primers) can be put into the *Study* table.
@@ -33,24 +28,30 @@ With THE_TOOL there is provided number of dataset templates. They all contain 3-
 * *Study*: this (optional) fourth table contain only two columns (term, value). This table can be used for metadata (terms) with values that are the same for the whole dataset ("global values") – often that would be things like: target gene, primer information, sequencing platform, pipeline, extraction procedure, etc.
 * *Seqs.fasta*: this (optional) file may contain the sequences of the OTUs instead of having them as a field in the *Taxonomy* table. 
 
+image::img/OTU_table_all_filed.png[]
+.The OTU table (example dataset 1). A minimalistic example of an *OTU_table* with 5 samples (Sample_A, Sample_B,..) as columns and 4 OTUs (OTU_001, OTU_002,..) as rows. Green boxes and arrow indicate the linking of the OTUs by their IDs to second table *Taxonomy* with taxonomic/sequence data data. Blue boxes and arrow indicate the the linking of samples by their IDs to the third table *Samples* with and sample metadata. The optional *Study* and *Seqs.fasta* are explained above. 
 
 === Preparing a dataset
 
 ==== Basic checks
 
 * The data is DNA metabarcoding data (amplified and sequenced marker genes) and not something else (metagenomics, specimen barcoding, qPCR)
-* You have access to the processed data as OTU table and associated table (and not just access to the raw un-amalysed sequence data - e.g. fastq files)
+* You have access to the processed data as OTU table and associated table (and not just access to the raw un-analysed sequence data - e.g. fastq files)
 * You are allowed to share the data in GBIF.
-* You have the most essential data available
-** location, date for the samples
-** sequences of the OTUs/ASVs
-** an OTU table with number of sequence reads of each OTU in each sample
-** some information that allows you to contruct a dataset description
-** information on the persons that should be associated as creators and contacts for the dataset. 
+* You have the most essential metadata (e.g. location, date for the samples)
+* You have an OTU table with number of sequence reads of each OTU in each sample
+* You have identified which samples are not real samples (e.g. negative controls, positive controls, PCR blanks). These often have names hinting at their identity ("Neg", "Blank","Pos", "CTRL", ..), and often lack metadata (e.g. latitude/longitude).
+** You have a plan for how to exclude these non-samples. The easiest approach is the remove them from the *Samples* sheet.
+* You have the sequences of the OTUs/ASVs
+* You have identified whether any OTUs are considered contaminations or non trustworthy detections ("orcids in the ocean" and "blue whales in the soil") to be excluded.
+** You have a plan for how to exclude these contaminations. The easiest approach is the remove them from the *Taxonomy* sheet.
+
+* You have some information that allows you to contruct a dataset description
+** You have information on the persons that should be associated as creators and contacts for the dataset. 
 
 ==== Select a template
 
-Select one of the available data structures (templates) that is suitable for your data.
+Select one of the available data structures (LINK to XXX templates) that is suitable for your data.
 
 * If you prefer Excel workbooks, then use template 1 og 2.
 * If you prefer tab (or comma) separated text files, go for template 3 or 4. 
@@ -58,16 +59,15 @@ Select one of the available data structures (templates) that is suitable for you
 
 ==== Fit the data into the template
 
-Now try to fit the data into the selected template and provide as many as the  <<recommended, required and recommended fields>>.
+Now fit the data into the selected template and provide as many as the <<recommended, required and recommended fields>> as possible.
 
-TIP: The order (sorting) of rows and columns in tables is not important. 
+TIP: The order (sorting) of rows and columns in the tables is not important. 
 
 *OTU_table*
 
 * Fit your data into an *OTU_table* with samples as columns and OTUs as row.
-* Remove rows and columns that are not samples and OTUs.
-** No rows or columns with sums/totals.
-** No columns with sample or taxomomy data, move that to a separate table/sheet.
+* Remove rows and columns that are not samples and OTUs to get a clean OTU/Sample matrix (i.e. remove rows or columns with sums/totals, etc.).
+** If present, move columns with sample or taxomomy data to those separate tables.
 * Use 0 (zero) in cells without a read count (not "NA", "-" or similar).
 * Make sure that samples IDs (column headers) are unique, and prefarably do not contain a lot of unstandardized [XXX] characters.
 * Make sure that OTU IDs (row names) are unique, and prefarably do not contain a lot of unstandardized [XXX] characters.
@@ -77,15 +77,19 @@ NOTE: This table does not hold any DwC fields/terms
 
 *Taxonomy*
 
-* Fit your OTU data into a *Taxonomy* table with OTUs as rows and associated data as columns.
-* First colums should be `id` and contain OTU IDs referring to (identical to) the row names in the *OTU_table*.
-* Normally this table would not contain a lot of fields, only those that relate to the single OTUs and carry different values per OTU:
-** The sequence (as term:dwc[DNA_sequence]) unless these are provided in a separate fasta file.
-** Taxonomy inferred from comparing the sequences againat a reference database
-*** This can be given as a XXXX
+* Fit your OTU (sequence/taxonomy) metadata into a *Taxonomy* table with OTUs as rows and associated fields as columns.
+* First colums should be labelled `id` and contain OTU IDs referring to (identical to!) the row names (OTU IDs) in the *OTU_table*.
 +
-NOTE: most metadata related to sequences (sequencing platform, primers, etc) is identical for all samples and OTUs, and these can be uploaded in the fouth table *Study* with "global" values. 
+Note: Normally the *Taxonomy* table would not contain a lot of fields, as most fields that relate to this part is global (primers, sequencing platform, etc).
+* Normally the *Taxonomy* table would only include a few fields:
+** The sequence (as term:dwc[DNA_sequence]) unless these are provided in a separate fasta file.
+** Taxonomy (inferred from comparing the sequences againat a reference database). Taxonomy can be given in several ways:
+*** XXXX (how can we advice in a simple way about this)
++
+NOTE: most metadata related to OTUs (sequencing platform, primers, etc) is identical for all samples and OTUs, and these can be placed in the fouth table *Study* with "global" values. 
 * Use Darwin Core terms for your fields to minimize manual mapping in later steps.
++
+TIP: known contaminants or other OTUs not wanted in GBIF.org can simply be removed from the *Taxonomy* table alone (and left untouched in the OTU table) 
 
 *Samples*
 
@@ -97,27 +101,30 @@ NOTE: most metadata related to sequences (sequencing platform, primers, etc) is 
 ** Physical properties related to the sample (e.g. pH)
 ** Links to sample-associated data elsewhere – e.g. raw sequence data and biosample record in INSDC.
 * Be sure to include as many of the required and recommended fields as possible (see below).
-* There are many more fields to select from in the Occurrence Core (LINK) and dna-derived extension (link).
+* In addition to the required/recommended fieldsm, Occurrence Core (LINK) and dna-derived extension (link) has many further fields to select from.
 +
-TIP: Use *Study* table for fields/terms that does not differ between samples.
+TIP: Use *Study* table for fields/terms that does not differ between samples (i.e. terms with global values).
 * Use Darwin Core terms for your fields to minimize manual mapping in later steps. 
++
+TIP: known control samples or other samples not wanted in GBIF.org can simply be removed from the *Samples* table alone (and left untouched in the OTU table)
 
 *Study* (optional)
 
-The use of this table is optional. But as many data fileds are often applicable to the whole study, we recommend to use this table (as opposed to have the same fields in the *Samples* table with identical values for all entries.
+The use of this table is optional. But as many metadata values often are applicable to the whole study (e.g. primers, sequencing platform, country, habitat type), we recommend to use this table, as opposed to having those fields in the *Samples* table with identical values for all samples.
 
-* Fit all metadata fields with global values (same value for all samples and/or OTUs) into this table.
 * the table has two columns (_term_, _value_). Each row holds any term from Darwin Core (incl the dna-derived extension) in the _term_ field, and the corresponding _value_ contains the value relevant for this study (see minimal example below).
+* Fit all metadata fields with global values (same value for all samples and/or OTUs) into this table.
 * Be sure to include as many of the required and recommended fields as possible (see below).
-* Use Darwin Core terms for your fields to minimize manual mapping in later steps.
+* Use only Darwin Core terms for your fields. Manual mapping isnot possible for fields provided in this sheet.
+
+image:img/study_table.png[]
 
 *Seqs.fasta* (optional)
 
-In some metabarcoding datasets, the sequences are placed in a separate https://en.wikipedia.org/wiki/FASTA_format[fasta file^]. This is also possible here. If this option is chosen, then a few checks are good.
+In some metabarcoding datasets, the sequences are placed in a separate https://en.wikipedia.org/wiki/FASTA_format[fasta file^]. This is also possible here. If this option is seleted, then a few checks are good.
 
-* Make sure you follow the classic fasta formatting. A sequence begins with a greater-than character (">") followed by the OTU ID. The lines immediately following this header line are the sequence representation (ACTG...). The next ">" marks the beginning of the next sequence.
-* OTU IDs are used as headers in the fasta file.
-* OTU IDs should be the same as those in the OTU table.
+* Make sure you follow the classic fasta formatting for the file. A sequence begins with a greater-than character (">") followed by the OTU ID (exactly as they are given in the OTU table). The lines immediately following this header are the sequence representation (ACTG ...). The next ">" marks the beginning of the next sequence.
+* OTU IDs (headers) should be the same as those in the OTU table, but with the ">" added in front.
 
 image:img/fasta_file.png[]
 
@@ -141,9 +148,9 @@ You need to prepare:
 * Be sure to designate one of the persons (you?) as the contact person. This is the person that will be contacted if e.g. users find issues in the data. This person needs to be registered with email and ORCID.
 * Associated ressources ???
 
-NOTE: THE_TOOL uses a simple form for providing this dataset metadata. This is intentional as we do not wish the demotivate users by confronting them with a form with many options only marginally relevant for DNA metabarcoding data. If you chose to publish the processed data through an IPT, you will have the possibility of adding metadata there.
+NOTE: THE_TOOL uses a simple web form for providing dataset metadata. This is intentional as we do not wish the demotivate users by confronting them with a web form with many options only marginally relevant for DNA metabarcoding data. If you chose to publish the processed data through an IPT, you will have the possibility of adding more/other dataset metadata there.
 
-=== Required and recommended fields [[recommended]]
+=== Required and recommended fields
 
 This section contains a list of required and recommended fields. These tables are modified/specialized version of tables xxx in the dna-publishing guide xxx specifically for when using THE_TOOL. 
 
