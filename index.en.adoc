@@ -2,7 +2,7 @@
 
 IMPORTANT: This document is under development and may contain errors and unfinished sections.
 
-IMPORTANT: The tool itself is still a prototype under development. Currently, it can be used to produce Darwin Core Archives, but it cannot publish them directly to GBIF.org – only to the test environment (UAT). For proper publication you need to download the  final Darwin Core Archive and publish it through some established publication tool (e.g. GBIF IPT) – be sure to consult the ad.hoc section XXX of this manual.
+IMPORTANT: The https://edna-tool.gbif-uat.org/[tool] is currently hosted in the GBIF test environment, and is still a prototype under development. Currently, it can be used to produce Darwin Core Archives, but it cannot publish them directly to GBIF.org – only to the test environment (UAT). For proper publication you need to download the  final Darwin Core Archive and publish it through some established publication tool (e.g. GBIF IPT) – be sure to consult the ad.hoc section XXX of this manual.
 
 WARNING: Files uploaded to the tool and files produced by the tool are currently stored in a test environment, that cannot be considered a stable repository. So download files you wish to have for future use. 
 
