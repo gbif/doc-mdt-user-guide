@@ -26,11 +26,11 @@ include::processing_dataset.adoc[]
 
 include::dataset_templates.adoc[]
 
-include::example_datasets.adoc[]
-
 include::detailed_user_guide.adoc[]
 
 include::publishing.adoc[]
+
+include::example_datasets.adoc[]
 
 include::faq.adoc[]
 

@@ -48,7 +48,9 @@ TIP: Press *how to use this form* to get a guided tour of this page.
 
 * The second section does the same for taxonomy and sequence related information, auto-mapping four fields from the *Taxonomy* sheet to the identically named Darwin Core terms.
 
+
 . Press *Proceed* to save the mapping and proceed.
+
 
 === Process data (step 3)
 
@@ -57,7 +59,7 @@ TIP: Press *how to use this form* to get a guided tour of this page.
 This produces standardized intermediate files in the BIOM format
 +
 NOTE: The option *assign taxonomy* uses the https://www.gbif.org/tools/sequence-id[GBIF Sequence ID tool^] to assign taxonomy to the sequences. This overwrites any taxonomy provided in the data.
-. (Optional) Briefly check that number of samples and taxa are as expected (here: 5 samples and 4 taxa).
+. (_Optional_) Briefly check that number of samples and taxa are as expected (here: 5 samples and 4 taxa).
 . Press *Proceed*
 
 === Review (step 4)
@@ -65,7 +67,7 @@ NOTE: The option *assign taxonomy* uses the https://www.gbif.org/tools/sequence-
 Here the data can be explored to check that everything is OK. This step is mainly intended as a sanity check of the data to ensure that control samples have been removed, and that the mapping is as expected.
 
 
-. (*Optional*) Check the data.
+. (_Optional_) Check the data.
 ** Check the map and verify that the samples are placed geographically where expected (Northern part on Denmark). 
 ** Check the taxonomic barchart to ensure that taxonomic composition is as expected.
 ** Check ordination plots (PCoA/MDS) for outliers (any control samples that should have been excluded?).
@@ -74,11 +76,11 @@ Here the data can be explored to check that everything is OK. This step is mainl
 
 === Add metadata (step 5)
 
-On this page dataset metadata is added in a minimalistic form.
+On this page dataset metadata is added in a minimalistic form. Some fields are mandatory and need to be filled to be able to proceed.
 
-. (Mandatory) Add a meaningful title (e.g. “my first test dataset”).
-. (Mandatory) Select a licence.
-. (Mandatory) Add contact information - minimum: email and ORCID.
+. Add a meaningful title (e.g. “my first test dataset”).
+. Select a licence.
+. Add contact information - minimum: email and ORCID.
 +
 NOTE: use e.g. 1111-2222-3333-123X as dummy ORCID if you wish.
 . Leave the other fields empty.
@@ -103,4 +105,4 @@ A prompt will inform that it takes some minutes before the data is fully ingeste
 ** access them on the test environment (UAT), and
 ** modify and export/publish updated/new versions.
 
-You should now have a first [.underline]#basic# idea of how THE_TOOL works and how you may adapt your own datasets to the template and use THE_TOOL. It is highly recommended go through the advanced quick start guide also.
+You should now have a first [.underline]#basic# idea of how THE_TOOL works and how you may adapt your own datasets. It is highly recommended go through the advanced quick start guide also.

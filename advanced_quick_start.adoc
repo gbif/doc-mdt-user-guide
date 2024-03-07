@@ -46,7 +46,7 @@ Here you can see and verify the structure and content of the four sheets from th
 . Scroll all the way to the right in the OTU table, and notice that there the last sample called _NEG_, wich is a negative control sample we do not want in the final dataset on GBIF.
 . Click on the "Samples" tab, and scroll down and notice that this _NEG_ sample is missing (has been removed on purpose) from the sample sheet. We will leave is like that.
 +
-NOTE: The tool will only include samples that are present in both *Samples* and *OTU_table*, so a trick to ignore control samples is to remove them just in one place. 
+NOTE: The tool will exclude samples that not present in both *Samples* and *OTU_table* tables, so a trick to ignore control samples is to remove them just in one place. 
 . Close the viewer by pressing *Back*.
 . Press *Proceed*.
 
@@ -70,6 +70,7 @@ TIP: Press *Save mapping* once in a while to make sure that you do not get logge
 
 Starting from the top with *Sample* information, we see:
 
+[staet=3]
 . term:dwc[id] was correctly identified and mapped.
 . term:dwc[eventDate] was not found in the uploaded data, but the tool suggest to use _date_.
 .. click on _date_ to make this mapping.
@@ -83,7 +84,7 @@ Starting from the top with *Sample* information, we see:
 
 Now, going down to the *Taxon* section, we see:
 
-[start=10]
+[start=11]
 . `id` and all the taxonomic levels were mapped automatically.
 . term:mixs[DNA_sequence] was not mapped automatically, but it is suggested to use _sequence_.
 .. click on "sequence" to map that.
@@ -94,7 +95,7 @@ NOTE: A detailed description the fields of the example dataset is in the section
 
 We expect (or know) that Darwin Core can accomodate several of these un-mapped fields, and we also want to supply some global information (e.g. country), which was not included in the uploaded data.
 
-[start=12]
+[start=13]
 . Go to the last part of the *Sample* section.
 . Click on *Add mapping for another sample field* and look at the list of available terms.
 . We wish to find some standard field to map to our field _Location_.
@@ -114,7 +115,7 @@ NOTE: this is also how the term term:mixs[env_medium] (above) is filled out from
 
 Now, going down to *Unmapped fields*, we see that only a few fields remain unmapped. We really want to map _salinity_, but there is no standard field for that. So we will put that into *Extended Measurement Or Facts*.
 
-[start=17]
+[start=18]
 . click on *salinity* from the row of unmapped fields and see how it is transferred to the the section below as a new entry.
 . We know that the measurement unit is "PSU", so we add that manually.
 
@@ -122,14 +123,14 @@ Now, the mapping is complete.
 
 NOTE: All available standard fields (from Occurrence Core, and the dna-derived extension) can be included in the upload files, and if spelled correctly no manual mapping is needed.
 
-[start=17]
+[start=20]
 . Press *Proceed*.
 
 === Process data (step 3)
 
 . Press *Process data*.
 +
-The tool goes through a series of steps which will be indicated as succesful with a green tick-mark, and finally produces standardized BIOM files, which the tool uses as an intermediate file format.
+THE_TOOL goes through a series of steps which will be indicated as succesful with a green tick-mark, and finally produces standardized BIOM files, which THE_TOOL uses as an intermediate file format.
 +
 NOTE: You will get a warning that "NEG in the OTU table are not present in the SAMPLE table". We already knew that and kept it like that to exclude this negative control from the final data.
 +
@@ -159,9 +160,9 @@ TIP: toggle "Show help" to get guidance text for the fields.
 . Add a meaningful title (e.g. “Fish and other vertebrates detected in sea water from the sea around Galapagos Islands, Ecuador; inferred from 12S DNA metabarcoding data with primers targeting elasmobranch.”).
 . Select a licence (e.g. CC0).
 . Give as rich a dataset description as you can (here just add some random text as you please).
-. Add contact information - minimum is email and orcid.
+. Add contact information - minimum is email and ORCID.
 +
-NOTE: use e.g. 1111-2222-3333-123X as dummy orcid if you wish.
+NOTE: use e.g. 1111-2222-3333-123X as dummy ORCID if you wish.
 . Fill out the other fields as good as possible (or leave them empty for now).
 . Press *Proceed*.
 
@@ -176,11 +177,10 @@ This creates the Darwin Core Archive from the data, going through a series of st
 
 A prompt will inform that it takes some minutes before the data is fully ingested and will show up with all samples in the GBIF test environment (and the map will only appear the next day). A link to the dataset in the test environment will appear next to the *Publish* button.
 
+[start=3]
 . Explore the dataset in the test environment
 . Ensure that all information and data is processed and displayed appropriately.
 
-You should now have an good idea of how the tool works and how you may adapt your own datasets to the template and use THE_TOOL.
-
-Be sure to check the best practices from the Detailed User Guide below.
+You should now have an good idea of how you may adapt your own datasets and process them with THE_TOOL.
 
 NOTE: If you end up with a dataset suitable for publication to GBIF.org, go to <<publishing_to_gbif>>.
