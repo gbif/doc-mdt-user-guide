@@ -80,7 +80,7 @@ NOTE: This table does not hold any DwC fields/terms
 * Fit your OTU (sequence/taxonomy) metadata into a *Taxonomy* table with OTUs as rows and associated fields as columns.
 * First colums should be labelled `id` and contain OTU IDs referring to (identical to!) the row names (OTU IDs) in the *OTU_table*.
 +
-Note: Normally the *Taxonomy* table would not contain a lot of fields, as most fields that relate to this part is global (primers, sequencing platform, etc).
+NOTE: Normally the *Taxonomy* table would not contain a lot of fields, as most fields that relate to this part is global (primers, sequencing platform, etc).
 * Normally the *Taxonomy* table would only include a few fields:
 ** The sequence (as term:dwc[DNA_sequence]) unless these are provided in a separate fasta file.
 ** Taxonomy (inferred from comparing the sequences againat a reference database). Taxonomy can be given in several ways:
