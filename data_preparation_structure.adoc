@@ -29,7 +29,9 @@ THE_TOOL accepts some variation around the OTU table data structure, and a handf
 * *Seqs.fasta*: this (optional) file may contain the sequences of the OTUs instead of having them as a field in the *Taxonomy* table. 
 
 image::img/OTU_table_all_filed.png[]
+
 .The OTU table (example dataset 1). A minimalistic example of an *OTU_table* with 5 samples (Sample_A, Sample_B,..) as columns and 4 OTUs (OTU_001, OTU_002,..) as rows. Green boxes and arrow indicate the linking of the OTUs by their IDs to second table *Taxonomy* with taxonomic/sequence data data. Blue boxes and arrow indicate the the linking of samples by their IDs to the third table *Samples* with and sample metadata. The optional *Study* and *Seqs.fasta* are explained above. 
+
 
 === Preparing a dataset
 
@@ -81,7 +83,7 @@ NOTE: This table does not hold any DwC fields/terms
 * First colums should be labelled `id` and contain OTU IDs referring to (identical to!) the row names (OTU IDs) in the *OTU_table*.
 +
 NOTE: Normally the *Taxonomy* table would not contain a lot of fields, as most fields that relate to this part is global (primers, sequencing platform, etc).
-* Normally the *Taxonomy* table would only include a few fields:
+* *Taxonomy* would typically include:
 ** The sequence (as term:dwc[DNA_sequence]) unless these are provided in a separate fasta file.
 ** Taxonomy (inferred from comparing the sequences againat a reference database). Taxonomy can be given in several ways:
 *** XXXX (how can we advice in a simple way about this)
