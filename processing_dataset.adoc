@@ -2,57 +2,59 @@
 
 If you have prepared a dataset in one of the suggested templates/formats, and used THE_TOOL before or used the two quick start guides, you should be able to upload and process a dataset by following the steps below.
 
-For specific use or error messages refer to the detailed user guide below.
+For specific usage or error messages refer to the detailed user guide below.
 
-=== Log into THE_TOOL
+=== Log in
 
 . Go to the website of https://edna-tool.gbif-uat.org/[THE_TOOL^].
-. Log in
+. Log in.
 . Press *New Dataset* in the upper part of the page.
 
 === Upload data (step 1)
 
-. Drag the example dataset to the upload area, or click and select the file.
+. Drag your dataset to the upload area, or click and select the file.
 . Give the dataset a nickname (e.g. "my_first_dataset")
 . Press *Start Upload*.
 +
-A green icon will indicate that the XLSX format is detected and OK according to some very basic data checks.
+A green icon will indicate if a recogniced format is detected and looks OK according to some very basic data checks.
 
 image::img/advanced_example_upload_warning.png[]
 
-. (optional) Inspect your data in the data viewer by clicking on the eye icon next to the uploaded dataset
+. (_optional_) Inspect your data in the data viewer by clicking on the eye icon next to the uploaded dataset
 + 
 . Press *Proceed*
 
 === Map terms (step 2)
 
-On this page you tell the tool which DwC terms correspond to which fields in the uploaded data.
+On this page you tell THE_TOOL which standardised field names (Darwin Core terms) correspond to which fields in your data.
 
 TIP: Press *how to use this form* to get a guided tour of this page.
 
-TIP: Press *Save mapping* once in a while to make sure that you do not get logged out and lose your work.
+TIP: Press *Save mapping* once in a while to make sure that you will not be logged out and lose your work.
 
 *First inspection*
 
 . Inspect the overall structure and information on the page.
-.. The upper section named *Sample* maps our sample data fields to Darwin Core terms (first column), automatically identifying and mapping four fields from the *Samples* sheet (second column) and five global fields from the *Study* sheet (third column) with their identically named Darwin Core counterparts.
-.. The second section named *Taxon* does the same for taxonomic and sequence related information, auto-mapping four fields from the Taxon sheet to identically named Darwin Core fields.
-.. The last section *Unmapped fields* lists all the fields in the uploaded data, that has names the tool do not easily recognize. Below there is an option to put unmapped fields into so-called *Extended Measurement Or Facts*.
+.. The upper section named *Sample* maps your sample data fields to Darwin Core terms (first column), automatically identifying and mapping fields from the *Samples* sheet (second column) and global fields from the *Study* sheet (third column) with their identically named Darwin Core counterparts.
+.. The second section named *Taxon* does the same for taxonomic and sequence related information, auto-mapping fields from the Taxon sheet to identically named Darwin Core fields.
+... If you uploaded sequences in a separate fasta file *Seqs.fasta*, this will be indicated in the mapping of term:dwc[DNA_sequences].
+.. The last section *Unmapped fields* lists all the fields in your data, that has names which the tool did not automatically  recognize. Below there is an option to put unmapped fields into *Extended Measurement Or Facts*.
 
 *Completing the mapping*
 
 Starting from the top with *Sample* and *Taxonomy* information
 
-* make sure that the automatically mapped fields are correct – both terms/values from the *Samples* table and from the *Study* table.
-* take a look a the *Unmapped fields* and check if there are any fields in the uploaded data that have not been mapped. for any unmapped field where you expect there to be a Darwin Core term in either the *Sample* or *Taxonomy* section:
-** Click on *Add mapping for another sample field* and inspect and search the list of available terms.
-** Add the term, and select the field from the uploaded data that you wish to map.
-** If you cannot find a relevant term, you may want to look at the official reoources with available terms XXX
+. make sure that the automatically mapped fields are correct – both fields from the *Samples* table and from the *Study* table.
+. take a look a the *Unmapped fields* and check if there are any fields in the uploaded data that have not been mapped.
+.. For each unmapped field where you expect (or know) that there is a suitable Darwin Core term in either the *Sample* or *Taxonomy* section:
+... Click on *Add mapping for another sample field* and inspect and search the list of available terms.
+... Add the term, and select the field from the uploaded data that you wish to map.
+... If you cannot find a relevant term, you may want to look at the official reoources with available terms XXX
 
-If you still have *Unmapped fields*, that you wish to include in the dataset to be published to GBIF, you can consider acomodating those in *Extended Measurement Or Facts*:
+If you still have *Unmapped fields*, that you wish to include in the dataset to be published to GBIF, you may consider acomodating those in *Extended Measurement Or Facts* (eMoF):
 
-. click on the "unmapped field" from the row of unmapped fields to transfer it to the the section below as a new entry.
-. Add measurement unit and other relevant information to the measurement if possible.
+. Click on the "unmapped" field you wish to put into eMoF from the row of unmapped fields to transfer it to the the eMoF section below as a new entry.
+. Add a measurement unit and other relevant information to the field, if possible.
 
 Now, the mapping is complete.
 
