@@ -14,9 +14,10 @@ All new users are encouraged to review and go through both quick start guides to
 
 === Scope
 
-* The tool handles *DNA metabarcoding data* in the shape of an OTU table and associated data. The OTU table and associated data can be uploaded in a few selected templates.
-* The tool does [.underline]#not# handle DNA metagenomic data (shotgun sequencing data).
-* The tool does [.underline]#not# handle other types of DNA biodiversity data (specimen barcodes, qPCR)
+* THE_TOOL handles *DNA metabarcoding datasets* in the shape an OTU tables/matrices and associated metadata. Datasets can be uploaded in a few selected template formats.
+** THE_TOOL cannot handle or process raw sequencing data (fastq files).
+* THE_TOOL does [.underline]#not# handle DNA metagenomic data (shotgun sequencing data).
+* THE_TOOL does [.underline]#not# handle other types of DNA biodiversity data (specimen barcodes, qPCR)
 
 === Essential terms
 

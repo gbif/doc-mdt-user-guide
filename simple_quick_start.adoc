@@ -1,20 +1,19 @@
 == Simple Quick Start Guide
 
-The two quick start guides should ideally introduce most users to all features necessary to know for being able to adapt own or existing datasets to process in the tool. Start with the simple and then move to the advanced. This [.underline]#simple# quick start guide handles the processing of a minimal example dataset  with only essential explanation. It requires little or no prior knowledge about eDNA data, GBIF and DarwinCore. The intention is to familiarize the user with THE_TOOL to get basic ideas of how to adapt real datasets for processing in the tool. We recommend to follow the advanced quick start guide as the next step.
+The two quick start guides should ideally introduce most users to all features necessary to know for being able to adapt datasets to be processed with THE_TOOL. Start with the simple and then move to the advanced. This [.underline]#simple# quick start guide guides the user though the processing of a minimal example dataset with little explanation, and requires little or no prior knowledge about eDNA data, GBIF and Darwin Core.
 
 === Simple example dataset
 
-This quick start uses a very simple and minimalistic example datset with only 5 samples and 4 OTUs.
+This quick start uses a very simple and minimalistic example datset with only 5 samples and 4 OTUs, and almost no metadata.
 
-. Download  link:../example_data/example_data1.en.xlsx[example_data_1].
+. Download  link:../example_data/example_data1.en.xlsx[example_dataset_1].
 . Save the file to your computer.
-. (Optional) Briefly explore the structure of the example data in Excel or another app (or see detailed explanations in the section XXX ).
+. (Optional) Briefly explore the structure of the example data in e.g. Excel (or see a detailed decription in section XXX ).
+* The Excel workbook has four sheets: *OTU_table*, *Taxonomy*, *Samples* and *Study*.
 ** The *OTU_table* sheet in the template is the OTU table. Column headers are the IDs of the 5 samples in the dataset. Row names are IDs of the 4 OTUs. Cells contain sequence read counts.
-** The *Taxonomy* sheet contains the IDs of the OTUs referring to the rownames in the *OTU_table* sheet, and OTU data: The sequence, and taxonomic information derived from some reference database.
+** The *Taxonomy* sheet contains the IDs of the OTUs referring to the rownames in the *OTU_table* sheet, and OTU data: The sequence, and taxonomic information.
 ** The *Samples* sheet contains tha ID of the samples referring to the column names in the *OTU_table* sheet, and sample metadata: sample ID, latitude, longitude and date.
 ** The *Study* sheet contains values that are the same for the whole dataset ("global values"), in this case: the barcoding regions used, primer sequences, and primer names.
-+
-NOTE: all the fields (columns) of this example data are already using the 
 
 === Log into THE_TOOL
 
@@ -43,7 +42,6 @@ A green icon will indicate that the data looks OK according to some very basic d
 
 On this page you tell the tool what the fields in the uploaded data mean. As this test dataset already uses Darwin Core terms for the fields, no manual mapping is needed.
 
-
 TIP: Press *how to use this form* to get a guided tour of this page.
 
 * The upper section maps our sample data fields to Darwin Core terms (first column), automatically identifying and mapping four fields from the *Samples* sheet (second column) and five fields from the *Study* sheet with global values (third column) to their identically named Darwin Core counterparts. (e.g. the field containing sampling dates was called _eventDate_ in the uploaded data corresponding exactly to the Darwin Core term term:dwc[eventDate], and the field _pcr_primer_forward_ corresponding to the term term:dwc[pcr_primer_forward]).
@@ -59,7 +57,6 @@ TIP: Press *how to use this form* to get a guided tour of this page.
 This produces standardized intermediate files in the BIOM format
 +
 NOTE: The option *assign taxonomy* uses the https://www.gbif.org/tools/sequence-id[GBIF Sequence ID tool^] to assign taxonomy to the sequences. This overwrites any taxonomy provided in the data.
-
 . (Optional) Briefly check that number of samples and taxa are as expected (here: 5 samples and 4 taxa).
 . Press *Proceed*
 
@@ -69,10 +66,10 @@ Here the data can be explored to check that everything is OK. This step is mainl
 
 
 . (*Optional*) Check the data.
-.. Check the map and verify that the samples are placed geographically where expected (Northern part on Denmark). 
-.. Check the taxonomic barchart to ensure that taxonomic composition is as expected.
-.. Check ordination plots (PCoA/MDS) for outliers (any control samples that should have been excluded?).
-.. Select single samples from the map or chart and explore their metadata and taxonomy in the panel to the right.
+** Check the map and verify that the samples are placed geographically where expected (Northern part on Denmark). 
+** Check the taxonomic barchart to ensure that taxonomic composition is as expected.
+** Check ordination plots (PCoA/MDS) for outliers (any control samples that should have been excluded?).
+** Select single samples from the map or chart and explore their metadata and taxonomy in the panel to the right.
 . Press *Proceed*
 
 === Add metadata (step 5)
@@ -81,11 +78,11 @@ On this page dataset metadata is added in a minimalistic form.
 
 . (Mandatory) Add a meaningful title (e.g. “my first test dataset”).
 . (Mandatory) Select a licence.
-. (Mandatory) Add contact information - minimum: email and ORCID
+. (Mandatory) Add contact information - minimum: email and ORCID.
 +
 NOTE: use e.g. 1111-2222-3333-123X as dummy ORCID if you wish.
 . Leave the other fields empty.
-. Press *Proceed*
+. Press *Proceed*.
 
 
 === Export (step 6)
@@ -106,6 +103,4 @@ A prompt will inform that it takes some minutes before the data is fully ingeste
 ** access them on the test environment (UAT), and
 ** modify and export/publish updated/new versions.
 
-You should now have a first basic ideas of how the tool works and how you may adapt your own datasets to the template and use THE_TOOL. It is highly recommended to now go through the advanced quick start.
-
-If you end up with a dataset suitable for publication to GBIF.org, go to <<publishing_to_gbif>>.
+You should now have a first [.underline]#basic# idea of how THE_TOOL works and how you may adapt your own datasets to the template and use THE_TOOL. It is highly recommended go through the advanced quick start guide also.

@@ -1,13 +1,12 @@
 == Advanced Quick Start Guide
 
-This [.underline]#advanced# quick start guide handles the processing of a realistic example dataset with more detailed explanations of the steps and options. You should be able to follow this guide if you already used the simple quick start, but a deeper understanding of all aspects may require further reading about eDNA metabarcoding, dna-derived data, GBIF and Darwin Core data standards. The intention is to familiarize the user with the wider possibilities of THE_TOOL to be able to adapt real datasets for processing in the tool.
+This [.underline]#advanced# quick start guide handles the processing of a realistic example dataset with detailed explanations of the steps and options. You should be able to follow this guide if you already used the simple quick start guide. A deeper understanding of all aspects may require further reading about eDNA metabarcoding, dna-derived data, GBIF and Darwin Core data standards elsewhere.
 
 NOTE: Some comments and notes are not repeated from the simple quick start.
 
 === Advanced example dataset
 
-This quick start quide uses a slightly modified version of a real dataset. It is from a eDNA metabarcoding study where DNA was extracted from sea water samples and amplified and sequenced for the 12S gene region. This version has been modified slightly from the original [xxx] to be able to illustrate some features in the tool and workflow, by adding fictional data and some errors.
-
+This quide uses a slightly modified version of a real dataset. It is from a eDNA metabarcoding study where DNA was extracted from sea water samples and amplified and sequenced for the 12S gene region. This version has been modified slightly from the original [xxx] to be able to illustrate some features of THE_TOOL and the interactive workflow.
 
 . Download link:../example_data/example_data2.en.xlsx[example_data_2].
 . Save the file to your computer.
@@ -20,10 +19,10 @@ NOTE: there is a more detailed description of this example dataset here [XXX].
 ** The *Samples* sheet contains the IDs of the 69 samples referring to the column names in the *OTU_table* sheet, and some sample metadata: spatiotemporal data, date, etc. Some fields are using DwC terms others are not yet standardised.
 ** The *Study* sheet contain "sample/OTU information" that is the same for the whole dataset - e.g.: primer information, sequencing platform.
 
-=== Log into THE_TOOL
+=== Log in
 
 . Go to the website of https://edna-tool.gbif-uat.org/[THE_TOOL^].
-. Log in
+. Log in.
 . Press *New Dataset* in the upper part of the page.
 
 === Upload data (step 1)
@@ -31,7 +30,7 @@ NOTE: there is a more detailed description of this example dataset here [XXX].
 image::img/process_step_1.png[]
 
 . Drag the example dataset to the upload area, or click and select the file.
-. Give the dataset a nickname (e.g. "my_advanced_test")
+. Give the dataset a nickname (e.g. "my_advanced_test").
 . Press *Start Upload*.
 +
 A green icon will indicate that the XLSX format is detected and OK according to some very basic data checks.
@@ -40,7 +39,8 @@ You will get a warning that one of the columns (samples) in the OTU table does n
 
 image::img/advanced_example_upload_warning.png[]
 
-. Open the data viewer by clicking on the eye icon next to the uploaded dataset
+[start=4]
+. Open the data viewer by clicking on the eye icon next to the uploaded dataset.
 + 
 Here you can see and verify the structure and content of the four sheets from the uploaded excel file.
 . Scroll all the way to the right in the OTU table, and notice that there the last sample called _NEG_, wich is a negative control sample we do not want in the final dataset on GBIF.
@@ -48,11 +48,11 @@ Here you can see and verify the structure and content of the four sheets from th
 +
 NOTE: The tool will only include samples that are present in both *Samples* and *OTU_table*, so a trick to ignore control samples is to remove them just in one place. 
 . Close the viewer by pressing *Back*.
-. Press *Proceed*
+. Press *Proceed*.
 
 === Map terms (step 2)
 
-On this page you tell the tool which DwC terms correspond to which fields in the uploaded data.
+On this page you tell THE_TOOL which Darwin Core terms (standardized field names) correspond to which fields in the uploaded data.
 
 TIP: Press *how to use this form* to get a guided tour of this page.
 
@@ -70,22 +70,23 @@ TIP: Press *Save mapping* once in a while to make sure that you do not get logge
 
 Starting from the top with *Sample* information, we see:
 
-* term:dwc[id] was correctly identified and mapped.
-* term:dwc[eventDate] was not found in the uploaded data, but the tool suggest to use _date_.
-** click on _date_ to make this mapping.
-* term:dwc[decimalLatitude] was correctly mapped.
-* term:dwc[decimalLatitude] was not found in the uploaded data, and there is no suggestion.
-** click on the empty field next to term:dwc[decimalLatitude], and inspect the field names from the uploaded data and notice how the latitude field was simply misspelled _ecimalLatitude_. Select it to make the mapping.
-* term:mixs[target_gene] was correctly set to "12S" which was picked from the *Study* sheet containing terms with global values.
-* term:mixs[otu_db] also got a value "NCBI nt" from the *Study* sheet.
-* term:dwc[island] was mapped to _island_.
-* term:mixs[env_medium] and the last terms of the sample section were also automatically were mapped to fields in the *study* sheet.
+. term:dwc[id] was correctly identified and mapped.
+. term:dwc[eventDate] was not found in the uploaded data, but the tool suggest to use _date_.
+.. click on _date_ to make this mapping.
+. term:dwc[decimalLatitude] was correctly mapped.
+. term:dwc[decimalLatitude] was not found in the uploaded data, and there is no suggestion.
+.. click on the empty field next to term:dwc[decimalLatitude], and inspect the field names from the uploaded data and notice how the latitude field was simply misspelled _ecimalLatitude_. Select it to make the mapping.
+. term:mixs[target_gene] was correctly set to "12S" which was picked from the *Study* sheet containing terms with global values.
+. term:mixs[otu_db] also got a value "NCBI nt" from the *Study* sheet.
+. term:dwc[island] was mapped to _island_.
+. term:mixs[env_medium] and the last terms of the sample section were also automatically were mapped to fields in the *study* sheet.
 
 Now, going down to the *Taxon* section, we see:
 
-* `id` and all the taxonomic levels were mapped automatically.
-* term:mixs[DNA_sequence] was not mapped automatically, but it is suggested to use _sequence_.
-** click on "sequence" to map that.
+[start=10]
+. `id` and all the taxonomic levels were mapped automatically.
+. term:mixs[DNA_sequence] was not mapped automatically, but it is suggested to use _sequence_.
+.. click on "sequence" to map that.
 
 Now, going down to *Unmapped fields*, we see a series of fields (_SiteType, Depth, Location, run_accession, sample_accession, salinity_) in the uploaded data, that were not automatically identified and mapped to any Darwin Core terms.
 
@@ -93,6 +94,7 @@ NOTE: A detailed description the fields of the example dataset is in the section
 
 We expect (or know) that Darwin Core can accomodate several of these un-mapped fields, and we also want to supply some global information (e.g. country), which was not included in the uploaded data.
 
+[start=12]
 . Go to the last part of the *Sample* section.
 . Click on *Add mapping for another sample field* and look at the list of available terms.
 . We wish to find some standard field to map to our field _Location_.
@@ -112,6 +114,7 @@ NOTE: this is also how the term term:mixs[env_medium] (above) is filled out from
 
 Now, going down to *Unmapped fields*, we see that only a few fields remain unmapped. We really want to map _salinity_, but there is no standard field for that. So we will put that into *Extended Measurement Or Facts*.
 
+[start=17]
 . click on *salinity* from the row of unmapped fields and see how it is transferred to the the section below as a new entry.
 . We know that the measurement unit is "PSU", so we add that manually.
 
@@ -119,6 +122,7 @@ Now, the mapping is complete.
 
 NOTE: All available standard fields (from Occurrence Core, and the dna-derived extension) can be included in the upload files, and if spelled correctly no manual mapping is needed.
 
+[start=17]
 . Press *Proceed*.
 
 === Process data (step 3)
