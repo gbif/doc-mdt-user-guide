@@ -119,7 +119,7 @@ In some metabarcoding datasets, the sequences are placed in a separate https://e
 * OTU IDs are used as headers in the fasta file.
 * OTU IDs should be the same as those in the OTU table.
 
-image:img/Fasta_file_example.png[]
+image:img/fasta_file.png[]
 
 *Dataset descriptions, people and other metadata*
 
@@ -127,18 +127,18 @@ Before starting the data upload and processing in THE_TOOL it is a good idea to 
 
 You need to prepare:
 * A dataset title. Choose something descriptive. Examples:
+** XXX 
 ** XXX
 ** XXX
-** XXX
-* A dataset description. XXXX
+* A dataset description. XXXX[some advice on this]
 * Persons that should be associated with the dataset. This could be the authors of an associated research paper, the laboratory personnel, the person preparing the dataset for GBIF publication, etc.
 ** Name
 ** Affiliation
 ** Address
 ** email
-** orcid
+** ORCID (if available)
 * All persons added will be listed as authors in the suggested dataset citation.
-* Be sure to designate one of the persons (you?) as the contact person. This is the person that will be contacted if e.g. users find issues in the data.
+* Be sure to designate one of the persons (you?) as the contact person. This is the person that will be contacted if e.g. users find issues in the data. This person needs to be registered with email and ORCID.
 * Associated ressources ???
 
 NOTE: THE_TOOL uses a simple form for providing this dataset metadata. This is intentional as we do not wish the demotivate users by confronting them with a form with many options only marginally relevant for DNA metabarcoding data. If you chose to publish the processed data through an IPT, you will have the possibility of adding metadata there.
