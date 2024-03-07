@@ -30,8 +30,7 @@ THE_TOOL accepts some variation around the OTU table data structure, and a handf
 
 image::img/OTU_table_all_filed.png[]
 
-.The OTU table (example dataset 1). A minimalistic example of an *OTU_table* with 5 samples (Sample_A, Sample_B,..) as columns and 4 OTUs (OTU_001, OTU_002,..) as rows. Green boxes and arrow indicate the linking of the OTUs by their IDs to second table *Taxonomy* with taxonomic/sequence data data. Blue boxes and arrow indicate the the linking of samples by their IDs to the third table *Samples* with and sample metadata. The optional *Study* and *Seqs.fasta* are explained above. 
-
+.The OTU table (example dataset 1). A minimalistic example of an *OTU_table* with 5 samples (Sample_A, Sample_B,..) as columns and 4 OTUs (OTU_001, OTU_002,..) as rows. Green boxes and arrow indicate the linking of the OTUs by their IDs to second table *Taxonomy* with taxonomic/sequence data data. Blue boxes and arrow indicate the the linking of samples by their IDs to the third table *Samples* with and sample metadata. The optional *Study* and *Seqs.fasta* are explained above.
 
 === Preparing a dataset
 
