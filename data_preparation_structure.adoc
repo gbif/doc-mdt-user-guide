@@ -81,7 +81,7 @@ NOTE: This table does not hold any DwC fields/terms
 * First colums should be labelled `id` and contain OTU IDs referring to (identical to!) the row names (OTU IDs) in the *OTU_table*.
 +
 NOTE: Normally the *Taxonomy* table would not contain a lot of fields, as most fields that relate to this part is global (primers, sequencing platform, etc).
-* *Taxonomy* would typically include:
+* The *Taxonomy* table would typically include:
 ** The sequence (as term:dwc[DNA_sequence]) unless these are provided in a separate fasta file.
 ** Taxonomy (inferred from comparing the sequences againat a reference database). Taxonomy can be given in several ways:
 *** XXXX (how can we advice in a simple way about this)
@@ -91,15 +91,13 @@ NOTE: most metadata related to OTUs (sequencing platform, primers, etc) is ident
 +
 TIP: known contaminants or other OTUs not wanted in GBIF.org can simply be removed from the *Taxonomy* table alone (and left untouched in the OTU table) 
 
+
+
 *Samples*
 
 * Fit your Sample metadata into a *Sample* table with Sample IDs as rows and associated data as columns.
 * First colums should be `id` and contain Sample IDs referring to (identical to) the column names in the *OTU_table*.
-* This table is where you fit all the metadata related to the single samples if the values are different between samples
-** Sampling locations
-** Sampling dates
-** Physical properties related to the sample (e.g. pH)
-** Links to sample-associated data elsewhere – e.g. raw sequence data and biosample record in INSDC.
+* This table is where you fit all the metadata related to the single samples if the values are different between samples, e.g. information on sampling locations, sampling dates, physical properties related to the sample (e.g. pH), and links to sample-associated data elsewhere – e.g. raw sequence data and biosample record in INSDC.
 * Be sure to include as many of the required and recommended fields as possible (see below).
 * In addition to the required/recommended fieldsm, Occurrence Core (LINK) and dna-derived extension (link) has many further fields to select from.
 +
@@ -153,7 +151,19 @@ NOTE: THE_TOOL uses a very minimalistic web form for providing dataset metadata.
 
 === Required and recommended fields
 
-This section contains a list of required and recommended fields. These tables are modified/specialized version of tables xxx in the dna-publishing guide xxx specifically for when using THE_TOOL. 
+This section contains an overview of required and recommended fields to include in your dataset. These tables are modified/specialized version of tables xxx in the dna-publishing guide xxx specifically for when using THE_TOOL. 
+
+==== quick reference
+
+===== Fields to be provided by user
+
+* Required: term:mixs[DNA_sequence], term:dwc[scientificName], term:dwc[eventDate], term:dwc[eventID] (Sample ID is used).
+* Highly recommended: term:dwc[materialSampleID], term:dwc[recordedBy], term:dwc[decimalLatitude], term:dwc[decimalLongitude], term:mixs[target_gene], term:mixs[target_subfragment], term:mixs[pcr_primer_forward], term:mixs[pcr_primer_reverse], term:mixs[pcr_primer_name_forward], term:mixs[pcr_primer_name_reverse],term:mixs[pcr_primer_reference], term:mixs[seq_meth], term:mixs[otu_class_appr], term:mixs[otu_seq_comp_appr], term:mixs[otu_db], term:dwc[kingdom].
+* Recommended: term:mixs[env_broad_scale], term:mixs[env_local_scale], term:mixs[env_medium], term:dwc[associatedSequences], term:mixs[lib_layout], term:mixs[sop], term:dwc[samplingProtocol], term:dwc[identificationRemarks], term:dwc[identificationReferences], term:dwc[phylum], term:dwc[class], term:dwc[order], term:dwc[family], term:dwc[genus].
+
+===== Fields automatically handled/filled by THE_TOOL
+
+* term:dwc[basisOfRecord], term:dwc[occurrenceID], term:dwc[organismQuantity], term:dwc[organismQuantityType], term:dwc[sampleSizeValue], term:dwc[sampleSizeUnit], term:dwc[taxonID], (term:dwc[eventID]).
 
 When using THE_TOOL it is not important to know whether the fields you are using are from Occurrence Core or the dna-derived extension. But it is important to know in which table to put the fields and associated values. The *Placement* column explains where to provide each field. A lot of the required and recommended fields are automatically handled/calculated, and do should not be provided by the user – *Placement* informs about this also.
 
@@ -445,5 +455,10 @@ Specify whether to expect single, paired, or other configuration of reads
 | Highly recommended
 | *Study*
 |===
+
+
+sadsdf
+sdfsdf
+sdfsdf
 
 <<<
