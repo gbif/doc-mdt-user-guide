@@ -151,23 +151,29 @@ NOTE: THE_TOOL uses a very minimalistic web form for providing dataset metadata.
 
 === Required and recommended fields
 
-This section contains an overview of required and recommended fields to include in your dataset. These tables are modified/specialized version of tables xxx in the dna-publishing guide xxx specifically for when using THE_TOOL. 
+This section contains an overview of required and recommended fields to include in your dataset.
 
 ==== quick reference
 
-===== Fields to be provided by user
+*Fields to be provided by user*
 
 * Required: term:mixs[DNA_sequence], term:dwc[scientificName], term:dwc[eventDate], term:dwc[eventID] (Sample ID is used).
+
 * Highly recommended: term:dwc[materialSampleID], term:dwc[recordedBy], term:dwc[decimalLatitude], term:dwc[decimalLongitude], term:mixs[target_gene], term:mixs[target_subfragment], term:mixs[pcr_primer_forward], term:mixs[pcr_primer_reverse], term:mixs[pcr_primer_name_forward], term:mixs[pcr_primer_name_reverse],term:mixs[pcr_primer_reference], term:mixs[seq_meth], term:mixs[otu_class_appr], term:mixs[otu_seq_comp_appr], term:mixs[otu_db], term:dwc[kingdom].
+
 * Recommended: term:mixs[env_broad_scale], term:mixs[env_local_scale], term:mixs[env_medium], term:dwc[associatedSequences], term:mixs[lib_layout], term:mixs[sop], term:dwc[samplingProtocol], term:dwc[identificationRemarks], term:dwc[identificationReferences], term:dwc[phylum], term:dwc[class], term:dwc[order], term:dwc[family], term:dwc[genus].
 
-===== Fields automatically handled/filled by THE_TOOL
+*Fields automatically handled/filled by THE_TOOL*
 
 * term:dwc[basisOfRecord], term:dwc[occurrenceID], term:dwc[organismQuantity], term:dwc[organismQuantityType], term:dwc[sampleSizeValue], term:dwc[sampleSizeUnit], term:dwc[taxonID], (term:dwc[eventID]).
 
+==== Detailed reference on required and recommended fields
+
+These tables are modified/specialized version of tables in the dna-publishing guide in the section https://docs.gbif.org/publishing-dna-derived-data/en/#mapping-metabarcoding-edna-and-barcoding-data[Mapping metabarcoding (eDNA) and barcoding data]. 
+
 When using THE_TOOL it is not important to know whether the fields you are using are from Occurrence Core or the dna-derived extension. But it is important to know in which table to put the fields and associated values. The *Placement* column explains where to provide each field. A lot of the required and recommended fields are automatically handled/calculated, and do should not be provided by the user – *Placement* informs about this also.
 
-NOTE: many of the fields relating to taxonomy/sequences (e.g. primers, reference database) should be possible to give as global values in the *Study* table. If you find that this is not the case, you may be dealing with a mixed dataset, with sequences from more than one primer set (e.g. COI and 16S sequences from the same set of samples). We recommend to publish such datasets separately.
+NOTE: Many of the fields relating to taxonomy/sequences (e.g. primers, reference database) are most often possible to give as global values in the *Study* table. If you find that this is not the case, you may be dealing with a *mixed dataset* – i.e. with OTUs/sequences from more than one primer set (e.g. COI _and_ 16S sequences) from the same set of samples. We recommend to publish such datasets separately.
 
 [[table-01]]
 .Recommended fields for http://rs.gbif.org/core/dwc_occurrence_2020-04-15.xml[Occurrence core] for Metabarcoding data. This table is a modified version of table xxx in the dna-publishing guide xxx specifically for using THE_TOOL.
