@@ -20,26 +20,24 @@ WARNING: Files uploaded to the tool and files produced by the tool are currently
 
 :sectnums!:
 
-include::introduction.adoc[]
+include::introduction.en.adoc[]
 
-include::simple_quick_start.adoc[]
+include::simple_quick_start.en.adoc[]
 
-include::advanced_quick_start.adoc[]
+include::advanced_quick_start.en.adoc[]
 
-include::data_preparation_structure.adoc[]
+include::data_preparation_structure.en.adoc[]
 
-include::processing_dataset.adoc[]
+include::processing_dataset.en.adoc[]
 
-include::dataset_templates.adoc[]
+include::dataset_templates.en.adoc[]
 
-include::detailed_user_guide.adoc[]
+include::detailed_user_guide.en.adoc[]
 
-include::publishing.adoc[]
+include::publishing.en.adoc[]
 
-include::example_datasets.adoc[]
+include::example_datasets.en.adoc[]
 
-include::faq.adoc[]
+include::faq.en.adoc[]
 
 include::glossary.en.adoc[]
-
-include::bibliography.en.adoc[]

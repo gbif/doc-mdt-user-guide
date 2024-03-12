@@ -1,3 +1,4 @@
+[[processing]]
 == Processing a dataset
 
 If you have prepared a dataset in one of the suggested templates/formats, and used THE_TOOL before or used the two quick start guides, you should be able to upload and process a dataset by following the steps below.

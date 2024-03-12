@@ -1,3 +1,4 @@
+[[advanced_quick_start]]
 == Advanced Quick Start Guide
 
 This [.underline]#advanced# quick start guide handles the processing of a realistic example dataset with detailed explanations of the steps and options. You should be able to follow this guide if you already used the simple quick start guide. A deeper understanding of all aspects may require further reading about eDNA metabarcoding, dna-derived data, GBIF and Darwin Core data standards elsewhere.

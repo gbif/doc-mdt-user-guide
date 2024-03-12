@@ -1,3 +1,4 @@
+[[templates]]
 == Dataset Templates
 
 === Data template 1 – Excel workbook

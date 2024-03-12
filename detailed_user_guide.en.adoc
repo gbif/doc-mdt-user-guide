@@ -1,3 +1,4 @@
+[[detailed_guidance]]
 == Detailed user guide
 
 === User interface
