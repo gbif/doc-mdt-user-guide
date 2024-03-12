@@ -5,7 +5,7 @@
 
 GBIF.org offers access to extensive biodiversity data, mainly focusing on where and when species have been observed. These records, sourced from collections, surveys, and citizen science, include species names, dates, locations, and  additional details. GBIF also accomodates DNA-associated biodiversity data, including  DNA metabarcoding data, and the first version of a practical dna-publishing guide was published in 2021. During consultations with the GBIF network and the research community in 2022 and 2023, it became clear that tools for easier data formatting and publishing were needed for DNA metabarcoding data.
 
-THE_TOOL allows users with basic knowledge of data standards, GBIF and DNA data to reshape traditional dataset formats of the DNA metabarcoding community – OTU table type datasets – into standardised datasets possible to publish to GBIF. 
+THE_TOOL allows users with basic knowledge of data standards, GBIF and DNA data to reshape traditional dataset formats of the DNA metabarcoding community – OTU table type datasets – into standardized datasets possible to publish to GBIF. 
 
 === Target audiences
 
@@ -25,7 +25,7 @@ All new users are encouraged to review and go through both quick start guides to
 There is a full glossary in the end of the document. The list here contains some essential terms for quick reference to new users. 
 
 * https://dwc.tdwg.org/[Darwin Core^] (Abbr: DwC): The name of the data standard used by GBIF.
-* Darwin Core [.underline]#term#: a standardised field name (e.g. term:dwc[decimalLatitude] is the official DwC term for geographical latitude).
+* Darwin Core [.underline]#term#: a standardized field name (e.g. term:dwc[decimalLatitude] is the official DwC term for geographical latitude).
 * Occurrence: the GBIF and DwC word for a registration/detection of a species/taxon in space and time.
 * Occurrence core: This is the part of DwC that includes all the central information (fields) on biological occurrences in GBIF (e.g. spatiotemporal data, taxonomy, etc), also for eDNA data.
 * dna-derived data: An extension to Occurrence core to capture information relating to DNA (e.g. primers, the sequence, sequencing platform, etc.). This extension is based on the MIxS standard used by the "GenBanks". 

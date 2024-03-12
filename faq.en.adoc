@@ -47,7 +47,7 @@
 
 *Q. Should samples be resampled/rarefied to even sequencing depth?*
 
-*A.* No. When doing metabarcoding, researchers are often resampling the OTU tables to achieve even sequencing depth (same total number of reads per sample) to standardise sampling effort across samples. GBIF recommends to share detected absolute abundances (number of reads per ASV/OTU in each sample). The tool will automatically calculate total number of reads per sample and relative abundances, so that future users have the option to filter on both absolute and relative abundances. Users downloading whole datasets will be able to do this resampling themselves if they wish.
+*A.* No. When doing metabarcoding, researchers are often resampling the OTU tables to achieve even sequencing depth (same total number of reads per sample) to standardize sampling effort across samples. GBIF recommends to share detected absolute abundances (number of reads per ASV/OTU in each sample). The tool will automatically calculate total number of reads per sample and relative abundances, so that future users have the option to filter on both absolute and relative abundances. Users downloading whole datasets will be able to do this resampling themselves if they wish.
 
 *Q. Should negative controls, positive controls, blanks and failed samples be removed from the dataset?*
 
@@ -104,7 +104,7 @@
 
 *Q. Can the tool be used to just to make a BIOM file?*
 
-*A.* Yes. The tool may be used to construct a standardised BIOM file of data, that can be downloaded for any other purpose.
+*A.* Yes. The tool may be used to construct a standardized BIOM file of data, that can be downloaded for any other purpose.
 
 *Q. Should/can data from several primers/markers be combined in one table?*
 

@@ -16,8 +16,8 @@ This quide uses a slightly modified version of a real dataset. It is from a eDNA
 NOTE: there is a more detailed description of this example dataset here [XXX].
 
 ** The *OTU_table* sheet in the template is the OTU table. Column headers _(BAR.1, BAR.2, BAR.3, ..._) are the IDs of the 69(70) samples in the dataset. Row names (_ASV_1, ASV_2, ASV_3, ..._) are IDs of the 563 OTUs (here ASVs). Cells contain sequence read counts.
-** The *Taxonomy* sheet contains the IDs of the 563 OTUs referring to the rownames in the *OTU_table* along with the sequence, and taxonomic information derived from comparing the sequences against NCBI GenBank. NB: Some fields are using DwC terms others are not yet standardised.
-** The *Samples* sheet contains the IDs of the 69 samples referring to the column names in the *OTU_table* sheet, and some sample metadata: spatiotemporal data, date, etc. Some fields are using DwC terms others are not yet standardised.
+** The *Taxonomy* sheet contains the IDs of the 563 OTUs referring to the rownames in the *OTU_table* along with the sequence, and taxonomic information derived from comparing the sequences against NCBI GenBank. NB: Some fields are using DwC terms others are not yet standardized.
+** The *Samples* sheet contains the IDs of the 69 samples referring to the column names in the *OTU_table* sheet, and some sample metadata: spatiotemporal data, date, etc. Some fields are using DwC terms others are not yet standardized.
 ** The *Study* sheet contain "sample/OTU information" that is the same for the whole dataset - e.g.: primer information, sequencing platform.
 
 === Log in
@@ -148,7 +148,7 @@ Here the data can be explored to check that everything is OK. The options in thi
 ** Check the map and verify that the samples are placed geographically where expected (Around Galapagos Islands).
 ** Check the taxonomic barchart to ensure that taxonomic composition is as expected.
 *** try some of the other options (e.g. Absolute read abundance).
-** Check ordination plots (PCoA/MDS) – that visualise compositional differnence of the samples – for outliers (any control samples that should have been excluded?).
+** Check ordination plots (PCoA/MDS) – that visualize compositional differnence of the samples – for outliers (any control samples that should have been excluded?).
 ** Select single samples from the map or from charts and explore their metadata and taxonomy in the panel to the right.
 . Press *Proceed*
 
