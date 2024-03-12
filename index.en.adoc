@@ -22,7 +22,9 @@ WARNING: Files uploaded to the tool and files produced by the tool are currently
 
 include::introduction.en.adoc[]
 
-include::simple_quick_start.en.adoc[]
+:sectnums:
+
+include::0100-simple-quick-start.en.adoc[]
 
 include::advanced_quick_start.en.adoc[]
 
@@ -37,6 +39,8 @@ include::detailed_user_guide.en.adoc[]
 include::publishing.en.adoc[]
 
 include::example_datasets.en.adoc[]
+
+:sectnums!:
 
 include::faq.en.adoc[]
 
