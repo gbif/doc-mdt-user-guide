@@ -26,19 +26,19 @@ include::introduction.en.adoc[]
 
 include::0100-simple-quick-start.en.adoc[]
 
-include::advanced_quick_start.en.adoc[]
+include::0200-advanced-quick-start.en.adoc[]
 
-include::data_preparation_structure.en.adoc[]
+include::0300-data-preparation-structure.en.adoc[]
 
-include::processing_dataset.en.adoc[]
+include::0400-data-preparation-structure.en.adoc[]
 
-include::dataset_templates.en.adoc[]
+include::0500-dataset-templates.en.adoc[]
 
-include::detailed_user_guide.en.adoc[]
+include::0600-detailed-user-guide.en.adoc[]
 
-include::publishing.en.adoc[]
+include::0700-publishing.en.adoc[]
 
-include::example_datasets.en.adoc[]
+include::0800-example-datasets.en.adoc[]
 
 :sectnums!:
 
