@@ -61,7 +61,7 @@ Select one of the available data structures (LINK to XXX templates) that is suit
 [[fit_data]]
 ==== Fit the data into the template
 
-Now fit the data into the selected template and provide as many as the <<recommended, required and recommended fields>> as possible.
+Now fit the data into the selected template and provide as many of the <<req_recom, required and recommended fields>> as possible.
 
 TIP: The order (sorting) of rows and columns in the tables is not important. 
 
@@ -156,7 +156,7 @@ NOTE: THE_TOOL uses a very minimalistic web form for providing dataset metadata.
 
 This section contains an overview of required and recommended fields to include in your dataset.
 
-==== Quick reference
+==== Quick reference on required and recommended fields
 
 *Fields to be provided by user*
 
@@ -168,7 +168,7 @@ This section contains an overview of required and recommended fields to include 
 
 *Fields automatically handled/filled by THE_TOOL*
 
-* term:dwc[basisOfRecord], term:dwc[occurrenceID], term:dwc[organismQuantity], term:dwc[organismQuantityType], term:dwc[sampleSizeValue], term:dwc[sampleSizeUnit], term:dwc[taxonID], (term:dwc[eventID]).
+* term:dwc[basisOfRecord], term:dwc[occurrenceID], term:dwc[organismQuantity], term:dwc[organismQuantityType], term:dwc[sampleSizeValue], term:dwc[sampleSizeUnit], term:dwc[taxonID], (term:dwc[eventID] – THE_TOOL automatically uses the proveded sample IDs).
 
 ==== Detailed reference on required and recommended fields
 
