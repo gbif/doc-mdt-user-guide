@@ -69,7 +69,7 @@ TIP: The order (sorting) of rows and columns in the tables is not important.
 * Remove rows and columns that are not samples and OTUs to get a clean OTU/Sample matrix (i.e. remove rows or columns with sums/totals, etc.).
 ** If present, move columns with sample or taxomomy data to those separate tables.
 * Use 0 (zero) in cells without a read count (not "NA", "-" or similar).
-* Make sure that samples IDs (column headers) are unique, and prefarably do not contain a lot of unstandardized [XXX] characters.
+* Make sure that sample IDs (column headers) are unique, and prefarably do not contain a lot of unstandardized [XXX] characters. (NB: These sample IDs will automatically be used as term:dwc[eventID] by THE_TOOL).
 * Make sure that OTU IDs (row names) are unique, and prefarably do not contain a lot of unstandardized [XXX] characters.
 * Leave the upper left cell empty.
 +
@@ -96,7 +96,7 @@ TIP: known contaminants or other OTUs not wanted in GBIF.org can simply be remov
 *Samples*
 
 * Fit your Sample metadata into a *Sample* table with Sample IDs as rows and associated data as columns.
-* First colums should be `id` and contain Sample IDs referring to (identical to) the column names in the *OTU_table*.
+* First colums should be `id` and contain Sample IDs referring to (identical to) the column names in the *OTU_table*. (NB: These IDs will automatically be used as term:dwc[eventID] by THE_TOOL).
 * This table is where you fit all the metadata related to the single samples if the values are different between samples, e.g. information on sampling locations, sampling dates, physical properties related to the sample (e.g. pH), and links to sample-associated data elsewhere – e.g. raw sequence data and biosample record in INSDC.
 * Be sure to include as many of the required and recommended fields as possible (see below).
 * In addition to the required/recommended fieldsm, Occurrence Core (LINK) and dna-derived extension (link) has many further fields to select from.
@@ -153,7 +153,7 @@ NOTE: THE_TOOL uses a very minimalistic web form for providing dataset metadata.
 
 This section contains an overview of required and recommended fields to include in your dataset.
 
-==== quick reference
+==== Quick reference
 
 *Fields to be provided by user*
 
@@ -461,10 +461,5 @@ Specify whether to expect single, paired, or other configuration of reads
 | Highly recommended
 | *Study*
 |===
-
-
-sadsdf
-sdfsdf
-sdfsdf
 
 <<<
