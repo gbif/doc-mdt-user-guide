@@ -58,6 +58,7 @@ Select one of the available data structures (LINK to XXX templates) that is suit
 * If you prefer tab (or comma) separated text files, go for template 3 or 4. 
 * If you have the sequence reads as a separate fasta file, then use template 2 or 4.
 
+[[fit_data]]
 ==== Fit the data into the template
 
 Now fit the data into the selected template and provide as many as the <<recommended, required and recommended fields>> as possible.
@@ -150,6 +151,7 @@ You need to prepare:
 
 NOTE: THE_TOOL uses a very minimalistic web form for providing dataset metadata. This is intentional as we do not wish the demotivate users by confronting them with a web form with many options only marginally relevant for DNA metabarcoding data. If you chose to publish the processed data through an IPT, you will have the possibility of adding more/other dataset metadata there.
 
+[[req_recom]]
 === Required and recommended fields
 
 This section contains an overview of required and recommended fields to include in your dataset.

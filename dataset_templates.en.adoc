@@ -1,5 +1,7 @@
 [[templates]]
-== Dataset Templates
+== OTU table templates
+
+This section provides and describes the available templates, that will allow you to format OTU table like datasets into a shape that can be uploaded to THE_TOOL. The templates include all the required and recommended fields and a few more. Refer to the section <<preparation_structure>> – specifically the section <<fit_data>> – for detailed information and best practices on how to prepare and structure datasets for uploading and processing, and the section <<req_recom>> for information on required and recommended fields.
 
 === Data template 1 – Excel workbook
 
