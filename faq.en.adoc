@@ -2,7 +2,7 @@
 
 *Q. What is the state of this tool?*  
 
-*A.* This is a prototype, and is beeing continuously developed. This means, that you may encounter bugs and problems that we have not yet addressed. You will be able to make a Darwin Core archive and download it, but you will not be able to publish it directly to GBIF.org through THE_TOOL. If you encounter bugs, inconveniences, have concrete input or want to request a feature, please make a github issue using the links on website of THE_TOOL.
+*A.* THE_TOOL is a still a [.underline]#prototype#. THE_TOOL is continuously being developed/improved. This means, that you may encounter bugs and problems that we have not yet addressed. You will be able to make a Darwin Core Archive and download it, but you will currently not be able to publish it directly to GBIF.org through THE_TOOL. If you encounter bugs, inconveniences, have concrete input or want to request a feature, please make a GitHub issue using the links on website of THE_TOOL.
 
 *Q. What does THE_TOOL do?*
 
@@ -98,14 +98,14 @@
 
 *A.* In the long term GBIF aims to continuously re-annotate sequence based data to ensure consistency across datasets and time. GBIF will however keep original taxonomic identifications provided by the user to ensure traceability. GBIF is also working on better tools for searching for and filtering of sequence based data.
 
-*Q. Can the tool be used to just to make a Darwin Core archive?*
+*Q. Can the tool be used to just to make a Darwin Core Archive?*
 
-*A.* Yes. The tool can be used to produce a Darwin Core archive. This darwin core archive can then be published to GBIF, OBIS or another research infrastructure through another publishing process.
+*A.* Yes. The tool can be used to produce a Darwin Core Archive. This Darwin Core Archive can then be downloaded and published to GBIF, OBIS or another research infrastructure through another publishing process.
 
 *Q. Can the tool be used to just to make a BIOM file?*
 
-*A.* Yes. The tool may be used to construct a standardized BIOM file of data, that can be downloaded for any other purpose.
+*A.* Yes. The tool can be used to construct a standardized BIOM file of the uploaded data. The BIOM files can be downloaded.
 
 *Q. Should/can data from several primers/markers be combined in one table?*
 
-*A.* Preferably, you shouldn't, but you can. DNA from the same set of samples may have amplified and sequenced with several different primer sets (e.g. COI, ITS, 16S). These should be treated as different datasets (one dataset per marker / primer-set), and each dataset should be published separately, as this makes the data maximally interoperable and reusable, and allows for calculation of relative read abundance per sample. The same sample data file may of course be (re-)used together with the different OTU tables. NB: If you have to use the tool to convert a table where data from different markers have been merged/mixed, you will need to supply the corresponding primer information etc for every single entry (OTU/ASV) in the taxon table. But the calculations of relative read abundances will be erroneous and misleading. We may look into developing a solution for this depending on wishes from the
+*A.* We highly recommend not to. DNA from the same set of samples may have been amplified and sequenced with several different primer sets (e.g. COI, ITS, 16S). These should be treated as different datasets (one dataset per marker / primer-set), and each dataset should be published separately. This makes the data maximally interoperable and reusable, from a technical perspective, it makes it possible to calculate total and relative read abundance per sample and OTU. The same sample information table file may of course be (re-)used for datasets relating to the same set of samples. NB: If you have to use the tool to convert a table where data from different markers have been merged/mixed, you will need to supply the corresponding primer information etc for every single entry (OTU/ASV) in the taxon table, but the calculations of relative read abundances will be erroneous and misleading. We may look into developing a solution for this depending on wishes from the community.
