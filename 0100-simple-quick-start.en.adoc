@@ -90,7 +90,7 @@ NOTE: use e.g. 1111-2222-3333-123X as dummy ORCID if you wish.
 
 === Export (step 6)
 
-This last page of the process produces a so-called Darwin Core archive (a zip file) that can be published directly to the GBIF test environment (UAT) from THE_TOOL. This archive can also be published properly to GBIF.org.
+This last page of the process produces a so-called Darwin Core Archive (a zip file) that can be published directly to the GBIF test environment (UAT) from THE_TOOL. This archive can also be published properly to GBIF.org.
 
 
 . Press *Create DWC archive*.

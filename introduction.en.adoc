@@ -32,5 +32,5 @@ There is a full glossary in the end of the document. The list here contains some
 * OTU (Operational Taxonomic Unit): In this context it refers to the molecular units / molecular species detected in an eDNA metabarcoding study. OTUs are often a cluster of higly similar species represented by one selected sequence type.
 * ASV: Amplicon sequence variant. A variant of OTUs where where only denoising of the sequence data, but no clustering, has been performed. For simplicity we refer to OTUs in general to cover also ASVs.
 * OTU table: spreadsheet that holds the number of sequencing reads detected of each OTU/sequence in each sample. Here used broadly to also cover ASVs.
-* Darwin Core archive (DwC-A): A standardized format for sharing biodiversity data – a ZIP file that contains one or more data files along with a descriptor file that explains how the data files are organized.
+* Darwin Core Archive (DwC-A): A standardized format for sharing biodiversity data – a ZIP file that contains one or more data files along with a descriptor file that explains how the data files are organized.
 * Endpoint: In the context of GBIF, an "endpoint" refers to a URL or web address where a DwC-A can be accessed through the internet, and indexed by GBIF.

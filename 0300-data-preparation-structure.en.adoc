@@ -24,7 +24,7 @@ THE_TOOL uses the OTU table as a publishing model, targeting a familiar data for
 THE_TOOL accepts some variation around the OTU table data structure, and a handful of dataset templates are provided. They all contain the three tables mentioned above (as sheets in an Excel workbook or as separate tsv/csv files). To make redundant data entry unnecessary, the templates also include a fourth table for metadata with values that are the same for the whole dataset ("global values"). The tamples also accept that the sequences are provided in a separate txt file (a fasta file.)
 
 * *OTU_table*: The table (matrix) of sequence read counts of each OTU in each sample
-* *Taxonomy*: a table of the sequences and potentially their taxonomy, and rarely much more, as relevant metadata (sequencing platform, primers) can be put into the *Study* table.
+* *Taxonomy*: a table of the sequences and potentially their taxonomy. Only rarely this table holds more fields, as relevant metadata (sequencing platform, primers) is similar across all samples/OTUs, and can be put into the *Study* table.
 * *Samples*: a table of the metadata associated with the samples. This table is where all the metadata with different values for each sample is placed (geography, sampling date, etc.).
 * *Study*: this (optional) fourth table contain only two columns (term, value). This table can be used for metadata (terms) with values that are the same for the whole dataset ("global values") – often that would be things like: target gene, primer information, sequencing platform, pipeline, extraction procedure, etc.
 * *Seqs.fasta*: this (optional) file may contain the sequences of the OTUs instead of having them as a field in the *Taxonomy* table. 
@@ -176,7 +176,7 @@ These tables are modified/specialized version of tables in the dna-publishing gu
 
 When using THE_TOOL it is not important to know whether the fields you are using are from Occurrence Core or the dna-derived extension. But it is important to know in which table to put the fields and associated values. The *Placement* column explains where to provide each field. A lot of the required and recommended fields are automatically handled/calculated, and do should not be provided by the user – *Placement* informs about this also.
 
-NOTE: Many of the fields relating to taxonomy/sequences (e.g. primers, reference database) are most often possible to give as global values in the *Study* table. If you find that this is not the case, you may be dealing with a *mixed dataset* – i.e. with OTUs/sequences from more than one primer set (e.g. COI _and_ 16S sequences) from the same set of samples. We recommend to publish such datasets separately.
+NOTE: Many fields relating to taxonomy/sequences (e.g. primers, reference database) are most often possible to give as global values in the *Study* table. If you find that this is not the case, you may be dealing with a *mixed dataset* – i.e. with OTUs/sequences from more than one primer set (e.g. COI _and_ 16S sequences) from the same set of samples. We recommend to publish such datasets separately.
 
 [[table-01]]
 .Recommended fields for http://rs.gbif.org/core/dwc_occurrence_2020-04-15.xml[Occurrence core] for Metabarcoding data. This table is a modified version of table xxx in the dna-publishing guide xxx specifically for using THE_TOOL.
