@@ -3,9 +3,13 @@
 
 In this section you will find detailed information and best practices on how to prepare and structure datasets for uploading and processing.
 
-NOTE: illustrations (screenshots) may be slighlty different from what you see in the online tool, as THE_TOOL is still being developed and improved.
+NOTE: Illustrations (screenshots) may be slighlty different from what you see in the online tool, as THE_TOOL is still being developed and improved.
 
-=== The OTU table as a familiar community data format
+TIP: You may want to read sections of the general https://doi.org/10.35035/doc-vf1a-nr22[DNA publishing guide] for background information. Specifically: https://docs.gbif.org/publishing-dna-derived-data/en/#rationale[Rationale], https://docs.gbif.org/publishing-dna-derived-data/en/#environmental-dna-as-a-source-for-dna-derived-occurrence-data[Environmental DNA as a source...], https://docs.gbif.org/publishing-dna-derived-data/en/#dna-metabarcoding-sequence-derived-data[DNA metabarcodin data], https://docs.gbif.org/publishing-dna-derived-data/en/#introduction-to-biodiversity-publishing[Introduction to publishing], https://docs.gbif.org/publishing-dna-derived-data/en/#taxonomy-of-sequences[Taxonomy of sequences], https://docs.gbif.org/publishing-dna-derived-data/en/#taxonomy-of-sequences[Mapping metabarcoding data]
+
+IMPORTANT: The general https://doi.org/10.35035/doc-vf1a-nr22[DNA publishing guide] contains a lot of advice and guidance on data preparation and mapping (incl required/recommended fields). THE_TOOL will handle most of these things automatically (incl some fields). If you can fit your data into one of the provided OTU table templates here, the processing should be almost self-explanatory.
+
+=== The OTU table as a familiar data format
 
 The tool accepts data in a format familiar to the eDNA metabarcoding community - the OTU table.
 
@@ -19,7 +23,7 @@ NOTE:  It is commonly seen that an OTU table (with OTUs as rows) has the taxonom
 
 Most analysed datasets from DNA metabarcoding will be possible to fit into this three-table format.
 
-THE_TOOL uses the OTU table as a publishing model, targeting a familiar data format of this research community, and reshapes the data into a format that can be published to GBIF. 
+THE_TOOL uses the OTU table as a publishing model, and reshapes the data into a format that can be published to GBIF. 
 
 THE_TOOL accepts some variation around the OTU table data structure, and a handful of dataset templates are provided. They all contain the three tables mentioned above (as sheets in an Excel workbook or as separate tsv/csv files). To make redundant data entry unnecessary, the templates also include a fourth table for metadata with values that are the same for the whole dataset ("global values"). The tamples also accept that the sequences are provided in a separate txt file (a fasta file.)
 

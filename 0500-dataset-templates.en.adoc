@@ -7,9 +7,14 @@ This section provides and describes the available templates, that will allow you
 
 A workbook with three/four sheets: *OTU_table*, *Taxonomy*, *Samples* and (optionally) *Study*. The latter (*Study*) contains study-wide global values. The *OTU_table* must have samples as columns and OTUs as rows.
 
+link:../templates/edna_template1.current.en.xlsx
+[template_1].
+
 === Data template 2 – Excel workbook with fasta file
 
 A workbook with three/four sheets: *OTU_table*, *Taxonomy*, *Samples* and (optionally) *Study*. The latter (*Study*) contains study-wide global values. Instead of having the sequences in the *Taxonomy* sheet, a fasta file (*seqs.fasta*) is provided. The *OTU_table* must have samples as columns and OTUs as rows. The fasta file must have fasta headers corresponding to the OTU IDs used in the *OTU_table* sheet and in the *Taxonomy* sheet.
+
+
 
 === Data template 3 – TSV format
 

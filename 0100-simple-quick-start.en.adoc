@@ -7,10 +7,11 @@ The two quick start guides should ideally introduce most users to all features n
 
 This quick start uses a very simple and minimalistic example datset with only 5 samples and 4 OTUs, and almost no metadata.
 
-. Download  link:../example_data/example_data1.en.xlsx[example_dataset_1].
+. Download  link:../example_data/example_data1.current.en.xlsx[example_dataset_1].
 . Save the file to your computer.
 . (Optional) Briefly explore the structure of the example data in e.g. Excel (or see a detailed decription in section XXX ).
 * The Excel workbook has four sheets: *OTU_table*, *Taxonomy*, *Samples* and *Study*.
++NOTE: This example data is basede on template 1
 ** The *OTU_table* sheet in the template is the OTU table. Column headers are the IDs of the 5 samples in the dataset. Row names are IDs of the 4 OTUs. Cells contain sequence read counts.
 ** The *Taxonomy* sheet contains the IDs of the OTUs referring to the rownames in the *OTU_table* sheet, and OTU data: The sequence, and taxonomic information.
 ** The *Samples* sheet contains tha ID of the samples referring to the column names in the *OTU_table* sheet, and sample metadata: sample ID, latitude, longitude and date.
