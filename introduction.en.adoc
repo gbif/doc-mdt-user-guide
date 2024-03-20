@@ -29,13 +29,13 @@ NOTE: THE_TOOL cannot handle or process raw sequencing files (fastq) from such d
 
 There is a full glossary at the end of the document. The list here contains some essential terms for quick reference to new users. 
 
-https://dwc.tdwg.org/[Darwin Core^] (DwC):: The name of the data standard used by GBIF.
-Darwin Core [.underline]#term#:: a standardized field name (e.g. term:dwc[decimalLatitude] is the official DwC term for geographical latitude).
-Darwin Core Archive (DwC-A):: A standardized format for sharing biodiversity data – a ZIP archive that contains one or more data files along with a descriptor file that explains how the data files are organized.
-Occurrence:: the GBIF and DwC word for a registration/detection of a species/taxon in space and time.
-Occurrence core:: This is the part of DwC that includes all the central information (fields) on biological occurrences in GBIF (e.g. spatiotemporal data, taxonomy, etc), also for eDNA data.
-dna-derived data:: An extension to Occurrence core to capture information relating to DNA (e.g. primers, the sequence, sequencing platform, etc.). This extension is based on the MIxS standard used by the "GenBanks". 
-OTU (Operational Taxonomic Unit):: In this context it refers to the molecular units / molecular species (OTUs, ASVs, sequences) detected in an eDNA metabarcoding study. OTUs are represented by one selected sequence.
-ASV:: Amplicon sequence variant. A variant of OTUs where where only denoising of the sequence data, but no clustering, has been performed.
-OTU table:: spreadsheet that holds the number of sequencing reads detected of each OTU/sequence in each sample. Here used broadly to also cover ASVs.
-Endpoint:: In the context of GBIF, an "endpoint" refers to a URL or web address where a DwC-A can be accessed through the internet, and indexed by GBIF.
+* <<asv>>
+* <<dwc-standard>>
+* <<dwc-a>>
+* <<dwc-term>>
+* <<dna-derived>>
+* <<endpoint>>
+* <<occurrence>>
+* <<occurrence_core>>
+* <<otu>>
+* <<otu-table>>

@@ -1,1 +1,7 @@
+[[publishing]]
+## Publishing a dataset to GBIF.org
+
+IMPORTANT: You can "publish" a dataset directly from THE_TOOL to the https://www.gbif-uat.org/[GBIF test environment (UAT)], where the dataset will be indexed and look exactly like it would be on GBIF.org. However, direct proper publishing to GBIF.org is currently not possible!
+
+### Selecting a suitable publishing procedure
 
