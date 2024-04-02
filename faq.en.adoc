@@ -2,11 +2,15 @@
 
 *Q. What is the state of this tool?*  
 
-*A.* THE_TOOL is a still a [.underline]#prototype#. THE_TOOL is continuously being developed/improved. This means, that you may encounter bugs and problems that we have not yet addressed. You will be able to make a Darwin Core Archive and download it, but you will currently not be able to publish it directly to GBIF.org through THE_TOOL. If you encounter bugs, inconveniences, have concrete input or want to request a feature, please make a GitHub issue using the links on website of THE_TOOL.
+*A.* THE_TOOL is a still a [.underline]#prototype#. Here we call it "THE_TOOL" as the name has not yet been decided. THE_TOOL is continuously being developed/improved. This means, that you may encounter bugs and problems that we have not yet addressed. You will be able to make a Darwin Core Archive, and download it, but you will currently not be able to publish it directly to GBIF.org through THE_TOOL. The tool is currently hosted in the GBIF test environment (UAT) https://edna-tool.gbif-uat.org/[here], and you will be able to view/publish the data to the GBIF test environment.
+
+*Q. Where can bugs and errors be reported?*  
+
+*A.* If you encounter bugs, inconveniences, have concrete input or want to request a feature, please make a GitHub issue using the links on website of THE_TOOL.
 
 *Q. What does THE_TOOL do?*
 
-*A.* It helps format a DNA metabarcoding dataset (OTU table style) to be published on GBIF.org without the user having to learn Darwin Core terms and know a lot about data standardisation and reformating. It performs a transformation of the familar OTU table (with associated sample info & taxonomic/sequence informantion) into a tall table, where each row reflects one occurrence – a taxon (sequence/OTU/ASV) in time and space – and facilitates the mapping/renaming of user-named field names to the biodiversity standard, DarwinCore. These are all steps that can be done manually following the DNA publishing guide [LINK], but THE_TOOL makes it easier.
+*A.* It helps format a DNA metabarcoding dataset (OTU table style) to be published on GBIF.org without the user having to learn Darwin Core terms and know a lot about data standardisation and reformating. It performs a transformation of the familar OTU table (with associated sample info & taxonomic/sequence informantion) into a tall table, where each row reflects one occurrence – a taxon (sequence/OTU/ASV) in time and space – and facilitates the mapping/renaming of user-named field names to the biodiversity standard, Darwin Core. These are all steps that can be done manually following the https://doi.org/10.35035/doc-vf1a-nr22[DNA publishing guide], but THE_TOOL makes it easier.
 
 *Q. Who can use the tool?*
 
@@ -14,7 +18,7 @@
 
 *Q. Are there templates?*
 
-*A.* Yes, there are a few templates and also example datasets. See above (XXX).
+*A.* Yes, there are a currently a handful of <<templates>>.
 
 *Q. What kind of data can be published/submitted using this tool?*
 
@@ -84,7 +88,7 @@
 
 *Q. How should I provide the taxonomic information when I submit my OTU data to GBIF?*
 
-*A.* Take a look at the template (link above XXXX).
+*A.* Take a look at the <<templates>>.
 
 *Q. Should I share sequences that cannot be taxonomically identified?*
 
