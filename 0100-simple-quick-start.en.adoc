@@ -17,7 +17,7 @@ This quick start uses a very simple and minimalistic example datset with only 5 
 ** The *Samples* sheet contains tha ID of the samples referring to the column names in the *OTU_table* sheet, and sample metadata: sample ID, latitude, longitude and date.
 ** The *Study* sheet contains values that are the same for the whole dataset ("global values"), in this case: the barcoding regions used, primer sequences, and primer names.
 
-=== Log into THE_TOOL
+=== Log in
 
 . Go to the website of https://edna-tool.gbif-uat.org/[THE_TOOL^].
 . Log in
