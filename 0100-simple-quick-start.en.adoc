@@ -7,7 +7,7 @@ The two quick start guides should ideally introduce most users to all features n
 
 This quick start uses a very simple and minimalistic example datset with only 5 samples and 4 OTUs, and almost no metadata.
 
-. Download  link:../example_data/example_data1.current.en.xlsx[example_dataset_1].
+. Download link:../example_data/example_data1.current.en.xlsx[example_dataset_1].
 . Save the file to your computer.
 . (Optional) Briefly explore the structure of the example data in e.g. Excel (or see a detailed decription in section XXX ).
 * The Excel workbook has four sheets: *OTU_table*, *Taxonomy*, *Samples* and *Study*.

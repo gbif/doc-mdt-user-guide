@@ -9,7 +9,7 @@ NOTE: Some comments and notes are not repeated from the simple quick start.
 
 This quide uses a slightly modified version of a real dataset. It is from a eDNA metabarcoding study where DNA was extracted from sea water samples and amplified and sequenced for the 12S gene region. This version has been modified slightly from the original [xxx] to be able to illustrate some features of THE_TOOL and the interactive workflow.
 
-. Download link:../example_data/example_data2.en.xlsx[example_data_2].
+. Download link:../example_data/example_data2.current.en.xlsx[example_dataset_2].
 . Save the file to your computer.
 . Explore the structure of the template and example data in Excel or another app.
 +
