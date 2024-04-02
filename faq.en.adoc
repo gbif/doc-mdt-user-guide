@@ -12,7 +12,7 @@
 
 *A.* It helps format a DNA metabarcoding dataset (OTU table style) to be published on GBIF.org without the user having to learn Darwin Core terms and know a lot about data standardisation and reformating. It performs a transformation of the familar OTU table (with associated sample info & taxonomic/sequence informantion) into a tall table, where each row reflects one occurrence – a taxon (sequence/OTU/ASV) in time and space – and facilitates the mapping/renaming of user-named field names to the biodiversity standard, Darwin Core. These are all steps that can be done manually following the https://doi.org/10.35035/doc-vf1a-nr22[DNA publishing guide], but THE_TOOL makes it easier.
 
-*Q. Who can use the tool?*
+*Q. Who can use THE_TOOL?*
 
 *A.* Anybody. 
 
@@ -20,19 +20,19 @@
 
 *A.* Yes, there are a currently a handful of <<templates>>.
 
-*Q. What kind of data can be published/submitted using this tool?*
+*Q. What kind of data can be published/submitted using THE_TOOL?*
 
-*A.* This tool processes an OTU table so the data can be published to GBIF.org. With an OTU table we think of a table containing some amplified marker gene sequences (ASVs/OTUs) and their sequence abundance in a set of samples. Each sample corresponds to an environmental sample or bulk sample (air, soil, water, faeces, insect trap homogenate, gut contents, ...), from which DNA has been extracted. A selected genetic region (barcode region) has been amplified with selected primers and sequenced on a high throughput seqeuncing platform like Illumina MiSeq.
+*A.* THE_TOOL processes an OTU table so the data can be published to GBIF.org. With an OTU table we think of a table containing some amplified marker gene sequences (ASVs/OTUs) and their sequence abundance in a set of samples. Each sample corresponds to an environmental sample or bulk sample (air, soil, water, faeces, insect trap homogenate, gut contents, ...), from which DNA has been extracted. A selected genetic region (barcode region) has been amplified with selected primers and sequenced on a high throughput seqeuncing platform like Illumina MiSeq.
 
-*Q. Can the tool be used metagenomic datasets?*
+*Q. Can THE_TOOL be used metagenomic datasets?*
 
-*A.* No. However note, that there is a confusion about the terms "metagenomic" and "metabarcoding". Metagenomic data sequences and captures all genetic material from an environmental sample, often with so-called shotgun sequencing. Metabarcoding data sequences specific selected DNA regions often called barcoding regions (e.g. CO1, ITS, 18S, 16S) to identify species in a sample, focusing on community composition. So, although the microbial research community often labels 16S amplicon sequencing (16S metabarcoding) as "metagenomic", that type of data would be suitable for processing in this tool, as it is associated with 16S sequences only. 
+*A.* No. However note, that there is a confusion about the terms "metagenomic" and "metabarcoding". Metagenomic data sequences and captures all genetic material from an environmental sample, often with so-called shotgun sequencing. Metabarcoding data sequences specific selected DNA regions often called barcoding regions (e.g. CO1, ITS, 18S, 16S) to identify species in a sample, focusing on community composition. So, although the microbial research community often labels 16S amplicon sequencing (16S metabarcoding) as "metagenomic", that type of data would be suitable for processing in THE_TOOL, as it is associated with 16S sequences only. 
 
 *Q. What kind of DNA metabarcoding samples are acceptable to publish on GBIF.org?*
 
 *A.* eDNA metabarcoding based data from all environmental samples (soil, air, water, dust, etc) as well as bulk samples of small organisms (e.g. from malaise trap) are acceptable. Heavily manipulated/treated environmental samples may not reflect real biodiversity and deemed as irrelevant from a biodiversity perspective. Use your judgement.
 
-*Q. Which markers/barcodes (COI, ITS, 16S,..) does GBIF and the tool support?*
+*Q. Which markers/barcodes (COI, ITS, 16S,..) does GBIF and THE_TOOL support?*
 
 *A.* It is possible to publish data based on amplification and sequencing of any amplified barcoding region. 
 
@@ -47,15 +47,15 @@
 
 *Q. Should sequence read abundance be converted to relative abundance?*
 
-*A.* No. GBIF recommends to share detected absolute sequence read abundance (detected number of reads of each ASV/OTU in each sample). The tool will automatically calculate the total number of reads per sample and relative abundance, so that future users will have the option to filter on both absolute and relative abundance.
+*A.* No. GBIF recommends to share detected absolute sequence read abundance (detected number of reads of each ASV/OTU in each sample). THE_TOOL will automatically calculate the total number of reads per sample and relative abundance, so that future users will have the option to filter on both absolute and relative abundance.
 
 *Q. Should samples be resampled/rarefied to even sequencing depth?*
 
-*A.* No. When doing metabarcoding, researchers are often resampling the OTU tables to achieve even sequencing depth (same total number of reads per sample) to standardize sampling effort across samples. GBIF recommends to share detected absolute abundances (number of reads per ASV/OTU in each sample). The tool will automatically calculate total number of reads per sample and relative abundances, so that future users have the option to filter on both absolute and relative abundances. Users downloading whole datasets will be able to do this resampling themselves if they wish.
+*A.* No. When doing metabarcoding, researchers are often resampling the OTU tables to achieve even sequencing depth (same total number of reads per sample) to standardize sampling effort across samples. GBIF recommends to share detected absolute abundances (number of reads per ASV/OTU in each sample). THE_TOOL will automatically calculate total number of reads per sample and relative abundances, so that future users have the option to filter on both absolute and relative abundances. Users downloading whole datasets will be able to do this resampling themselves if they wish.
 
 *Q. Should negative controls, positive controls, blanks and failed samples be removed from the dataset?*
 
-*A.* Yes. Only share data from real environmental samples producing data that seems trustworthy should be shared. NB: The tool only includes samples that are present in both the sample data AND the OTU table - i.e. it automatically discards samples that are absent from either table. So, removing controls from the sample-list is an easy way to do that.
+*A.* Yes. Only share data from real environmental samples producing data that seems trustworthy should be shared. NB: THE_TOOL only includes samples that are present in both the sample data AND the OTU table - i.e. it automatically discards samples that are absent from either table. So, removing controls from the sample-list is an easy way to do that.
 
 
 *Q. Should I remove singletons, infrequent or low abundant sequences?*
@@ -80,11 +80,11 @@
 
 *Q. Should taxonomy be assigned to sequences?*
 
-*A.* Not necessarily. Currently GBIF identifies/indexes data based on the taxonomy you provide. If only the sequence is provided, the inferred occurrences will be stored under the label "incertae sedis" for now. However, the presence of the sequence will make it possible to assign taxonomy at a later stage. GBIF aims to provide the possibility of automatic updating of sequence based identification (see above). The tool currently also allows assigning of taxonomy for a few genetic markers and organism groups.
+*A.* Not necessarily. Currently GBIF identifies/indexes data based on the taxonomy you provide. If only the sequence is provided, the inferred occurrences will be stored under the label "incertae sedis" for now. However, the presence of the sequence will make it possible to assign taxonomy at a later stage. GBIF aims to provide the possibility of automatic updating of sequence based identification (see above). THE_TOOL currently also allows assigning of taxonomy for a few genetic markers and organism groups.
 
 *Q. How should taxonomy be assigned to sequences?*
 
-*A.* There are many reference databases and tools for assigning taxonomy to sequences, and reference databases are continuously being improved and changed. GBIF does not recommend any particular tool or pipeline. Use what is appropriate for the data. GBIF provides a sequence annotation tool for some markers. You can use that if you wish. The sequence ID tool is also built into this eDNA data converter tool as an option during the processing step, but as this step takes time you may want to use the sequence ID tool alone before using using this conveter. [NB: In the long term GBIF hopes to be able to continuously reannotate sequence based data to ensure consistency across datasets and time. GBIF will however keep original taxonomic identifications provided by the user to ensure traceability.]
+*A.* There are many reference databases and tools for assigning taxonomy to sequences, and reference databases are continuously being improved and changed. GBIF does not recommend any particular tool or pipeline. Use what is appropriate for the data. GBIF provides a sequence annotation tool for some markers. You can use that if you wish. The sequence ID tool is also built into THE_TOOL as an option during the processing step, but as this step takes time you may want to use the sequence ID tool alone before using using this conveter. [NB: In the long term GBIF hopes to be able to continuously reannotate sequence based data to ensure consistency across datasets and time. GBIF will however keep original taxonomic identifications provided by the user to ensure traceability.]
 
 *Q. How should I provide the taxonomic information when I submit my OTU data to GBIF?*
 
@@ -102,14 +102,14 @@
 
 *A.* In the long term GBIF aims to continuously re-annotate sequence based data to ensure consistency across datasets and time. GBIF will however keep original taxonomic identifications provided by the user to ensure traceability. GBIF is also working on better tools for searching for and filtering of sequence based data.
 
-*Q. Can the tool be used to just to make a Darwin Core Archive?*
+*Q. Can THE_TOOL be used to just to make a Darwin Core Archive?*
 
-*A.* Yes. The tool can be used to produce a Darwin Core Archive. This Darwin Core Archive can then be downloaded and published to GBIF, OBIS or another research infrastructure through another publishing process.
+*A.* Yes. THE_TOOL can be used to produce a Darwin Core Archive. This Darwin Core Archive can then be downloaded and published to GBIF, OBIS or another research infrastructure through another publishing process.
 
-*Q. Can the tool be used to just to make a BIOM file?*
+*Q. Can THE_TOOL be used to just to make a BIOM file?*
 
-*A.* Yes. The tool can be used to construct a standardized BIOM file of the uploaded data. The BIOM files can be downloaded.
+*A.* Yes. THE_TOOL can be used to construct a standardized BIOM file of the uploaded data. The BIOM files can be downloaded.
 
 *Q. Should/can data from several primers/markers be combined in one table?*
 
-*A.* We highly recommend not to. DNA from the same set of samples may have been amplified and sequenced with several different primer sets (e.g. COI, ITS, 16S). These should be treated as different datasets (one dataset per marker / primer-set), and each dataset should be published separately. This makes the data maximally interoperable and reusable, from a technical perspective, it makes it possible to calculate total and relative read abundance per sample and OTU. The same sample information table file may of course be (re-)used for datasets relating to the same set of samples. NB: If you have to use the tool to convert a table where data from different markers have been merged/mixed, you will need to supply the corresponding primer information etc for every single entry (OTU/ASV) in the taxon table, but the calculations of relative read abundances will be erroneous and misleading. We may look into developing a solution for this depending on wishes from the community.
+*A.* We highly recommend not to. DNA from the same set of samples may have been amplified and sequenced with several different primer sets (e.g. COI, ITS, 16S). These should be treated as different datasets (one dataset per marker / primer-set), and each dataset should be published separately. This makes the data maximally interoperable and reusable, from a technical perspective, it makes it possible to calculate total and relative read abundance per sample and OTU. The same sample information table file may of course be (re-)used for datasets relating to the same set of samples. NB: If you have to use THE_TOOL to convert a table where data from different markers have been merged/mixed, you will need to supply the corresponding primer information etc for every single entry (OTU/ASV) in the taxon table, but the calculations of relative read abundances will be erroneous and misleading. We may look into developing a solution for this depending on wishes from the community.
