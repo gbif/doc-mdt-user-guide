@@ -25,7 +25,7 @@ Most analysed datasets from DNA metabarcoding will be possible to fit into this 
 
 THE_TOOL uses the OTU table as a publishing model, and reshapes the data into a format that can be published to GBIF. 
 
-THE_TOOL accepts some variation around the OTU table data structure, and a handful of dataset templates are provided. They all contain the three tables mentioned above (as sheets in an Excel workbook or as separate tsv/csv files). To make redundant data entry unnecessary, the templates also include a fourth table for metadata with values that are the same for the whole dataset ("global values"). The tamples also accept that the sequences are provided in a separate txt file (a fasta file.)
+THE_TOOL accepts OTU table data in one of the provided dataset templates. Each dataset template contains the three tables mentioned above (as sheets in an Excel workbook or as separate tsv/csv files). To minimize redundant data entry, a fourth table can be used for metadata with values that are identical across the whole dataset. Sequences can also be provided in a separate txt file (as a fasta file.)
 
 * *OTU_table*: The table (matrix) of sequence read counts of each OTU in each sample
 * *Taxonomy*: a table of the sequences and potentially their taxonomy. Only rarely this table holds more fields, as relevant metadata (sequencing platform, primers) is similar across all samples/OTUs, and can be put into the *Study* table.
@@ -33,12 +33,12 @@ THE_TOOL accepts some variation around the OTU table data structure, and a handf
 * *Study*: this (optional) fourth table contain only two columns (term, value). This table can be used for metadata (terms) with values that are the same for the whole dataset ("global values") – often that would be things like: target gene, primer information, sequencing platform, pipeline, extraction procedure, etc.
 * *Seqs.fasta*: this (optional) file may contain the sequences of the OTUs instead of having them as a field in the *Taxonomy* table. 
 
-.The OTU table (example dataset 1). A minimalistic example of an *OTU_table* with 5 samples (Sample_A, Sample_B,..) as columns and 4 OTUs (OTU_001, OTU_002,..) as rows. Green boxes and arrow indicate the linking of the OTUs by their IDs to second table *Taxonomy* with taxonomic/sequence data data. Blue boxes and arrow indicate the the linking of samples by their IDs to the third table *Samples* with and sample metadata. The optional *Study* and *Seqs.fasta* are explained above.
+.The OTU table. A minimalistic example of an *OTU_table* with 5 samples (Sample_A, Sample_B,..) as columns and 4 OTUs (OTU_001, OTU_002,..) as rows. Green boxes and arrow indicate the linking of the OTUs by their IDs to second table *Taxonomy* with taxonomic/sequence data data. Blue boxes and arrow indicate the the linking of samples by their IDs to the third table *Samples* with and sample metadata. The optional *Study* and *Seqs.fasta* are explained above.
 image::img/OTU_table_all_filed.png[]
 
 === Preparing a dataset
 
-==== Basic checks
+==== Basic checks and preparations
 
 * The data is DNA metabarcoding data (amplified and sequenced marker genes) and not something else (metagenomics, specimen barcoding, qPCR)
 * You have access to the processed data as OTU table and associated table (and not just access to the raw un-analysed sequence data - e.g. fastq files)
