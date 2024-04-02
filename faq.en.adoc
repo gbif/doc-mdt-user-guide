@@ -26,7 +26,7 @@
 
 *Q. Can THE_TOOL be used metagenomic datasets?*
 
-*A.* No. However note, that there is a confusion about the terms "metagenomic" and "metabarcoding". Metagenomic data sequences and captures all genetic material from an environmental sample, often with so-called shotgun sequencing. Metabarcoding data sequences specific selected DNA regions often called barcoding regions (e.g. CO1, ITS, 18S, 16S) to identify species in a sample, focusing on community composition. So, although the microbial research community often labels 16S amplicon sequencing (16S metabarcoding) as "metagenomic", that type of data would be suitable for processing in THE_TOOL, as it is associated with 16S sequences only. 
+*A.* No. However note, that there is a confusion about the terms "metagenomic" and "metabarcoding". Broadly speaking, metagenomic methods sequences all genetic material from an environmental sample, often with so-called shotgun sequencing, and not including a PCR step targeting specific genetic regions. Metabarcoding methods on the other sequences selected DNA regions – often called barcoding regions (e.g. CO1, ITS, 18S, 16S) – to identify species in a sample. NB: Although the microbial research community often refers to 16S amplicon sequencing as "metagenomic", this type of data is strictly speaking metabarcoding data and thus suitable for processing in THE_TOOL. 
 
 *Q. What kind of DNA metabarcoding samples are acceptable to publish on GBIF.org?*
 
