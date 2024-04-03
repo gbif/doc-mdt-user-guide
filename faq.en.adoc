@@ -1,3 +1,4 @@
+[[faq]]
 == FAQ
 
 *Q. What is the state of this tool?*  

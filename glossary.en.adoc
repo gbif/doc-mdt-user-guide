@@ -1,4 +1,4 @@
-[glossary]
+[[glossary]]
 == Glossary
 
 Most parts of his glossary is identical to the glossary of the https://doi.org/10.35035/doc-vf1a-nr22[general DNA publishing guide]. Entries unique to this version are marked with "§".
