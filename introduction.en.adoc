@@ -30,7 +30,8 @@ A suggested approach could be:
 * ...then the <<advanced_quick_start>>
 * Select a <<templates>>
 * Adapt your own dataset to the template (see <<preparation_structure>>)
-* Refer to the <<faq>> and <<glossary>>
+* Process the data in THE_TOOL
+* Refer to the <<faq>>, the <<glossary>>, and the general https://doi.org/10.35035/doc-vf1a-nr22[dna-publishing guide] where needed.
 
 === Essential terms
 
