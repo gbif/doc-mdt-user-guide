@@ -28,7 +28,7 @@ A suggested approach could be:
 * Watch this very brief https://vimeo.com/912170754[video] (originally made for the https://www.gbif.org/composition/lKyZFAUnIDv8kpf0CgZsS/technical-support-hour-for-gbif-nodes[Technical support hour for GBIF nodes])
 * Run through the <<simplequick_start>>
 * ...then the <<advanced_quick_start>>
-* Select a <<templates>>
+* Select a <<templates, dataset template>>
 * Adapt your own dataset to the template (see <<preparation_structure>>)
 * Process the data in THE_TOOL
 * Refer to the <<faq>>, the <<glossary>>, and the general https://doi.org/10.35035/doc-vf1a-nr22[dna-publishing guide] where needed.
