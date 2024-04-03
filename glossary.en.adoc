@@ -1,7 +1,7 @@
 [[glossary]]
 == Glossary
 
-Most parts of his glossary is identical to the glossary of the https://doi.org/10.35035/doc-vf1a-nr22[general DNA publishing guide]. Entries unique to this version are marked with "§".
+Most parts of his glossary is identical to the glossary of the https://doi.org/10.35035/doc-vf1a-nr22[general DNA publishing guide]. Entries unique to this version are marked with "(§)".
 
 [glossary]
 [[ala]]Atlas of Living Australia (ALA):: The ALA is a web-based platform that pulls together Australian biodiversity data from multiple sources, making it accessible and reusable to anyone (see https://www.ala.org.au/about-ala/). The open infrastructure platform developed by the ALA is also used by several other countries for their own national biodiversity data platform (see https://living-atlases.gbif.org/).
@@ -13,7 +13,7 @@ Most parts of his glossary is identical to the glossary of the https://doi.org/1
 [[clustering]]Clustering:: In taxonomic classification, the process of grouping organisms together according to some similarity criterion. See <<otu,Operational Taxonomic Unit>>.
 [[community-dna]]Community (bulk) DNA:: DNA from bulk samples (e.g. plankton samples or Malaise trap samples consisting of several individuals from many species). For the purpose of this guide, bulk sample DNA is included in the eDNA concept.
 [[dwc-a]]Darwin Core Archive (DwC-A):: Compressed (ZIP) file format for exchange of biodiversity data compiled in accordance with the <<dwc-standard,Darwin Core (DwC) standard>>. Essentially a self-contained set of interconnected CSV files and an XML document describing included files and data columns, and their mutual relationships.
-[[dwc-term]]Darwin Core [.underline]#term#§:: a standardized field name (e.g. term:dwc[decimalLatitude] is the official DwC term for geographical latitude).
+[[dwc-term]]Darwin Core [.underline]#term#:: a standardized field name (e.g. term:dwc[decimalLatitude] is the official DwC term for geographical latitude). (§)
 [[dwc-standard]]Darwin Core (DwC) standard:: Standard for sharing and publishing biodiversity data, originating from the Biodiversity Information Standards (TDWG) community. In principle, a set of terms used for describing different entities of biodiversity observations, such as sampling events, occurrences and taxa. Current Darwin Core terms are described in the https://dwc.tdwg.org/terms/[Quick Reference Guide].
 [[data-vocabulary]]Data vocabulary:: Set of preferred terms or concepts
 with specific, well-defined meanings and interrelationships, facilitating data exchange and reuse.
@@ -23,12 +23,12 @@ with specific, well-defined meanings and interrelationships, facilitating data e
 [[barcoding]]DNA barcoding and metabarcoding (amplicon sequencing):: Use of short, standardized DNA fragments to identify individual organisms via sequencing. Metabarcoding combines barcoding with high-throughput DNA sequencing, using universal primers to amplify and sequence large groups of organisms in eDNA samples.
 [[dna-marker]]DNA marker:: A DNA fragment used as a marker of some property (e.g., taxonomic affiliation). May, but does not have to, be a gene or a part of a gene.
 [[dna-db]]DNA metabarcoding database:: Database containing DNA sequences (DNA barcodes) from previously recovered or studied organisms. The reference sequences were ideally generated from individuals of described, well-studied species-with the type specimen serving as the ideal-or higher taxonomic level (e.g., genus, family), but may also stem from eDNA sequencing efforts. It is wise not to trust “reference sequences” blindly.
-[[dna-derived]]dna-derived data§:: An extension to Occurrence core to capture information relating to DNA (e.g. primers, the sequence, sequencing platform, etc.). This extension is based on the MIxS standard used by the "GenBanks".
+[[dna-derived]]dna-derived data:: An extension to Occurrence core to capture information relating to DNA (e.g. primers, the sequence, sequencing platform, etc.). This extension is based on the MIxS standard used by the "GenBanks". (§)
 [[dna-probe]]DNA probe:: A short, synthetic single-stranded DNA fragment with fluorescent labelling that binds to a selected region of target DNA (marker) during PCR. Increases specificity and can be used in addition to primers in <<qpcr,qPCR>> and <<ddpcr,ddPCR>> to detect and quantify a genetic marker.
 [[embl]]European Bioinformatics Institute (EMBL-EBI):: Intergovernmental organization for bioinformatics research and services, part of the European Molecular Biology Laboratory (EMBL), providing eg. (raw) sequence reads and assembly data via <<ena,the European Nucleotide Archive (ENA)>>.
 [[edna]]Environmental DNA (eDNA):: DNA from an environmental sample, e.g. soil, water, air or host organism. An often used definition is that environmental DNA is the genetic material (DNA) obtained from environmental samples without any obvious evidence of biological source material (https://doi.org/10.1016/j.biocon.2014.11.019[Thomsen and Willerslev 2015^]).
 [[ena]]European Nucleotide Archive (ENA):: European repository for nucleotide sequences, covering raw sequencing data, sequence assembly information and functional annotation. Includes the <<sra,Sequence Read Archive (SRA)>>, and is maintained by the European Bioinformatics Institute (EMBL-EBI), as part of <<insdc, the International Nucleotide Sequence Database Collaboration (INSDC)>>.
-[[endpoint]]Endpoint§:: In the context of GBIF, an "endpoint" refers to a URL or web address where a DwC-A can be accessed through the internet, and indexed by GBIF.
+[[endpoint]]Endpoint:: In the context of GBIF, an "endpoint" refers to a URL or web address where a DwC-A can be accessed through the internet, and indexed by GBIF. (§)
 [[fastq]]FASTQ:: Text-based standard for storing molecular sequences and associated quality measures deriving from <<hts,High-throughput sequencing (HTS)>>. For each sequence position, single ASCII-characters are used to represent base call (identified nucleotide) and score, respectively.
 [[gbif]]Global Biodiversity Information Facility (GBIF):: International network and research infrastructure, mainly focused on mobilizing and providing open access to global biodiversity data.
 [[ggbn]]Global Genome Biodiversity Network (GGBN):: International network of institutions concerned with efficient sharing and usage of genomic biodiversity samples and associated metadata, e.g. promoting the Darwin Core-compatible GGBN Data Standard.
@@ -43,7 +43,7 @@ with specific, well-defined meanings and interrelationships, facilitating data e
 [[ncbi]]National Center for Biotechnology Information (NCBI):: Division of United States National Library of Medicine (NLM) housing important bioinformatics resources, such as the GenBank database of DNA sequences, and the <<sra,Sequence Read Archive (SRA)>> of high throughput sequencing data.
 [[ngs]]Next Generation Sequencing (NGS):: See <<hts,High-throughput sequencing (HTS)>>.
 [[occurrence]]Occurrence:: An existence of an Organism (sensu http://rs.tdwg.org/dwc/terms/Organism) at a particular place at a particular time.
-[[occurrence_core]]Occurrence core§:: The part of DwC that includes all the central information (fields) on biological occurrences in GBIF (e.g. spatiotemporal data, taxonomy, etc), also for eDNA data.
+[[occurrence_core]]Occurrence core:: The part of DwC that includes all the central information (fields) on biological occurrences in GBIF (e.g. spatiotemporal data, taxonomy, etc), also for eDNA data. (§)
 [[otu]]Operational Taxonomic Unit (OTU):: Cluster of organisms based on similarity in specific DNA marker sequence(s), used for taxonomic classification. Includes, for example, <<sh,Species Hypothesis>> in UNITE, and <<bins,Barcode Index Numbers>> in the Barcode of Life Data System (BOLD). <<asv,Amplicon Sequence Variants (ASVs)>> may be considered analogous to <<zotu,zero radius OTUs (zOTUs)>>.
 [[otu-table]]OTU table:: Spreadsheet that holds the number of sequencing reads detected of each OTU/sequence in each sample.
 [[pcr]]Polymerase Chain Reaction (PCR):: Technique for fast amplification and detection of specific fragments of target DNA (or RNA) sequences. Amplified regions are determined by the pair of <<primer,PCR primers>> used in the reaction.
