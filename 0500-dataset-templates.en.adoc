@@ -1,28 +1,28 @@
 [[templates]]
 == OTU table templates
 
-This section provides and describes the available templates, that will allow you to format OTU table like datasets into a shape that can be uploaded to THE_TOOL. The templates include all the required and recommended fields and a few more. Refer to the section <<preparation_structure>> – specifically the section <<fit_data>> – for detailed information and best practices on how to prepare and structure datasets for uploading and processing, and the section <<req_recom>> for information on required and recommended fields.
+This section provides and describes the available templates, that will allow you to format OTU tables to be uploaded to THE_TOOL. The templates include all the required and recommended fields and a few more. Refer to the section <<preparation_structure>> – specifically the section <<fit_data>> – for detailed information and best practices on how to prepare and structure datasets for uploading and processing, and the section <<req_recom>> for information on required and recommended fields.
 
-=== Data template 1 – Excel workbook
+=== OTU table template 1 – Excel workbook
 
 A workbook with three/four sheets: *OTU_table*, *Taxonomy*, *Samples* and (optionally) *Study*. The latter (*Study*) contains study-wide global values. The *OTU_table* must have samples as columns and OTUs as rows.
 
-link:../templates/edna_template1_excel.current.en.xlsx[Template 1].
+link:../templates/otutable_template1_excel.current.en.xlsx[Template 1].
 
-=== Data template 2 – Excel workbook with fasta file
+=== OTU table template 2 – Excel workbook with fasta file
 
 A workbook with three/four sheets: *OTU_table*, *Taxonomy*, *Samples* and (optionally) *Study*. The latter (*Study*) contains study-wide global values. Instead of having the sequences in the *Taxonomy* sheet, a fasta file (*seqs.fasta*) is provided. The *OTU_table* must have samples as columns and OTUs as rows. The fasta file must have fasta headers corresponding to the OTU IDs used in the *OTU_table* sheet and in the *Taxonomy* sheet.
 
-link:../templates/edna_template2_excel_w_fasta.current.en.zip[Template 2].
+link:../templates/otutable_template2_excel_w_fasta.current.en.zip[Template 2].
 
-=== Data template 3 – TSV format
+=== OTU table template 3 – TSV format
 
 Three/four tsv (or csv) files *OTU_table.tsv*, *Taxonomy.tsv*, *Samples.tsv*, and (optionally) *Study.tsv* containing study-wide global values. The OTU table can have samples as either columns or rows.
 
-link:../templates/edna_template3_tsv_files.current.en.zip[Template 3].
+link:../templates/otutable_template3_tsv_files.current.en.zip[Template 3].
 
-=== Data template 4 – TSV format with fasta file
+=== OTU table template 4 – TSV format with fasta file
 
 Three/four tsv (or csv) files *OTU_table.tsv*, *Taxonomy.tsv*, *Samples.tsv*, and (optionally) *Study.tsv* containing study-wide global values. Instead of having the sequences in the *Taxonomy.tsv*, a fasta file (*seqs.fasta*) is provided. The *OTU_table.tsv* can have samples as either columns or rows. The fasta file must have fasta headers corresponding to the OTU IDs used in the *OTU_table.tsv* and in the *Taxonomy.tsv*.
 
-link:../templates/edna_template4_tsv_files_w_fasta.current.en.zip[Template 4].
+link:../templates/otutable_template4_tsv_files_w_fasta.current.en.zip[Template 4].
