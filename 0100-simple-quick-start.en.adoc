@@ -1,4 +1,4 @@
-[[simplequick_start]]
+[[simple_quick_start]]
 == Simple Quick Start Guide
 
 The two quick start guides should ideally introduce most users to all features necessary to know for being able to adapt datasets to be processed with THE_TOOL. Start with the simple and then move to the advanced. This [.underline]#simple# quick start guide guides the user though the processing of a minimal example dataset with little explanation, and requires little or no prior knowledge about eDNA data, GBIF and Darwin Core.

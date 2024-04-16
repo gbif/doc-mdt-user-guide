@@ -26,7 +26,7 @@ NOTE: THE_TOOL cannot handle or process raw sequencing files (fastq) from such d
 A suggested approach could be:
 
 * Watch this short https://vimeo.com/912170754[video] on DNA data + GBIF (originally made for the https://www.gbif.org/composition/lKyZFAUnIDv8kpf0CgZsS/technical-support-hour-for-gbif-nodes[Technical support hour for GBIF nodes]) and/or this quickly made ad.hoc. https://drive.google.com/file/d/1T27BYTxC_ky-Qn89lhvhlR0asRsLnbML/view?usp=sharing[video] with an example use of THE_TOOL.
-* Run through the <<simplequick_start>>
+* Run through the <<simple_quick_start>>
 * ...then the <<advanced_quick_start>>
 * Select a <<templates, dataset template>>
 * Adapt your own dataset to the template (see <<preparation_structure>>)
