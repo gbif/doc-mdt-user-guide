@@ -30,6 +30,7 @@ Comments
 * All samples have a measurement of _salinity_. This does not have a corresponding DwC term, but can be accomodated as a field in the Extended Measurements or Facts.
 * See more details the walk-through here: <<advanced_quick_start>>
 
+[[example3,Example dataset 3]]
 === Example dataset 3: COI marine water – a richly formatted dataset
 
 A real dataset with COI metabarcoding of DNA extracted from sea water. The dataset has rich metadata and is a good example of a well-documented dataset. This example version has been modified slightly from the https://www.gbif.org/dataset/9358fbd7-cfd0-4eab-99fa-0934396a0529[original dataset]. It is based on template 3 (4 separate csv files in a zip-archive).
