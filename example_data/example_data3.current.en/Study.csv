@@ -1,0 +1,30 @@
+term,value
+env_medium,coastal sea water [ENVO_00002150]
+env_broad_scale,marine biome [ENVO:00000447]
+env_local_scale,shoreline [ENVO:00000486]|intertidal zone [ENVO:00000316]
+project_name,Environmental DNA metabarcoding differentiates between micro-habitats within the rocky intertidal
+target_gene,COI
+pcr_primer_forward,GGWACWGGWTGAACWGTWTAYCCYCC
+pcr_primer_name_forward,mlCOIintF
+pcr_primer_reverse,TAIACYTCIGGRTGICCRAARAAYCA
+pcr_primer_name_reverse,jgHCO2198
+sop,https://www.biorxiv.org/content/10.1101/2023.08.03.551543v1
+seq_meth,Illumina MiSeq
+samplingProtocol,https://dx.doi.org/10.17504/protocols.io.bp2l69y7klqe/v2
+size_frac,0.22 micrometer
+samp_vol_we_dna_ext,1000 mL
+samp_collec_device,Covidien single-use enteral feeding pouch
+samp_collec_method,Covidien single-use enteral feeding pouch: https://dx.doi.org/10.17504/protocols.io.bp2l69y7klqe/v2
+samp_mat_process,Gravity filtered through Sterivex (0.22-µm): https://dx.doi.org/10.17504/protocols.io.bp2l69y7klqe/v2
+annealingTemp,69.5
+annealingTempUnit,Degrees Celsius
+ampliconSize,313
+amplificationReactionVolume,25
+amplicationReactionVolumeUnit,µl
+nucl_acid_ext,https://dx.doi.org/10.17504/protocols.io.ewov1qyyygr2/v1
+nucl_acid_amp,https://dx.doi.org/10.17504/protocols.io.dm6gp3wpdvzp/v1
+lib_layout,paired
+verbatimDepth,Surface
+institutionID,https://ror.org/00f54p054
+institutionCode,Stanford University
+otu_db,"MIDORI2 reference database,v. GB253 (20 December 2022): https://www.reference-midori.info/download.php"
