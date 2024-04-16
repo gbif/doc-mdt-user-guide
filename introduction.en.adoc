@@ -41,7 +41,7 @@ There is a full glossary at the end of the document. The list here contains some
 * <<dwc-standard>>
 * <<dwc-a>>
 * <<dwc-term>>
-* <<dna-derived>>
+* <<dna-derived, DNA-derived data (extension)>>
 * <<endpoint>>
 * <<occurrence>>
 * <<occurrence_core>>
