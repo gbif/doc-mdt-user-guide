@@ -15,7 +15,7 @@ Comments
 
 === Example dataset 2: 12S fish – data from Galapagos Islands
 
-A realistic but simple dataset used in the <<advanced_quick_start>> with 12S fish metabarcoding of DNA was extracted from sea water. This version has been modified slightly from the original [xxx] to illustrate some features. It is based on template 1 (Excel workbook with four sheets).
+A realistic but simple dataset used in the <<advanced_quick_start>> with 12S fish metabarcoding of DNA was extracted from sea water. This version has been modified slightly from the original [xxx not yet published properly] to illustrate some features. It is based on template 1 (Excel workbook with four sheets).
 
 Download file(s): link:../example_data/example_data1.current.en.xlsx[example_dataset_2].
 

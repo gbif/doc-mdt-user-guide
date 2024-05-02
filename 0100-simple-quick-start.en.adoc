@@ -9,7 +9,7 @@ This quick start uses a very simple and minimalistic example datset with only 5 
 
 . Download link:../example_data/example_data1.current.en.xlsx[example_dataset_1].
 . Save the file to your computer.
-. (Optional) Briefly explore the structure of the example data in e.g. Excel (or see a detailed decription in section XXX ).
+. (Optional) Briefly explore the structure of the example data in e.g. Excel (or see a detailed decription in section example_data ).
 * The Excel workbook has four sheets: *OTU_table*, *Taxonomy*, *Samples* and *Study*.
 +
 NOTE: This example data is basede on template 1 (see <<templates>> section).

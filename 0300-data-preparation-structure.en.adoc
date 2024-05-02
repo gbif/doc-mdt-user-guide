@@ -56,11 +56,11 @@ image::img/OTU_table_all_filed.png[]
 
 ==== Select a template
 
-Select one of the available data structures (LINK to XXX templates) that is suitable for your data.
+Select one of the <<templates>> that is suitable for your data.
 
 * If you prefer Excel workbooks, then use template 1 og 2.
 * If you prefer tab (or comma) separated text files, go for template 3 or 4. 
-* If you have the sequence reads as a separate fasta file, then use template 2 or 4.
+* If you have sequences in a separate fasta file, then use template 2 or 4.
 
 [[fit_data]]
 ==== Fit the data into the template
@@ -75,8 +75,8 @@ TIP: The order (sorting) of rows and columns in the tables is not important.
 * Remove rows and columns that are not samples and OTUs to get a clean OTU/Sample matrix (i.e. remove rows or columns with sums/totals, etc.).
 ** If present, move columns with sample or taxomomy data to those separate tables.
 * Use 0 (zero) in cells without a read count (not "NA", "-" or similar).
-* Make sure that sample IDs (column headers) are unique, and prefarably do not contain a lot of unstandardized [XXX] characters. (NB: These sample IDs will automatically be used as term:dwc[eventID] by THE_TOOL).
-* Make sure that OTU IDs (row names) are unique, and prefarably do not contain a lot of unstandardized [XXX] characters.
+* Make sure that sample IDs (column headers) are unique, and prefarably do not contain a lot of non-standard characters. (NB: These sample IDs will automatically be used as term:dwc[eventID] by THE_TOOL).
+* Make sure that OTU IDs (row names) are unique, and prefarably do not contain a lot of non-standard characters.
 * Leave the upper left cell empty.
 +
 NOTE: This table does not hold any DwC fields/terms
@@ -183,7 +183,7 @@ When using THE_TOOL it is not important to know whether the fields you are using
 NOTE: Many fields relating to taxonomy/sequences (e.g. primers, reference database) are most often possible to give as global values in the *Study* table. If you find that this is not the case, you may be dealing with a *mixed dataset* – i.e. with OTUs/sequences from more than one primer set (e.g. COI _and_ 16S sequences) from the same set of samples. We recommend to publish such datasets separately.
 
 [[table-01]]
-.Recommended fields for http://rs.gbif.org/core/dwc_occurrence_2020-04-15.xml[Occurrence core] for Metabarcoding data. This table is a modified version of table xxx in the dna-publishing guide xxx specifically for using THE_TOOL.
+.Recommended fields for http://rs.gbif.org/core/dwc_occurrence_2020-04-15.xml[Occurrence core] for Metabarcoding data. This table is a modified version of table 2 in the https://docs.gbif.org/publishing-dna-derived-data/en/#mapping-metabarcoding-edna-and-barcoding-data[dna-publishing guide] specifically for using THE_TOOL.
 [cols="1,1,4,1,1",options="header"]
 |===
 | Field name
@@ -348,7 +348,7 @@ https://github.com/terrimporter/CO1Classifier
 <<<
 
 [[table-02]]
-.Recommended fields from the DNA derived data extension (a selection) for metabarcoding data
+.Recommended fields from the DNA derived data extension (a selection) for metabarcoding data. This table is a modified version of table 3 in the https://docs.gbif.org/publishing-dna-derived-data/en/#mapping-metabarcoding-edna-and-barcoding-data[dna-publishing guide] specifically for using THE_TOOL.
 [cols="1,1,4,1,1",options="header"]
 |===
 | Field name

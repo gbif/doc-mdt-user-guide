@@ -50,16 +50,16 @@ Starting from the top with *Sample* and *Taxonomy* information
 .. For each unmapped field where you expect (or know) that there is a suitable Darwin Core term in either the *Sample* or *Taxonomy* section:
 ... Click on *Add mapping for another sample field* and inspect and search the list of available terms.
 ... Add the term, and select the field from the uploaded data that you wish to map.
-... If you cannot find a relevant term, you may want to look at the official reoources with available terms XXX
+... If you cannot find a relevant term, you may want to look at the official resources with available terms from https://rs.gbif.org/core/dwc_occurrence_2024-02-23.xml[Darwin Core Occurrence] and https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2024-04-17.xml[dna-derived data].
 
-If you still have *Unmapped fields*, that you wish to include in the dataset to be published to GBIF, you may consider acomodating those in *Extended Measurement Or Facts* (eMoF):
+If you still have *Unmapped fields*, that you wish to include in the dataset to be published to GBIF, you may consider accomodating those in https://rs.gbif.org/extension/obis/extended_measurement_or_fact_2023-08-28.xml[Extended Measurement Or Facts] (eMoF) in this way:
 
 . Click on the "unmapped" field you wish to put into eMoF from the row of unmapped fields to transfer it to the the eMoF section below as a new entry.
 . Add a measurement unit and other relevant information to the field, if possible.
 
 Now, the mapping is complete.
 
-NOTE: All available standard fields (from Occurrence Core, and the dna-derived extension) can be included in the upload files, and if spelled correctly no manual mapping is needed.
+NOTE: All available standard fields (from https://rs.gbif.org/core/dwc_occurrence_2024-02-23.xml[Darwin Core Occurrence] and https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2024-04-17.xml[dna-derived data]) can be included in the upload files, and require no manual mapping if spelled correctly.
 
 . Press *Proceed*.
 
@@ -90,10 +90,10 @@ On this page, dataset metadata (dataset description, persons and affiliations, e
 
 TIP: toggle "Show help" to get guidance text for the fields.
 
-. Add a meaningful title (Cecilie XXX).
+. Add a meaningful title.
 . Select a licence.
 . Give as rich a dataset description as you can.
-. Add contact information for all persons you wish to associate with the dataset.
+. Add all persons you wish to associate with the dataset.
 . Be sure to put the person that knows about this dataset (you?) as the contact, so that response and issues about this dataset is directed to the correct person.
 . Fill out the other fields as good as possible.
 . Press *Proceed*.

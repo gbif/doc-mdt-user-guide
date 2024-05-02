@@ -14,7 +14,7 @@ endif::backend-html5[]
 
 IMPORTANT: This document is under development and may contain errors and unfinished sections. Feedback and input from testers/users is very welcome.
 
-IMPORTANT: *https://edna-tool.gbif-uat.org/[THE_TOOL (GBIF eDNA metabarcoding data converter)]* is currently hosted in the GBIF [.underline]#test environment#, and is still a prototype under development. Currently, it can be used to produce a Darwin Core Archive, that can be viewed in the https://www.gbif-uat.org/[GBIF test environment (UAT)], but it [.underline]#cannot publish them directly to GBIF.org#. For proper publication you need to download the produced Darwin Core Archive and publish it through some established publication tool (e.g. GBIF IPT) – be sure to consult the ad.hoc section XXX of this manual.
+IMPORTANT: *https://edna-tool.gbif-uat.org/[THE_TOOL (GBIF eDNA metabarcoding data converter)]* is currently hosted in the GBIF [.underline]#test environment#, and is still a prototype under development. Currently, it can be used to produce a Darwin Core Archive, that can be viewed in the https://www.gbif-uat.org/[GBIF test environment (UAT)], but it [.underline]#cannot publish them directly to GBIF.org#. For proper publication you currently need to download the produced Darwin Core Archive and publish it through some established publication tool (e.g. GBIF IPT) – check the section <<publishing>>.
 
 WARNING: Files uploaded to the tool and files produced by the tool are currently stored in the GBIF test environment, that cannot be considered a stable repository. Download files you wish to have for future use! 
 

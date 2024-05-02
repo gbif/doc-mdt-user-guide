@@ -13,7 +13,7 @@ This quide uses a slightly modified version of a real dataset. It is from a eDNA
 . Save the file to your computer.
 . Explore the structure of the template and example data in Excel or another app.
 +
-NOTE: there is a more detailed description of this example dataset here [XXX].
+NOTE: there is a more detailed description of this dataset in the section <<example_data>>.
 
 ** The *OTU_table* sheet in the template is the OTU table. Column headers _(BAR.1, BAR.2, BAR.3, ..._) are the IDs of the 69(70) samples in the dataset. Row names (_ASV_1, ASV_2, ASV_3, ..._) are IDs of the 563 OTUs (here ASVs). Cells contain sequence read counts.
 ** The *Taxonomy* sheet contains the IDs of the 563 OTUs referring to the rownames in the *OTU_table* along with the sequence, and taxonomic information derived from comparing the sequences against NCBI GenBank. NB: Some fields are using DwC terms others are not yet standardized.
@@ -91,8 +91,6 @@ Now, going down to the *Taxon* section, we see:
 .. click on "sequence" to map that.
 
 Now, going down to *Unmapped fields*, we see a series of fields (_SiteType, Depth, Location, run_accession, sample_accession, salinity_) in the uploaded data, that were not automatically identified and mapped to any Darwin Core terms.
-
-NOTE: A detailed description the fields of the example dataset is in the section XXX.
 
 We expect (or know) that Darwin Core can accomodate several of these un-mapped fields, and we also want to supply some global information (e.g. country), which was not included in the uploaded data.
 
