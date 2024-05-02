@@ -109,4 +109,4 @@ A prompt will inform that it takes some minutes before the data is fully ingeste
 ** access them on the test environment (UAT), and
 ** modify and export/publish updated/new versions.
 
-You should now have a first [.underline]#basic# idea of how THE_TOOL works and how you may adapt your own datasets. It is highly recommended go through the advanced quick start guide also.
+You should now have a first [.underline]#basic# idea of how THE_TOOL works and how you may adapt your own datasets. It is highly recommended go through the <<advanced_quick_start>> also.

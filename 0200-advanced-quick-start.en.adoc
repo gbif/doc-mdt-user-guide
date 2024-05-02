@@ -182,6 +182,4 @@ A prompt will inform that it takes some minutes before the data is fully ingeste
 . Explore the dataset in the test environment
 . Ensure that all information and data is processed and displayed appropriately.
 
-You should now have an good idea of how you may adapt your own datasets and process them with THE_TOOL. You may also try to process <<example3>>.
-
-NOTE: If you end up with a dataset suitable for publication to GBIF.org, go to <<publishing_to_gbif>>.
+You should now have an good idea of how you may adapt your own datasets and process them with THE_TOOL. If so, select a <<template  You may also try to process <<example3>>.

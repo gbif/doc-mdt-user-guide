@@ -1,7 +1,7 @@
 [[preparation_structure]]
 == Dataset preparation and structure
 
-In this section you will find detailed information and best practices on how to prepare and structure datasets for uploading and processing.
+In this section you will find detailed information and best practices on how to prepare and structure datasets for uploading and processing. If you still feel uncertain, you may wish to take a look at some of the <<example_data>>.
 
 NOTE: Illustrations (screenshots) may be slighlty different from what you see in the online tool, as THE_TOOL is still being developed and improved.
 
