@@ -100,11 +100,12 @@ TIP: toggle "Show help" to get guidance text for the fields.
 
 === Export (step 6)
 
-This last page of the process produces a Darwin Core Archive that can be published directly to the https://www.gbif-uat.org/[GBIF test environment (UAT)^] from THE_TOOL. This archive can also be published properly to GBIF.org eventually.
+This last page of the process produces a Darwin Core Archive that can be published directly to the https://www.gbif-uat.org/[GBIF test environment (UAT)^] from THE_TOOL. In technical terms this version of the dataset will be hosted and published by the dummy publisher https://www.gbif-uat.org/publisher/f7ecf12b-221d-4eea-806d-fb4b37face25[*GBIF eDNA Test organisation*] with an endpoint at https://hosted-datasets.gbif-uat.org/edna/.
 
 . Press *Create DWC archive*.
 +
-This creates the Darwin Core Archive from the data, going through a series of steps, that will be indicated as succesful with a green tick-mark.
+This creates the <<dwc-a>> from the data, going through a series of steps, that will be indicated as succesful with a green tick-mark.
+
 . Press *Publish to GBIF test environment (UAT)*.
 +
 A prompt will inform that it takes some minutes before the data is fully ingested and will show up with all samples in the GBIF test environment (and the map will only appear the next day). A link to the dataset in the test environment will appear next to the *Publish* button.
@@ -114,4 +115,4 @@ A prompt will inform that it takes some minutes before the data is fully ingeste
 
 WARNING: Currently, THE_TOOL is in the GBIF test environment, and it is still being developed and has not been formally released. Uploaded datasets and the produced BIOM files and Darwin Core Archive should be downloaded and stored locally to ensure they are not lost in case of problems in the GBIF test environment.
 
-NOTE: If you end up with a dataset suitable for publication to GBIF.org, go to <<publishing_to_gbif>>.
+NOTE: If you end up with a dataset suitable for proper publication to GBIF.org, go to <<publishing_to_gbif>>.

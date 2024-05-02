@@ -46,3 +46,4 @@ Comments
 * The *Study* file includes 29 terms with global values, adding to the richness of the dataset. 
 * Also take a look at the dataset description, etc of https://www.gbif.org/dataset/9358fbd7-cfd0-4eab-99fa-0934396a0529[the published dataset] for inspiration on which information can be added in the "Add metadata step".
 * NB: This modified version has 93.908 occurrences (compare to the original datasets 160.114)
+
