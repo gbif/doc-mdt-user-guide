@@ -30,7 +30,7 @@ include::0200-advanced-quick-start.en.adoc[]
 
 include::0300-data-preparation-structure.en.adoc[]
 
-include::0400-data-preparation-structure.en.adoc[]
+include::0400-processing-dataset.en.adoc[]
 
 include::0500-dataset-templates.en.adoc[]
 
