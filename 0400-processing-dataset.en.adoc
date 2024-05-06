@@ -115,4 +115,4 @@ A prompt will inform that it takes some minutes before the data is fully ingeste
 
 WARNING: Currently, THE_TOOL is in the GBIF test environment, and it is still being developed and has not been formally released. Uploaded datasets and the produced BIOM files and Darwin Core Archive should be downloaded and stored locally to ensure they are not lost in case of problems in the GBIF test environment.
 
-NOTE: If you end up with a dataset suitable for proper publication to GBIF.org, go to <<publishing_to_gbif>>.
+NOTE: If you end up with a dataset suitable for proper publication to GBIF.org, go to <<publishing>>.
