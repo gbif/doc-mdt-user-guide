@@ -27,7 +27,7 @@ A suggested approach could be:
 
 * Watch this short https://vimeo.com/912170754[video] on DNA data + GBIF (originally made for the https://www.gbif.org/composition/lKyZFAUnIDv8kpf0CgZsS/technical-support-hour-for-gbif-nodes[Technical support hour for GBIF nodes]) and/or this quickly made ad.hoc. https://drive.google.com/file/d/1T27BYTxC_ky-Qn89lhvhlR0asRsLnbML/view?usp=sharing[video] with an example use of THE_TOOL.
 * Work through the <<simple_quick_start>> and the <<advanced_quick_start>>.
-* ...maybe supplement with processing of one of the other <<example data>>.
+* ...maybe supplement with processing of one of the other <<example_data>>.
 * Select a <<templates, dataset template>> and maybe have a look at the <<example_data, example datasets>>.
 * Adapt your own dataset to the template (see <<preparation_structure>>).
 * Process the data in THE_TOOL.
