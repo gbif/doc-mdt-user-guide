@@ -51,3 +51,5 @@ include::0800-example-datasets.en.adoc[]
 include::faq.en.adoc[]
 
 include::glossary.en.adoc[]
+
+include::acknowledgements.en.adoc[]

@@ -146,7 +146,7 @@ Here the data can be explored to check that everything is OK. The options in thi
 ** Check the map and verify that the samples are placed geographically where expected (Around Galapagos Islands).
 ** Check the taxonomic barchart to ensure that taxonomic composition is as expected.
 *** try some of the other options (e.g. Absolute read abundance).
-** Check ordination plots (PCoA/MDS) – that visualize compositional differnence of the samples – for outliers (any control samples that should have been excluded?).
+** Check ordination plots (PCoA/MDS) – that visualize compositional differences of the samples – for outliers (any control samples that should have been excluded?).
 ** Select single samples from the map or from charts and explore their metadata and taxonomy in the panel to the right.
 . Press *Proceed*
 

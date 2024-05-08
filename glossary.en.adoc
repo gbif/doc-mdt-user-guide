@@ -37,6 +37,7 @@ with specific, well-defined meanings and interrelationships, facilitating data e
 [[ingest]]Ingestion:: Process of importing data from heterogeneous sources, such as local databases, text files or spreadsheets, to a common destination system, such as an online <<biodiversity-data-platform, biodiversity data platform>>, for storage and further analysis. Typically includes steps of extraction, transformation (cleaning) and loading (ETL).
 [[index]]Indexing:: Organization of information in accordance with a specific schema or structure, making data easier to access and present.
 [[insdc]]International Nucleotide Sequence Database Collaboration (INSDC):: Joint effort of the DNA Databank of Japan (DDBJ), <<embl,EMBL>> and <<ncbi,NCBI>> to provide global public access to nucleotide sequence data and associated information.
+[[ipt]]Integrated Publishing Toolkit (IPT):: https://www.gbif.org/ipt[The Integrated Publishing Toolkit] — commonly referred to as the IPT — is free open-source software developed by GBIF and used by organizations around the world to create and manage repositories for sharing biodiversity datasets.
 [[metagenomics]]Metagenomics:: PCR-free sequencing of random genomic fragments in a mixed sample.
 [[mixs]]Minimum Information about any (x) Sequence (MIxS) standard:: Family of standards (checklists) for sequence metadata, developed by the Genomic Standards Consortium (GSC).
 [[motu]]molecular Operational Taxonomic Unit (mOTU):: See <<otu,Operational Taxonomic Unit (OTU)>>.

@@ -5,7 +5,7 @@ The two quick start guides should ideally introduce most users to all features n
 
 === Simple example dataset
 
-This quick start uses a very simple and minimalistic example datset with only 5 samples and 4 OTUs, and almost no metadata.
+IMPORTANT: This quick start uses an unrealistically simple and minimal example datset with only 5 samples and 4 OTUs, and almost no metadata – not even all the required and recommended fields. For real datasets, we encourage much more extensive metadata. This quick start guide is only to become familiar with the basics of THE_TOOL. 
 
 . Download link:../example_data/example_data1.current.en.xlsx[example_dataset_1].
 . Save the file to your computer.
@@ -15,7 +15,7 @@ This quick start uses a very simple and minimalistic example datset with only 5 
 NOTE: This example data is basede on template 1 (see <<templates>> section).
 
 ** The *OTU_table* sheet in the template is the OTU table. Column headers are the IDs of the 5 samples in the dataset. Row names are IDs of the 4 OTUs. Cells contain sequence read counts.
-** The *Taxonomy* sheet contains the IDs of the OTUs referring to the rownames in the *OTU_table* sheet, and OTU data: The sequence, and taxonomic information.
+** The *Taxonomy* sheet contains the IDs of the OTUs referring to the rownames in the *OTU_table* sheet, as well as the sequence and taxonomic information.
 ** The *Samples* sheet contains tha ID of the samples referring to the column names in the *OTU_table* sheet, and sample metadata: sample ID, latitude, longitude and date.
 ** The *Study* sheet contains values that are the same for the whole dataset ("global values"), in this case: the barcoding regions used, primer sequences, and primer names.
 
