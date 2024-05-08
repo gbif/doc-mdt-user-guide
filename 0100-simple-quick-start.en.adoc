@@ -33,7 +33,7 @@ This opens the first step of the data processing.
 
 === Upload data (step 1)
 
-image::process_step_1.png[]
+image::img/process_step_1.png[]
 
 . Drag the example dataset to the upload area, or click and select the file.
 . Give the dataset a nickname (e.g. "my_first_test")
