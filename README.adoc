@@ -6,11 +6,11 @@ https://creativecommons.org/licenses/by-sa/4.0/[image:https://img.shields.io/bad
 // Build status badge: In the text below, please update "doc-edna-tool-guide" to "doc-your-document-name", and remove this line.
 https://builds.gbif.org/job/doc-edna-tool-guide/lastBuild/console[image:https://builds.gbif.org/job/doc-edna-tool-guide/badge/icon[Build status]]
 
-= User Guide for "THE_TOOL" - the GBIF DNA metabarcoding data converter (in prep.)
+= User Guide for "the MDT" - the GBIF DNA metabarcoding data converter (in prep.)
 
 
 _This is information *about* this document's source code.  It is not part of the document._
 
-The document is available as HTML and PDF at https://docs.gbif-uat.org/edna-tool-guide/en/[User Guide for "THE_TOOL" - the GBIF DNA metabarcoding data converter (in prep.)].
+The document is available as HTML and PDF at https://docs.gbif-uat.org/edna-tool-guide/en/[User Guide for "the MDT" - the GBIF DNA metabarcoding data converter (in prep.)].
 
 The document is built using AsciiDoc, for guidance on how to make changes or suggestions see the https://docs.gbif.org/documentation-guidelines/[GBIF Documentation Guidelines].

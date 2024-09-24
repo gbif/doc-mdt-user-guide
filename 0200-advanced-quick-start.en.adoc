@@ -7,7 +7,7 @@ NOTE: Some comments and notes are not repeated from the simple quick start.
 
 === Advanced example dataset
 
-This quide uses a slightly modified version of a real dataset. It is from a eDNA metabarcoding study where DNA was extracted from sea water samples and amplified and sequenced for the 12S gene region. This version has been modified slightly from the original [xxx] to be able to illustrate some features of THE_TOOL and the interactive workflow.
+This quide uses a slightly modified version of a real dataset. It is from a eDNA metabarcoding study where DNA was extracted from sea water samples and amplified and sequenced for the 12S gene region. This version has been modified slightly from the original [xxx] to be able to illustrate some features of the MDT and the interactive workflow.
 
 . Download link:../example_data/example_data2.current.en.xlsx[example_dataset_2].
 . Save the file to your computer.
@@ -22,7 +22,7 @@ NOTE: there is a more detailed description of this dataset in the section <<exam
 
 === Log in
 
-. Go to the website of https://edna-tool.gbif-uat.org/[THE_TOOL^].
+. Go to the website of https://edna-tool.gbif-uat.org/[the MDT^].
 . Log in.
 . Press *New Dataset* in the upper part of the page.
 
@@ -53,7 +53,7 @@ NOTE: The tool will exclude samples that not present in both *Samples* and *OTU_
 
 === Map terms (step 2)
 
-On this page you tell THE_TOOL which Darwin Core terms (standardized field names) correspond to which fields in the uploaded data.
+On this page you tell the MDT which Darwin Core terms (standardized field names) correspond to which fields in the uploaded data.
 
 TIP: Press *how to use this form* to get a guided tour of this page.
 
@@ -129,7 +129,7 @@ NOTE: All available standard fields (from Occurrence Core, and the dna-derived e
 
 . Press *Process data*.
 +
-THE_TOOL goes through a series of steps which will be indicated as succesful with a green tick-mark, and finally produces standardized BIOM files, which THE_TOOL uses as an intermediate file format.
+the MDT goes through a series of steps which will be indicated as succesful with a green tick-mark, and finally produces standardized BIOM files, which the MDT uses as an intermediate file format.
 +
 NOTE: You will get a warning that "NEG in the OTU table are not present in the SAMPLE table". We already knew that and kept it like that to exclude this negative control from the final data.
 +
@@ -167,7 +167,7 @@ NOTE: use e.g. 1111-2222-3333-123X as dummy ORCID if you wish.
 
 === Export (step 6)
 
-This last page of the process produces a Darwin Core Archive that can be published directly to the https://www.gbif-uat.org/[GBIF test environment (UAT)^] from THE_TOOL. This archive can also be published properly to GBIF.org eventually.
+This last page of the process produces a Darwin Core Archive that can be published directly to the https://www.gbif-uat.org/[GBIF test environment (UAT)^] from the MDT. This archive can also be published properly to GBIF.org eventually.
 
 . Press *Create DWC archive*.
 +
@@ -180,4 +180,4 @@ A prompt will inform that it takes some minutes before the data is fully ingeste
 . Explore the dataset in the test environment
 . Ensure that all information and data is processed and displayed appropriately.
 
-You should now have an good idea of how you may adapt your own datasets and process them with THE_TOOL. If so, select a <<template  You may also try to process <<example3>>.
+You should now have an good idea of how you may adapt your own datasets and process them with the MDT. If so, select a <<template  You may also try to process <<example3>>.

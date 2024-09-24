@@ -1,13 +1,13 @@
 [[processing]]
 == Processing a dataset
 
-If you have prepared a dataset in one of the suggested templates/formats, and used THE_TOOL before or used the two quick start guides, you should be able to upload and process a dataset by following the steps below.
+If you have prepared a dataset in one of the suggested templates/formats, and used the MDT before or used the two quick start guides, you should be able to upload and process a dataset by following the steps below.
 
 For specific usage or error messages refer to the detailed user guide below.
 
 === Log in
 
-. Go to the website of https://edna-tool.gbif-uat.org/[THE_TOOL^].
+. Go to the website of https://edna-tool.gbif-uat.org/[the MDT^].
 . Log in.
 . Press *New Dataset* in the upper part of the page.
 
@@ -27,7 +27,7 @@ image::img/advanced_example_upload_warning.png[]
 
 === Map terms (step 2)
 
-On this page you tell THE_TOOL which standardised field names (Darwin Core terms) correspond to which fields in your data.
+On this page you tell the MDT which standardised field names (Darwin Core terms) correspond to which fields in your data.
 
 TIP: Press *how to use this form* to get a guided tour of this page.
 
@@ -100,7 +100,7 @@ TIP: toggle "Show help" to get guidance text for the fields.
 
 === Export (step 6)
 
-This last page of the process produces a Darwin Core Archive that can be published directly to the https://www.gbif-uat.org/[GBIF test environment (UAT)^] from THE_TOOL. In technical terms this version of the dataset will be hosted and published by the dummy publisher https://www.gbif-uat.org/publisher/f7ecf12b-221d-4eea-806d-fb4b37face25[*GBIF eDNA Test organisation*] with an endpoint at https://hosted-datasets.gbif-uat.org/edna/.
+This last page of the process produces a Darwin Core Archive that can be published directly to the https://www.gbif-uat.org/[GBIF test environment (UAT)^] from the MDT. In technical terms this version of the dataset will be hosted and published by the dummy publisher https://www.gbif-uat.org/publisher/f7ecf12b-221d-4eea-806d-fb4b37face25[*GBIF eDNA Test organisation*] with an endpoint at https://hosted-datasets.gbif-uat.org/edna/.
 
 . Press *Create DWC archive*.
 +
@@ -113,6 +113,6 @@ A prompt will inform that it takes some minutes before the data is fully ingeste
 . Explore the dataset in the test environment
 . Ensure that all information and data is processed and displayed appropriately.
 
-WARNING: Currently, THE_TOOL is in the GBIF test environment, and it is still being developed and has not been formally released. Uploaded datasets and the produced BIOM files and Darwin Core Archive should be downloaded and stored locally to ensure they are not lost in case of problems in the GBIF test environment.
+WARNING: Currently, the MDT is in the GBIF test environment, and it is still being developed and has not been formally released. Uploaded datasets and the produced BIOM files and Darwin Core Archive should be downloaded and stored locally to ensure they are not lost in case of problems in the GBIF test environment.
 
 NOTE: If you end up with a dataset suitable for proper publication to GBIF.org, go to <<publishing>>.

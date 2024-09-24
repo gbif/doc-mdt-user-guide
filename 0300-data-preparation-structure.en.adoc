@@ -3,11 +3,11 @@
 
 In this section you will find detailed information and best practices on how to prepare and structure datasets for uploading and processing. If you still feel uncertain, you may wish to take a look at some of the <<example_data>>.
 
-NOTE: Illustrations (screenshots) may be slighlty different from what you see in the online tool, as THE_TOOL is still being developed and improved.
+NOTE: Illustrations (screenshots) may be slighlty different from what you see in the online tool, as the MDT is still being developed and improved.
 
 TIP: You may want to read sections of the general https://doi.org/10.35035/doc-vf1a-nr22[DNA publishing guide] for background information. Specifically: https://docs.gbif.org/publishing-dna-derived-data/en/#rationale[Rationale], https://docs.gbif.org/publishing-dna-derived-data/en/#environmental-dna-as-a-source-for-dna-derived-occurrence-data[Environmental DNA as a source...], https://docs.gbif.org/publishing-dna-derived-data/en/#dna-metabarcoding-sequence-derived-data[DNA metabarcodin data], https://docs.gbif.org/publishing-dna-derived-data/en/#introduction-to-biodiversity-publishing[Introduction to publishing], https://docs.gbif.org/publishing-dna-derived-data/en/#taxonomy-of-sequences[Taxonomy of sequences], https://docs.gbif.org/publishing-dna-derived-data/en/#taxonomy-of-sequences[Mapping metabarcoding data]
 
-IMPORTANT: The general https://doi.org/10.35035/doc-vf1a-nr22[DNA publishing guide] contains a lot of advice and guidance on data preparation and mapping (incl required/recommended fields). THE_TOOL will handle most of these things automatically (incl some fields). If you can fit your data into one of the provided OTU table templates here, the processing should be almost self-explanatory.
+IMPORTANT: The general https://doi.org/10.35035/doc-vf1a-nr22[DNA publishing guide] contains a lot of advice and guidance on data preparation and mapping (incl required/recommended fields). the MDT will handle most of these things automatically (incl some fields). If you can fit your data into one of the provided OTU table templates here, the processing should be almost self-explanatory.
 
 === The OTU table as a familiar data format
 
@@ -24,9 +24,9 @@ NOTE:  It is commonly seen that an OTU table (with OTUs as rows) has the taxonom
 
 Most analysed datasets from DNA metabarcoding will be possible to fit into this three-table format.
 
-THE_TOOL uses the OTU table as a publishing model, and reshapes the data into a format that can be published to GBIF. 
+the MDT uses the OTU table as a publishing model, and reshapes the data into a format that can be published to GBIF. 
 
-THE_TOOL accepts OTU table data in one of the provided dataset templates. Each dataset template contains the three tables mentioned above (as sheets in an Excel workbook or as separate tsv/csv files). To minimize redundant data entry, a fourth table can be used for metadata with values that are identical across the whole dataset. Sequences can also be provided in a separate txt file (as a fasta file.)
+the MDT accepts OTU table data in one of the provided dataset templates. Each dataset template contains the three tables mentioned above (as sheets in an Excel workbook or as separate tsv/csv files). To minimize redundant data entry, a fourth table can be used for metadata with values that are identical across the whole dataset. Sequences can also be provided in a separate txt file (as a fasta file.)
 
 * *OTU_table*: The table (matrix) of sequence read counts of each OTU in each sample
 * *Taxonomy*: a table of the sequences and potentially their taxonomy. Only rarely this table holds more fields, as relevant metadata (sequencing platform, primers) is similar across all samples/OTUs, and can be put into the *Study* table.
@@ -76,7 +76,7 @@ TIP: The order (sorting) of rows and columns in the tables is not important.
 * Remove rows and columns that are not samples and OTUs to get a clean OTU/Sample matrix (i.e. remove rows or columns with sums/totals, etc.).
 ** If present, move columns with sample or taxomomy data to those separate tables.
 * Use 0 (zero) in cells without a read count (not "NA", "-" or similar).
-* Make sure that sample IDs (column headers) are unique, and prefarably do not contain a lot of non-standard characters. (NB: These sample IDs will automatically be used as term:dwc[eventID] by THE_TOOL).
+* Make sure that sample IDs (column headers) are unique, and prefarably do not contain a lot of non-standard characters. (NB: These sample IDs will automatically be used as term:dwc[eventID] by the MDT).
 * Make sure that OTU IDs (row names) are unique, and prefarably do not contain a lot of non-standard characters.
 * Leave the upper left cell empty.
 +
@@ -103,7 +103,7 @@ TIP: known contaminants or other OTUs not wanted in GBIF.org can simply be remov
 *Samples*
 
 * Fit your Sample metadata into a *Sample* table with Sample IDs as rows and associated data as columns.
-* First colums should be `id` and contain Sample IDs referring to (identical to) the column names in the *OTU_table*. (NB: These IDs will automatically be used as term:dwc[eventID] by THE_TOOL).
+* First colums should be `id` and contain Sample IDs referring to (identical to) the column names in the *OTU_table*. (NB: These IDs will automatically be used as term:dwc[eventID] by the MDT).
 * This table is where you fit all the metadata related to the single samples if the values are different between samples, e.g. information on sampling locations, sampling dates, physical properties related to the sample (e.g. pH), and links to sample-associated data elsewhere – e.g. raw sequence data and biosample record in INSDC.
 * Be sure to include as many of the required and recommended fields as possible (see below).
 * In addition to the required/recommended fields, Occurrence Core (LINK) and dna-derived extension (link) has many further fields to select from.
@@ -130,13 +130,13 @@ In some metabarcoding datasets, the sequences are placed in a separate https://e
 
 * Make sure you follow the classic fasta formatting for the file. A sequence begins with a greater-than character (">") followed by the OTU ID (exactly as they are given in the OTU table). The lines immediately following this header are the sequence representation (ACTG ...). The next ">" marks the beginning of the next sequence.
 * OTU IDs (headers) should be the same as those in the OTU table, but with the ">" added in front.
-* Some fasta files may have line breaks in the DNA sequence. THE_TOOL allows this format. 
+* Some fasta files may have line breaks in the DNA sequence. the MDT allows this format. 
 
 image:img/fasta_file.png[]
 
 *Dataset descriptions, people and other metadata*
 
-Before starting the data upload and processing in THE_TOOL it is a good idea to prepare a dataset description, collect information on the people you need to associate with the data, etc.
+Before starting the data upload and processing in the MDT it is a good idea to prepare a dataset description, collect information on the people you need to associate with the data, etc.
 
 You need to prepare:
 
@@ -155,7 +155,7 @@ You need to prepare:
 * Be sure to designate one of the persons (you?) as the contact person. This is the person that will be contacted if e.g. users find issues in the data. This person needs to be registered with email and ORCID.
 * Associated ressources ???
 
-NOTE: THE_TOOL uses a  minimalistic web form for providing dataset metadata. This is intentional as we do not wish the demotivate users by confronting them with a web form with many options only marginally relevant for DNA metabarcoding data. If you chose to publish the processed data through an <<ipt>>, you will have the possibility of adding more/other dataset metadata there.
+NOTE: the MDT uses a  minimalistic web form for providing dataset metadata. This is intentional as we do not wish the demotivate users by confronting them with a web form with many options only marginally relevant for DNA metabarcoding data. If you chose to publish the processed data through an <<ipt>>, you will have the possibility of adding more/other dataset metadata there.
 
 [[req_recom]]
 === Required and recommended fields
@@ -172,20 +172,20 @@ This section contains an overview of required and recommended fields to include 
 
 * Recommended: term:mixs[env_broad_scale], term:mixs[env_local_scale], term:mixs[env_medium], term:dwc[associatedSequences], term:mixs[lib_layout], term:mixs[sop], term:dwc[samplingProtocol], term:dwc[identificationRemarks], term:dwc[identificationReferences], term:dwc[phylum], term:dwc[class], term:dwc[order], term:dwc[family], term:dwc[genus].
 
-*Fields automatically handled/filled by THE_TOOL*
+*Fields automatically handled/filled by the MDT*
 
-* term:dwc[basisOfRecord], term:dwc[occurrenceID], term:dwc[organismQuantity], term:dwc[organismQuantityType], term:dwc[sampleSizeValue], term:dwc[sampleSizeUnit], term:dwc[taxonID], (term:dwc[eventID] – THE_TOOL automatically uses the proveded sample IDs).
+* term:dwc[basisOfRecord], term:dwc[occurrenceID], term:dwc[organismQuantity], term:dwc[organismQuantityType], term:dwc[sampleSizeValue], term:dwc[sampleSizeUnit], term:dwc[taxonID], (term:dwc[eventID] – the MDT automatically uses the proveded sample IDs).
 
 ==== Detailed reference on required and recommended fields
 
 These tables are modified/specialized version of tables in the dna-publishing guide in the section https://docs.gbif.org/publishing-dna-derived-data/en/#mapping-metabarcoding-edna-and-barcoding-data[Mapping metabarcoding (eDNA) and barcoding data]. 
 
-When using THE_TOOL it is not important to know whether the fields you are using are from Occurrence Core or the dna-derived extension. But it is important to know in which table to put the fields and associated values. The *Placement* column explains where to provide each field. A lot of the required and recommended fields are automatically handled/calculated, and should not be provided by the user – *Placement* informs about this also.
+When using the MDT it is not important to know whether the fields you are using are from Occurrence Core or the dna-derived extension. But it is important to know in which table to put the fields and associated values. The *Placement* column explains where to provide each field. A lot of the required and recommended fields are automatically handled/calculated, and should not be provided by the user – *Placement* informs about this also.
 
 NOTE: Many fields relating to taxonomy/sequences (e.g. primers, reference database) are most often possible to give as global values in the *Study* table. If you find that this is not the case, you may be dealing with a *mixed dataset* – i.e. with OTUs/sequences from more than one primer set (e.g. COI _and_ 16S sequences) from the same set of samples. We recommend to publish such datasets separately.
 
 [[table-01]]
-.Recommended fields for http://rs.gbif.org/core/dwc_occurrence_2020-04-15.xml[Occurrence core] for Metabarcoding data. This table is a modified version of table 2 in the https://docs.gbif.org/publishing-dna-derived-data/en/#mapping-metabarcoding-edna-and-barcoding-data[dna-publishing guide] specifically for using THE_TOOL.
+.Recommended fields for http://rs.gbif.org/core/dwc_occurrence_2020-04-15.xml[Occurrence core] for Metabarcoding data. This table is a modified version of table 2 in the https://docs.gbif.org/publishing-dna-derived-data/en/#mapping-metabarcoding-edna-and-barcoding-data[dna-publishing guide] specifically for using the MDT.
 [cols="1,1,4,1,1",options="header"]
 |===
 | Field name
@@ -350,7 +350,7 @@ https://github.com/terrimporter/CO1Classifier
 <<<
 
 [[table-02]]
-.Recommended fields from the DNA derived data extension (a selection) for metabarcoding data. This table is a modified version of table 3 in the https://docs.gbif.org/publishing-dna-derived-data/en/#mapping-metabarcoding-edna-and-barcoding-data[dna-publishing guide] specifically for using THE_TOOL.
+.Recommended fields from the DNA derived data extension (a selection) for metabarcoding data. This table is a modified version of table 3 in the https://docs.gbif.org/publishing-dna-derived-data/en/#mapping-metabarcoding-edna-and-barcoding-data[dna-publishing guide] specifically for using the MDT.
 [cols="1,1,4,1,1",options="header"]
 |===
 | Field name

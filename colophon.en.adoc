@@ -7,14 +7,14 @@ endif::backend-html5[]
 
 === Suggested citation
 
-The guide to THE_TOOL. GBIF Secretariat: Copenhagen. 
+Metabarcoding Data Toolkit - user guide. GBIF Secretariat: Copenhagen. 
 // Uncomment once a DOI is assigned
 //https://doi.org/10.EXAMPLE/EXAMPLE
 
 
 === Licence
 
-The document _Guide to THE_TOOL_ is licensed under https://creativecommons.org/licenses/by-sa/4.0[Creative Commons Attribution-ShareAlike 4.0 Unported License].
+The document _Metabarcoding Data Toolkit - user guide_ is licensed under https://creativecommons.org/licenses/by-sa/4.0[Creative Commons Attribution-ShareAlike 4.0 Unported License].
 
 === Persistent URI
 

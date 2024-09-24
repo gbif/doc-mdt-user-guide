@@ -1,27 +1,28 @@
 [[simple_quick_start]]
 == Simple Quick Start Guide
 
-The two quick start guides should ideally introduce most users to all features necessary to know for being able to adapt datasets to be processed with THE_TOOL. Start with the simple and then move to the advanced. This [.underline]#simple# quick start guide guides the user though the processing of a minimal example dataset with little explanation, and requires little or no prior knowledge about eDNA data, GBIF and Darwin Core.
+The two quick start guides should introduce most users to the key features needed to adapt datasets for the MDT. Begin with the simple guide, then move to the advanced. 
+
+This simple guide walks users through processing a minimal example dataset with minimal explanation, requiring little to no prior knowledge of eDNA data, GBIF, or Darwin Core
 
 === Simple example dataset
 
-IMPORTANT: This quick start uses an unrealistically simple and minimal example datset with only 5 samples and 4 OTUs, and almost no metadata – not even all the required and recommended fields. For real datasets, we encourage much more extensive metadata. This quick start guide is only to become familiar with the basics of THE_TOOL. 
+IMPORTANT: This quick start uses a minimal example dataset with 5 samples, 4 OTUs, and very limited metadata. For real datasets, more extensive metadata is encouraged. This guide is solely to introduce the basics of the MDT. 
 
-. Download link:../example_data/example_data1.current.en.xlsx[example_dataset_1].
+NOTE: This example data is basede on template 1 (see <<templates>> section), and is decribed in the <<example_data> section>.
+
+. Download link:../example_data/example_data1.current.en.xlsx[Example Dataset 1].
 . Save the file to your computer.
-. (Optional) Briefly explore the structure of the example data in e.g. Excel (or see a detailed decription in section example_data ).
+. (Optional) Explore the structure of the example data in e.g. Microsoft Excel.
 * The Excel workbook has four sheets: *OTU_table*, *Taxonomy*, *Samples* and *Study*.
-+
-NOTE: This example data is basede on template 1 (see <<templates>> section).
-
-** The *OTU_table* sheet in the template is the OTU table. Column headers are the IDs of the 5 samples in the dataset. Row names are IDs of the 4 OTUs. Cells contain sequence read counts.
-** The *Taxonomy* sheet contains the IDs of the OTUs referring to the rownames in the *OTU_table* sheet, as well as the sequence and taxonomic information.
-** The *Samples* sheet contains tha ID of the samples referring to the column names in the *OTU_table* sheet, and sample metadata: sample ID, latitude, longitude and date.
-** The *Study* sheet contains values that are the same for the whole dataset ("global values"), in this case: the barcoding regions used, primer sequences, and primer names.
+**  *OTU_table* is the OTU table, with sample IDs as column headers, OTU IDs as row names, and sequence read counts in the cells.
+** *Taxonomy* links OTU IDs (from OTU_table) to sequence and taxonomic info.
+** *Samples* links sample IDs (from OTU_table) to sample metadata: e.g. spatiotemporal information, protocols etc.
+** *Study* holds global values for the dataset, such as barcoding region, primer sequences, and primer names.
 
 === Log in
 
-. Go to the website of https://edna-tool.gbif-uat.org/[THE_TOOL^].
+. Go to https://edna-tool.gbif-uat.org/[the MDT^].
 . Log in
 +
 NOTE: If you do not have an account, the login prompt will link you to the sign-up form.
@@ -35,52 +36,53 @@ This opens the first step of the data processing.
 
 image::img/process_step_1.png[]
 
-. Drag the example dataset to the upload area, or click and select the file.
+. Drag the example dataset to the upload area, OR click and select the file on your computer.
 . Give the dataset a nickname (e.g. "my_first_test")
 . Press *Start Upload*.
 +
-A green icon will indicate that the data looks OK according to some very basic data checks.
+A green icon will indicate that the data looks OK.
 . Press *Proceed*
 
 === Map terms (step 2)
 
-On this page you tell the tool what the fields in the uploaded data mean. As this test dataset already uses Darwin Core terms for the fields, no manual mapping is needed.
+On this page, you specify the mapping of the fields in the uploaded data, indicating how the fields correspond to Darwin Core terms.
+
+NOTE: Since this test dataset already utilizes Darwin Core terms as field names, no manual mapping is required.  
 
 TIP: Press *how to use this form* to get a guided tour of this page.
 
-* The upper section maps our sample data fields to Darwin Core terms (first column), automatically identifying and mapping four fields from the *Samples* sheet (second column) and five fields from the *Study* sheet with global values (third column) to their identically named Darwin Core counterparts. (e.g. the field containing sampling dates was called _eventDate_ in the uploaded data corresponding exactly to the Darwin Core term term:dwc[eventDate], and the field _pcr_primer_forward_ corresponding to the term term:dwc[pcr_primer_forward]).
+The first section concerns the mapping of sample data fields to Darwin Core terms (first column). The MDT has automatically mapped four fields from the *Samples* sheet (second column) and five fields from the *Study* sheet (third column) to their identically named Darwin Core counterparts: e.g. the field with sampling dates is called _eventDate_ in the uploaded data corresponding exactly to the Darwin Core term term:dwc[eventDate], and the field _pcr_primer_forward_ corresponds to the term term:dwc[pcr_primer_forward]).
 
-* The second section does the same for taxonomy and sequence related information, auto-mapping four fields from the *Taxonomy* sheet to the identically named Darwin Core terms.
-
+The second section concerns the mapping of taxonomy and sequence related information. The MDT has automatically mapped four fields from the *Taxonomy* sheet to identically named Darwin Core terms.
 
 . Press *Proceed* to save the mapping and proceed.
 
-
 === Process data (step 3)
 
+NOTE: The option *assign taxonomy* uses the https://www.gbif.org/tools/sequence-id[GBIF Sequence ID tool^] to assign taxonomy to the sequences. This overwrites any taxonomy provided in the data. We will not use that option here.
+
 . Press *Process data*.
-+
-This produces standardized intermediate files in the BIOM format
-+
-NOTE: The option *assign taxonomy* uses the https://www.gbif.org/tools/sequence-id[GBIF Sequence ID tool^] to assign taxonomy to the sequences. This overwrites any taxonomy provided in the data.
-. (_Optional_) Briefly check that number of samples and taxa are as expected (here: 5 samples and 4 taxa).
+
+This produces standardized intermediate files in the BIOM format, and some basic stats/metrics on the dataset, e.g. number of samples, etc.
+
+[start=2]
 . Press *Proceed*
 
 === Review (step 4)
 
-Here the data can be explored to check that everything is OK. This step is mainly intended as a sanity check of the data to ensure that control samples have been removed, and that the mapping is as expected.
+Here the processed data is explored to check that everything is OK, e.g. ensure control samples are not included as samples, and that the mapping is as expected.
 
 
 . (_Optional_) Check the data.
 ** Check the map and verify that the samples are placed geographically where expected (Northern part on Denmark). 
 ** Check the taxonomic barchart to ensure that taxonomic composition is as expected.
-** Check ordination plots (PCoA/MDS) for outliers (any control samples that should have been excluded?).
+** Check ordination plots (PCoA/MDS) for outliers (e.g. control samples that were not excluded).
 ** Select single samples from the map or chart and explore their metadata and taxonomy in the panel to the right.
 . Press *Proceed*
 
 === Add metadata (step 5)
 
-On this page dataset metadata is added in a minimalistic form. Some fields are mandatory and need to be filled to be able to proceed.
+On this page, you provide dataset metadata. Certain mandatory fields must be completed in order to proceed. Here we ignore most of this.
 
 . Add a meaningful title (e.g. “my first test dataset”).
 . Select a licence.
@@ -90,18 +92,17 @@ NOTE: use e.g. 1111-2222-3333-123X as dummy ORCID if you wish.
 . Leave the other fields empty.
 . Press *Proceed*.
 
-
 === Export (step 6)
 
-This last page of the process produces a so-called Darwin Core Archive (a zip file) that can be published directly to the GBIF test environment (UAT) from THE_TOOL. This archive can also be published properly to GBIF.org.
-
+At this step, the so-called <<dwc-a>> is produced. It can be published directly to the GBIF test environment (UAT) from the MDT.
 
 . Press *Create DWC archive*.
 +
-This creates the Darwin Core Archive from the data, going through a series of steps, that will be indicated as succesful with a green tick-mark.
+This process generates the Darwin Core Archive from the data, progressing through several steps, each marked with a green check if successful.
+
 . Press *Publish to GBIF test environment (UAT)*.
 
-A prompt will inform that it takes some minutes before the data is fully ingested and will show up with all samples in the GBIF test environment. A link to the dataset in the test environment will appear next to the *Publish* button.
+A notification will indicate that data ingestion may take a few minutes before all samples appear in the GBIF test environment. A link to the dataset in the test environment will appear next to the Publish button.
 
 [start=3]
 . Click on your username in the top right. Here you can:
@@ -109,4 +110,4 @@ A prompt will inform that it takes some minutes before the data is fully ingeste
 ** access them on the test environment (UAT), and
 ** modify and export/publish updated/new versions.
 
-You should now have a first [.underline]#basic# idea of how THE_TOOL works and how you may adapt your own datasets. It is highly recommended go through the <<advanced_quick_start>> also.
+You should now have a first [.underline]#basic# idea of how the MDT works and how you may adapt a real datasets. It is highly recommended go through the <<advanced_quick_start>> also.

@@ -3,34 +3,43 @@
 
 === Overview
 
-GBIF offers access to extensive biodiversity data, mainly focusing on where and when species have been observed. These records, sourced from collections, surveys, and citizen science, include species names, dates, locations, and  additional details. GBIF also accomodates DNA-associated biodiversity data, including  DNA metabarcoding data, and the first version of a https://doi.org/10.35035/doc-vf1a-nr22[dna-publishing guide] was published in 2021. During consultations with the GBIF network and the research community in 2022 and 2023, it became clear that tools for easier data formatting and publishing were needed for DNA metabarcoding data.
+GBIF provides access to extensive biodiversity data, primarily focused on species occurrences, including where and when species have been recorded. These records, gathered from collections, surveys, and citizen science efforts, contain species names, observation dates, locations, and other important details. In addition to traditional biodiversity records, GBIF also supports DNA-associated data, such as DNA metabarcoding datasets. A general guide – https://doi.org/10.35035/doc-vf1a-nr22[Publishing DNA-derived data through biodiversity data platforms] – was released in 2021 to assist with these specific data types. However, consultations with the GBIF network and research community in 2022 and 2023 highlighted the need for user-friendly tools to facilitate the formatting and publishing of DNA metabarcoding data.
 
-THE_TOOL allows users with basic knowledge of data standards, GBIF and DNA (metabarcoding) data to reshape datasets in formats familiar to the DNA metabarcoding community – OTU table type datasets – into standardized datasets possible to publish to GBIF.
+The *Metabarcoding Data Toolkit (MDT)* was developed to address this need, enabling users with basic knowledge of data standards, GBIF processes, and DNA metabarcoding to convert metabarcoding data – in the shape of the so-called OTU table commonly used in the metabarcoding community – into the standardised format suitable for GBIF.
 
 === Target audiences
 
-This guide is for anyone interested in publishing DNA metabarcoding data on GBIF (or OBIS, etc.), catering to both seasoned GBIF network members and researchers new to GBIF and the data publishing process.
+Anyone interested in publishing DNA metabarcoding data on GBIF (or OBIS, etc.)  
 
-[.underline]#All new users# are encouraged to review and go through both quick start guides to familiarize themselves with THE_TOOL, and then consult other relevant sections of the guide and ressources as needed.
+* eDNA researchers or other data publishers
+* GBIF network people
+* Managers of a toolkit installatio
+
+TIP: New users may benefit from starting with the two simple quick start guides.
 
 === Scope
 
-* THE_TOOL handles *DNA metabarcoding datasets* in the shape of OTU tables/matrices and associated metadata. Datasets can be uploaded in a few selected template formats.
-+
-NOTE: THE_TOOL cannot handle or process raw sequencing files (fastq) from such datasets.
-* THE_TOOL does [.underline]#not# handle DNA metagenomic data (shotgun sequencing data).
-* THE_TOOL does [.underline]#not# handle other types of DNA-associated biodiversity data (specimen barcodes, qPCR, etc).
+What the Metabarcoding Data Toolkit can do:
+
+* Handle *DNA metabarcoding datasets* – specifically OTU tables and their associated metadata.
+* Accept dataset uploads in a few supported template formats.
+
+What the MDT cannot do:
+
+* Process raw sequencing files (e.g., fastq).
+* Handle DNA metagenomic dataset (e.g., shotgun sequencing).
+* Support other DNA-associated biodiversity data types (e.g., specimen barcodes, qPCR).
 
 === Getting started
 
 A suggested approach could be:
 
-* Watch this short https://vimeo.com/912170754[video] on DNA data + GBIF (originally made for the https://www.gbif.org/composition/lKyZFAUnIDv8kpf0CgZsS/technical-support-hour-for-gbif-nodes[Technical support hour for GBIF nodes]) and/or this quickly made ad.hoc. https://drive.google.com/file/d/1T27BYTxC_ky-Qn89lhvhlR0asRsLnbML/view?usp=sharing[video] with an example use of THE_TOOL.
+* Watch this short https://vimeo.com/912170754[video] on DNA data + GBIF (originally made for the https://www.gbif.org/composition/lKyZFAUnIDv8kpf0CgZsS/technical-support-hour-for-gbif-nodes[Technical support hour for GBIF nodes]) and/or this quickly made ad.hoc. https://drive.google.com/file/d/1T27BYTxC_ky-Qn89lhvhlR0asRsLnbML/view?usp=sharing[video] with an example use of the MDT.
 * Work through the <<simple_quick_start>> and the <<advanced_quick_start>>.
 * ...maybe supplement with processing of one of the other <<example_data>>.
 * Select a <<templates, dataset template>> and maybe have a look at the <<example_data, example datasets>>.
 * Adapt your own dataset to the template (see <<preparation_structure>>).
-* Process the data in THE_TOOL.
+* Process the data in the MDT.
 * Refer to the <<faq>>, the <<glossary>>, and the general https://doi.org/10.35035/doc-vf1a-nr22[DNA-publishing guide] where needed.
 
 === Essential terms
