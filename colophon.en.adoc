@@ -15,3 +15,7 @@ The document _Metabarcoding Data Toolkit - user guide_ is licensed under https:/
 === Persistent URI
 
 https://doi.org/10.35035/doc-wkpc-m352
+
+=== Document control
+
+v1.0, September 2024
