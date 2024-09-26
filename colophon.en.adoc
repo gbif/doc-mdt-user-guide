@@ -1,4 +1,3 @@
-// add cover image to img directory and update filename below
 ifdef::backend-html5[]
 image::img/dna-cover.png[]
 endif::backend-html5[]
@@ -7,10 +6,7 @@ endif::backend-html5[]
 
 === Suggested citation
 
-Metabarcoding Data Toolkit - user guide. GBIF Secretariat: Copenhagen. 
-// Uncomment once a DOI is assigned
-//https://doi.org/10.EXAMPLE/EXAMPLE
-
+GBIF Secretariat (2024) Metabarcoding Data Toolkit - user guide. Copenhagen: Global Biodiversity Facility. https://doi.org/10.35035/doc-wkpc-m352
 
 === Licence
 
@@ -18,12 +14,4 @@ The document _Metabarcoding Data Toolkit - user guide_ is licensed under https:/
 
 === Persistent URI
 
-#TODO: Assign a DOI before publication#
-// Uncomment once a DOI is assigned
-//https://doi.org/10.EXAMPLE/EXAMPLE
-
-
-=== Cover image
-
-// Caption. Credit, source, licence.
-
+https://doi.org/10.35035/doc-wkpc-m352
