@@ -3,13 +3,11 @@
 
 The two quick start guides should introduce most users to the key features needed to adapt datasets for the MDT. Begin with the simple guide, then move to the advanced. 
 
-This simple guide walks users through processing a minimal example dataset with minimal explanation, requiring little to no prior knowledge of eDNA data, GBIF, or Darwin Core
+This simple guide walks users through processing a minimal example dataset with minimal explanation, requiring little to no prior knowledge of eDNA data, GBIF, or Darwin Core.
 
 === Simple example dataset
 
-IMPORTANT: This quick start uses a minimal example dataset with 5 samples, 4 OTUs, and very limited metadata. For real datasets, more extensive metadata is encouraged. This guide is solely to introduce the basics of the MDT. 
-
-NOTE: This example data is basede on template 1 (see <<templates>> section), and is decribed in the <<example_data> section>.
+NOTE: This minimal dummy dataset in only to introduce the basics of the MDT, and should not be seen as an model for real data. It is basede on template 1 (see <<templates>> section), and is decribed in the <<example_data>> section.
 
 . Download link:../example_data/example_data1.current.en.xlsx[Example Dataset 1].
 . Save the file to your computer.
@@ -22,10 +20,10 @@ NOTE: This example data is basede on template 1 (see <<templates>> section), and
 
 === Log in
 
-. Go to https://edna-tool.gbif-uat.org/[the MDT^].
+. Go to the https://edna-tool.gbif-uat.org/[MDT^].
 . Log in
 +
-NOTE: If you do not have an account, the login prompt will link you to the sign-up form.
+NOTE: If you don't have an account, the login prompt will provide a link to the sign-up form.
 
 . Press *New Dataset* in the upper part of the page.
 +
@@ -40,7 +38,7 @@ image::img/process_step_1.png[]
 . Give the dataset a nickname (e.g. "my_first_test")
 . Press *Start Upload*.
 +
-A green icon will indicate that the data looks OK.
+A green icon will indicate that the XLSX format is detected and OK according to some very basic data checks.
 . Press *Proceed*
 
 === Map terms (step 2)
@@ -51,7 +49,7 @@ NOTE: Since this test dataset already utilizes Darwin Core terms as field names,
 
 TIP: Press *how to use this form* to get a guided tour of this page.
 
-The first section concerns the mapping of sample data fields to Darwin Core terms (first column). The MDT has automatically mapped four fields from the *Samples* sheet (second column) and five fields from the *Study* sheet (third column) to their identically named Darwin Core counterparts: e.g. the field with sampling dates is called _eventDate_ in the uploaded data corresponding exactly to the Darwin Core term term:dwc[eventDate], and the field _pcr_primer_forward_ corresponds to the term term:dwc[pcr_primer_forward]).
+The first section concerns the mapping of sample data fields to Darwin Core terms (first column). The MDT has automatically mapped four fields from the *Samples* table (second column) and five fields from the *Study* table (third column) to their identically named Darwin Core counterparts: e.g. the field with sampling dates is called _eventDate_ in the uploaded data corresponding exactly to the Darwin Core term term:dwc[eventDate], and the field _pcr_primer_forward_ corresponds to the term term:dwc[pcr_primer_forward]).
 
 The second section concerns the mapping of taxonomy and sequence related information. The MDT has automatically mapped four fields from the *Taxonomy* sheet to identically named Darwin Core terms.
 
@@ -59,7 +57,7 @@ The second section concerns the mapping of taxonomy and sequence related informa
 
 === Process data (step 3)
 
-NOTE: The option *assign taxonomy* uses the https://www.gbif.org/tools/sequence-id[GBIF Sequence ID tool^] to assign taxonomy to the sequences. This overwrites any taxonomy provided in the data. We will not use that option here.
+NOTE: The option *assign taxonomy* uses the https://www.gbif.org/tools/sequence-id[GBIF Sequence ID tool^] to assign taxonomy to the sequences. This overwrites any taxonomy provided in the uploaded data. We will not use that option here.
 
 . Press *Process data*.
 

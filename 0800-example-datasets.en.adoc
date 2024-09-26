@@ -13,23 +13,6 @@ Comments
 * For real datasets, we recommend to get inspiration from some of the richer datasets.
 * See more detail the walk-through here: <<simple_quick_start>>
 
-=== Example dataset 2: 12S fish – data from Galapagos Islands
-
-A realistic but simple dataset used in the <<advanced_quick_start>> with 12S fish metabarcoding of DNA was extracted from sea water. This version has been modified slightly from the original [xxx not yet published properly] to illustrate some features. It is based on template 1 (Excel workbook with four sheets).
-
-Download file(s): link:../example_data/example_data1.current.en.xlsx[example_dataset_2].
-
-Comments
-
-* The *OTU_table* contains 69 samples (and a negative control) and 996 OTUs. The control sample is not in the *Samples* table and will thus automatically be excluded from the final data.
-* The *Samples* table includes links to the corresponding "GenBank" (ENA) records.
-** Links to raw sequencing data records are placed in a field called _run_accession_. This field should be mapped to the DwC term term:dwc[associatedSequences]) during processing (alternatively rename field before upload).
-** Links to the corresponding Biosamples records are placed in a field called _sample_accession_. This field should be mapped to the DwC term term:dwc[materialSampleID]) during processing (alternatively rename field before upload).
-* Several fields carry names not corresponding to DwC terms and need manual mapping during processing, e.g.:
-** Map _sequence_ to term:dwc[DNA-sequence], _Location_ to term:dwc[verbatimLocality], etc.
-* All samples have a measurement of _salinity_. This does not have a corresponding DwC term, but can be accomodated as a field in the Extended Measurements or Facts.
-* See more details the walk-through here: <<advanced_quick_start>>
-
 [[example3,Example dataset 3]]
 === Example dataset 3: COI marine water – a richly formatted dataset
 
