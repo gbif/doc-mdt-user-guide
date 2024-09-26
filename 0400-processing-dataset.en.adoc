@@ -39,7 +39,7 @@ TIP: Press *Save mapping* once in a while to make sure that you will not be logg
 .. The upper section named *Sample* maps your sample data fields to Darwin Core terms (first column), automatically identifying and mapping fields from the *Samples* sheet (second column) and global fields from the *Study* sheet (third column) with their identically named Darwin Core counterparts.
 .. The second section named *Taxon* does the same for taxonomic and sequence related information, auto-mapping fields from the Taxon sheet to identically named Darwin Core fields.
 ... If you uploaded sequences in a separate fasta file *Seqs.fasta*, this will be indicated in the mapping of term:dwc[DNA_sequences].
-.. The last section *Unmapped fields* lists all the fields in your data, that has names which the tool did not automatically  recognize. Below there is an option to put unmapped fields into *Extended Measurement Or Facts*.
+.. The last section *Unmapped fields* lists all the fields in your data, that has names which the MDT did not automatically  recognize. Below there is an option to put unmapped fields into *Extended Measurement Or Facts*.
 
 *Completing the mapping*
 
@@ -67,7 +67,7 @@ NOTE: All available standard fields (from https://rs.gbif.org/core/dwc_occurrenc
 
 . Press *Process data*.
 +
-The tool goes through a series of steps which will be indicated as succesful with a green tick-mark, and finally produces standardized BIOM files, which the tool uses as an intermediate file format.
+The MDT goes through a series of steps which will be indicated as succesful with a green tick-mark, and finally produces standardized BIOM files, which the MDT uses as an intermediate file format.
 +
 NOTE: If the barcoding region used for your dataset is one of the regions included in the https://www.gbif.org/tools/sequence-id[GBIF Sequence ID tool^], the option *assign taxonomy* will be available. You can use that to assign taxonomy to the OTUs by comparing the sequences with a reference database. NB: This overwrites any taxonomy provided in the data.
 

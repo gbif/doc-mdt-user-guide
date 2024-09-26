@@ -3,7 +3,7 @@
 
 In this section you will find detailed information and best practices on how to prepare and structure datasets for uploading and processing. If you still feel uncertain, you may wish to take a look at some of the <<example_data>>.
 
-NOTE: Illustrations (screenshots) may be slighlty different from what you see in the online tool, as the MDT is still being developed and improved.
+NOTE: Illustrations (screenshots) may be slighlty different from what you see in your browser, as the MDT is continuously being developed and improved.
 
 TIP: You may want to read sections of the general https://doi.org/10.35035/doc-vf1a-nr22[DNA publishing guide] for background information. Specifically: https://docs.gbif.org/publishing-dna-derived-data/en/#rationale[Rationale], https://docs.gbif.org/publishing-dna-derived-data/en/#environmental-dna-as-a-source-for-dna-derived-occurrence-data[Environmental DNA as a source...], https://docs.gbif.org/publishing-dna-derived-data/en/#dna-metabarcoding-sequence-derived-data[DNA metabarcodin data], https://docs.gbif.org/publishing-dna-derived-data/en/#introduction-to-biodiversity-publishing[Introduction to publishing], https://docs.gbif.org/publishing-dna-derived-data/en/#taxonomy-of-sequences[Taxonomy of sequences], https://docs.gbif.org/publishing-dna-derived-data/en/#taxonomy-of-sequences[Mapping metabarcoding data]
 
@@ -11,7 +11,7 @@ IMPORTANT: The general https://doi.org/10.35035/doc-vf1a-nr22[DNA publishing gui
 
 === The OTU table as a familiar data format
 
-The tool accepts data in a format familiar to the eDNA metabarcoding community - the OTU table.
+The MDT accepts data in a format familiar to the eDNA metabarcoding community - the OTU table.
 
 The OTU table is a specialized version of a species/site matrix, which is a standard way to organize data in biodiversity and ecology studies, summarizing the presence and abundance of different organisms across various samples. In an OTU table each row represents a unique OTU, and each column represents a different sample or site, with the cell values indicating the count of sequencing reads of the OTUs in each sample. An OTU table may also have OTUs as columns and samples as rows – i.e. transposed compared to the above description.
 
@@ -195,22 +195,22 @@ NOTE: Many fields relating to taxonomy/sequences (e.g. primers, reference databa
 | Placement
 
 | term:dwc[basisOfRecord]
-| _This field is is automatically set as "Material Sample" by the tool_
+| _This field is is automatically set as "Material Sample" by the MDT_
 | The specific nature of the data record - a subtype of the http://rs.gbif.org/vocabulary/dwc/basis_of_record.xml[dcterms:type].
 | Required
-| _Automatic by tool_
+| _Automated in MDT_
 
 | term:dwc[occurrenceID]
-| _This field is automatilly contructed by the tool as "eventID:OTU_id"_
+| _This field is automatilly contructed by the MDT as "eventID:OTU_id"_
 | A unique identifier for the occurrence, allowing the same occurrence to be recognized across dataset versions as well as through data downloads and use.
 | Required
-| _Automatic by tool_
+| _Automated in MDT_
 
 | term:dwc[eventID]
 | _This field is automatically set to the IDs of the Sample_
 | An identifier for the set of information associated with an Event (something that occurs at a place and time).
 | Highly recommended
-| _Automatic by tool_
+| _Automated in MDT_
 
 | term:dwc[eventDate]
 | 2020-01-05
@@ -228,25 +228,25 @@ NOTE: Many fields relating to taxonomy/sequences (e.g. primers, reference databa
 | _This field is automatically filled with the value from the corresponding cell in the uploaded OTU table_
 | Number of reads of this OTU or ASV in the sample.
 | Highly recommended
-| _Automatic by tool_
+| _Automated in MDT_
 
 | term:dwc[organismQuantityType]
 | _This field is automatically filled with the value "DNA sequence reads"_
 | Should always be “DNA sequence reads”
 | Highly recommended
-| _Automatic by tool_
+| _Automated in MDT_
 
 | term:dwc[sampleSizeValue]
-| _This field is automatically filled total number of reads in the sample as calculated by the tool automatically_
+| _This field is automatically filled total number of reads in the sample as calculated by the MDT automatically_
 | Total number of reads in the sample. This is important since it allows calculating the relative abundance of each OTU or ASV within the sample.
 | Highly recommended
-| _Automatic by tool_
+| _Automated in MDT_
 
 | term:dwc[sampleSizeUnit]
 | DNA sequence reads
 | _This field is automatically filled with the value “DNA sequence reads”_
 | Highly recommended
-| _Automatic by tool_
+| _Automated in MDT_
 
 | term:dwc[materialSampleID]
 | https://www.ncbi.nlm.nih.gov/biosample/15224856 +
@@ -301,7 +301,7 @@ https://github.com/terrimporter/CO1Classifier
 | _This field is automatically filled with an MD5 hash of the sequence – e.g. [.break-all]#ASV:7bdb57487bee022ba30c03c3e7ca50e1#_
 | For eDNA data, it is recommended to use an MD5 hash of the sequence and prepend it with “ASV:”. See also <<taxonomy-of-sequences>>.
 | Highly recommended
-| _Automatic by tool_
+| _Automated in MDT_
 
 | term:dwc[scientificName]
 | _Gadus morhua_ L. 1758, BOLD:ACF1143
@@ -421,14 +421,14 @@ A reference to a well documented protocol, e.g. using https://protocols.io[proto
 | *Equivalent to env_biome in MIxS v4* +
 In this field, report which major environmental system your sample or specimen came from. The systems identified should have a coarse spatial grain, to provide the general environmental context of where the sampling was done (e.g. were you in the desert or a rainforest?). We recommend using subclasses of ENVO’s biome class: +
 http://purl.obolibrary.org/obo/ENVO_00000428
-| Recommended (ENVO can be browsed and selected interactively in tool)
+| Recommended (ENVO can be browsed and selected interactively in the MDT)
 | *Samples*
 
 | term:mixs[env_local_scale]
 | litter layer [ENVO:01000338]
 | *Equivalent to env_feature in MIxS v4* +
 In this field, report the entity or entities which are in your sample or specimen´s local vicinity and which you believe have significant causal influences on your sample or specimen. Please use terms that are present in ENVO and which are of smaller spatial grain than your entry for env_broad_scale.
-| Recommended (ENVO can be browsed and selected interactively in tool)
+| Recommended (ENVO can be browsed and selected interactively in the MDT)
 | *Samples*
 
 | term:mixs[env_medium]
@@ -436,7 +436,7 @@ In this field, report the entity or entities which are in your sample or specime
 | *Equivalent to env_material in MIxS v4* +
 In this field, report which environmental material or materials (pipe separated) immediately surrounded your sample or specimen prior to sampling, using one or more subclasses of ENVO´s environmental material class: +
 http://purl.obolibrary.org/obo/ENVO_00010483
-| Recommended (ENVO can be browsed and selected interactively in tool)
+| Recommended (ENVO can be browsed and selected interactively in the MDT)
 | *Samples*
 
 | term:mixs[lib_layout]

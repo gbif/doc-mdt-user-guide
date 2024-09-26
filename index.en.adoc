@@ -18,7 +18,7 @@ IMPORTANT: This document is under development and may contain errors and unfinis
 
 IMPORTANT: *https://edna-tool.gbif-uat.org/[the MDT (GBIF eDNA metabarcoding data converter)]* is currently hosted in the GBIF [.underline]#test environment#, and is still a prototype under development. Currently, it can be used to produce a Darwin Core Archive, that can be viewed in the https://www.gbif-uat.org/[GBIF test environment (UAT)], but it [.underline]#cannot publish them directly to GBIF.org#. For proper publication you currently need to download the produced Darwin Core Archive and publish it through some established publication tool (e.g. GBIF IPT) – check the section <<publishing>>.
 
-WARNING: Files uploaded to the tool and files produced by the tool are currently stored in the GBIF test environment, that cannot be considered a stable repository. Download files you wish to have for future use! 
+WARNING: Files uploaded to the MDT and files produced by the MDT are currently stored in the GBIF test environment, that cannot be considered a stable repository. Download files you wish to have for future use! 
 
 ////
 
@@ -32,7 +32,7 @@ include::introduction.en.adoc[]
 
 include::0100-simple-quick-start.en.adoc[]
 
-include::0200-advanced-quick-start.en.adoc[]
+//// include::0200-advanced-quick-start.en.adoc[] ////
 
 include::0300-data-preparation-structure.en.adoc[]
 

@@ -13,7 +13,7 @@ Anyone interested in publishing DNA metabarcoding data on GBIF (or OBIS, etc.)
 
 * eDNA researchers or other data publishers
 * GBIF network people
-* Managers of a toolkit installatio
+* Managers of a MDT installation
 
 TIP: New users may benefit from starting with the two simple quick start guides.
 

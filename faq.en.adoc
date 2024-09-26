@@ -1,9 +1,9 @@
 [[faq]]
 == FAQ
 
-*Q. What is the state of this tool?*  
+*Q. What is the state of this the Metabarcoding Data Toolkit?*  
 
-*A.* the MDT is a still a [.underline]#prototype#. Here we call it "the MDT" as the name has not yet been decided. the MDT is continuously being developed/improved. This means, that you may encounter bugs and problems that we have not yet addressed. You will be able to make a Darwin Core Archive, and download it, but you will currently not be able to publish it directly to GBIF.org through the MDT. The tool is currently hosted in the GBIF test environment (UAT) https://edna-tool.gbif-uat.org/[here], and you will be able to view/publish the data to the GBIF test environment.
+*A.* the MDT is a still a [.underline]#prototype#. Here we call it the MDT as the name has not yet been decided. the MDT is continuously being developed/improved. This means, that you may encounter bugs and problems that we have not yet addressed. You will be able to make a Darwin Core Archive, and download it, but you will currently not be able to publish it directly to GBIF.org through the MDT. The MDT is currently hosted in the GBIF test environment (UAT) https://edna-tool.gbif-uat.org/[here], and you will be able to view/publish the data to the GBIF test environment.
 
 *Q. Where can bugs and errors be reported?*  
 
