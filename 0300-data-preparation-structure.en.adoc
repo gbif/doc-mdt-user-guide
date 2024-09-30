@@ -76,6 +76,7 @@ TIP: The order (sorting) of rows and columns in the tables is not important.
 * Make sure that OTU IDs (row names) are unique and prefarably do not contain a lot of non-standard characters.
 * Leave the upper left cell empty.
 
+[[tax_form]]
 *Taxonomy*
 
 * Fit your OTU (sequence and taxonomy) metadata into a *Taxonomy* table with OTUs as rows and their associated metadata as columns.
@@ -88,13 +89,9 @@ TIP: The order (sorting) of rows and columns in the tables is not important.
 *** add term:dwc[rank] to provide information on what taxonomic level the name provided as term:dwc[scientificName] is.
 *** add as many of the names on other taxonomic ranks that you have information on for each OTU: term:dwc[phylum], term:dwc[class], term:dwc[order], term:dwc[family], term:dwc[genus], term:dwc[specificEpithet].
 
-
-NOTE: Generally, most remaining metadata related to OTUs (sequencing platform, primers, etc) will be identical for all samples and OTUs, and these can be placed in the fourth table *Study* with "global" values. 
-
+NOTE: Generally, most remaining metadata related to OTUs (sequencing platform, primers, etc) will be identical for all samples and OTUs, and these can be placed in the fourth table *Study* with "global" values. If you find that this is not the case, you may be dealing with a *mixed dataset* – i.e. with OTUs/sequences from more than one primer set (e.g. COI _and_ 16S sequences) from the same set of samples. We highly recommend to publish such datasets separately.
 
 TIP: known contaminants or other OTUs not wanted in GBIF.org can simply be removed from the *Taxonomy* table alone (and left untouched in the OTU table) 
-
-
 
 *Samples*
 
@@ -164,66 +161,19 @@ To describe the samples in your dataset, you can use all fields from https://dwc
 
 *Fields to be provided by user*
 
-*Required*
-[%hardbreaks]
-term:mixs[DNA_sequence]
-term:dwc[scientificName]
-term:dwc[eventDate]
-term:dwc[eventID] (Sample ID is used).
-
-*Highly recommended*
-[%hardbreaks]
-term:dwc[materialSampleID]
-term:dwc[recordedBy]
-term:dwc[decimalLatitude]
-term:dwc[decimalLongitude]
-term:mixs[target_gene]
-term:mixs[target_subfragment]
-term:mixs[pcr_primer_forward]
-term:mixs[pcr_primer_reverse]
-term:mixs[pcr_primer_name_forward]
-term:mixs[pcr_primer_name_reverse]
-term:mixs[pcr_primer_reference]
-term:mixs[seq_meth]
-term:mixs[otu_class_appr]
-term:mixs[otu_seq_comp_appr]
-term:mixs[otu_db]
-term:dwc[kingdom]
-
-*Recommended*
-[%hardbreaks]
-term:mixs[env_broad_scale]
-term:mixs[env_local_scale]
-term:mixs[env_medium]
-term:dwc[associatedSequences]
-term:mixs[lib_layout]
-term:mixs[sop]
-term:dwc[samplingProtocol]
-term:dwc[identificationRemarks]
-term:dwc[identificationReferences]
-term:dwc[phylum]
-term:dwc[class]
-term:dwc[order]
-term:dwc[family]
-term:dwc[genus]
-
-* Required: term:mixs[DNA_sequence], term:dwc[scientificName], term:dwc[eventDate], term:dwc[eventID] (Sample ID is used).
-
-* Highly recommended: term:dwc[materialSampleID], term:dwc[recordedBy], term:dwc[decimalLatitude], term:dwc[decimalLongitude], term:mixs[target_gene], term:mixs[target_subfragment], term:mixs[pcr_primer_forward], term:mixs[pcr_primer_reverse], term:mixs[pcr_primer_name_forward], term:mixs[pcr_primer_name_reverse],term:mixs[pcr_primer_reference], term:mixs[seq_meth], term:mixs[otu_class_appr], term:mixs[otu_seq_comp_appr], term:mixs[otu_db], term:dwc[kingdom].
-
-* Recommended: term:mixs[env_broad_scale], term:mixs[env_local_scale], term:mixs[env_medium], term:dwc[associatedSequences], term:mixs[lib_layout], term:mixs[sop], term:dwc[samplingProtocol], term:dwc[identificationRemarks], term:dwc[identificationReferences], term:dwc[phylum], term:dwc[class], term:dwc[order], term:dwc[family], term:dwc[genus].
+* *Required*: term:mixs[DNA_sequence], term:dwc[scientificName], term:dwc[eventDate], term:dwc[eventID] (Sample ID is used).
+* *Highly recommended*: term:dwc[materialSampleID], term:dwc[recordedBy], term:dwc[decimalLatitude], term:dwc[decimalLongitude], term:mixs[target_gene], term:mixs[target_subfragment], term:mixs[pcr_primer_forward], term:mixs[pcr_primer_reverse], term:mixs[pcr_primer_name_forward], term:mixs[pcr_primer_name_reverse],term:mixs[pcr_primer_reference], term:mixs[seq_meth], term:mixs[otu_class_appr], term:mixs[otu_seq_comp_appr], term:mixs[otu_db], term:dwc[kingdom].
+* *Recommended*: term:mixs[env_broad_scale], term:mixs[env_local_scale], term:mixs[env_medium], term:dwc[associatedSequences], term:mixs[lib_layout], term:mixs[sop], term:dwc[samplingProtocol], term:dwc[identificationRemarks], term:dwc[identificationReferences], term:dwc[phylum], term:dwc[class], term:dwc[order], term:dwc[family], term:dwc[genus].
 
 *Fields automatically handled/filled by the MDT*
 
-* term:dwc[basisOfRecord], term:dwc[occurrenceID], term:dwc[organismQuantity], term:dwc[organismQuantityType], term:dwc[sampleSizeValue], term:dwc[sampleSizeUnit], term:dwc[taxonID], (term:dwc[eventID] – the MDT automatically uses the proveded sample IDs).
+* Some required or recommended fields are *automatically handled* by the MDT and do not require any input from the user: term:dwc[basisOfRecord], term:dwc[occurrenceID], term:dwc[organismQuantity], term:dwc[organismQuantityType], term:dwc[sampleSizeValue], term:dwc[sampleSizeUnit], term:dwc[taxonID], (term:dwc[eventID] – the MDT automatically uses the proveded sample IDs).
 
 ==== Detailed reference on required and recommended fields
 
-These tables are modified/specialized version of tables in the dna-publishing guide in the section https://docs.gbif.org/publishing-dna-derived-data/en/#mapping-metabarcoding-edna-and-barcoding-data[Mapping metabarcoding (eDNA) and barcoding data]. 
+Tables in this section are modified/specialized version of tables in the guide https://doi.org/10.35035/doc-vf1a-nr22[Publishing DNA-derived data through biodiversity data platforms] from the section https://docs.gbif.org/publishing-dna-derived-data/en/#mapping-metabarcoding-edna-and-barcoding-data[Mapping metabarcoding (eDNA) and barcoding data]. 
 
-When using the MDT it is not important to know whether the fields you are using are from Occurrence Core or the dna-derived extension. But it is important to know in which table to put the fields and associated values. The *Placement* column explains where to provide each field. A lot of the required and recommended fields are automatically handled/calculated, and should not be provided by the user – *Placement* informs about this also.
-
-NOTE: Many fields relating to taxonomy/sequences (e.g. primers, reference database) are most often possible to give as global values in the *Study* table. If you find that this is not the case, you may be dealing with a *mixed dataset* – i.e. with OTUs/sequences from more than one primer set (e.g. COI _and_ 16S sequences) from the same set of samples. We recommend to publish such datasets separately.
+When using the MDT, it's not essential to distinguish between Darwin Core Occurrence or DNA-derived data terms. What matters is placing fields and their values in the correct table of the OTU template. The 'Placement' column of the tables below guides where to input each field and indicates which required or recommended fields are automatically handled by the MDT.
 
 [[table-01]]
 .Recommended fields for http://rs.gbif.org/core/dwc_occurrence_2020-04-15.xml[Occurrence core] for Metabarcoding data. This table is a modified version of table 2 in the https://docs.gbif.org/publishing-dna-derived-data/en/#mapping-metabarcoding-edna-and-barcoding-data[dna-publishing guide] specifically for using the MDT.

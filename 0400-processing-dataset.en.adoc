@@ -1,33 +1,24 @@
 [[processing]]
 == Processing a dataset
 
-If you have prepared a dataset in one of the suggested templates/formats, and used the MDT before or used the two quick start guides, you should be able to upload and process a dataset by following the steps below.
-
+A simple step-wise guide to uploading and processing a dataset
 For specific usage or error messages refer to the detailed user guide below.
 
 === Log in
 
-. Go to the website of https://edna-tool.gbif-uat.org/[the MDT^].
+: Go to the https://edna-tool.gbif-uat.org/[MDT^].
 . Log in.
 . Press *New Dataset* in the upper part of the page.
 
 === Upload data (step 1)
 
 . Drag your dataset to the upload area, or click and select the file.
-. Give the dataset a nickname (e.g. "my_first_dataset")
+. Give the dataset a nickname.
 . Press *Start Upload*.
-+
-A green icon will indicate if a recogniced format is detected and looks OK according to some very basic data checks.
-
-image::img/advanced_example_upload_warning.png[]
-
-. (_optional_) Inspect your data in the data viewer by clicking on the eye icon next to the uploaded dataset
-+ 
+. (Optional) Inspect your data in the data viewer by clicking on the eye icon next to the uploaded dataset
 . Press *Proceed*
 
 === Map terms (step 2)
-
-On this page you tell the MDT which standardised field names (Darwin Core terms) correspond to which fields in your data.
 
 TIP: Press *how to use this form* to get a guided tour of this page.
 

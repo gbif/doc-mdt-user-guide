@@ -3,52 +3,50 @@
 
 *Q. What is the state of this the Metabarcoding Data Toolkit?*  
 
-*A.* the MDT is a still a [.underline]#prototype#. Here we call it the MDT as the name has not yet been decided. the MDT is continuously being developed/improved. This means, that you may encounter bugs and problems that we have not yet addressed. You will be able to make a Darwin Core Archive, and download it, but you will currently not be able to publish it directly to GBIF.org through the MDT. The MDT is currently hosted in the GBIF test environment (UAT) https://edna-tool.gbif-uat.org/[here], and you will be able to view/publish the data to the GBIF test environment.
+*A.* This toolkit is being developed as part of the pilot phase of the GBIF Metabarcoding Data Programme. The pilot programme is open exclusively to GBIF nodes who wish to manage an instance of the MDT. Installations can be configured to operate in one of two modes:
+
+* Publishing mode: MDT users can register datasets for publication through GBIF through the organizations to which they’re associated. Operating in this mode, the MDT functions similarly to an installation of GBIF’s Integrated Publishing Toolkit (IPT) and serves a publishing platform into GBIF.
+* Conversion-only mode: MDT users can use it to reshape their datasets into GBIF-ready Darwin Core Archive (DwC-A) files but must download them for hosting and publication on another repository, such as an IPT.
 
 *Q. Where can bugs and errors be reported?*  
 
-*A.* If you encounter bugs, inconveniences, have concrete input or want to request a feature, please make a GitHub issue using the links on website of the MDT.
+*A.* If you encounter bugs, inconveniences, have concrete input or want to request a feature, please make a GitHub issue https://github.com/gbif/metabarcoding-data-toolkit-ui/issues[here].
 
 *Q. What does the MDT do?*
 
-*A.* It helps format a DNA metabarcoding dataset (OTU table style) to be published on GBIF.org without the user having to learn Darwin Core terms and know a lot about data standardisation and reformating. It performs a transformation of the familar OTU table (with associated sample info & taxonomic/sequence informantion) into a tall table, where each row reflects one occurrence – a taxon (sequence/OTU/ASV) in time and space – and facilitates the mapping/renaming of user-named field names to the biodiversity standard, Darwin Core. These are all steps that can be done manually following the https://doi.org/10.35035/doc-vf1a-nr22[DNA publishing guide], but the MDT makes it easier.
-
-*Q. Who can use the MDT?*
-
-*A.* Anybody. 
+*A.* The MFT helps reshape/format a DNA metabarcoding dataset (OTU table style) to be published on GBIF.org. Technically speaking this is done by transforming the familar broad OTU table (with associated sample info & taxonomic/sequence informantion) into a tall table, where each row reflects one occurrence – a taxon (sequence/OTU/ASV) in time and space – and facilitates the mapping/renaming of fields to Darwin Core (the data standard of GBIF). These are in principle formatting steps that can be done manually following the guidelines in the guide https://doi.org/10.35035/doc-vf1a-nr22[Publishing DNA-derived data through biodiversity data platforms], but the MDT automates this and makes it easier. 
 
 *Q. Are there templates?*
 
-*A.* Yes, there are a currently a handful of <<templates>>.
+*A.* Yes. <<templates, Here>>.
 
 *Q. What kind of data can be published/submitted using the MDT?*
 
-*A.* the MDT processes an OTU table so the data can be published to GBIF.org. With an OTU table we think of a table containing some amplified marker gene sequences (ASVs/OTUs) and their sequence abundance in a set of samples. Each sample corresponds to an environmental sample or bulk sample (air, soil, water, faeces, insect trap homogenate, gut contents, ...), from which DNA has been extracted. A selected genetic region (barcode region) has been amplified with selected primers and sequenced on a high throughput seqeuncing platform like Illumina MiSeq.
+*A.* DNA metabarcoding dataset in the shape on an OTU table. With an OTU table we think of a table containing some amplified marker gene sequences (ASVs/OTUs) and their sequence abundance in a set of samples. Each sample corresponds to an environmental sample or bulk sample (air, soil, water, faeces, insect trap homogenate, gut contents, ...), from which DNA has been extracted. A selected genetic region (barcode region) has been amplified with selected primers and sequenced on a high throughput sequencing platform – like Illumina MiSeq.
 
 *Q. Can the MDT be used metagenomic datasets?*
 
-*A.* No. However note, that there is a confusion about the terms "metagenomic" and "metabarcoding". Broadly speaking, metagenomic methods sequences all genetic material from an environmental sample, often with so-called shotgun sequencing, and not including a PCR step targeting specific genetic regions. Metabarcoding methods on the other sequences selected DNA regions – often called barcoding regions (e.g. CO1, ITS, 18S, 16S) – to identify species in a sample. NB: Although the microbial research community often refers to 16S amplicon sequencing as "metagenomic", this type of data is strictly speaking metabarcoding data and thus suitable for processing in the MDT. 
+*A.* No. BUT: There is often confusion between the terms 'metagenomic' and 'metabarcoding.' Broadly, metagenomics involves sequencing all genetic material in an environmental sample, typically using shotgun sequencing without a PCR step to target specific genetic regions. In contrast, metabarcoding targets specific DNA regions (e.g., CO1, ITS, 18S, 16S), known as barcoding regions, to identify species in a sample. Although microbial researchers have often referred to 16S amplicon sequencing as 'metagenomic,' it is technically metabarcoding and can be processed in the MDT. 
 
 *Q. What kind of DNA metabarcoding samples are acceptable to publish on GBIF.org?*
 
-*A.* eDNA metabarcoding based data from all environmental samples (soil, air, water, dust, etc) as well as bulk samples of small organisms (e.g. from malaise trap) are acceptable. Heavily manipulated/treated environmental samples may not reflect real biodiversity and deemed as irrelevant from a biodiversity perspective. Use your judgement.
+*A.* eDNA metabarcoding based data from all environmental samples (soil, air, water, dust, etc) as well as bulk samples of small organisms (e.g. from malaise traps) and gut contents are acceptable. Heavily manipulated/treated environmental samples may not reflect real biodiversity and thus deemed as irrelevant from a biodiversity perspective. Use your judgement.
 
 *Q. Which markers/barcodes (COI, ITS, 16S,..) does GBIF and the MDT support?*
 
-*A.* It is possible to publish data based on amplification and sequencing of any amplified barcoding region. 
+*A.* It is possible to publish data from any barcoding gene/region. 
 
 *Q. Should sequences be trimmed?*
 
-*A.* Primers, adapters and tags, etc should always be removed from sequences. If you have trimmed your sequences further (e.g. trimming away the end of 5.8S and start of 28S from ITS2 data), then that is also acceptable, but not a requirement.
+*A.* Primers, adapters, tags, etc. should always be removed from sequences. Further trimming – of e.g. the 5.8S and 28S from ITS2 data – is optional.
 
 *Q. Should sequences be clustered into OTUs?*
 
-*A.* 100% identical sequences should always be collapsed (dereplicated), and futher clustering, denoising and compression may be relevant depending of sequencing platform and bioinformatic tools used. If using e.g. the Illumina MiSeq platform, we recommend sharing unclustered (but denoised) amplicon sequence variants (ASVs). This approach keeps the data maximally interoperable with data from other studies, compared to clusting into broader (e.g. 97% culstering) OTUs, where centroids (the variant picked to represent an OTU) of almost similar OTUs may have been picked differently between datasets and algorithms.
-
+*A.* 100% identical sequences should always be collapsed (dereplicated), and futher clustering, denoising and compression may be relevant depending of sequencing platform and bioinformatic tools used. If using e.g. the Illumina MiSeq platform, we recommend sharing unclustered (but denoised) amplicon sequence variants (ASVs) from e.g. the pipeline dada2. This approach keeps the data maximally interoperable with data from other studies compared to clustering into broader (e.g. 97%) OTUs where centroids (the variant picked to represent an OTU) of almost similar OTUs may be picked differently between datasets and algorithms.
 
 *Q. Should sequence read abundance be converted to relative abundance?*
 
-*A.* No. GBIF recommends to share detected absolute sequence read abundance (detected number of reads of each ASV/OTU in each sample). the MDT will automatically calculate the total number of reads per sample and relative abundance, so that future users will have the option to filter on both absolute and relative abundance.
+*A.* No. GBIF recommends to share detected absolute sequence read abundance (detected number of reads of each ASV/OTU in each sample). The MDT will automatically calculate the total number of reads per sample and relative abundances, so that future users will have the option to filter on both absolute and relative abundance.
 
 *Q. Should samples be resampled/rarefied to even sequencing depth?*
 
@@ -58,59 +56,63 @@
 
 *A.* Yes. Only share data from real environmental samples producing data that seems trustworthy should be shared. NB: the MDT only includes samples that are present in both the sample data AND the OTU table - i.e. it automatically discards samples that are absent from either table. So, removing controls from the sample-list is an easy way to do that.
 
+*Q. Should singletons, infrequent and low abundant sequences be removed?*
 
-*Q. Should I remove singletons, infrequent or low abundant sequences?*
-
-*A.* No. There may be a good reason to remove low abundant sequences, singletons, infrequent sequences in some studies. But GBIF does not recommend any default removal of singletons, infrequent og low abundant sequences.
+*A.* No. There may be a good reason to remove such sequences in some studies. But GBIF does not recommend any default removal of such.
 
 *Q. Should data from replicates be merged?*
 
-*A.* Maybe. Do what makes the data most suitable for reuse in biodiversity studies. If replication (multiple samples, DNA extractions, PCRs) was used to reduce stochasticity, then (bioinformatic) merging of replicates may be a good choice.
+*A.* Maybe. Do what makes the data most suitable for reuse in biodiversity studies. If replication (multiple samples, DNA extractions, PCRs) was used to reduce stochasticity, then merging of data from replicates may be a good choice.
 
 *Q. What if there are several versions of an OTU table?*
 
-*A.* Only one verison of the OTU table should be shared. Sometimes several version of an OTU table exist - e.g. clustered at different thresholds, removed non-target species and suspected contaminants - or split it into several tables with different taxonomic scopes. GBIF recommends to share the most inclusive version, including everything detected.
+*A.* Only one verison of the OTU table should be shared. Sometimes several version of an OTU table exist - e.g. tables clustered at different thresholds, tables with non-target species removed, tables with different taxonomic scopes, etc. GBIF recommends to share the most inclusive version, including everything detected (but excluding contaminations etc.)
 
 *Q. Should data from suspected contaminants be removed?*
 
-*A.* Yes. Some sequences/OTUs may be suspected contamination (e.g. DNA from human and classical food items like tomato, potato, chicken, etc.). We recommend to remove these if they can be identified. Only taxa/OTUs that are present in both the taxon table AND the OTU table will be processed. So, removing suspected contaminats from the taxon information is an easy way to do that.
+*A.* Yes. Some sequences/OTUs may be suspected contamination (e.g. DNA from humans, pets, classical food items like tomato, potato, chicken, etc.). We recommend to remove these if they can be identified. Removing suspected contaminats from the *Taxon* table is an easy way to do that.
 
 *Q. Should non-target sequences be removed?*
 
-*A.* Not necessarily. Some sequences/OTUs are perceived as non-target sequences - e.g. if mammals are detected in a study using fish-specific primers. However, most of those non-target sequences may still be biodiversity relevant data seen in a larger perspective. Also, such custom filterings of data may actually make the data less compatible with similar datasets produced with the same primers, and it makes the calculation of relative read abundances flawed. So, GBIF generally encourages not to remove non-target sequences, unless they are obviously contaminations or otherwise untrustworthy.
+*A.* Not necessarily. Some sequences/OTUs are perceived as non-target sequences - e.g. if mammals are detected in a study using fish-specific primers. However, most of those non-target sequences may still be relevant data seen in a larger perspective. Also, such custom filterings of data may actually make the data less compatible/interoperable with similar datasets produced with the same primers, and it makes the automatic calculation of relative read abundances flawed. So, GBIF generally encourages not to remove non-target sequences, unless they are obvious contamination or otherwise untrustworthy.
 
 *Q. Should taxonomy be assigned to sequences?*
 
-*A.* Not necessarily. Currently GBIF identifies/indexes data based on the taxonomy you provide. If only the sequence is provided, the inferred occurrences will be stored under the label "incertae sedis" for now. However, the presence of the sequence will make it possible to assign taxonomy at a later stage. GBIF aims to provide the possibility of automatic updating of sequence based identification (see above). the MDT currently also allows assigning of taxonomy for a few genetic markers and organism groups.
+*A.* Not necessarily. Currently GBIF indexes data based on the taxonomy you provide. If OTUs are provided with the sequences but without taxonomy, the occurrences will be indexed under the taxonomic label "_incertae sedis_" (uncertain placement) for now. However, the presence of sequences makes it possible to assign taxonomy at a later stage.
 
 *Q. How should taxonomy be assigned to sequences?*
 
-*A.* There are many reference databases and tools for assigning taxonomy to sequences, and reference databases are continuously being improved and changed. GBIF does not recommend any particular tool or pipeline. Use what is appropriate for the data. GBIF provides a sequence annotation tool for some markers. You can use that if you wish. The sequence ID tool is also built into the MDT as an option during the processing step, but as this step takes time you may want to use the sequence ID tool alone before using using this conveter. [NB: In the long term GBIF hopes to be able to continuously reannotate sequence based data to ensure consistency across datasets and time. GBIF will however keep original taxonomic identifications provided by the user to ensure traceability.]
+*A.* There are many DNA reference databases (BOLD, MIDORI, UNITE, MiFish, etc.) and tools (RDP Classifier, BLAST, VSEARCH, mothur, etc.) for assigning taxonomy to sequences, and reference databases are continuously being improved and changed. GBIF does not recommend any particular reference databases or tools. Use what is appropriate for the data. GBIF.org hosts the https://www.gbif.org/tools/sequence-id[Sequence ID] tool (GBIF.org > TOOLS > Sequence ID) for some of the frequently used markers and databases. You can use that if you wish. This tool is  built into the MDT as an option during the processing step, but as this step takes time you may want to use the sequence ID tool at an earlier step as part of the dataset preparation.
 
 *Q. How should I provide the taxonomic information when I submit my OTU data to GBIF?*
 
-*A.* Take a look at the <<templates>>.
+*A.* Take a look at <<tax_form, this part>> of the section <<preparation_structure>>.
 
 *Q. Should I share sequences that cannot be taxonomically identified?*
 
-*A.* Yes. By default all OTUs/ASVs should be shared. Sequences that cannot be reliably identified to species level (or to genus, or any taxonomic level at all) generally reflect the fact that reference databases are incomplete and/or not 100% curated. However, as reference databases are continuously improved, many sequences will be possible to receive improved taxonomic affiliation. So please provide all sequences.
+*A.* Yes. All OTUs/ASVs should be shared. Sequences that cannot be reliably identified to species level (or to genus, or any taxonomic level at all) generally reflect the fact that DNA reference databases are incomplete. However, reference databases are continuously improved, and many currently un-identifyable sequences will be possible to identify in the future. So please provide all OTUs/sequences.
 
 *Q. Will GBIF make sure that the taxonomy is updated?*
 
-*A.* Hopefully yes. For many barcoding regions and taxonomic groups, reference databases are incomplete and partially incorrect, but continuously improved. Thus, taxonomic identifications based on comparison with reference databases often reflect the current state of the database used. In the long term GBIF aims to continuously reannotate sequence based data to ensure consistency across datasets and time. GBIF will keep original taxonomic identifications provided by the user to ensure traceability.
+*A.* This is an often heard question from DNA data publishers and users. For many barcoding regions and taxonomic groups, reference databases are incomplete and partially incorrect. However, reference databases are continuously improved, and many currently un-identifyable sequences will be possible to identify in the future. Whether GBIF will provide such service is currently not known.
 
 *Q. How does GBIF ensure fitness for reuse and interoperability of data?*
 
-*A.* In the long term GBIF aims to continuously re-annotate sequence based data to ensure consistency across datasets and time. GBIF will however keep original taxonomic identifications provided by the user to ensure traceability. GBIF is also working on better tools for searching for and filtering of sequence based data.
+*A.* GBIF is working on generally improving the support for DNA derived data with relation to indexing, searching and filtering.
 
-*Q. Can the MDT be used to just to make a Darwin Core Archive?*
+*Q. Can the MDT be used solely to create a Darwin Core Archive?*
 
-*A.* Yes. the MDT can be used to produce a Darwin Core Archive. This Darwin Core Archive can then be downloaded and published to GBIF, OBIS or another research infrastructure through another publishing process.
+*A.* Yes. The Darwin Core Archive can then be downloaded at the 6th processing step *Export*. It can then be published to GBIF, OBIS or another research infrastructure through any standard publishing procedure.
 
-*Q. Can the MDT be used to just to make a BIOM file?*
+*Q. Can the MDT be used solely to create BIOM files?*
 
-*A.* Yes. the MDT can be used to construct a standardized BIOM file of the uploaded data. The BIOM files can be downloaded.
+*A.* Yes. the MDT can be used to construct a standardized BIOM file of the uploaded data. The BIOM files can be downloaded at the 3rd processing step *Process data* and at the 6th step *Export*.
 
 *Q. Should/can data from several primers/markers be combined in one table?*
 
-*A.* We highly recommend not to. DNA from the same set of samples may have been amplified and sequenced with several different primer sets (e.g. COI, ITS, 16S). These should be treated as different datasets (one dataset per marker / primer-set), and each dataset should be published separately. This makes the data maximally interoperable and reusable, from a technical perspective, it makes it possible to calculate total and relative read abundance per sample and OTU. The same sample information table file may of course be (re-)used for datasets relating to the same set of samples. NB: If you have to use the MDT to convert a table where data from different markers have been merged/mixed, you will need to supply the corresponding primer information etc for every single entry (OTU/ASV) in the taxon table, but the calculations of relative read abundances will be erroneous and misleading. We may look into developing a solution for this depending on wishes from the community.
+*A.* We highly recommend not to. DNA from the same set of samples may have been amplified and sequenced with several different primer sets (e.g. COI, ITS, 16S). These should be treated as different datasets (one dataset per marker / primer-set), and each dataset should be published separately. This makes the data maximally interoperable and reusable from a technical perspective. It also makes it possible to calculate total and relative read abundance per sample and OTU. The same sample information table file can be (re-)used for datasets relating to the same set of samples. NB: If you want to use the MDT to convert a table where data from different markers have been merged/mixed, you will need to supply the corresponding primer information etc for every single entry (OTU/ASV) in the taxon table, but the calculations of relative read abundances will be erroneous and misleading.
+
+*Q. How can I connect/link datasets with data from different markers for the same set of samples?*
+
+*A.* To do.
+

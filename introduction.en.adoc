@@ -9,7 +9,7 @@ The *Metabarcoding Data Toolkit (MDT)* was developed to address this need, enabl
 
 === Target audiences
 
-Anyone interested in publishing DNA metabarcoding data on GBIF (or OBIS, etc.)  
+Anyone interested in publishing DNA metabarcoding data to GBIF (or OBIS, etc.)  
 
 * eDNA researchers or other data publishers
 * GBIF network people
