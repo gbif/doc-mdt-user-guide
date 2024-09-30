@@ -183,4 +183,4 @@ A prompt will inform that it takes some minutes before the data is fully ingeste
 . Explore the dataset in the test environment
 . Ensure that all information and data is processed and displayed appropriately.
 
-You should now have an good idea of how you may adapt your own datasets and process them with the MDT. If so, select a <<template  You may also try to process <<example3>>.
+You should now have an good idea of how you may adapt your own datasets and process them with the MDT.
