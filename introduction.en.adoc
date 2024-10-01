@@ -1,50 +1,68 @@
 [[introduction]]
 == Introduction
 
-=== Overview
+=== GBIF and DNA
 
-GBIF provides access to extensive biodiversity data, primarily focused on species occurrences, including where and when species have been recorded. These records, gathered from collections, surveys, and citizen science efforts, contain species names, observation dates, locations, and other important details. In addition to traditional biodiversity records, GBIF also supports DNA-associated data, such as DNA metabarcoding datasets. A general guide – https://doi.org/10.35035/doc-vf1a-nr22[Publishing DNA-derived data through biodiversity data platforms] – was released in 2021 to assist with these specific data types. However, consultations with the GBIF network and research community in 2022 and 2023 highlighted the need for user-friendly tools to facilitate the formatting and publishing of DNA metabarcoding data.
+GBIF provides access to extensive biodiversity data, primarily focused on species occurrences, including where and when species have been recorded. These records, gathered from collections, surveys, and citizen science efforts, contain species names, observation dates, locations, and other important details. In addition to traditional biodiversity records, GBIF also supports DNA-associated data, such as DNA metabarcoding datasets. A general guide – https://doi.org/10.35035/doc-vf1a-nr22[Publishing DNA-derived data through biodiversity data platforms] – was released in 2021 to assist with these specific data types. However, consultations with the GBIF network and research community in 2022 and 2023 highlighted the need for user-friendly tools to facilitate the formatting and publishing of DNA metabarcoding data in particular.
 
 The *Metabarcoding Data Toolkit (MDT)* was developed to address this need, enabling users with basic knowledge of data standards, GBIF processes, and DNA metabarcoding to convert metabarcoding data – in the shape of the so-called OTU table commonly used in the metabarcoding community – into the standardised format suitable for GBIF.
 
-=== Target audiences
+=== The GBIF Metabarcoding Data Programme
 
-Anyone interested in publishing DNA metabarcoding data to GBIF (or OBIS, etc.)  
+In October 2024, https://www.gbif.org/news/3gm3lJaUQgTKZJRm6TiBff/gbif-nodes-invited-to-join-pilot-for-metabarcoding-data-on-biodiversity[GBIF launched] a pilot phase for the https://www.gbif.org/metabarcoding-data-programme[Metabarcoding Data programme], intended to improve GBIF’s integration of DNA metabarcoding data on biodiversity. The pilot programme is open to GBIF node managers who wish to manage an instance of the MDT. Participating nodes are provided a hosted installation of the MDT. An MDT can be configured to operate in one of two modes:
 
-* eDNA researchers or other data publishers
-* GBIF network people
-* Managers of a MDT installation
+* *Publishing mode*: MDT users can register datasets for publication through GBIF through the organizations to which they’re associated. This mode functions similarly to an installation of GBIF’s Integrated Publishing Toolkit (IPT).
+* *Conversion-only mode*: MDT users can use it to reshape their datasets into GBIF-ready Darwin Core Archive (DwC-A) files but must download them for hosting and publication on another repository, such as an IPT.
 
-TIP: New users may benefit from starting with the two simple quick start guides.
+https://www.gbif.org/composition/7o3nbjPcY92vZxmjo6Z8E2/[Apply to manage an MDT] in the pilot programme (GBIF node managers only).
 
-=== Scope
+=== Target audiences and scope
+
+This user guide is for anyone interested in learning to use the MDT for formatting and publishing DNA metabarcoding data to GBIF (or OBIS, etc.).
 
 What the Metabarcoding Data Toolkit can do:
 
 * Handle *DNA metabarcoding datasets* – specifically OTU tables and their associated metadata.
 * Accept dataset uploads in a few supported template formats.
 
-What the MDT cannot do:
+What the MDT [.underline]#cannot# do:
 
-* Process raw sequencing files (e.g., fastq).
-* Handle DNA metagenomic dataset (e.g., shotgun sequencing).
-* Support other DNA-associated biodiversity data types (e.g., specimen barcodes, qPCR).
+* Bioinformatic processing/analysis of raw sequencing data (Fastq files, etc.). Use dedicated bioinformatic tools and pipelines for that (dada2, Qiime2, Vsearch, Usearch, etc.).
+* Handle DNA metagenomic dataset (e.g., shotgun sequencing) - 
+* Handle other DNA-associated biodiversity data types (e.g., specimen barcodes, qPCR).
 
 === Getting started
 
-A suggested approach could be:
+If you already know about DNA metabarcoding data and/or just want to learn the basics of using the MDT:
 
-* Watch this short https://vimeo.com/912170754[video] on DNA data + GBIF (originally made for the https://www.gbif.org/composition/lKyZFAUnIDv8kpf0CgZsS/technical-support-hour-for-gbif-nodes[Technical support hour for GBIF nodes]) and/or this quickly made ad.hoc. https://drive.google.com/file/d/1T27BYTxC_ky-Qn89lhvhlR0asRsLnbML/view?usp=sharing[video] with an example use of the MDT.
 * Work through the <<simple_quick_start>> and the <<advanced_quick_start>>.
-* ...maybe supplement with processing of one of the other <<example_data>>.
-* Select a <<templates, dataset template>> and maybe have a look at the <<example_data, example datasets>>.
-* Adapt your own dataset to the template (see <<preparation_structure>>).
+
+If you know the basics of the MDT and want to prepare your own dataset:
+
+* Select a <<templates, dataset template>> suitable for your data.
+* Adapt your own dataset to the template, following the (see <<preparation_structure, preparation instructions>>).
+** Use the  <<example2>> as a model of a well-formatted dataset.
 * Process the data in the MDT.
-* Refer to the <<faq>>, the <<glossary>>, and the general https://doi.org/10.35035/doc-vf1a-nr22[DNA-publishing guide] where needed.
+* Refer to the <<faq>>, the <<glossary>>, and the "general DNA GBIF guide", https://doi.org/10.35035/doc-vf1a-nr22[Publishing DNA-derived data through biodiversity data platforms], where needed. NB: the general guide is not yet updated with information on the MDT, so when in doubt, follow the information in this MDT user guide).
+
+More context about MDT and DNA-derived data in GBIF:
+
+* A short https://vimeo.com/912170754[video] on DNA data + GBIF (originally made for the https://www.gbif.org/composition/lKyZFAUnIDv8kpf0CgZsS/technical-support-hour-for-gbif-nodes[Technical support hour for GBIF nodes])
+* A quickly made https://drive.google.com/file/d/1T27BYTxC_ky-Qn89lhvhlR0asRsLnbML/view?usp=sharing[video] with an example use of the MDT.
+* https://www.gbif.org/dsi-statement[GBIF briefing on Digital Sequence Information (DSI)]
+
+Learn more about eDNA and DNA metabarcoding (videos, podcasts):
+
+* How we can detect pretty much anything - Hélène Morlon and Anna Papadopoulou - TED-Ed. (https://www.youtube.com/watch?v=bdwU_ZPk1cY[video])
+* Biomonitoring using eDNA (environmental DNA) - Henrik's Lab. (https://www.youtube.com/watch?v=lxw6QvL1g70[video])
+* What is Environmental DNA (eDNA)? – Illumina AMEA. (https://www.youtube.com/watch?v=b_MTVV5rYfo[video])
+* Environmental DNA - World Wildlife Fund. (https://www.youtube.com/watch?v=4YXfZvEvUgc[video])
+* Environmental DNA - Towards Next-Generation Biomonitoring - LeeseLab. (https://www.youtube.com/watch?v=cdV5BFaek_A[video])
+* What is Environmental DNA (eDNA) and How Can it Help? - A Conversation with Dr Shaun Wilkinson – Dr Adam Forbes. (https://www.youtube.com/watch?v=Se41PcD6H0g[podcast])
 
 === Essential terms
 
-There is a full glossary at the end of the document. The list here contains some essential terms for quick reference to new users. Terms link to the glossary. 
+Quick reference to essential terms for new users. Links to <<glossary>>.  
 
 * <<asv>>
 * <<dwc-standard>>

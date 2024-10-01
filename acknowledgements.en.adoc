@@ -1,8 +1,10 @@
 [acknowledgements]
 == Acknowledgements
 
-Thanks to the following people for providing feedback or input to this guide material: Christiane Hassenrück.
+Thanks to the following people for providing substantial feedback or input to this guide material: Christiane Hassenrück.
 
-Thanks to the following to provide valuable test data, user feedback, comments and other input during the development of the MDT: Andrew Bissett, Birgit Gemeinholzer, Bruce Deagle, Carole Sinou, Cathryn Abbott, Christiane Hassenrück, Christina Pavloudi, Clara Baringo Fonseca, Dag Endresen, Daniel Swan, David Bloom, Dimitri Brossens, Esteban Marentes Herrera, Esteban Marentes Herrera, Fatima Parker-Allie, Isabel Calabuig, Isolde Cornelis, James Macklin, Joana Pauperio, Luke Earl Holman, Luke Jimu, MarionChevrinais, Meghan Shea, Meredith Mckay, Miwa Takahashi, Neha Acharya-Patel, Niels Raes, Pedro G. Retamal, Peggy Newman, Philipp Bayer, Ricardo Ortíz Gallego, Rukaya Sarah Johaadien, Sachit Rajbhandari, Sarah Bourlat, Shaun Wilkinson, Sofie Derycke, Steve Formel, Urmas Kõljalg, Veronika A. Johansson, Victor Chocho Sánchez
+Thanks to the following people for allowing to use their datasets as example datasets for this guide: Isolde Cornelis, Sofie Derycke, Meghan M. Shea and Alexandria B. Boehm.
+
+Thanks to the following to provide valuable test data, user feedback, comments and other input during the development of the MDT and this guide: Andrew Bissett, Birgit Gemeinholzer, Bruce Deagle, Carole Sinou, Cathryn Abbott, Cecilie Svenningsen, Christiane Hassenrück, Christina Pavloudi, Clara Baringo Fonseca, Dag Endresen, Daniel Swan, David Bloom, Dimitri Brossens, Esteban Marentes Herrera, Esteban Marentes Herrera, Fatima Parker-Allie, Isabel Calabuig, Isolde Cornelis, James Macklin, Joana Pauperio, Luke Earl Holman, Luke Jimu, Marion Chevrinais, Meghan Shea, Meredith Mckay, Mike Bunce, Miwa Takahashi, Neha Acharya-Patel, Niels Raes, Pedro G. Retamal, Peggy Newman, Philipp Bayer, Rachel Meyer, Ricardo Ortíz Gallego, Rukaya Sarah Johaadien, Sachit Rajbhandari, Sarah Bourlat, Shaun Wilkinson, Sofie Derycke, Steve Formel, Urmas Kõljalg, Veronika A. Johansson, Victor Chocho Sánchez.
 
 <<<

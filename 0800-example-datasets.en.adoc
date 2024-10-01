@@ -1,6 +1,7 @@
 [[example_data]]
 == Example datasets
 
+[[example1,Example Dataset 1]]
 === Example dataset 1: ITS fungi – fictional minimal dataset
 
 A simple dataset is used in the <<simple_quick_start>>. It is based on template 1 (Excel workbook with four sheets).
@@ -13,12 +14,12 @@ Comments
 * For real datasets, we recommend to get inspiration from some of the richer datasets.
 * See more detail the walk-through here: <<simple_quick_start>>
 
-[[example3,Example dataset 3]]
-=== Example dataset 3: COI marine water – a richly formatted dataset
+[[example2,Example Dataset 2]]
+=== Example dataset 2: COI marine water – a richly formatted dataset
 
 A real dataset with COI metabarcoding of DNA extracted from sea water. The dataset has rich metadata and is a good example of a well-documented dataset. This example version has been modified slightly from the https://www.gbif.org/dataset/9358fbd7-cfd0-4eab-99fa-0934396a0529[original dataset]. It is based on template 3 (4 separate csv files in a zip-archive).
 
-Download file(s): link:../example_data/example_data3.current.en.zip[example_dataset_3].
+Download file(s): link:../example_data/example_data2current.en.xlsx[Example Dataset 2].
 
 Comments
 
