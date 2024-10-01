@@ -161,6 +161,7 @@ image::img/advanced_metadata.png[]
 The metadata is added in some defined sections: _Basic Metadata, Geographic Coverage, Taxonomic Coverage, etc._ 
 
 For now we will skip most of the sections, and just add the mandatory. When working with a real dataset, please refer to the section on <<preparation_structure>>. 
+
 . Add a title, e.g. "COI metabarcoding test-dataset”, to replace the nickname provided in the beginning.
 . Select a licence (e.g. CC0).
 . Add a contact for the dataset (minimum: email)
