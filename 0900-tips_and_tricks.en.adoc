@@ -1,0 +1,6 @@
+[[tips_tricks]]
+== Tips and Tricks
+
+=== Getting the taxonomy into shape
+
+==== 

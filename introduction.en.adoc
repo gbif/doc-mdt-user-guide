@@ -5,7 +5,7 @@
 
 GBIF provides access to extensive biodiversity data, primarily focused on species occurrences, including where and when species have been recorded. These records, gathered from collections, surveys, and citizen science efforts, contain species names, observation dates, locations, and other important details. In addition to traditional biodiversity records, GBIF also supports DNA-associated data, such as DNA metabarcoding datasets. A general guide – https://doi.org/10.35035/doc-vf1a-nr22[Publishing DNA-derived data through biodiversity data platforms] – was released in 2021 to assist with these specific data types. However, consultations with the GBIF network and research community in 2022 and 2023 highlighted the need for user-friendly tools to facilitate the formatting and publishing of DNA metabarcoding data in particular.
 
-The *Metabarcoding Data Toolkit (MDT)* was developed to address this need, enabling users with basic knowledge of data standards, GBIF processes, and DNA metabarcoding to convert metabarcoding data – in the shape of the so-called OTU table commonly used in the metabarcoding community – into the standardised format suitable for GBIF.
+The *Metabarcoding Data Toolkit (MDT)* was developed to address this need.
 
 === The GBIF Metabarcoding Data Programme
 
@@ -36,6 +36,7 @@ What the MDT [.underline]#cannot# do:
 If you already know about DNA metabarcoding data and/or just want to learn the basics of using the MDT:
 
 * Work through the <<simple_quick_start>> and the <<advanced_quick_start>>.
+* Explore this https://mdt.gbif-uat.org/dataset/3d4e6748-df68-4047-ab04-ac3c3baa7840/review[example dataset].
 
 If you know the basics of the MDT and want to prepare your own dataset:
 

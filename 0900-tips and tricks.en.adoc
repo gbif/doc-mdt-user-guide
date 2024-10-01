@@ -1,0 +1,33 @@
+[[example_data]]
+== Tips and tricks
+
+[[example1,Example Dataset 1]]
+=== Example dataset 1: ITS fungi – fictional minimal dataset
+
+A simple dataset is used in the <<simple_quick_start>>. It is based on template 1 (Excel workbook with four sheets).
+
+Download file(s): link:../example_data/example_data1.current.en.xlsx[example_dataset_1].
+
+Comments
+
+* A very minimal dataset to exemplify the overall structure of such datasets.
+* For real datasets, we recommend to get inspiration from some of the richer datasets.
+* See more detail the walk-through here: <<simple_quick_start>>
+
+[[example2,Example Dataset 2]]
+=== Example dataset 2: COI marine water – a richly formatted dataset
+
+A real dataset with COI metabarcoding of DNA extracted from sea water. The dataset has rich metadata and is a good example of a well-documented dataset. This example version has been modified slightly from the https://www.gbif.org/dataset/9358fbd7-cfd0-4eab-99fa-0934396a0529[original dataset]. It is based on template 3 (4 separate csv files in a zip-archive).
+
+Download file(s): link:../example_data/example_data2current.en.xlsx[Example Dataset 2].
+
+Comments
+
+* The *OTU_table* file 159 samples and 24.744 OTUs.
+* The *Samples* file includes links to the corresponding "GenBank" (SRA) sequence and sample records in fields that already carry DwC term names: term:dwc[associatedSequences], term:dwc[materialSampleID].
+* Several fields carry names not corresponding to DwC terms and need manual mapping during processing: _Sample_Name, Latitude, Longitude, temperature, salinity, sequence, lsid, rank_. 
+** As the current dataset was formatted for indexing by OBIS, the dataset follows the https://docs.gbif.org/publishing-dna-derived-data/en/#marine-datasets-and-the-ocean-biodiversity-information-system-obis[recommendations] from the https://doi.org/10.35035/doc-vf1a-nr22[DNA guide] and includes the scientific name ID of the detected taxa as per the https://www.marinespecies.org[WoRMS database] in the field _lsid_. During processing the _lsid_ field should be mapped to term:dwc[scientificNameID] (or renamed in the file before upload). Likewise NCBI taxon IDs are given in the field _taxonConceptID_ (which will be automatically mapped to term:dwc[taxonConceptID]).
+* The *Study* file includes 29 terms with global values, adding to the richness of the dataset. 
+* Also take a look at the dataset description, etc of https://www.gbif.org/dataset/9358fbd7-cfd0-4eab-99fa-0934396a0529[the published dataset] for inspiration on which information can be added in the "Add metadata step".
+* NB: This modified version has 93.908 occurrences (compare to the original datasets 160.114)
+

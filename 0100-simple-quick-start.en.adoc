@@ -1,13 +1,13 @@
 [[simple_quick_start]]
 == Simple Quick Start Guide
 
-The two quick start guides should introduce most users to the key features needed to adapt datasets for the MDT. Begin with the simple guide, then move to the advanced. 
+The two quick start guides should introduce most users to the key features needed to use the MDT.
 
-This simple guide walks users through processing a minimal example dataset with minimal explanation, requiring little to no prior knowledge of eDNA data, GBIF, or Darwin Core.
+This Simple Quick Start Guide leads users through processing a dataset with minimal explanation.
 
 === Simple example dataset
 
-NOTE: This minimal dummy dataset in only to introduce the basics of the MDT, and should not be seen as an model for real data. It is basede on template 1 (see <<templates>> section), and is decribed in the <<example_data>> section.
+NOTE: This minimal dummy dataset in only to introduce the basics of the MDT, and should not be seen as an model for real data. It is based on template 1 (see <<templates>> section), and is decribed in the <<example_data>> section.
 
 . Download link:../example_data/example_data1.current.en.xlsx[Example Dataset 1].
 . Save the file to your computer.
@@ -20,38 +20,44 @@ NOTE: This minimal dummy dataset in only to introduce the basics of the MDT, and
 
 === Log in
 
-. Go to the https://edna-tool.gbif-uat.org/[MDT^].
-. Log in
+IMPORTANT: This guide assumes that you are using the demo version of the MDT.
+
+. Go to the website of the https://edna-tool.gbif-uat.org/[MDT demo^]. (alternatively use another installation of the MDT)
+. Log in with your *UAT login*. (use GBIF login for any other installation of the MDT).
 +
-NOTE: If you don't have an account, the login prompt will provide a link to the sign-up form.
+NOTE: If you don't have a login, the MDT login prompt will provide a link to the sign-up form.
 
 . Press *New Dataset* in the upper part of the page.
-+
-This opens the first step of the data processing.
-
 
 === Upload data (step 1)
 
-image::img/process_step_1.png[]
+image::img/general_step_bar.png[]
 
 . Drag the example dataset to the upload area, OR click and select the file on your computer.
 . Give the dataset a nickname (e.g. "my_first_test")
 . Press *Start Upload*.
 +
 A green icon will indicate that the XLSX format is detected and OK according to some very basic data checks.
+
+img::simple_upload.png[]
+
+[start=4]
 . Press *Proceed*
+
 
 === Map terms (step 2)
 
-On this page, you specify the mapping of the fields in the uploaded data, indicating how the fields correspond to Darwin Core terms.
-
-NOTE: Since this test dataset already utilizes Darwin Core terms as field names, no manual mapping is required.  
+In this step, you specify the mapping of the fields in the uploaded data, indicating how the fields correspond to Darwin Core terms.
 
 TIP: Press *how to use this form* to get a guided tour of this page.
 
-The first section concerns the mapping of sample data fields to Darwin Core terms (first column). The MDT has automatically mapped four fields from the *Samples* table (second column) and five fields from the *Study* table (third column) to their identically named Darwin Core counterparts: e.g. the field with sampling dates is called _eventDate_ in the uploaded data corresponding exactly to the Darwin Core term term:dwc[eventDate], and the field _pcr_primer_forward_ corresponds to the term term:dwc[pcr_primer_forward]).
+NOTE: Since this test dataset already uses Darwin Core terms as field names, no manual mapping is required.  
 
-The second section concerns the mapping of taxonomy and sequence related information. The MDT has automatically mapped four fields from the *Taxonomy* sheet to identically named Darwin Core terms.
+. (optional) Inspect the mapping.
+** The first section concerns the mapping of sample data fields to Darwin Core terms (first column). The MDT has automatically mapped four fields from the *Samples* table (second column) and five fields from the *Study* table (third column) to their identically named Darwin Core counterparts: e.g. the field with sampling dates is called _eventDate_ in the uploaded data corresponding exactly to the Darwin Core term term:dwc[eventDate], and the field _pcr_primer_forward_ corresponds to the term term:mixs[pcr_primer_forward]).
+** The second section concerns the mapping of taxonomy and sequence related information. Similar to above, the MDT has automatically mapped four fields from the *Taxonomy* table to identically named Darwin Core terms.
+
+img::simple_mapping.png[]
 
 . Press *Proceed* to save the mapping and proceed.
 
@@ -61,33 +67,40 @@ NOTE: The option *assign taxonomy* uses the https://www.gbif.org/tools/sequence-
 
 . Press *Process data*.
 
-This produces standardized intermediate files in the BIOM format, and some basic stats/metrics on the dataset, e.g. number of samples, etc.
+Standardized intermediate files are produced in the BIOM format, and some basic stats/metrics on the dataset – e.g. number of samples, etc. – are calculated
+
+img::simple_processing.png[]
 
 [start=2]
 . Press *Proceed*
 
 === Review (step 4)
 
-Here the processed data is explored to check that everything is OK, e.g. ensure control samples are not included as samples, and that the mapping is as expected.
+At this step the processed data can be explored and reviewed to verify that everything is OK, e.g. ensure that control samples are not included as samples, and that the mapping is as expected.
 
-
-. (_Optional_) Check the data.
+. (_Optional_) Review the data.
 ** Check the map and verify that the samples are placed geographically where expected (Northern part on Denmark). 
 ** Check the taxonomic barchart to ensure that taxonomic composition is as expected.
 ** Check ordination plots (PCoA/MDS) for outliers (e.g. control samples that were not excluded).
 ** Select single samples from the map or chart and explore their metadata and taxonomy in the panel to the right.
+
+img::simple_review.png[]
+
+[start=2]
 . Press *Proceed*
 
 === Add metadata (step 5)
 
-On this page, you provide dataset metadata. Certain mandatory fields must be completed in order to proceed. Here we ignore most of this.
+In this step, information on the dataset (dataset metadata) is provided. Mandatory fields must be completed in order to proceed. Here we ignore the remaining fields.
 
 . Add a meaningful title (e.g. “my first test dataset”).
 . Select a licence.
-. Add contact information - minimum: email and ORCID.
-+
-NOTE: use e.g. 1111-2222-3333-123X as dummy ORCID if you wish.
+. Add contact information - minimum: email.
 . Leave the other fields empty.
+
+img::simple_metadata.png[]
+
+[start=5]
 . Press *Proceed*.
 
 === Export (step 6)
@@ -96,16 +109,17 @@ At this step, the so-called <<dwc-a>> is produced. It can be published directly 
 
 . Press *Create DWC archive*.
 +
-This process generates the Darwin Core Archive from the data, progressing through several steps, each marked with a green check if successful.
-
+This process generates the <<dwc-a>> from the data, progressing through several steps, each marked with a green check if successful.
 . Press *Publish to GBIF test environment (UAT)*.
-
-A notification will indicate that data ingestion may take a few minutes before all samples appear in the GBIF test environment. A link to the dataset in the test environment will appear next to the Publish button.
-
-[start=3]
++
+A notification will indicate that data ingestion may take a few minutes before all samples appear in the GBIF test environment (UAT). A link to the dataset in the test environment (UAT) will appear next to the Publish button.
+. (Optional) Click on the hyperlink *Dataset at gbif-uat.org*.
+.. Explore the dataset in the GBIF test environment (UAT)
+.. Go back to the MDT 
 . Click on your username in the top right. Here you can:
-** see your datasets,
-** access them on the test environment (UAT), and
-** modify and export/publish updated/new versions.
+** logout 
+** access your datasets, e.g. to: 
+*** see them in the test environment (UAT)
+*** revise and update dataset and export/publish new versions
 
-You should now have a first [.underline]#basic# idea of how the MDT works and how you may adapt a real datasets. It is highly recommended go through the <<advanced_quick_start>> also.
+You should now have a basic idea of how the MDT works. Continue with the <<advanced_quick_start>> to learn more.
