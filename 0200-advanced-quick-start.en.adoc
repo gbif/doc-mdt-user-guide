@@ -170,16 +170,18 @@ For now we will skip most of the sections, and just add the mandatory. When work
 
 === Export (step 6)
 
-At this step, the so-called <<dwc-a>> is produced. It can be published directly to the GBIF test environment (UAT) from the MDT in this step.
+At this step, the so-called <<dwc-a>> is produced. It can be published directly to the GBIF [.underline]#test environment# (UAT) from the MDT in this step.
 
 . Press *Create DWC archive*.
 +
 This process generates the <<dwc-a>> from the data, progressing through several steps, each marked with a green check if successful.
 . Press *Publish to GBIF test environment (UAT)*.
 +
-A notification will indicate that data ingestion may take a few minutes before all samples appear in the GBIF test environment (UAT). A link to the dataset in the test environment (UAT) will appear next to the Publish button.
-. Click on the hyperlink *Dataset at gbif-uat.org*.
+A notification will inform you that data ingestion may take a few minutes before all samples are visible in the GBIF test environment (UAT). A link to the dataset in the test environment will appear next to the "Publish" button
+. Click on the link *Dataset at gbif-uat.org*.
 . Explore the dataset in the GBIF test environment (UAT).
 . Ensure that all information and data is processed and displayed appropriately as you expect.
 
 You should now have an good idea of how you may adapt your own datasets and process them with the MDT.
+
+IMPORTANT: If you followed this guide with your own dataset, your dataset will now be published to a [.underline]#test environment# (UAT). If you want to publish the data to GBIF.org properly: 1) consider consulting the section on <<preparation_structure>> to verify your formatting, 2) read the instructions in the section <<publishing>>.
