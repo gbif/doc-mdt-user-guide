@@ -165,13 +165,13 @@ To describe the samples in your dataset, you can use all fields from https://dwc
 
 *Fields to be provided by user*
 
-* *Required*: term:mixs[DNA_sequence], term:dwc[scientificName], term:dwc[eventDate], term:dwc[eventID] (Sample ID is used).
+* *Required*: term:mixs[DNA_sequence], term:dwc[scientificName], term:dwc[eventDate], term:dwc[eventID] (Sample ID is used by default, automatically).
 * *Highly recommended*: term:dwc[materialSampleID], term:dwc[recordedBy], term:dwc[decimalLatitude], term:dwc[decimalLongitude], term:mixs[target_gene], term:mixs[target_subfragment], term:mixs[pcr_primer_forward], term:mixs[pcr_primer_reverse], term:mixs[pcr_primer_name_forward], term:mixs[pcr_primer_name_reverse],term:mixs[pcr_primer_reference], term:mixs[seq_meth], term:mixs[otu_class_appr], term:mixs[otu_seq_comp_appr], term:mixs[otu_db], term:dwc[kingdom].
 * *Recommended*: term:mixs[env_broad_scale], term:mixs[env_local_scale], term:mixs[env_medium], term:dwc[associatedSequences], term:mixs[lib_layout], term:mixs[sop], term:dwc[samplingProtocol], term:dwc[identificationRemarks], term:dwc[identificationReferences], term:dwc[phylum], term:dwc[class], term:dwc[order], term:dwc[family], term:dwc[genus].
 
 *Fields automatically handled/filled by the MDT*
 
-* Some required or recommended fields are *automatically handled* by the MDT and do not require any input from the user: term:dwc[basisOfRecord], term:dwc[occurrenceID], term:dwc[organismQuantity], term:dwc[organismQuantityType], term:dwc[sampleSizeValue], term:dwc[sampleSizeUnit], term:dwc[taxonID], (term:dwc[eventID] – the MDT automatically uses the proveded sample IDs).
+* Some required or recommended fields are *automatically handled* by the MDT and do not require any input from the user: term:dwc[basisOfRecord], term:dwc[occurrenceID], term:dwc[organismQuantity], term:dwc[organismQuantityType], term:dwc[sampleSizeValue], term:dwc[sampleSizeUnit], term:dwc[taxonID], (term:dwc[eventID] – the MDT uses the proveded sample IDs by default).
 
 ==== Detailed reference on required and recommended fields
 
@@ -202,7 +202,7 @@ When using the MDT, it's not essential to distinguish between Darwin Core Occurr
 | _Automated in MDT_
 
 | term:dwc[eventID]
-| _This field is automatically set to the IDs of the Sample_
+| _This field automatically uses Sample ID_
 | An identifier for the set of information associated with an Event (something that occurs at a place and time).
 | Highly recommended
 | _Automated in MDT_
@@ -220,26 +220,26 @@ When using the MDT, it's not essential to distinguish between Darwin Core Occurr
 | *Samples* or *Study*
 
 | term:dwc[organismQuantity]
-| _This field is automatically filled with the value from the corresponding cell in the uploaded OTU table_
-| Number of reads of this OTU or ASV in the sample.
+| _This field is automatically set, reflecting the read count in the cell of the OTU table_
+| Number of reads of this occurrence (OTU/ASV in sample).
 | Highly recommended
 | _Automated in MDT_
 
 | term:dwc[organismQuantityType]
-| _This field is automatically filled with the value "DNA sequence reads"_
+| _This field is automatically set as "DNA sequence reads"_
 | Should always be “DNA sequence reads”
 | Highly recommended
 | _Automated in MDT_
 
 | term:dwc[sampleSizeValue]
-| _This field is automatically filled total number of reads in the sample as calculated by the MDT automatically_
+| _This field is automatically calculated as the total sequeunce read sum of the sample_
 | Total number of reads in the sample. This is important since it allows calculating the relative abundance of each OTU or ASV within the sample.
 | Highly recommended
 | _Automated in MDT_
 
 | term:dwc[sampleSizeUnit]
 | DNA sequence reads
-| _This field is automatically filled with the value “DNA sequence reads”_
+| _This field is automatically set as “DNA sequence reads”_
 | Highly recommended
 | _Automated in MDT_
 
@@ -261,7 +261,7 @@ urn:uuid:a964805b-33c2-439a-beaa-6379ebbfcd03
 
 | term:dwc[associatedSequences]
 | https://www.ebi.ac.uk/ena/browser/view/ERR1202046
-| A list (concatenated and separated) of identifiers (publication, global unique identifier, URI). For most cases it woule be linking to archived raw metabarcoding read files in a public repository.
+| A list (concatenated and separated) of identifiers (publication, global unique identifier, URI). For most cases it would be linking to archived raw metabarcoding read files in a public repository.
 | Recommended
 | *Samples*
 
@@ -293,7 +293,7 @@ https://github.com/terrimporter/CO1Classifier
 
 // The [.break-all]#ASV:…# is to allow the identifier to be broken at any character, rather than stretching the text cell.
 | term:dwc[taxonID]
-| _This field is automatically filled with an MD5 hash of the sequence – e.g. [.break-all]#ASV:7bdb57487bee022ba30c03c3e7ca50e1#_
+| _This field is automatically calculated as the MD5 hash of the sequence – e.g. [.break-all]#ASV:7bdb57487bee022ba30c03c3e7ca50e1#_
 | For eDNA data, it is recommended to use an MD5 hash of the sequence and prepend it with “ASV:”. See also <<taxonomy-of-sequences>>.
 | Highly recommended
 | _Automated in MDT_
@@ -357,9 +357,9 @@ https://github.com/terrimporter/CO1Classifier
 // The [.break-all]#TCTA…# is to allow the sequence to be broken at any character, rather than stretching the text cell.
 | term:mixs[DNA_sequence]
 | [.break-all]#TCTATCCTCAATTATAGGTCATAATTCACCATCAGTAGATTTAGGAATTTTCTCTATTCATATTGCAGGTGTATCATCAATTATAGGATCAATTAATTTTATTGTAACAATTTTAAATATACATACAAAAACTCATTCATTAAACTTTTTACCATTATTTTCATGATCAGTTCTAGTTACAGCAATTCTCCTTTTATTATCATTA#
-| The DNA sequence (ASV). Taxonomic interpretation of the sequence depends on the technology and reference library available at the time of publication. Hence, the most objective taxonomic handle is the sequence which can be reinterpreted in the future.
+| The DNA sequence (e.g. ASV or OTU centroid, consensus). Taxonomic interpretation of the sequence depends on the technology and reference library available at the time of publication. Hence, the most objective taxonomic handle is the sequence which can be reinterpreted in the future.
 | Required (Highly recommended)
-| *Taxonomy* or in separate fasta file (*Seqs.fasta*)
+| *Taxonomy* or in a separate fasta file (*Seqs.fasta*)
 
 | term:mixs[sop]
 | https://www.protocols.io/view/emp-its-illumina-amplicon-protocol-pa7dihn

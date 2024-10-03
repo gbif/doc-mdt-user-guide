@@ -16,7 +16,6 @@ The Menu Bar contains the following items
 * New dataset: start new data upload/processing from <<dg_upload>>.
 * User area (user name): links to: logout, My datasets and Administration (for Managers).
 
-
 *Administration*
 
 NOTE: This area is only visible and accessible to MDT managers
@@ -33,11 +32,11 @@ The tab _Manage organizations and users_ allows managers to configure organizati
 
 In this area users can access the datasets they have uploaded to the MDT.
 
-* Datasets can be opened (eye symbol) and the _Browse_ tab allows to visualize the data similar to the review step, _Metadata_ allows inspection of basic dataset information/metadata, _Files available_ gives access to download standardized BIOM and <dwc-a> files of the dataset (if these have been produced).
-* Datasets can be edited. By clicking the pen symbol, the dataset is opened at processing step 1 (Upload data). This allows users to initiate editing of the dataset at any of the processing steps.
+* Datasets can be opened (eye icon) and the _Browse_ tab allows to visualize the data similar to the review step, _Metadata_ allows inspection of basic dataset information/metadata, _Files available_ gives access to download standardized BIOM and <dwc-a> files of the dataset (if these have been produced).
+* Datasets can be edited. By clicking the pen icon, the dataset is opened at processing step 1 (Upload data). This allows users to initiate editing of the dataset at any of the processing steps.
 +
 IMPORTANT: Do not start editing a dataset that is already published on GBIF.org unless you are certain that it requires correction or updating. If you edit a published dataset, you must make the changes effective by publishing an updated Darwin Core Archive (<dwc-a>) through the MDT. Alternatively, if the dataset is published elsewhere, you must update or replace the old <dwc-a> at the respective endpoint. For changes to dataset metadata only (Edit metadata, step 5): Simply create a new <dwc-a> in the Export (step 6) by clicking "Create Darwin Core Archive.", and publish that. For changes in the mapping (step 2) you must also press "Re-process data" in Process data (step 3) to apply the changes, before creating the updated DwC-A and publishing it. For changes to uploaded files (step 1) you must also redo or verify the mapping in step 2.
-* Datasets can be deleted (trash symbol). More XX
+* Datasets can be deleted (trash icon). More XX
 
 image::img/dg_mydata.png[]
 
