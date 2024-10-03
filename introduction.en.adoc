@@ -35,16 +35,18 @@ What the MDT [.underline]#cannot# do:
 
 If you already know about DNA metabarcoding data and/or just want to learn the basics of using the MDT:
 
-* Work through the <<simple_quick_start>> and the <<advanced_quick_start>>.
-* Explore this https://mdt.gbif-uat.org/dataset/3d4e6748-df68-4047-ab04-ac3c3baa7840/review[example dataset].
+* Work through the <<simple_quick_start>> and the <<advanced_quick_start>> using the GBIF demo MDT installation.
+* Browse/explore this https://mdt.gbif-uat.org/dataset/3d4e6748-df68-4047-ab04-ac3c3baa7840/review[example dataset 2] in the demo MDT.
 
-If you know the basics of the MDT and want to prepare your own dataset:
+If you already know the basics of the MDT and want to prepare your own dataset:
 
 * Select a <<templates, dataset template>> suitable for your data.
 * Adapt your own dataset to the template, following the (see <<preparation_structure, preparation instructions>>).
-** Use the  <<example2>> as a model of a well-formatted dataset.
-* Process the data in the MDT.
-* Refer to the <<faq>>, the <<glossary>>, and the "general DNA GBIF guide", https://doi.org/10.35035/doc-vf1a-nr22[Publishing DNA-derived data through biodiversity data platforms], where needed. NB: the general guide is not yet updated with information on the MDT, so when in doubt, follow the information in this MDT user guide).
+** You may use the <<example2>> as a model of a well-formatted dataset.
+* Process the data in an MDT (a hosted MDT or the demo installation).
+* Refer to the <<preparation_structure, preparation instructions>>, the <<detailed_guidance>>, the <<advanced_quick_start>>, the <<faq>>, and the <<glossary>> as needed.
++
+NOTE: The https://doi.org/10.35035/doc-vf1a-nr22[general GBIF DNA guide] has valuable information, but is not yet updated with information on the MDT, so when in doubt, follow the information in this MDT user guide.
 
 More context about MDT and DNA-derived data in GBIF:
 
@@ -52,7 +54,7 @@ More context about MDT and DNA-derived data in GBIF:
 * A quickly made https://drive.google.com/file/d/1T27BYTxC_ky-Qn89lhvhlR0asRsLnbML/view?usp=sharing[video] with an example use of the MDT.
 * https://www.gbif.org/dsi-statement[GBIF briefing on Digital Sequence Information (DSI)]
 
-Learn more about eDNA and DNA metabarcoding (videos, podcasts):
+Selected learning resources on eDNA and DNA metabarcoding (videos, podcasts):
 
 * How we can detect pretty much anything - Hélène Morlon and Anna Papadopoulou - TED-Ed. (https://www.youtube.com/watch?v=bdwU_ZPk1cY[video])
 * Biomonitoring using eDNA (environmental DNA) - Henrik's Lab. (https://www.youtube.com/watch?v=lxw6QvL1g70[video])
