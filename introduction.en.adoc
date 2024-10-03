@@ -3,7 +3,7 @@
 
 === GBIF and DNA
 
-GBIF provides access to extensive biodiversity data, primarily focused on species occurrences, including where and when species have been recorded. These records, gathered from collections, surveys, and citizen science efforts, contain species names, observation dates, locations, and other important details. In addition to traditional biodiversity records, GBIF also supports DNA-associated data, such as DNA metabarcoding datasets. A general guide – https://doi.org/10.35035/doc-vf1a-nr22[Publishing DNA-derived data through biodiversity data platforms] – was released in 2021 to assist with these specific data types. However, consultations with the GBIF network and research community in 2022 and 2023 highlighted the need for user-friendly tools to facilitate the formatting and publishing of DNA metabarcoding data in particular.
+GBIF provides access to extensive biodiversity data, primarily focused on species occurrences, including where and when species have been recorded. These records, gathered from collections, surveys, and citizen science efforts, contain species names, observation dates, locations, and other important details. In addition to traditional biodiversity records, GBIF also supports https://www.gbif.org/dna[DNA-associated data], such as DNA metabarcoding datasets. A general guide – https://doi.org/10.35035/doc-vf1a-nr22[Publishing DNA-derived data through biodiversity data platforms] – was released in 2021 to assist with these specific data types. However, consultations with the GBIF network and research community in 2022 and 2023 highlighted the need for user-friendly tools to facilitate the formatting and publishing of DNA metabarcoding data in particular.
 
 The *Metabarcoding Data Toolkit (MDT)* was developed to address this need.
 
@@ -11,8 +11,8 @@ The *Metabarcoding Data Toolkit (MDT)* was developed to address this need.
 
 In October 2024, https://www.gbif.org/news/3gm3lJaUQgTKZJRm6TiBff/gbif-nodes-invited-to-join-pilot-for-metabarcoding-data-on-biodiversity[GBIF launched] a pilot phase for the https://www.gbif.org/metabarcoding-data-programme[Metabarcoding Data programme], intended to improve GBIF’s integration of DNA metabarcoding data on biodiversity. The pilot programme is open to GBIF node managers who wish to manage an instance of the MDT. Participating nodes are provided a hosted installation of the MDT. An MDT can be configured to operate in one of two modes:
 
-* *Publishing mode*: MDT users can register datasets for publication through GBIF through the organizations to which they’re associated. This mode functions similarly to an installation of GBIF’s Integrated Publishing Toolkit (IPT).
-* *Conversion-only mode*: MDT users can use it to reshape their datasets into GBIF-ready Darwin Core Archive (DwC-A) files but must download them for hosting and publication on another repository, such as an IPT.
+* *Publishing mode*: MDT users can register datasets for publication through GBIF through the organizations to which they’re associated. This mode functions similarly to an installation of GBIF’s <<ipt>>.
+* *Conversion-only mode*: MDT users can use it to reshape their dataset into a GBIF-ready <<dwc-a>> but must download them for hosting and publication on another repository, such as an IPT.
 
 https://www.gbif.org/composition/7o3nbjPcY92vZxmjo6Z8E2/[Apply to manage an MDT] in the pilot programme (GBIF node managers only).
 

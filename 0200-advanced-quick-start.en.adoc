@@ -37,7 +37,7 @@ A green icon will indicate that the XLSX format is detected and OK.
 
 You will get a warning that one of the columns (samples) in the OTU table does not have a corresponding row in the sample table. We knew that, and it is OK (see above).
 
-image::img/advanced_example_upload.png[]
+image::img/advanced_upload.png[]
 
 [start=4]
 . Open the data viewer by clicking on the eye icon next to the uploaded dataset.

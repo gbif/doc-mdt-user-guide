@@ -8,6 +8,10 @@ endif::backend-html5[]
 
 GBIF Secretariat (2024) Metabarcoding Data Toolkit – user guide. Copenhagen: Global Biodiversity Facility. https://doi.org/10.35035/doc-wkpc-m352
 
+=== Editors
+
+https://orcid.org/0000-0002-3530-013X[Tobias Guldberg Frøslev] of the GBIF Secretariat.
+
 === Licence
 
 The document _Metabarcoding Data Toolkit – user guide_ is licensed under https://creativecommons.org/licenses/by-sa/4.0[Creative Commons Attribution-ShareAlike 4.0 Unported License].
@@ -16,6 +20,20 @@ The document _Metabarcoding Data Toolkit – user guide_ is licensed under https
 
 https://doi.org/10.35035/doc-wkpc-m352
 
+=== Abstract
+
+This guide aims to help anyone interested in learning to use the Metabarcoding Data Toolkit (MDT) for formatting and sharing DNA metabarcoding data freely and openly in standardized, accessible and interoperable formats through the Global Biodiversity Information Facility (GBIF) or OBIS, etc. The MDT is a user friendly tool that aims to make the data formatting and publishing procecure as easy as possible for researchers and similar data holders. The MDT accepts DNA Metabarcoding datasets in the shape of OTU tables, utilizes the BIOM file format, and outputs fully indexable/publishable Darwin Core Archives. An MDT installation can operate in two modes: Publishing mode, where users can publish dataset through GBIF; and Conversion mode, where users convert datasets into Darwin Core Archive (DwC-A) files for external hosting and publication.
+
 === Document control
 
 v0.1, September 2024
+
+The guide will be developed and improved dynamically during the pilot https://www.gbif.org/metabarcoding-data-programme[Metabarcoding data programme] with no version control as such. Important changes to the MDT and/or this guide will be listed in the section <<changes>>. 
+
+=== About GBIF
+
+GBIF—the Global Biodiversity Information Facility—is an international network and data infrastructure funded by the world’s governments and aimed at providing anyone, anywhere, open access to data about all types of life on Earth. Coordinated through its Secretariat in Copenhagen, the GBIF network of participating countries and organizations, working through participant nodes, provides data-holding institutions around the world with common standards and open-source tools that enable them to share information about where and when species have been recorded. For more information, visit https://www.gbif.org; for DNA specifically: https://www.gbif.org/dna
+
+=== Cover image
+
+Graphic by Javier Andrés Gamboa Martínez, Communications Officer, GBIF Secretariat.

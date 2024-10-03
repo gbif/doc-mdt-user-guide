@@ -1,63 +1,139 @@
 [[detailed_guidance]]
 == Detailed user guide
 
-=== User interface
+This section provides some extra information on the MDT and the user interface, focussing on uses/aspects/errors that are not "self explanatory" or not already explained in the <<advanced_quick_start>>.
 
-==== Landing page
+=== Landing page
 
+The landing page (home) is where users access their datasets, start new uploads, etc.
+
+img::dg_landing.png[]
+
+==== Menu Bar  
+
+* <<admin>> (only visible to MDT managers)
+* <<mydata>>
+* New dataset: start new data upload/processing from <<dg_upload>>.
+* User area (user name): links to: logout, My datasets and Administration (for Managers).
+
+[[admin]]
+===== Administration
+
+NOTE: This area is only visible and accessible to MDT managers
+
+The tab _All datasets in this tool_ allows managers to see, sort and access datasets in the MDT installation.
+
+img::dg_admin_datasets[]
+
+The tab _Manage organizations and users_ allows managers to configure organizations and user.
+
+More XXX
+
+[[mydata]]
+===== My datasets
+
+In this area users can access the datasets they have uploaded to the MDT.
+
+* Datasets can be opened (eye symbol) and the _Browse_ tab allows to visualize the data similar to the review step, _Metadata_ allows inspection of basic dataset information/metadata, _Files available_ gives access to download standardized BIOM and <dwc-a> files of the dataset (if these have been produced).
+* Datasets can be edited. By clicking the pen symbol, the dataset is opened at processing step 1 (Upload data). This allows users to initiate editing of the dataset at any of the processing steps.
++
+IMPORTANT: Do not start editing a dataset that is already published on GBIF.org unless you are certain that it requires correction or updating. If you edit a published dataset, you must make the changes effective by publishing an updated Darwin Core Archive (<dwc-a>) through the MDT. Alternatively, if the dataset is published elsewhere, you must update or replace the old <dwc-a> at the respective endpoint. For changes to dataset metadata only (Edit metadata, step 5): Simply create a new <dwc-a> in the Export (step 6) by clicking "Create Darwin Core Archive.", and publish that. For changes in the mapping (step 2) you must also press "Re-process data" in Process data (step 3) to apply the changes, before creating the updated DwC-A and publishing it. For changes to uploaded files (step 1) you must also redo or verify the mapping in step 2.
+* Datasets can be deleted (trash symbol). More XX
+
+img::dg_mydata.png[]
+
+==== Help, feedback and other resources
+
+* The *Neep help?* (fern leaf): Opens an email to contact the Manager of the MDT installation.
+* The *RSS feed*: Lists the most recently updated resources (datasets) available as an RSS feed. This can be used to monitor incoming datasets to the MDT installation.
+* The *Report a bug* and *Request a feature* : Opens a GitHub issue where users can report MDT bugs or request MDT features to be developed.
 
 [[dg_upload]]
-==== Upload data (processing step 1) 
+=== Upload data (processing step 1)
+
+img::dg_upload.png[]
+
+*Files uploaded area*
+
+*The green check above the Files uploaded, is only a basic check of the file type. It is not a check that the dataset is formatted correctly in all aspects.
+*The symbols/icons in the Files uploaded area allows to visualize parts of the uploaded tables, delete and download files.
+
+==== Troubleshooting
+
+img::dg_invalid_format[][pdfwidth=10%,scaledwidth=10%]
+
+An red check above the Files uploaded area means that the uploaded files are somehow not as expected. Some explanation or orange text below may help interpreting the cause of the error
+
+Suggestions:
+
+* Ensure that the uploaded files are as required:
+** For Excel workbooks (one only):
+*** Name if workbook not important
+*** Expected names of sheets in workbook: OTU_table, Taxonomy, Samples, and optionally: Study
+** For text files:
+*** Expected names of uploaded files: OTU_table, Taxonomy, Samples, and optionally: Study. (Taxonomy can also be left out if sequences are provided as fasta and no taxonomy is provided)
+*** Expected file extensions: csv or tsv (txt ??? xxx)
+*** Expected formatting: tab separated text
+** For fasta files with sequences:
+*** Expected name and extensions: Seqs.fasta
+*** Expected formatting: Text-based format. Each entry begins with a header line with a greater-than symbol (">") and the OTU ID. The line(s) after contain the actual sequence.
+
+img::dg_no_corresponding.png[]
+
+A yellow box with some information that a number of sample or OTU IDs are do not have corresponding entries in another table.
+
+Suggestion:
+
+* Ensure that the all the samples (Sample IDs) you want included in the final dataset are present in both the *OTU_table* and the *Samples* tables, and similarly for the OTUs (OTU IDs), that they are present in both the *OTU_table* and *Taxonomy* tables.
+* Deleting or leaving out OTUs or Samples (their IDs) from any table means that they will be excluded from the final data. This is thus an easy way of excluding OTUs or Samples – e.g. negative control samples, suspected contaminant species – from the data. There will be warnings during processing.
+
 
 [[dg_map]]
-==== Map terms (processing step 2) 
+=== Map terms (processing step 2) 
+
+See <<advanced_quick_start>>.
 
 [[dg_process]]
-==== Process data (processing step 3) 
+=== Process data (processing step 3)
+
+See <<advanced_quick_start>>.
 
 [[dg_review]]
-==== Review (processing step 4) 
+=== Review (processing step 4) 
+
+See <<advanced_quick_start>>.
 
 [[dg_metadata]]
 === Edit Metadata (processing step 5) 
 
+See <<advanced_quick_start>>.
+
 [[dg_export]]
-==== Export (processing step 6)
+=== Export (processing step 6)
+
+See <<advanced_quick_start>>.
 
 [[publishing]]
-==== Publish (processing step 7)
+=== Publish (processing step 7)
 
-=== Types of MDT installations
+At this step the user options depend on the version (mode) of the MDT used:
 
-Seen from a user perspective there are three different versions of the MDT:
+* <<pub_demo, GBIF demo installation>>
+* Hosted installations in Publishing mode
+* Hosted installations in conversion-only mode
 
-*The GBIF DEMO installation*
+<<pub_demo>>
+==== GBIF demo MDT installation
 
-* Requires login for the GBIF [.underline]#test environment# (UAT).
-* Can be accessed here: https://mdt.gbif-uat.org/
-* Open for any user
-* Use it to learn how to use the MDT
-* Use it to prepare/convert a Metabarcoding Dataset and download the files for external use or to publish them through other procedures.
+img::dg_publish_demo.png[]
 
-*A hosted installation in Publishing mode*
+The GBIF demo MDT installation cannot publish to GBIF.org.
+If you have processed a dataset in the demo MDT that you would like to publish properly to GBIF.org, you can do the following
+* Publish the dataset to the GBIF TEST environment (UAT) (step 6 - Export), if you haven't already.
+* If have identified a hosted MDT installation 
 
-* Requires login for GBIF.org
-* Open for any user
 
-Participating nodes are provided a hosted installation of the MDT. An MDT can be configured to operate in one of two modes:
-
-* *Publishing mode*: MDT users can register datasets for publication through GBIF through the organizations to which they’re associated. This mode functions similarly to an installation of GBIF’s Integrated Publishing Toolkit (IPT).
-* *Conversion-only mode*: MDT users can use it to reshape their datasets into GBIF-ready Darwin Core Archive (DwC-A) files but must download them for hosting and publication on another repository, such as an IPT.
-
-IMPORTANT: https://edna-tool.gbif-uat.org/[*the MDT (GBIF eDNA metabarcoding data converter)*] is currently hosted in the GBIF [.underline]#test environment#, and is still a prototype under development. Currently, the MDT can be used to produce a Darwin Core Archive, that can be "published to" and viewed in the https://www.gbif-uat.org/[GBIF test environment (UAT)], but it [.underline]#cannot publish them directly to GBIF.org#.
-
-WARNING: Files uploaded to the MDT and files produced by the MDT are currently stored in the GBIF test environment that cannot be considered a stable repository. Keep a local copy of important files! 
-
-NOTE: the MDT may possibly become a hosted repository, so that endpoints generated by the MDT can be registered with and indexed by with GBIF, OBIS, etc. It may also be a future possibility to be able to publish directly to GBIF.org from the MDT.
-
-TIP: see this https://data-blog.gbif.org/post/installations-and-hosting-solutions-explained/[blog post] on general possibilities to publish and host datasets.
-
-=== Publishing through IPT
+==== Publishing through IPT
 
 The https://www.gbif.org/ipt[Integrated Publishing Toolkit] — commonly referred to as the IPT — is free open-source software developed by GBIF and used by organizations around the world to create and manage repositories for sharing biodiversity datasets. If you have access to an IPT and know how to use it, you can download the DwC-A produced by the MDT and publish it through an IPT. By doing so you will unfortunately lose the possibility and functionality of the MDT for updating, re-processing and "analysing" the dataset.
 
@@ -88,3 +164,37 @@ A Darwin Core Archive produced with the MDT may be put elsewhere on the web – 
 * Download the DwC-A (archive.zip) from the MDT.
 * Put the archive somewhere in a stable repository, so you have an URL: www/xxx/archive.zip
 * Register the dataset with the relevant publisher in the GBIF registry (How to do that?).
+
+[[installations]]
+=== Types of MDT installations
+
+Seen from a user perspective there are three different versions of the MDT
+
+*The GBIF DEMO installation*
+
+* Requires login for the GBIF [.underline]#test environment# (UAT).
+* Can be accessed here: https://mdt.gbif-uat.org/
+* Open for any user.
+* MDT users can use it to reshape their datasets into GBIF-ready Darwin Core Archive (DwC-A) files
+* DwC-A must be downloaded for hosting and publication on another repository, such as an <<ipt>>.
+
+*Hosted installations in Publishing mode*
+
+* Requires login for GBIF.org.
+* Open for any user.
+* MDT users can use it to format and register datasets for publication through GBIF through the organizations to which they’re associated.
+* This mode functions similarly to an installation of GBIF’s Integrated Publishing Toolkit (IPT).
+
+*Hosted installations in conversion-only mode*
+* Requires login for GBIF.org
+* Open for any user
+* MDT users can use it to reshape their datasets into GBIF-ready Darwin Core Archive (DwC-A) files.
+* DwC-A must be downloaded for hosting and publication on another repository, such as an IPT.
+
+IMPORTANT: https://edna-tool.gbif-uat.org/[*the MDT (GBIF eDNA metabarcoding data converter)*] is currently hosted in the GBIF [.underline]#test environment#, and is still a prototype under development. Currently, the MDT can be used to produce a Darwin Core Archive, that can be "published to" and viewed in the https://www.gbif-uat.org/[GBIF test environment (UAT)], but it [.underline]#cannot publish them directly to GBIF.org#.
+
+WARNING: Files uploaded to the MDT and files produced by the MDT are currently stored in the GBIF test environment that cannot be considered a stable repository. Keep a local copy of important files! 
+
+NOTE: the MDT may possibly become a hosted repository, so that endpoints generated by the MDT can be registered with and indexed by with GBIF, OBIS, etc. It may also be a future possibility to be able to publish directly to GBIF.org from the MDT.
+
+TIP: see this https://data-blog.gbif.org/post/installations-and-hosting-solutions-explained/[blog post] on general possibilities to publish and host datasets.

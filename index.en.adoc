@@ -40,7 +40,7 @@ include::0300-data-preparation-structure.en.adoc[]
 
 include::0500-dataset-templates.en.adoc[]
 
-//// include::0600-detailed-user-guide.en.adoc[] ////
+include::0600-detailed-user-guide.en.adoc[]
 
 //// include::0700-publishing.en.adoc[] ////
 
