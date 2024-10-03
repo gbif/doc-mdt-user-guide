@@ -91,7 +91,7 @@ TIP: The order (sorting) of rows and columns in the tables is not important.
 
 NOTE: Generally, most remaining metadata related to OTUs (sequencing platform, primers, etc) will be identical for all samples and OTUs, and these can be placed in the fourth table *Study* with "global" values. If you find that this is not the case, you may be dealing with a *mixed dataset* – i.e. with OTUs/sequences from more than one primer set (e.g. COI _and_ 16S sequences) from the same set of samples. We highly recommend to publish such datasets separately.
 
-TIP: known contaminants or other OTUs that you want to exclude from the final dataset can simply be removed from the *Taxonomy* table alone (and left untouched in the OTU table). 
+TIP: Known contaminants or other OTUs that you want to exclude from the final dataset can simply be removed from the *Taxonomy* table alone (and left untouched in the OTU table). 
 
 *Samples*
 

@@ -5,37 +5,37 @@ This advanced quick start guide handles the processing of a realistic example da
 
 === Advanced example dataset
 
-This quide uses a real metabarcoding dataset of surface seawater metazoan communities. The dataset has been modified to better illustrate some features of the MDT. 
+This guide uses a real metabarcoding dataset of surface seawater metazoan communities. The dataset has been modified to better illustrate some features of the MDT. 
 
-NOTE: The dataset was formatted for publishing to OBIS, and thus OTUs (sequences) identified to organisms not on the WoRMS checklist are provided with unspecified taxonomy (i.e. "Incertae sedis"). Read a more detailed description of the dataset <<example2, here>>. You may explored the dataset in the MDT https://mdt.gbif-uat.org/dataset/3d4e6748-df68-4047-ab04-ac3c3baa7840/review[here].
+NOTE: The dataset was formatted for publishing to OBIS, and thus OTUs (sequences) identified to organisms not on the WoRMS checklist are provided with unspecified taxonomy (i.e. "Incertae sedis"). Read a more detailed description of the dataset <<example2, here>>. You can also explore the dataset in the MDT https://mdt.gbif-uat.org/dataset/3d4e6748-df68-4047-ab04-ac3c3baa7840/review[here].
 
 . Download link:../example_data/example_data2.current.en.xlsx[example_dataset_2].
 . Save the file to your computer.
 . Explore the structure of the example data in Excel or another app.
-** The *OTU_table*. Column headers (_CO1_A1.1006.a.S1.L001, CO1_A3.1006.c.S17.L001, CO1_A2.1006.b.S9.L001, CO1_B3.1007.c.S18.L001, etc._) are the IDs of the 159(160) samples in the dataset. Row names (_merged_CO1_1, merged_CO1_2, merged_CO1_3, etc._) are IDs of the 24744 OTUs. Cells contain sequence read counts. (NB: the 160th column contains a negative control sample _NEG_ that we do not want to include in the final data)
-** The *Taxonomy* table contains the IDs of the OTUs referring to the rownames in the *OTU_table* along with the sequence, and taxonomic information derived from comparing the sequences against NCBI GenBank. Notice how many OTUs have not been possible to identify (or match to a species in the WoRMS Checklist) and are simply named "Incertae sedis" (uncertain placement). 
-** The *Samples* table contains the IDs of the samples referring to the column names in the *OTU_table* table, and some sample metadata: spatiotemporal data, date, etc. Some fields are using DwC terms others are not yet standardized. (NB: The negative control sample _NEG_ has been removed from this table)
-** The *Study* table contains sample or study level information that is the same for the whole dataset - e.g.: primer information, sequencing platform.
+** The *OTU_table*. Column headers (_CO1_A1.1006.a.S1.L001, CO1_A3.1006.c.S17.L001, CO1_A2.1006.b.S9.L001, CO1_B3.1007.c.S18.L001, etc._) are the IDs of the 159(160) samples in the dataset. Row names (_merged_CO1_1, merged_CO1_2, merged_CO1_3, etc._) are IDs of the 24.744 OTUs. Cells contain sequence read counts.
+** The *Taxonomy* table contains the IDs of the OTUs referring to the rownames in the *OTU_table* along with the sequence, and taxonomic information derived from comparing the sequences against NCBI GenBank. Notice that many OTUs have not been possible to identify (_or_ were identified to a species not on the WoRMS Checklist) and are simply named "Incertae sedis" (uncertain placement). 
+** The *Samples* table contains the IDs of the samples referring to the column names in the *OTU_table* table, and sample metadata: spatiotemporal data, date, etc. Some fields are already using DwC terms others are not yet standardized, and will need manual mapping.
+** The *Study* table contains sample or study level information that is the same for the whole dataset - e.g.: primer information, sequencing platform. All fields (the term column) are already using Darwin Core terms as needed for this table.
 
 NOTE: The 160th column of the OTU table corresponds to a negative control sample (NEG), which should be excluded from the final dataset. The MDT will automatically remove any samples that are not present in both the *Samples* and *OTU_table* tables. Since the negative control has already been removed from  *Samples*, it will not be included in the final dataset.
 
 === Log in
 
-IMPORTANT: This guide assumes that you are using the demo version of the MDT.
+IMPORTANT: This guide assumes that you are using the GBIF MDT demo installation.
 
-. Go to the website of the https://edna-tool.gbif-uat.org/[MDT demo^]. (alternatively use another installation of the MDT)
-. Log in with your *UAT login*. (use GBIF login for any other installation of the MDT).
+. Go to the website of the https://edna-tool.gbif-uat.org/[MDT demo^] – alternatively, use another installation of the MDT.
+. Log in with *credentials for the GBIF test environment (UAT)*. – alternatively, use GBIF login for any other MDT installation.
 . Press *New Dataset*.
 
 === Upload data (step 1)
 
-. Drag the example dataset to the upload area, or click and select the file.
+. Drag and drop the example dataset to the upload area, or click and select the file.
 . Give the dataset a nickname (e.g. "my_advanced_test").
 . Press *Start Upload*.
 +
 A green icon will indicate that the XLSX format is detected and OK.
 
-You will get a warning that one of the columns (samples) in the OTU table does not have a corresponding row in the sample table. We knew that, and it is OK (see above).
+You will get a warning that one of the columns – i.e. one Sample ID – in the OTU_table does not have a corresponding row in the Sample table. We knew that, and it is OK (see above).
 
 image::img/advanced_upload.png[]
 
@@ -47,11 +47,11 @@ image::img/advanced_upload.png[]
 
 === Map terms (step 2)
 
-In this step, you define the mapping of fields from the uploaded data, specifying how each field corresponds to the appropriate Darwin Core terms
+In this step, you define the mapping of fields from the uploaded data, specifying how each field corresponds to the applicable Darwin Core terms.
 
 TIP: Press *how to use this form* to get a guided tour of this page.
 
-TIP: Press *Save mapping* once in a while to make sure that you do not get logged out and lose your work.
+TIP: Press *Save mapping* once in a while to make sure that you do not get logged out.
 
 *First inspection*
 
@@ -59,7 +59,7 @@ TIP: Press *Save mapping* once in a while to make sure that you do not get logge
 .. The upper section named *Samples* maps our sample data fields to Darwin Core terms (first column), automatically identifying and mapping four fields from the *Samples* table (second column) and five global fields from the *Study* table (third column) with their identically named Darwin Core counterparts.
 .. The second section named *Taxon* does the same for taxonomic and sequence related information, auto-mapping four fields from the *Taxonomy* table to identically named Darwin Core fields.
 .. The last section *Unmapped fields* lists all the fields in the uploaded data, that has names the tool do not easily recognize. Below there is an option to put unmapped fields into so-called *Extended Measurement Or Facts*.
-. Press "Save Mapping" and see how you get a warning about how some essential fields have not ben mapped.
+. Press "Save Mapping" and see how you get a warning about how some essential fields have not been mapped.
 
 image::img/advanced_mapping.png[]
 
@@ -93,19 +93,19 @@ We expect that Darwin Core can accomodate several of these un-mapped fields, and
 .. Click *Add field*, and see how the field is added to the list of terms.
 .. Now, select our field _Accession_biosamples_ from the drop-down list to map it.
 . We can also see that we forgot to provide the term:mixs[env_medium] in the format recommended using the ENVO ontology, but simply wrote "sea water". To fix that:
-.. Click on the pencil to the right of "sea water"
-.. Remove "sea water" by clicking the "sea water x"
+.. Click on the pencil to the right of "sea water". A dialogue box opens.
+.. Remove "sea water" by clicking the "sea water x".
 .. Search for "coastal sea"
-.. Select  "coastal sea water" with OBO ID "ENVO:00002150". (NB: you can also click the link and explore the ENVO ontology online)
-.. Scroll down and press "OK"
+.. Select  "coastal sea water" with OBO ID "ENVO:00002150". (NB: you can also click the link and explore the ENVO ontology online).
+.. Scroll down and press "OK" to close the dialogue box.
 +
-NOTE: The terms term:mixs[env_broad_scale] and term:mixs[env_local_scale] (below) were also described with the same ontology, but values were correctly was supplied in the uploaded data. Notice how multiple values are possible (shoreline [ENVO:00000486] and intertidal zone [ENVO:00000316] for env_local_scale)
-. As this data was also intended for publishing to OBIS, so-called lsid were provided for the taxonomic names according to WoRMS checklist. Following the recommendations we will map that field to the term:dwc[scientificNameID].
+NOTE: The terms term:mixs[env_broad_scale] and term:mixs[env_local_scale] (below) were also described with the ENVO ontology, but values were correctly was supplied in the uploaded data. Notice how multiple values are possible: `shoreline [ENVO:00000486]` and `intertidal zone [ENVO:00000316]` for term:mixs[env_local_scale].
+. As this data was also intended for publishing to OBIS, so-called lsid were provided for the taxonomic names according to the WoRMS checklist. Following the OBIS recommendations we will map that field to the term:dwc[scientificNameID].
 .. Go to the *Taxon* section.
-.. Click the "Add mapping for another Taxon/ASV field"
-.. Search, find and select term:dwc[scientificNameID]
-.. Map it to _lsid_
-. Similarly add the term term:dwc[taxonRank] and map it to _rank_
+.. Click the "Add mapping for another Taxon/ASV field".
+.. Search, find and select term:dwc[scientificNameID].
+.. Map it to _lsid_.
+. Similarly add the term term:dwc[taxonRank] and map it to _rank_.
 
 Now, looking at *Unmapped fields*, we see that only a few fields remain unmapped. We want to include _salinity_ in the final data but there is no standard field for that. Thus, we will put that into *Extended Measurement Or Facts*.
 
@@ -148,7 +148,7 @@ image::img/advanced_review.png[]
 ** Inspect PCoA/MDS ordination plots (visualization of compositional differences between samples) for outliers, e.g. to see if there any control samples that should have been excluded. Try to color the ordination plot by _salinity_ or _temperature_. NB: we did not map _temperature_ to any DwC term, but unmapped fields are included in the BIOM files facilitating these visualizations.
 ** Select single samples from the map, from charts or from the dropdown, and explore their metadata and taxonomy in the panel to the right.
 ** "Most frequent OTUs" and "Least frequent OTUs" are mainly "Incertae sedis" in this dataset, so those outputs are not so informative in this case.
-. Press *Proceed*
+. Press *Proceed*.
 
 === Add metadata (step 5)
 
@@ -156,15 +156,16 @@ In this step, dataset information is added, including dataset title, description
 
 TIP: Toggle "Show help" to get guidance text for the fields.
 
+.*Edit metadata*. In this section you provide dataset information/metadata in defined sections (left panel): _Basic Metadata, Geographic Coverage, Taxonomic Coverage, etc._ For real datasets it is important to provide rich and detailed information to improve their discoverability and reuse. 
 image::img/advanced_metadata.png[]
 
-The metadata is added in some defined sections: _Basic Metadata, Geographic Coverage, Taxonomic Coverage, etc._ 
+The metadata is added in some defined sections: _Basic Metadata, Geographic Coverage, Taxonomic Coverage, etc_. 
 
 For now we will skip most of the sections, and just add the mandatory. When working with a real dataset, please refer to the section on <<preparation_structure>>. 
 
-. Add a title, e.g. "COI metabarcoding test-dataset”, to replace the nickname provided in the beginning.
+. Add a title, e.g. "COI metabarcoding test-dataset” to replace the nickname provided in the beginning.
 . Select a licence (e.g. CC0).
-. Add a contact for the dataset (minimum: email)
+. Add a contact for the dataset (minimum: email).
 . Explore the other sections if you wish, e.g. the automatic inferrences of Geographic, Taxonomic, and Temporal Coverage.
 . Press *Proceed*.
 
@@ -177,11 +178,11 @@ At this step, the so-called <<dwc-a>> is produced. It can be published directly 
 This process generates the <<dwc-a>> from the data, progressing through several steps, each marked with a green check if successful.
 . Press *Publish to GBIF test environment (UAT)*.
 +
-A notification will inform you that data ingestion may take a few minutes before all samples are visible in the GBIF test environment (UAT). A link to the dataset in the test environment will appear next to the "Publish" button
+A notification will inform you that data ingestion may take a few minutes before all samples are visible in the GBIF test environment (UAT). A link to the dataset in the test environment will appear next to the "Publish" button.
 . Click on the link *Dataset at gbif-uat.org*.
 . Explore the dataset in the GBIF test environment (UAT).
 . Ensure that all information and data is processed and displayed appropriately as you expect.
 
 You should now have an good idea of how you may adapt your own datasets and process them with the MDT.
 
-IMPORTANT: If you followed this guide with your own dataset, your dataset will now be published to a [.underline]#test environment# (UAT). If you want to publish the data to GBIF.org properly: 1) consider consulting the section on <<preparation_structure>> to verify your formatting, 2) read the instructions in the section <<publishing>>.
+IMPORTANT: If you followed this guide with your own dataset, your dataset will now have been published to the GBIF [.underline]#test environment# (UAT). If you want to publish the data to GBIF properly: 1) consider consulting the section on <<preparation_structure>> to verify your formatting, 2) read the instructions in the section <<publishing>> of the detailed user guide.

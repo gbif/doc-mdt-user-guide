@@ -12,7 +12,7 @@ NOTE: This minimal dummy dataset in only to introduce the basics of the MDT, and
 . Download link:../example_data/example_data1.current.en.xlsx[Example Dataset 1].
 . Save the file to your computer.
 . (Optional) Explore the structure of the example data in e.g. Microsoft Excel.
-* The Excel workbook has four sheets: *OTU_table*, *Taxonomy*, *Samples* and *Study*.
+* The Excel Workbook has four sheets: *OTU_table*, *Taxonomy*, *Samples* and *Study*.
 **  *OTU_table* is the OTU table, with sample IDs as column headers, OTU IDs as row names, and sequence read counts in the cells.
 ** *Taxonomy* links OTU IDs (from OTU_table) to sequence and taxonomic info.
 ** *Samples* links sample IDs (from OTU_table) to sample metadata: e.g. spatiotemporal information, protocols etc.
@@ -22,10 +22,10 @@ NOTE: This minimal dummy dataset in only to introduce the basics of the MDT, and
 
 IMPORTANT: This guide assumes that you are using the demo version of the MDT.
 
-. Go to the website of the https://edna-tool.gbif-uat.org/[MDT demo^]. (alternatively use another installation of the MDT)
-. Log in with your *UAT login*. (use GBIF login for any other installation of the MDT).
+. Go to the website of the https://edna-tool.gbif-uat.org/[MDT demo^] – alternatively, use another installation of the MDT.
+. Log in with *credentials for the GBIF test environment (UAT)*. – alternatively, use GBIF login for any other MDT installation.
 +
-NOTE: If you don't have a login, the MDT login prompt will provide a link to the sign-up form.
+NOTE: If you don't have a login, the MDT login prompt will provide a link to a sign-up form.
 
 . Press *New Dataset* in the upper part of the page.
 
@@ -33,8 +33,8 @@ NOTE: If you don't have a login, the MDT login prompt will provide a link to the
 
 image::img/general_step_bar.png[]
 
-. Drag the example dataset to the upload area, OR click and select the file on your computer.
-. Give the dataset a nickname (e.g. "my_first_test")
+. Drag and drop the example dataset to the upload area, OR click and select the file on your computer.
+. Give the dataset a nickname – e.g. "my_first_test".
 . Press *Start Upload*.
 +
 A green icon will indicate that the XLSX format is detected and OK according to some very basic data checks.
@@ -53,7 +53,7 @@ TIP: Press *how to use this form* to get a guided tour of this page.
 
 NOTE: Since this test dataset already uses Darwin Core terms as field names, no manual mapping is required.  
 
-. (optional) Inspect the mapping.
+. (Optional) Inspect the mapping.
 ** The first section concerns the mapping of sample data fields to Darwin Core terms (first column). The MDT has automatically mapped four fields from the *Samples* table (second column) and five fields from the *Study* table (third column) to their identically named Darwin Core counterparts: e.g. the field with sampling dates is called _eventDate_ in the uploaded data corresponding exactly to the Darwin Core term term:dwc[eventDate], and the field _pcr_primer_forward_ corresponds to the term term:mixs[pcr_primer_forward]).
 ** The second section concerns the mapping of taxonomy and sequence related information. Similar to above, the MDT has automatically mapped four fields from the *Taxonomy* table to identically named Darwin Core terms.
 
@@ -67,7 +67,7 @@ NOTE: The option *assign taxonomy* uses the https://www.gbif.org/tools/sequence-
 
 . Press *Process data*.
 
-Standardized intermediate files are produced in the BIOM format, and some basic stats/metrics on the dataset – e.g. number of samples, etc. – are calculated
+Standardized intermediate files in BIOM format are produced, and some basic stats/metrics on the dataset – e.g. number of samples, etc. – are calculated.
 
 image::img/simple_processing.png[]
 
@@ -87,7 +87,7 @@ At this step the processed data can be explored and reviewed to verify that ever
 image::img/simple_review.png[]
 
 [start=2]
-. Press *Proceed*
+. Press *Proceed*.
 
 === Add metadata (step 5)
 
@@ -117,9 +117,9 @@ A notification will indicate that data ingestion may take a few minutes before a
 .. Explore the dataset in the GBIF test environment (UAT)
 .. Go back to the MDT 
 . Click on your username in the top right. Here you can:
-** logout 
-** access your datasets, e.g. to: 
-*** see them in the test environment (UAT)
-*** revise and update dataset and export/publish new versions
+** Logout.
+** Access your datasets, e.g. to: 
+*** See them in the test environment (UAT).
+*** Revise and update dataset and export/publish new versions.
 
 You should now have a basic idea of how the MDT works. Continue with the <<advanced_quick_start>> to learn more.
