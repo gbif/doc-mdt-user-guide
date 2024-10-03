@@ -36,18 +36,18 @@ include::0200-advanced-quick-start.en.adoc[]
 
 include::0300-data-preparation-structure.en.adoc[]
 
-include::0500-dataset-templates.en.adoc[]
+include::0500-detailed-user-guide.en.adoc[]
 
-include::0600-detailed-user-guide.en.adoc[]
+include::0600-dataset-templates.en.adoc[]
 
 include::0800-example-datasets.en.adoc[]
 
 :sectnums!:
-
-include::changelog.en.adoc[]
 
 include::faq.en.adoc[]
 
 include::glossary.en.adoc[]
 
 include::acknowledgements.en.adoc[]
+
+include::changelog.en.adoc[]

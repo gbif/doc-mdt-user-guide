@@ -30,6 +30,8 @@ v0.1, September 2024
 
 The guide will be developed and improved dynamically during the pilot phase https://www.gbif.org/metabarcoding-data-programme[Metabarcoding data programme] with no version control as such. Important changes to the MDT and/or this guide will be listed in the section <<changes>>. 
 
+Input and feedback is very welcome.
+
 === About GBIF
 
 GBIF—the Global Biodiversity Information Facility—is an international network and data infrastructure funded by the world’s governments and aimed at providing anyone, anywhere, open access to data about all types of life on Earth. Coordinated through its Secretariat in Copenhagen, the GBIF network of participating countries and organizations, working through participant nodes, provides data-holding institutions around the world with common standards and open-source tools that enable them to share information about where and when species have been recorded. For more information, visit https://www.gbif.org; for DNA specifically: https://www.gbif.org/dna
