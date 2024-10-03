@@ -65,7 +65,7 @@ image::img/advanced_mapping.png[]
 
 *Completing the mapping*
 
-Starting from the top with *Sample* information, we see:
+Starting from the top with *Sample* information:
 
 [start=3]
 . Notice how the field `id` was correctly identified and mapped.
