@@ -7,7 +7,7 @@ This section provides some extra information on the MDT and the user interface, 
 
 The landing page (home) is where users access their datasets, start new uploads, etc.
 
-img::dg_landing.png[]
+image::img/dg_landing.png[]
 
 ==== Menu Bar  
 
@@ -23,7 +23,7 @@ NOTE: This area is only visible and accessible to MDT managers
 
 The tab _All datasets in this tool_ allows managers to see, sort and access datasets in the MDT installation.
 
-img::dg_admin_datasets[]
+image::img/dg_admin_datasets[]
 
 The tab _Manage organizations and users_ allows managers to configure organizations and user.
 
@@ -40,7 +40,7 @@ In this area users can access the datasets they have uploaded to the MDT.
 IMPORTANT: Do not start editing a dataset that is already published on GBIF.org unless you are certain that it requires correction or updating. If you edit a published dataset, you must make the changes effective by publishing an updated Darwin Core Archive (<dwc-a>) through the MDT. Alternatively, if the dataset is published elsewhere, you must update or replace the old <dwc-a> at the respective endpoint. For changes to dataset metadata only (Edit metadata, step 5): Simply create a new <dwc-a> in the Export (step 6) by clicking "Create Darwin Core Archive.", and publish that. For changes in the mapping (step 2) you must also press "Re-process data" in Process data (step 3) to apply the changes, before creating the updated DwC-A and publishing it. For changes to uploaded files (step 1) you must also redo or verify the mapping in step 2.
 * Datasets can be deleted (trash symbol). More XX
 
-img::dg_mydata.png[]
+image::img/dg_mydata.png[]
 
 ==== Help, feedback and other resources
 
@@ -51,7 +51,7 @@ img::dg_mydata.png[]
 [[dg_upload]]
 === Upload data (processing step 1)
 
-img::dg_upload.png[]
+image::img/dg_upload.png[]
 
 *Files uploaded area*
 
@@ -60,7 +60,7 @@ img::dg_upload.png[]
 
 ==== Troubleshooting
 
-img::dg_invalid_format[][pdfwidth=10%,scaledwidth=10%]
+image::img/dg_invalid_format[][pdfwidth=10%,scaledwidth=10%]
 
 An red check above the Files uploaded area means that the uploaded files are somehow not as expected. Some explanation or orange text below may help interpreting the cause of the error
 
@@ -78,7 +78,7 @@ Suggestions:
 *** Expected name and extensions: Seqs.fasta
 *** Expected formatting: Text-based format. Each entry begins with a header line with a greater-than symbol (">") and the OTU ID. The line(s) after contain the actual sequence.
 
-img::dg_no_corresponding.png[]
+image::img/dg_no_corresponding.png[]
 
 A yellow box with some information that a number of sample or OTU IDs are do not have corresponding entries in another table.
 
@@ -125,14 +125,59 @@ At this step the user options depend on the version (mode) of the MDT used:
 <<pub_demo>>
 ==== GBIF demo MDT installation
 
-img::dg_publish_demo.png[]
+image::img/dg_publish_demo.png[]
 
 The GBIF demo MDT installation cannot publish to GBIF.org.
-If you have processed a dataset in the demo MDT that you would like to publish properly to GBIF.org, you can do the following
-* Publish the dataset to the GBIF TEST environment (UAT) (step 6 - Export), if you haven't already.
-* If have identified a hosted MDT installation 
+If you have processed a dataset in the demo MDT that you would like to publish properly to GBIF.org, you can do the following:
+
+* Check if there is a suitable hosted MDT installation – e.g. national or regional – that you can use for your dataset.
+* If there is a suitable hosted MDT and it is not too much work: reprocess your dataset there.
+* Otherwise:
+* Write a mail to mailto:dna@gbif.org[dna@gbif.org]. Add the following information in the mail:
+** Link to the dataset in the test environment.
+** Your UAT login (used in the demo installation).
+** Your GBIF login (to be used in hosted installations).
+** Your affiliation and country.
+** Name of the suitable hosted MDT (if any).
+** Explain that you wish your dataset published.
+
+<<pub_host_p>>
+==== Hosted installation (publishing mode)
+
+A hosted MDT in publishing mode can publish directly to GBIF.
+
+When you are publishing your first dataset, you will not yet have been associated with a publishing organization. In order to publish your dataset to GBIF, your institution/organisation must be registered as a data publisher in GBIF.
+
+image::img/dg_publish_find_institution.png[]
 
 
+*Find/register your institution*
+* Use the search box under the *Find / register your institution* tab to search for your institution.
+* If your institution is already registered:
+** select it, and click on "Ask for access to publish under this institution/organisation". This will start a preformulated email to the manager of the MDT, asking to associate you with the institutuion in the MDT.
+** Send the mail, and allow some time for the MDT manager to get back you you.
+* If you can´t find your institution/organisation:
+** Click on "Ask for help with registering your institution/organisation". This will start a preformulated email to the manager of the MDT, asking for help with the steps needed in order to get your institution recognized as a GBIF data publisher, and associate you, so your dataset can be published.
+** Add the relevant information about your institution in the mail:
+*** INSTITUTION NAME
+*** INSTITUTION ADDRESS
+*** CONTACT EMAIL
+** Send the mail, and allow some time for the MDT manager to get back you you
+
+
+
+If you have processed a dataset in the demo MDT that you would like to publish properly to GBIF.org, you can do the following:
+
+* Check if there is a suitable hosted MDT installation – e.g. national or regional – that you can use for your dataset.
+* If there is a suitable hosted MDT and it is not too much work: reprocess your dataset there.
+* Otherwise:
+* Write a mail to mailto:dna@gbif.org[dna@gbif.org]. Add the following information in the mail:
+** Link to the dataset in the test environment.
+** Your UAT login (used in the demo installation).
+** Your GBIF login (to be used in hosted installations).
+** Your affiliation and country.
+** Name of the suitable hosted MDT (if any).
+** Explain that you wish your dataset published.
 ==== Publishing through IPT
 
 The https://www.gbif.org/ipt[Integrated Publishing Toolkit] — commonly referred to as the IPT — is free open-source software developed by GBIF and used by organizations around the world to create and manage repositories for sharing biodiversity datasets. If you have access to an IPT and know how to use it, you can download the DwC-A produced by the MDT and publish it through an IPT. By doing so you will unfortunately lose the possibility and functionality of the MDT for updating, re-processing and "analysing" the dataset.

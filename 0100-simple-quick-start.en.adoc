@@ -39,7 +39,7 @@ image::img/general_step_bar.png[]
 +
 A green icon will indicate that the XLSX format is detected and OK according to some very basic data checks.
 
-img::simple_upload.png[]
+image::img/simple_upload.png[]
 
 [start=4]
 . Press *Proceed*
@@ -57,7 +57,7 @@ NOTE: Since this test dataset already uses Darwin Core terms as field names, no 
 ** The first section concerns the mapping of sample data fields to Darwin Core terms (first column). The MDT has automatically mapped four fields from the *Samples* table (second column) and five fields from the *Study* table (third column) to their identically named Darwin Core counterparts: e.g. the field with sampling dates is called _eventDate_ in the uploaded data corresponding exactly to the Darwin Core term term:dwc[eventDate], and the field _pcr_primer_forward_ corresponds to the term term:mixs[pcr_primer_forward]).
 ** The second section concerns the mapping of taxonomy and sequence related information. Similar to above, the MDT has automatically mapped four fields from the *Taxonomy* table to identically named Darwin Core terms.
 
-img::simple_mapping.png[]
+image::img/simple_mapping.png[]
 
 . Press *Proceed* to save the mapping and proceed.
 
@@ -69,7 +69,7 @@ NOTE: The option *assign taxonomy* uses the https://www.gbif.org/tools/sequence-
 
 Standardized intermediate files are produced in the BIOM format, and some basic stats/metrics on the dataset – e.g. number of samples, etc. – are calculated
 
-img::simple_processing.png[]
+image::img/simple_processing.png[]
 
 [start=2]
 . Press *Proceed*
@@ -84,7 +84,7 @@ At this step the processed data can be explored and reviewed to verify that ever
 ** Check ordination plots (PCoA/MDS) for outliers (e.g. control samples that were not excluded).
 ** Select single samples from the map or chart and explore their metadata and taxonomy in the panel to the right.
 
-img::simple_review.png[]
+image::img/simple_review.png[]
 
 [start=2]
 . Press *Proceed*
@@ -98,7 +98,7 @@ In this step, information on the dataset (dataset metadata) is provided. Mandato
 . Add contact information - minimum: email.
 . Leave the other fields empty.
 
-img::simple_metadata.png[]
+image::img/simple_metadata.png[]
 
 [start=5]
 . Press *Proceed*.
