@@ -44,6 +44,8 @@ include::0800-example-datasets.en.adoc[]
 
 :sectnums!:
 
+include::changelog.en.adoc[]
+
 include::faq.en.adoc[]
 
 include::glossary.en.adoc[]

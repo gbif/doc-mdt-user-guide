@@ -1,6 +1,6 @@
 [changes]
 == Important changes/updates
 
-
+2024-10-03: NB: Some sections are still in progress and do not yet have complete draft text.
 
 <<<
