@@ -155,7 +155,7 @@ image::img/dg_publish_find_institution.png[]
 ** Send the mail, and allow some time for the MDT manager to get back you you
 
 .If your institution is already registered, select it and request 'access to publish'. If not, ask for 'help with registering'.
-image::img/dg_publish_find_institution2.png[]
+image::img/dg_publish_find_institution_step2.png[]
 
 [[pub_host_c]]
 ==== Hosted installation (conversion-only)
