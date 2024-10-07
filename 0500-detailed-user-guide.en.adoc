@@ -58,7 +58,7 @@ image::img/dg_upload.png[]
 
 ==== Troubleshooting
 
-image::img/dg_invalid_format[][pdfwidth=10%,scaledwidth=10%]
+image::img/dg_invalid_format[pdfwidth=10%,scaledwidth=10%]
 
 An red check above the Files uploaded area means that the uploaded files are somehow not as expected. Some explanation or orange text below may help interpreting the cause of the error
 
