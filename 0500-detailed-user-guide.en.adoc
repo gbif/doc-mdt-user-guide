@@ -26,7 +26,7 @@ image::img/dg_admin_datasets.png[]
 
 The tab _Manage organizations and users_ allows managers to configure organizations and user.
 
-<mark> Add information! </mark>
+#Add information!#
 
 *My datasets*
 
@@ -89,35 +89,35 @@ Suggestion:
 [[dg_map]]
 === Map terms (processing step 2) 
 
-(<mark> TO BE WRITTEN! </mark>)
+#TO BE WRITTEN!#
 
 See <<advanced_quick_start>> for instructions.
 
 [[dg_process]]
 === Process data (processing step 3)
 
-(<mark> TO BE WRITTEN! </mark>)
+#TO BE WRITTEN!#
 
 See <<advanced_quick_start>> for instructions.
 
 [[dg_review]]
 === Review (processing step 4) 
 
-(<mark> TO BE WRITTEN! </mark>)
+#TO BE WRITTEN!#
 
 See <<advanced_quick_start>> for instructions.
 
 [[dg_metadata]]
 === Edit Metadata (processing step 5) 
 
-(<mark> TO BE WRITTEN! </mark>)
+#TO BE WRITTEN!#
 
 See <<advanced_quick_start>> for instructions.
 
 [[dg_export]]
 === Export (processing step 6)
 
-(<mark> TO BE WRITTEN! </mark>)
+#TO BE WRITTEN!#
 
 See <<advanced_quick_start>> for instructions.
 
@@ -130,7 +130,7 @@ At this step the user options depend on the version (mode) of the MDT used:
 * <<pub_host_c, Hosted installations in conversion-only mode>>
 * <<pub_demo, GBIF demo installation>>
 
-<<pub_host_p>>
+[[pub_host_p]]
 ==== Hosted installation (publishing mode)
 
 A hosted MDT in publishing mode can publish directly to GBIF.
@@ -157,23 +157,23 @@ image::img/dg_publish_find_institution.png[]
 .If your institution is already registered, select it and request 'access to publish'. If not, ask for 'help with registering'.
 image::img/dg_publish_find_institution2.png[]
 
-<<pub_host_c>>
+[[pub_host_c]]
 ==== Hosted installation (conversion-only)
 
 image::img/dg_publish_demo.png[]
 
 The hosted MDT installation in conversion-only mode cannot publish to GBIF.
 
-<mark> NOTE: Section to be written </mark>
+NOTE: #Section to be written#
 
-<<pub_demo>>
+[[pub_demo]]
 ==== GBIF demo MDT installation
 
 image::img/dg_publish_demo.png[]
 
 The GBIF demo MDT installation cannot publish to GBIF.
 
-If you have processed a dataset in the demo MDT that you would like to publish properly to GBIF.org, you can do the following (<mark> TO BE UPDATED! </mark>):
+If you have processed a dataset in the demo MDT that you would like to publish properly to GBIF.org, you can do the following (#TO BE UPDATED! #):
 
 * Check if there is a suitable hosted MDT installation – e.g. national or regional – that you can use for your dataset.
 * If there is a suitable hosted MDT and it is not too much work: reprocess your dataset there.
@@ -219,7 +219,7 @@ You may run into challenges if you are using older versions of the IPT and/or if
 * Update the DNA Metabarcoding dataset (the files uploaded to the MDT)
 * Process them in an MDT
 * Download the new DwC-A
-* Replace the DwC-A in the IPT (<mark>How is that done ?</mark>)
+* Replace the DwC-A in the IPT (#How is that done ?#)
 
 ==== Registering an DwC-A hosted elsewhere
 
@@ -229,7 +229,7 @@ A Darwin Core Archive produced with the MDT may be put elsewhere on the web – 
 
 * Download the DwC-A (archive.zip) from the MDT.
 * Put the archive somewhere in a stable repository so you have an URL: www/xxx/archive.zip
-* Register the dataset with the relevant publisher in the GBIF registry (<mark>How is that done ?</mark>).
+* Register the dataset with the relevant publisher in the GBIF registry (#How is that done ?#).
 
 [[installations]]
 === Types of MDT installations
