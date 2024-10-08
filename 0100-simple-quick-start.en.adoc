@@ -90,17 +90,18 @@ image::img/simple_metadata.png[]
 
 === Export (step 6)
 
+image::img/simple_export_header.png[]
+
 At this step, the so-called <<dwc-a>> is produced. It can be published directly to the GBIF test environment (UAT) from the MDT.
 
-. Press *Create DWC archive*.
-+
-This process generates the <<dwc-a>> from the data, progressing through several steps, each marked with a green check if successful.
+. Press *Create DWC archive*.to generate a <<dwc-a>>.
 . Press *Publish to GBIF test environment (UAT)*.
-+
-A notification will indicate that data ingestion may take a few minutes before all samples appear in the GBIF test environment (UAT). A link to the dataset in the test environment (UAT) will appear next to the Publish button.
-. (Optional) Click on the hyperlink *Dataset at gbif-uat.org*.
-.. Explore the dataset in the GBIF test environment (UAT)
-.. Go back to the MDT 
+
+.*Export* – pressing *Create DWC archive* generates a <<dwc-a>> from the data through several steps, each marked with a green check as successful. Pressing *Publish to GBIF test environment (UAT)* will register the dataset (<<dwc-a>>) in the GBIF test environment. A notification indicates that it may take a few minutes. A link to the "test dataset" appears next to the Publish button.
+image::img/simple_export.png[]
+
+[start=3]
+. (Optional) Click on the hyperlink *Dataset at gbif-uat.org* to explore the dataset in the GBIF test environment (UAT). Go back to the MDT. 
 . Click on your username in the top right. Here you can:
 ** Logout.
 ** Access your datasets, e.g. to: 
