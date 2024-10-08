@@ -38,11 +38,11 @@ image::img/simple_upload.png[]
 
 image::img/simple_mapping_header.png[]
 
-Specify the mapping of the fields – i.e. indicate how the field names correspond to Darwin Core terms.
-
-TIP: *how to use this form* for a guided tour.
+At this step, mapping of the fields is specified – i.e. indicate the field names of uploaded data correspond to Darwin Core terms.
 
 NOTE: Example dataset 1 uses Darwin Core terms as field names, no manual mapping required.  
+
+TIP: *how to use this form* for a guided tour.
 
 .*Sample* – the first section concerns the mapping of sample data fields to Darwin Core terms (first column). The MDT has automatically mapped four fields from the *Samples* table (second column) and five fields from the *Study* table (third column) to their identically named Darwin Core counterparts: e.g. the field with sampling dates is called _eventDate_ in the uploaded data corresponding exactly to the Darwin Core term term:dwc[eventDate], and the field _pcr_primer_forward_ corresponds to the term term:mixs[pcr_primer_forward]).
 image::img/simple_mapping_sample.png[]
@@ -70,6 +70,8 @@ image::img/simple_processing.png[]
 
 image::img/simple_review_header.png[]
 
+At this step, data is reviewed to ensure that everything looks OK.
+
 .The processed data can be explored and reviewed to ensure that everything looks as expected – Check the geolocation in the map (here: northern part on Denmark); Check the taxonomic composition in the barcharts; Check ordination plots (PCoA/MDS) for outliers (e.g. control samples not excluded); Select samples from the map or charts and explore metadata and taxonomy in the panel to the right.
 image::img/simple_review.png[].
 
@@ -79,10 +81,12 @@ image::img/simple_review.png[].
 
 image::img/simple_metadata_header.png[]
 
-.*Add metadata* – in this step, information on the dataset (dataset metadata) is provided. Mandatory fields must be completed in order to proceed. Here we ignore the remaining fields.
+At this step, information on the dataset is provided.
+
+.*Add metadata* – Notive how there a several sections with metadata (left panle with section headers). For real datasets it is important to provide rich and meaningful data at this step.
 image::img/simple_metadata.png[]
 
-. Add a meaningful title (e.g. “my first test dataset”).
+. Add a title to replace nickname – e.g. “my first simple test dataset”.
 . Select a licence.
 . Add contact information - minimum: email.
 . Leave the other fields empty.
@@ -92,19 +96,19 @@ image::img/simple_metadata.png[]
 
 image::img/simple_export_header.png[]
 
-At this step, the so-called <<dwc-a>> is produced. It can be published directly to the GBIF test environment (UAT) from the MDT.
+At this step, the so-called <<dwc-a>> is produced. This is file type that can be indexed by (published through) GBIF. In the MDT demo installation, the archive can be published directly to the GBIF test environment (UAT) to see how a real GBIF publication would look like.
 
 . Press *Create DWC archive*.to generate a <<dwc-a>>.
 . Press *Publish to GBIF test environment (UAT)*.
 
-.*Export* – pressing *Create DWC archive* generates a <<dwc-a>> from the data through several steps, each marked with a green check as successful. Pressing *Publish to GBIF test environment (UAT)* will register the dataset (<<dwc-a>>) in the GBIF test environment. A notification indicates that it may take a few minutes. A link to the "test dataset" appears next to the Publish button.
+.*Export* – *Create DWC archive* generates a <<dwc-a>> from the data through several steps, each marked with a green check as successful. *Publish to GBIF test environment (UAT)* will register the dataset (<<dwc-a>>) in the GBIF test environment. A notification indicates that it may take a few minutes before the indexing is complete. A link to the "test dataset" appears next to the Publish button.
 image::img/simple_export.png[]
 
 [start=3]
-. (Optional) Click on the hyperlink *Dataset at gbif-uat.org* to explore the dataset in the GBIF test environment (UAT). Go back to the MDT. 
+. Click on the hyperlink *Dataset at gbif-uat.org* to explore the dataset in the GBIF test environment (UAT). Go back to the MDT. (come back later when the indexing is complete)
 . Click on your username in the top right. Here you can:
 ** Logout.
-** Access your datasets, e.g. to: 
+** Access all your datasets, e.g. to: 
 *** See them in the test environment (UAT).
 *** Revise and update dataset and export/publish new versions.
 
