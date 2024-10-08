@@ -73,7 +73,7 @@ image::img/simple_review_header.png[]
 At this step, data is reviewed to ensure that everything looks OK.
 
 .The processed data can be explored and reviewed to ensure that everything looks as expected – Check the geolocation in the map (here: northern part on Denmark); Check the taxonomic composition in the barcharts; Check ordination plots (PCoA/MDS) for outliers (e.g. control samples not excluded); Select samples from the map or charts and explore metadata and taxonomy in the panel to the right.
-image::img/simple_review.png[].
+image::img/simple_review.png[]
 
 . Press *Proceed*.
 
