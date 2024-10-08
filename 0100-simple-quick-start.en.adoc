@@ -1,16 +1,15 @@
 [[simple_quick_start]]
 == Simple Quick Start Guide
 
-The two quick start guides should introduce most users to the key features needed to use the MDT.
+A Simple Quick Start Guide with minimal explanation.
 
-This Simple Quick Start Guide leads users through processing a dataset with minimal explanation.
+IMPORTANT: This guide assumes that you are using the demo version of the MDT, where log-in is with *credentials for the GBIF test environment (UAT)*.
 
 === Simple example dataset
 
-NOTE: This minimal dummy dataset in only to introduce the basics of the MDT, and should not be seen as an model for real data. It is based on template 1 (see <<templates>> section), and is decribed in the <<example_data>> section.
+NOTE: Minimal dummy dataset, not a model for real data. Based on <<template1, template 1>>
 
 . Download link:../example_data/example_data1.current.en.xlsx[Example Dataset 1].
-. Save the file to your computer.
 . (Optional) Explore the structure of the example data in e.g. Microsoft Excel.
 * The Excel Workbook has four sheets: *OTU_table*, *Taxonomy*, *Samples* and *Study*.
 **  *OTU_table* is the OTU table, with sample IDs as column headers, OTU IDs as row names, and sequence read counts in the cells.
@@ -18,48 +17,41 @@ NOTE: This minimal dummy dataset in only to introduce the basics of the MDT, and
 ** *Samples* links sample IDs (from OTU_table) to sample metadata: e.g. spatiotemporal information, protocols etc.
 ** *Study* holds global values for the dataset, such as barcoding region, primer sequences, and primer names.
 
-=== Log in
-
-IMPORTANT: This guide assumes that you are using the demo version of the MDT.
-
-. Go to the website of the https://edna-tool.gbif-uat.org/[MDT demo^] – alternatively, use another installation of the MDT.
-. Log in with *credentials for the GBIF test environment (UAT)*. – alternatively, use GBIF login for any other MDT installation.
-+
-NOTE: If you don't have a login, the MDT login prompt will provide a link to a sign-up form.
-
-. Press *New Dataset* in the upper part of the page.
-
 === Upload data (step 1)
+
+. Go to https://edna-tool.gbif-uat.org/[MDT demo^] and log in.
+. Press *New Dataset* in the upper part of the page.
 
 image::img/general_step_bar.png[]
 
-. Drag and drop the example dataset to the upload area, OR click and select the file on your computer.
-. Give the dataset a nickname – e.g. "my_first_test".
+. Drag and drop the dataset OR click and select on your computer.
+. Give it a nickname – e.g. "my_first_test".
 . Press *Start Upload*.
 +
-A green icon will indicate that the XLSX format is detected and OK according to some very basic data checks.
+A green icon indicates that XLSX format is detected and OK.
 
 image::img/simple_upload.png[]
 
 [start=4]
 . Press *Proceed*
 
-
 === Map terms (step 2)
 
-In this step, you specify the mapping of the fields in the uploaded data, indicating how the fields correspond to Darwin Core terms.
+Specify the mapping of the fields – i.e. indicate how the field names correspond to Darwin Core terms.
 
-TIP: Press *how to use this form* to get a guided tour of this page.
+TIP: *how to use this form* for a guided tour.
 
-NOTE: Since this test dataset already uses Darwin Core terms as field names, no manual mapping is required.  
+NOTE: Example dataset 1 uses Darwin Core terms as field names, no manual mapping required.  
 
-. (Optional) Inspect the mapping.
-** The first section concerns the mapping of sample data fields to Darwin Core terms (first column). The MDT has automatically mapped four fields from the *Samples* table (second column) and five fields from the *Study* table (third column) to their identically named Darwin Core counterparts: e.g. the field with sampling dates is called _eventDate_ in the uploaded data corresponding exactly to the Darwin Core term term:dwc[eventDate], and the field _pcr_primer_forward_ corresponds to the term term:mixs[pcr_primer_forward]).
-** The second section concerns the mapping of taxonomy and sequence related information. Similar to above, the MDT has automatically mapped four fields from the *Taxonomy* table to identically named Darwin Core terms.
+. (Optional) Inspect mapping.
 
-image::img/simple_mapping.png[]
+.*Sample* – the first section concerns the mapping of sample data fields to Darwin Core terms (first column). The MDT has automatically mapped four fields from the *Samples* table (second column) and five fields from the *Study* table (third column) to their identically named Darwin Core counterparts: e.g. the field with sampling dates is called _eventDate_ in the uploaded data corresponding exactly to the Darwin Core term term:dwc[eventDate], and the field _pcr_primer_forward_ corresponds to the term term:mixs[pcr_primer_forward]).
+image::img/simple_mapping_sample.png[]
 
-. Press *Proceed* to save the mapping and proceed.
+.*Taxon – the second section concerns the mapping of taxonomy and sequence related information. Similar to above, the MDT has automatically mapped four fields from the *Taxonomy* table to identically named Darwin Core terms.
+image::img/simple_mapping_taxon.png[]
+
+. Press *Proceed* to save mapping and proceed.
 
 === Process data (step 3)
 

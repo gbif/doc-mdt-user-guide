@@ -33,7 +33,7 @@ Tables/Files required for uploading a dataset to the MDT
 * *Seqs.fasta*: (optional) A file containing the OTU sequences in fasta format, as an alternative to including them in the *Taxonomy* table. 
 
 .The OTU table. A minimalistic example of an *OTU_table* with 5 samples (Sample_A, Sample_B,..) as columns and 4 OTUs (OTU_001, OTU_002,..) as rows. Green boxes and arrow indicate the linking of the OTUs by their IDs to second table *Taxonomy* with taxonomic/sequence data data. Blue boxes and arrow indicate the the linking of samples by their IDs to the third table *Samples* with and sample metadata.
-image::img/OTU_table_all_filed.png[]
+image::img/OTU_table_all_files.png[]
 
 === Preparing a dataset
 
@@ -113,7 +113,7 @@ Although optional, using this table is highly recommended for providing informat
 * Use only correcly spelled and formatted names for the terms, as manual mapping is not possible for this table.
 
 .The optional *Study* table. A minimalistic with 5 term-value pairs describing metadata relevant for all samples in the dataset.
-image::img/study_table.png[]
+image::img/study_table.png[pdfwidth=40%,scaledwidth=40%]
 
 *Seqs.fasta* (optional)
 
@@ -129,7 +129,7 @@ Entries are separated by the ">" symbol, which marks the start of each new seque
 The name of the file should be *Seqs.fasta*.
 
 .The optional *Seqs.fasta* file. A text file with the DNA sequences associated with the OTUs in fasta format.
-image::img/fasta_file.png[]
+image::img/fasta_file.png[pdfwidth=40%,scaledwidth=40%]
 
 *Dataset descriptions, people and other metadata*
 

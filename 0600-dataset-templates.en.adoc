@@ -3,6 +3,7 @@
 
 This section provides and describes the available templates, that will allow you to format OTU tables to be uploaded to the MDT. The templates include all the required and recommended fields and a few more. Refer to the section <<preparation_structure>> – specifically the section <<fit_data>> – for detailed information and best practices on how to prepare and structure datasets for uploading and processing, and the section <<req_recom>> for information on required and recommended fields.
 
+[[template1]]
 === OTU table template 1 – Excel workbook
 
 A workbook with three/four sheets: *OTU_table*, *Taxonomy*, *Samples* and (optionally) *Study*. The latter (*Study*) contains study-wide global values. The *OTU_table* must have samples as columns and OTUs as rows.
