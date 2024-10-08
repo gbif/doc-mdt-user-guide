@@ -67,31 +67,25 @@ image::img/simple_processing.png[]
 
 === Review (step 4)
 
-At this step the processed data can be explored and reviewed to verify that everything is OK, e.g. ensure that control samples are not included as samples, and that the mapping is as expected.
+image::img/simple_review_header.png[].
 
-. (_Optional_) Review the data.
-** Check the map and verify that the samples are placed geographically where expected (Northern part on Denmark). 
-** Check the taxonomic barchart to ensure that taxonomic composition is as expected.
-** Check ordination plots (PCoA/MDS) for outliers (e.g. control samples that were not excluded).
-** Select single samples from the map or chart and explore their metadata and taxonomy in the panel to the right.
 
-image::img/simple_review.png[]
+.The processed data can be explored and reviewed to ensure that everything looks as expected – Check the geolocation in the map (here: northern part on Denmark); Check the taxonomic composition in the barcharts; Check ordination plots (PCoA/MDS) for outliers (e.g. control samples not excluded); Select samples from the map or charts and explore metadata and taxonomy in the panel to the right.
+image::img/simple_review.png[].
 
-[start=2]
 . Press *Proceed*.
 
 === Add metadata (step 5)
 
-In this step, information on the dataset (dataset metadata) is provided. Mandatory fields must be completed in order to proceed. Here we ignore the remaining fields.
+image::img/simple_metadata_header.png[]
+
+.*Add metadata* – in this step, information on the dataset (dataset metadata) is provided. Mandatory fields must be completed in order to proceed. Here we ignore the remaining fields.
+image::img/simple_metadata.png[]
 
 . Add a meaningful title (e.g. “my first test dataset”).
 . Select a licence.
 . Add contact information - minimum: email.
 . Leave the other fields empty.
-
-image::img/simple_metadata.png[]
-
-[start=5]
 . Press *Proceed*.
 
 === Export (step 6)
