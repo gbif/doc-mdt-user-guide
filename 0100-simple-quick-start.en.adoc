@@ -48,19 +48,18 @@ NOTE: Example dataset 1 uses Darwin Core terms as field names, no manual mapping
 .*Sample* – the first section concerns the mapping of sample data fields to Darwin Core terms (first column). The MDT has automatically mapped four fields from the *Samples* table (second column) and five fields from the *Study* table (third column) to their identically named Darwin Core counterparts: e.g. the field with sampling dates is called _eventDate_ in the uploaded data corresponding exactly to the Darwin Core term term:dwc[eventDate], and the field _pcr_primer_forward_ corresponds to the term term:mixs[pcr_primer_forward]).
 image::img/simple_mapping_sample.png[]
 
-.*Taxon – the second section concerns the mapping of taxonomy and sequence related information. Similar to above, the MDT has automatically mapped four fields from the *Taxonomy* table to identically named Darwin Core terms.
+.*Taxon* – the second section concerns the mapping of taxonomy and sequence related information. Similar to above, the MDT has automatically mapped four fields from the *Taxonomy* table to identically named Darwin Core terms.
 image::img/simple_mapping_taxon.png[]
 
 . Press *Proceed* to save mapping and proceed.
 
 === Process data (step 3)
 
-NOTE: The option *assign taxonomy* uses the https://www.gbif.org/tools/sequence-id[GBIF Sequence ID tool^] to assign taxonomy to the sequences. This overwrites any taxonomy provided in the uploaded data. We will not use that option here.
+NOTE: *assign taxonomy* uses the https://www.gbif.org/tools/sequence-id[GBIF Sequence ID tool^] to assign taxonomy to the sequences. This overwrites any taxonomy provided. We will not use that option here.
 
 . Press *Process data*.
 
-Standardized intermediate files in BIOM format are produced, and some basic stats/metrics on the dataset – e.g. number of samples, etc. – are calculated.
-
+.*Process data* – standardized intermediate files (in BIOM) and some calculated metrics are generated.
 image::img/simple_processing.png[]
 
 [start=2]
