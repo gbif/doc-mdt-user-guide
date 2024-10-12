@@ -114,7 +114,7 @@ Recommended for metadata applying to the whole dataset (e.g., primer info, platf
 * Ensure correct term spelling, as manual mapping is not allowed.
 
 .The optional *Study* table. A minimalistic with 5 term-value pairs describing metadata relevant for all samples in the dataset.
-image::img/study_table.png[pdfwidth=40%,scaledwidth=40%]
+image::img/study_table.png[pdfwidth=20%,scaledwidth=20%]
 
 *Seqs.fasta* (optional)
 
@@ -126,7 +126,7 @@ The MDT accepts a https://en.wikipedia.org/wiki/FASTA_format[fasta file^] for se
 * Separate entries by ">" symbols.
 
 .The optional *Seqs.fasta* file. A text file with the DNA sequences associated with the OTUs in fasta format.
-image::img/fasta_file.png[pdfwidth=40%,scaledwidth=40%]
+image::img/fasta_file.png[pdfwidth=20%,scaledwidth=20%]
 
 [[req_recom]]
 === Required and recommended fields

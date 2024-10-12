@@ -32,8 +32,6 @@ include::introduction.en.adoc[]
 
 include::0100-simple-quick-start.en.adoc[]
 
-//// include::0200-advanced-quick-start.en.adoc[] ////
-
 include::0300-data-preparation-structure.en.adoc[]
 
 include::0400-detailed-guide.en.adoc[]
