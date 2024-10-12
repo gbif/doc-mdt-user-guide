@@ -1,7 +1,9 @@
 [[introduction]]
 == Introduction
 
-#Idea: move some of the Introduction to a resources section#
+IMPORTANT: #The MDT and this guide is continuously being developed. Even when using the most recent version of the guide, it may be slightly out of sync with the exact appearance of the MDT.#
+
+_editor idea: move some of the Introduction to a "resources" section_
 
 === GBIF and DNA
 
