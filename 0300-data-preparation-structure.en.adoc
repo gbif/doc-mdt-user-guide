@@ -128,12 +128,13 @@ The MDT accepts a https://en.wikipedia.org/wiki/FASTA_format[fasta file^] for se
 .The optional *Seqs.fasta* file. A text file with the DNA sequences associated with the OTUs in fasta format.
 image::img/fasta_file.png[pdfwidth=20%,scaledwidth=20%]
 
+
 [[req_recom]]
 === Required and recommended fields
 
- All fields from https://dwc.tdwg.org/list/#dwc_Occurrence[Darwin Core Occurrence] and the http://rs.gbif.org/terms/1.0/DNADerivedData[DNA derived data extension] can be used to describe the dataset. 
- 
- This sections details the usage of required and recommended fields.
+All fields from https://dwc.tdwg.org/list/#dwc_Occurrence[Darwin Core Occurrence] and the http://rs.gbif.org/terms/1.0/DNADerivedData[DNA derived data extension] can be used to describe the dataset. 
+
+This sections details the usage of required and recommended fields.
 
 ==== Quick reference on required and recommended fields
 
