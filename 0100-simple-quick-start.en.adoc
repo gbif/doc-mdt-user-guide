@@ -112,4 +112,4 @@ image::img/simple_export.png[]
 *** See them in the test environment (UAT).
 *** Revise and update dataset and export/publish new versions.
 
-You should now have a basic idea of how the MDT works. Continue with the <<advanced_quick_start>> to learn more.
+You should now have a basic idea of how the MDT works.
