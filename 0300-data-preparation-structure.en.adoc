@@ -109,7 +109,7 @@ TIP: Exclude control samples, etc. by removing them from the *Samples* table onl
 
 Recommended for metadata applying to the whole dataset (e.g., primer info, platform). Reduces redundancy and minimizes errors.
 
-* Two columns: _term_ and _value_. Use terms from https://dwc.tdwg.org/list/#dwc_Occurrence[Darwin Core] and http://rs.gbif.org/terms/1.0/DNADerivedData[DNA derived data extension].
+* Two columns: _term_ and _value_. Use terms from https://dwc.tdwg.org/list/#dwc_Occurrence[Darwin Core Occurrence] and http://rs.gbif.org/terms/1.0/DNADerivedData[DNA derived data extension].
 * Include as many required/recommended fields as possible.
 * Ensure correct term spelling, as manual mapping is not allowed.
 
@@ -131,7 +131,9 @@ image::img/fasta_file.png[pdfwidth=20%,scaledwidth=20%]
 [[req_recom]]
 === Required and recommended fields
 
- All fields from https://dwc.tdwg.org/list/#dwc_Occurrence[Darwin Core Occurrence] and the http://rs.gbif.org/terms/1.0/DNADerivedData[DNA derived data extension] can be used to describe the dataset. This sections details the usage of required and recommended fields.
+ All fields from https://dwc.tdwg.org/list/#dwc_Occurrence[Darwin Core Occurrence] and the http://rs.gbif.org/terms/1.0/DNADerivedData[DNA derived data extension] can be used to describe the dataset. 
+ 
+ This sections details the usage of required and recommended fields.
 
 ==== Quick reference on required and recommended fields
 
