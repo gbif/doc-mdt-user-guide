@@ -39,3 +39,5 @@ GBIF—the Global Biodiversity Information Facility—is an international networ
 === Cover image
 
 Graphic by Javier Andrés Gamboa Martínez, Communications Officer, GBIF Secretariat.
+
+<<<

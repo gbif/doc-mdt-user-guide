@@ -113,3 +113,5 @@ image::img/simple_export.png[]
 *** Revise and update dataset and export/publish new versions.
 
 You should now have a basic idea of how the MDT works.
+
+<<<

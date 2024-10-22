@@ -156,7 +156,7 @@ When using the MDT, it's not essential to distinguish between Darwin Core Occurr
 
 [[table-01]]
 .Recommended fields for http://rs.gbif.org/core/dwc_occurrence_2020-04-15.xml[Occurrence core] for Metabarcoding data. This table is a modified version of table 2 in the https://docs.gbif.org/publishing-dna-derived-data/en/#mapping-metabarcoding-edna-and-barcoding-data[dna-publishing guide] specifically for using the MDT.
-[cols="1,1,4,1,1",options="header"]
+[cols="1,2,4,1,1",options="header"]
 |===
 | Field name
 | Examples / explanation
@@ -321,7 +321,7 @@ https://github.com/terrimporter/CO1Classifier
 
 [[table-02]]
 .Recommended fields from the DNA derived data extension (a selection) for metabarcoding data. This table is a modified version of table 3 in the https://docs.gbif.org/publishing-dna-derived-data/en/#mapping-metabarcoding-edna-and-barcoding-data[dna-publishing guide] specifically for using the MDT.
-[cols="1,1,4,1,1",options="header"]
+[cols="1,2,4,1,1",options="header"]
 |===
 | Field name
 | Examples
