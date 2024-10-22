@@ -1,6 +1,14 @@
 [[changes]]
 == Important changes/updates
 
-2024-10-03: NB: Some sections are still in progress and do not yet have complete draft text.
+* 2024-10-22 (v0.1.1, October 2024): NB: Some sections are still in progress and do not yet have complete draft text. Some major rearrangements and simplifications have been carried out.
+* 2024-10-03: NB: Some sections are still in progress and do not yet have complete draft text.
+
+To Do:
+
+* Add publish step to the simple guide
+* Add section on MDT administrator specific actions
+* Add glossary term links throughout the text?
+
 
 <<<

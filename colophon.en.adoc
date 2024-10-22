@@ -26,7 +26,7 @@ This guide aims to help anyone interested in learning to use the Metabarcoding D
 
 === Document control
 
-v0.1, September 2024
+v0.1.1, October 2024
 
 The guide will be developed and improved dynamically during the pilot phase https://www.gbif.org/metabarcoding-data-programme[Metabarcoding data programme] with no version control as such. Important changes to the MDT and/or this guide will be listed in the section <<changes>>. 
 
