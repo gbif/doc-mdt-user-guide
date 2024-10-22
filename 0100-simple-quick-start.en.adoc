@@ -5,9 +5,7 @@ A Simple Quick Start Guide with minimal explanation.
 
 IMPORTANT: This guide assumes that you are using the demo version of the MDT, where log-in is with *credentials for the GBIF test environment (UAT)*.
 
-=== Simple example dataset
-
-NOTE: Minimal dummy dataset, not a model for real data. Based on <<template1, template 1>>
+This guide uses a _minimal dummy dataset_ – not to be used as a model for real data. The dataset is based on <<template1, template 1>>
 
 . Download link:../example_data/example_data1.current.en.xlsx[Example Dataset 1].
 . (Optional) Explore the structure of the example data in e.g. Microsoft Excel.
@@ -31,36 +29,36 @@ image::img/general_step_bar.png[]
 
 image::img/simple_upload.png[]
 
-[start=4]
+[start=6]
 . Press *Proceed*
 
 === Map terms (step 2)
 
 image::img/simple_mapping_header.png[]
 
-At this step, mapping of the fields is specified – i.e. indicate the field names of uploaded data correspond to Darwin Core terms.
+The user specifies and verifies how field names of uploaded data (second and third column on the page) correspond to standardized terms (first column on the page).
 
-NOTE: Example dataset 1 uses Darwin Core terms as field names, no manual mapping required.  
+NOTE: Example dataset 1 uses standard terms (Darwin Core terms) as field names – no manual mapping required.
 
-TIP: *how to use this form* for a guided tour.
+TIP: *How to use this form* for a guided tour.
 
-.*Sample* – the first section concerns the mapping of sample data fields to Darwin Core terms (first column). The MDT has automatically mapped four fields from the *Samples* table (second column) and five fields from the *Study* table (third column) to their identically named Darwin Core counterparts: e.g. the field with sampling dates is called _eventDate_ in the uploaded data corresponding exactly to the Darwin Core term term:dwc[eventDate], and the field _pcr_primer_forward_ corresponds to the term term:mixs[pcr_primer_forward]).
+.The first section (*Sample*) concerns the mapping of metadata associated with samples. The MDT has automatically mapped four fields from the uploaded *Samples* table and five fields from the *Study* table to their identically named Darwin Core counterparts: e.g. the field with sampling dates is called _eventDate_ in the uploaded data corresponding exactly to the Darwin Core term term:dwc[eventDate], and the field _pcr_primer_forward_ corresponds to the term term:mixs[pcr_primer_forward]).
 image::img/simple_mapping_sample.png[]
 
-.*Taxon* – the second section concerns the mapping of taxonomy and sequence related information. Similar to above, the MDT has automatically mapped four fields from the *Taxonomy* table to identically named Darwin Core terms.
+.The second section (*Taxon*) concerns the mapping of metadata associated with the OTUs, i.e. taxonomy and sequence related information. Similar to above, the MDT has automatically mapped all fields from the uploaded *Taxonomy* table to identically named Darwin Core terms.
 image::img/simple_mapping_taxon.png[]
 
-. Press *Proceed* to save mapping and proceed.
+Press *Proceed* to save mapping and proceed.
 
 === Process data (step 3)
 
 image::img/simple_processing_header.png[]
 
-NOTE: *assign taxonomy* uses the https://www.gbif.org/tools/sequence-id[GBIF Sequence ID tool^] to assign taxonomy to the sequences. This overwrites any taxonomy provided. We will not use that option here.
+NOTE: *Assign taxonomy* uses the https://www.gbif.org/tools/sequence-id[GBIF Sequence ID tool^] to assign taxonomy to the sequences. This overwrites any taxonomy provided. We will not use that option here.
 
 . Press *Process data*.
 
-.*Process data* – standardized intermediate files (in BIOM) and some calculated metrics are generated.
+.When pressing *Process data* standardized intermediate files (in BIOM) and some calculated metrics are generated.
 image::img/simple_processing.png[]
 
 [start=2]
@@ -72,10 +70,10 @@ image::img/simple_review_header.png[]
 
 At this step, data is reviewed to ensure that everything looks OK.
 
-.The processed data can be explored and reviewed to ensure that everything looks as expected – Check the geolocation in the map (here: northern part on Denmark); Check the taxonomic composition in the barcharts; Check ordination plots (PCoA/MDS) for outliers (e.g. control samples not excluded); Select samples from the map or charts and explore metadata and taxonomy in the panel to the right.
+.Explore and review the processed data to ensure that everything looks as expected. E.g.: Check the geolocation in the map (here: northern part on Denmark); Check the taxonomic composition in the barcharts; Check ordination plots (PCoA/MDS) for outliers (e.g. control samples not excluded); Select samples from the map or charts and explore metadata and taxonomy in the panel to the right.
 image::img/simple_review.png[]
 
-. Press *Proceed*.
+Press *Proceed*.
 
 === Add metadata (step 5)
 
@@ -83,31 +81,36 @@ image::img/simple_metadata_header.png[]
 
 At this step, information on the dataset is provided.
 
-.*Add metadata* – Notive how there a several sections with metadata (left panle with section headers). For real datasets it is important to provide rich and meaningful data at this step.
+.*Dataset information* – Notive how the left panel offers several sections for providing dataset information/metadata. *NB: For real datasets it is important to provide rich and meaningful data at this step*.
 image::img/simple_metadata.png[]
 
 . Add a title to replace nickname – e.g. “my first simple test dataset”.
 . Select a licence.
 . Add contact information - minimum: email.
-. Leave the other fields empty.
-. Press *Proceed*.
+. Leave the other fields empty (as this is just a test).
+. Press *Proceed* to save the metadata and proceed.
 
 === Export (step 6)
 
 image::img/simple_export_header.png[]
 
-At this step, the so-called <<dwc-a>> is produced. This is file type that can be indexed by (published through) GBIF. In the MDT demo installation, the archive can be published directly to the GBIF test environment (UAT) to see how a real GBIF publication would look like.
+At this step, the so-called <<dwc-a>> is produced. This is the file type that can be indexed by (published through) GBIF. In the MDT demo installation, the archive can be published directly to the GBIF test environment (UAT) allowing the user to explore how a real publication to GBIF.org would look like.
 
 . Press *Create DWC archive*.to generate a <<dwc-a>>.
 . Press *Publish to GBIF test environment (UAT)*.
 
-.*Export* – *Create DWC archive* generates a <<dwc-a>> from the data through several steps, each marked with a green check as successful. *Publish to GBIF test environment (UAT)* will register the dataset (<<dwc-a>>) in the GBIF test environment. A notification indicates that it may take a few minutes before the indexing is complete. A link to the "test dataset" appears next to the Publish button.
+.Pressing *Create DWC archive* generates a <<dwc-a>> from the data through several steps – each marked with a green check as successful. *Publish to GBIF test environment (UAT)* registers ("publishes") the dataset (<<dwc-a>>) in the GBIF test environment. A notification indicates that it may take a few minutes before the indexing is complete. A link to the "test dataset" appears next to the Publish button.
 image::img/simple_export.png[]
 
 [start=3]
-. Click on the hyperlink *Dataset at gbif-uat.org* to explore the dataset in the GBIF test environment (UAT). Go back to the MDT. (come back later when the indexing is complete)
+. Click on the hyperlink *Dataset at gbif-uat.org* to explore the dataset in the GBIF test environment (UAT).
+
+#insert screenshot of dataset in UAT#
+
+[start=4]
+. Go back to the MDT.
 . Click on your username in the top right. Here you can:
-** Logout.
+** Log out.
 ** Access all your datasets, e.g. to: 
 *** See them in the test environment (UAT).
 *** Revise and update dataset and export/publish new versions.

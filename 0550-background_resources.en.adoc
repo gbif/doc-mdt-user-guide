@@ -1,0 +1,59 @@
+[[background_resources]]
+== Background and resources
+
+=== GBIF and DNA
+
+GBIF provides access to extensive biodiversity data, primarily focused on species occurrences, including where and when species have been recorded. These records, gathered from collections, surveys, and citizen science efforts, contain species names, observation dates, locations, and other important details. In addition to traditional biodiversity records, GBIF also supports https://www.gbif.org/dna[DNA-associated data], such as DNA metabarcoding datasets. A general guide – https://doi.org/10.35035/doc-vf1a-nr22[Publishing DNA-derived data through biodiversity data platforms] – was released in 2021 to assist with these specific data types. However, consultations with the GBIF network and research community in 2022 and 2023 highlighted the need for user-friendly tools to facilitate the formatting and publishing of DNA metabarcoding data in particular.
+
+The *Metabarcoding Data Toolkit (MDT)* was developed to address this need.
+
+=== The GBIF Metabarcoding Data Programme
+
+In October 2024, https://www.gbif.org/news/3gm3lJaUQgTKZJRm6TiBff/gbif-nodes-invited-to-join-pilot-for-metabarcoding-data-on-biodiversity[GBIF launched] a pilot phase for the https://www.gbif.org/metabarcoding-data-programme[Metabarcoding Data programme], intended to improve GBIF’s integration of DNA metabarcoding data on biodiversity. The pilot programme is open to GBIF node managers who wish to manage an instance of the MDT. Participating nodes are provided a hosted installation of the MDT. An MDT can be configured to operate in one of two modes:
+
+* *Publishing mode*: MDT users can register datasets for publication through GBIF through the organizations to which they’re associated. This mode functions similarly to an installation of GBIF’s <<ipt>>.
+* *Conversion-only mode*: MDT users can use it to reshape their dataset into a GBIF-ready <<dwc-a>> but must download them for hosting and publication on another repository, such as an IPT.
+
+https://www.gbif.org/composition/7o3nbjPcY92vZxmjo6Z8E2/[Apply to manage an MDT] in the pilot programme (GBIF node managers only).
+
+=== Resources
+
+==== GBIF guides
+
+* The general guide – https://doi.org/10.35035/doc-vf1a-nr22[Publishing DNA-derived data through biodiversity data platforms] – was released in 2021 and has valuable supplementary in-depth information on publishing DNA-derived biodiversity data, but the guide is not yet updated with information on the MDT, so when in doubt, follow the information in this MDT user guide.
+
+==== More context about the MDT and DNA-derived data in GBIF:
+
+* A short https://vimeo.com/912170754[video] on DNA data + GBIF (originally made for the https://www.gbif.org/composition/lKyZFAUnIDv8kpf0CgZsS/technical-support-hour-for-gbif-nodes[Technical support hour for GBIF nodes])
+* A quickly made https://drive.google.com/file/d/1T27BYTxC_ky-Qn89lhvhlR0asRsLnbML/view?usp=sharing[video] with an example use of the MDT.
+* https://www.gbif.org/dsi-statement[GBIF briefing on Digital Sequence Information (DSI)]
+
+==== Selected short videos on eDNA and DNA metabarcoding
+
+* How we can detect pretty much anything - Hélène Morlon and Anna Papadopoulou - TED-Ed. (https://www.youtube.com/watch?v=bdwU_ZPk1cY[video])
+* Biomonitoring using eDNA (environmental DNA) - Henrik's Lab. (https://www.youtube.com/watch?v=lxw6QvL1g70[video])
+* What is Environmental DNA (eDNA)? – Illumina AMEA. (https://www.youtube.com/watch?v=b_MTVV5rYfo[video])
+* Environmental DNA - World Wildlife Fund. (https://www.youtube.com/watch?v=4YXfZvEvUgc[video])
+* Environmental DNA - Towards Next-Generation Biomonitoring - LeeseLab. (https://www.youtube.com/watch?v=cdV5BFaek_A[video])
+
+
+==== Podcasts on eDNA and DNA metabarcoding
+
+* What is Environmental DNA (eDNA) and How Can it Help? - A Conversation with Dr Shaun Wilkinson – Dr Adam Forbes. (https://www.youtube.com/watch?v=Se41PcD6H0g[podcast])
+
+==== Essential terms
+
+Quick reference to essential terms for new users (links to <<glossary>>).  
+
+* <<asv>>
+* <<dwc-standard>>
+* <<dwc-a>>
+* <<dwc-term>>
+* <<dna-derived, DNA-derived data (extension)>>
+* <<endpoint>>
+* <<occurrence>>
+* <<occurrence_core>>
+* <<otu>>
+* <<otu-table>>
+
+<<<
