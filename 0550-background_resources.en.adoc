@@ -20,7 +20,9 @@ https://www.gbif.org/composition/7o3nbjPcY92vZxmjo6Z8E2/[Apply to manage an MDT]
 
 ==== GBIF guides
 
-* The general guide – https://doi.org/10.35035/doc-vf1a-nr22[Publishing DNA-derived data through biodiversity data platforms] – was released in 2021 and has valuable supplementary in-depth information on publishing DNA-derived biodiversity data, but the guide is not yet updated with information on the MDT, so when in doubt, follow the information in this MDT user guide.
+* The general guide – https://doi.org/10.35035/doc-vf1a-nr22[Publishing DNA-derived data through biodiversity data platforms] – was released in 2021 and has valuable supplementary in-depth information on publishing DNA-derived biodiversity data. The general guide specifies data preparation, etc, but the MDT will handle a lot of these things automatically/interactively. As the general guide is not yet updated with information on the MDT, follow the information in the MDT user guide, so when in doubt.
+
+NOTE: You may especially benefit from reading the sections https://docs.gbif.org/publishing-dna-derived-data/en/#rationale[Rationale]; https://docs.gbif.org/publishing-dna-derived-data/en/#environmental-dna-as-a-source-for-dna-derived-occurrence-data[Environmental DNA as a source...]; https://docs.gbif.org/publishing-dna-derived-data/en/#dna-metabarcoding-sequence-derived-data[DNA metabarcodin data]; https://docs.gbif.org/publishing-dna-derived-data/en/#introduction-to-biodiversity-publishing[Introduction to publishing]; https://docs.gbif.org/publishing-dna-derived-data/en/#taxonomy-of-sequences[Taxonomy of sequences]; https://docs.gbif.org/publishing-dna-derived-data/en/#taxonomy-of-sequences[Mapping metabarcoding data].
 
 ==== More context about the MDT and DNA-derived data in GBIF:
 

@@ -3,28 +3,24 @@
 
 This section contains detailed information and best practices on how to prepare and structure datasets for uploading and processing.
 
-TIP: You may want to read sections of the general guide – https://doi.org/10.35035/doc-vf1a-nr22[Publishing DNA-derived data through biodiversity data platforms] – for background information. Specifically: https://docs.gbif.org/publishing-dna-derived-data/en/#rationale[Rationale], https://docs.gbif.org/publishing-dna-derived-data/en/#environmental-dna-as-a-source-for-dna-derived-occurrence-data[Environmental DNA as a source...], https://docs.gbif.org/publishing-dna-derived-data/en/#dna-metabarcoding-sequence-derived-data[DNA metabarcodin data], https://docs.gbif.org/publishing-dna-derived-data/en/#introduction-to-biodiversity-publishing[Introduction to publishing], https://docs.gbif.org/publishing-dna-derived-data/en/#taxonomy-of-sequences[Taxonomy of sequences], https://docs.gbif.org/publishing-dna-derived-data/en/#taxonomy-of-sequences[Mapping metabarcoding data]
-
-IMPORTANT: The general guide – https://doi.org/10.35035/doc-vf1a-nr22[Publishing DNA-derived data through biodiversity data platforms] – contains a lot of advice and guidance on data preparation and mapping (incl required/recommended fields). the MDT will handle most of these things automatically/interactively. If your data fits one of the provided OTU table templates in this MDT user guide, the processing steps should be straightforward and easy to follow
-
 === Basic checks and preparations
 
 Ensure the following applies to your dataset:
 
 * The data is DNA metabarcoding (i.e. amplified and sequenced marker genes), not something else (e.g. shotgun metagenomics, qPCR).
-* You have processed data as an OTU table with associated OTU/ASV sequences and sample metadata.
+* You have the data as an OTU table with associated OTU/taxonomy and sample metadata.
 * You have permission to share the data on GBIF.
 * Essential metadata (e.g. location, date) is available.
 * The OTU table includes the number of sequence reads per OTU/sample.
-* Non-samples (e.g. negative/positive controls, PCR blanks) are identified and can be excluded, e.g. by removing them from the *Samples* table.
-* OTU/ASV sequences are available.
+* Non-samples (e.g. negative/positive controls, PCR blanks) can be identified and be excluded, e.g. by removing them from the *Samples* table.
 * Contaminant or non-trustworthy OTUs are identified and can be excluded, e.g. by removing them from the *Taxonomy* table.
+* ASVs/OTU representative sequences are available and can be included.
 
 *Dataset descriptions, people and other metadata*
 
-Before uploading and processing your dataset in the MDT, it's recommended to prepare a dataset description and gather information about the contributors to be associated with the data. This information will be entered during the 5th processing step (*Add Metadata*) in the MDT.
+Before uploading and processing your dataset, it's recommended to prepare the so-called dataset metadata, i.e.: a description of the dataset, and information about contributors/authors, etc. This information will be entered during the 5th processing step (*Add Metadata*) in the MDT.
 
-You need to prepare #I need input here#:
+Recommended preparations #I need input here#:
 
 * A dataset title. Choose something descriptive. Examples:
 ** COI data from: Environmental DNA metabarcoding differentiates between micro-habitats within the rocky intertidal.
@@ -35,26 +31,21 @@ You need to prepare #I need input here#:
 ** How was the samples collected, and how was the data produced?
 ** See e.g. this https://www.gbif.org/dataset/9358fbd7-cfd0-4eab-99fa-0934396a0529[dataset], where these things have been described in different sections:Description, Purpose, Methodology (with sub-headers)
 * Scientific papers related to the dataset.
-* Persons that should be associated with the dataset, and thus credited when data is reused. This could be people associated with the research paper, the laboratory personnel, persons preparing the dataset for GBIF publication, helping out with the metadata desciption, etc. gather their:
-** Name
-** Affiliation
-** Address
-** Email
-** ORCID
-* For each person there is the possibility to select a role. If in doubt use the creator role.
-* All persons added will be listed as authors in the suggested dataset citation.
-* Be sure to designate one of the persons as the contact person. This is the person that will be contacted if e.g. users find issues in the data.
+* Persons that should be associated with and/or credited for the dataset:
+** Contact: The contact person for this dataset.
+** Creators: All persons that should be accredited when citing the dataset. You can prepare a table of creators using https://mdt.gbif-uat.org/templates/people.xlsx[this template]
+** Metadata providers: Potential additional people or organizations who provided documentation and other metadata for this dataset. You can prepare a table of metadata providers using https://mdt.gbif-uat.org/templates/people.xlsx[this template]
 
 [[fit_data]]
 === The OTU table
 
-The MDT accepts analysed DNA metabarcoding data in the OTU table format, commonly used in eDNA metabarcoding. It reshapes this data into a Darwin Core Archive (DwC-A) for publishing to GBIF.
+The MDT accepts DNA metabarcoding data in the OTU table format – a format commonly used for such data.
 
-An OTU table is a specialized species/site matrix used in biodiversity and community ecology science, summarizing the presence and abundance of organisms across samples. Each row represents an OTU, and each column represents a sample, with the cell values indicating the number of sequence read counts.
+An OTU table is a specialized species/site matrix used in biodiversity and community ecology science, summarizing the presence and abundance of organisms across samples. Each row represents an OTU, each column represents a sample, and cell values indicate the number of sequence read counts of each OTU in each sample.
 
-Note: The MDT expects OTU tables to only contain read counts, with taxonomic and sample metadata provided separately in linked tables.
+Note: The MDT expects the OTU table to only contain read counts, with taxonomic and sample metadata provided in separate tables.
 
-.An example OTU_table with OTUs linked to Taxonomy and Samples tables. *OTU_table* sequence read counts of each OTU per sample; *Taxonomy* DNA sequences and taxonomy; *Samples* Sample metadata; *Study (optional)* Metadata applying to the all samples and OTUs; *Seqs.fasta (optional)* OTU sequences in fasta format.
+.An example OTU_table with OTU IDs linked to the Taxonomy table and Sample IDs linke to the Samples table. *OTU_table*: sequence read counts of each OTU per sample; *Taxonomy*: DNA sequences and taxonomy per OTU; *Samples* Sample metadata per sample; *Study* (optional): Metadata values applying to all samples and OTUs; *Seqs.fasta (optional)* OTU sequences in fasta format.
 image::img/OTU_table_all_files.png[]
 
 === Fitting the data into a template
