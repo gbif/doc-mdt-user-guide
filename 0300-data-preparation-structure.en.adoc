@@ -1,24 +1,24 @@
 [[preparation_structure]]
 == Dataset preparation and structure
 
-This section contains detailed information and best practices on how to prepare and structure datasets for uploading and processing.
+This section contains detailed information and best practices on how to prepare and structure DNA metabarcoding datasets before uploading to the MDT.
 
 === Basic checks and preparations
 
-Ensure the following applies to your dataset:
+Ensure the following applies to the dataset:
 
-* The data is DNA metabarcoding (i.e. amplified and sequenced marker genes), not something else (e.g. shotgun metagenomics, qPCR).
-* You have the data as an OTU table with associated OTU/taxonomy and sample metadata.
-* You have permission to share the data on GBIF.
-* Essential metadata (e.g. location, date) is available.
-* The OTU table includes the number of sequence reads per OTU/sample.
-* Non-samples (e.g. negative/positive controls, PCR blanks) can be identified and be excluded, e.g. by removing them from the *Samples* table.
-* Contaminant or non-trustworthy OTUs are identified and can be excluded, e.g. by removing them from the *Taxonomy* table.
-* ASVs/OTU representative sequences are available and can be included.
+* [ ] The data is from DNA metabarcoding.
+* [ ] There is permission to share the data.
+* [ ] The data is an OTU table with associated OTU/taxonomy and sample metadata.
+* [ ] ASVs/OTU sequences are available and can be included.
+* [ ] The OTU table includes the number of sequence reads per OTU/sample.
+* [ ] Essential metadata (e.g. location, date) is available.
+* [ ] Non-samples, e.g. negative/positive controls, PCR blanks, are identified to be excluded by e.g. removing them from the *Samples* table.
+* [ ] Contaminant or non-trustworthy detections (OTUs/species/taxa) are identified to be excluded by e.g. removing them from the *Taxonomy* table.
 
 *Dataset descriptions, people and other metadata*
 
-Before uploading and processing your dataset, it's recommended to prepare the so-called dataset metadata, i.e.: a description of the dataset, and information about contributors/authors, etc. This information will be entered during the 5th processing step (*Add Metadata*) in the MDT.
+Before uploading and processing a dataset, it's recommended to prepare the so-called dataset metadata, i.e.: the description of the dataset, and information about contributors/authors, etc. This information will be entered during the 5th processing step (*Add Metadata*) in the MDT.
 
 Recommended preparations #I need input here#:
 
