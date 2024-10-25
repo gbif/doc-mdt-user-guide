@@ -1,7 +1,7 @@
 = Metabarcoding Data Toolkit – user guide
 GBIF Secretariat <DNA@gbif.org>
 :toc: left
-:toclevels: 2
+:toclevels: 3
 :numbered:
 :revnumber: {git-metadata-sha-short}
 :revdate: {git-metadata-date} {git-metadata-time} {git-metadata-timezone}
