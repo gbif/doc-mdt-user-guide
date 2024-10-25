@@ -25,10 +25,8 @@ NOTE: The 160th column of the OTU table corresponds to a negative control sample
 [[detailed_select_mdt]]
 === Select an MDT installation
 
-Select a suitable <<installations,MDT installation>> for the dataset to be processed and possibly published.
-
 * Still learning testing? Use the https://sandbox-mdt.gbif-uat.org/[MDT Sandbox (Demo Installation)].
-* Got a real dataset? Identify and use the most relevant MDT installation for you #how can we guide here??#
+* Got a real dataset? Identify and use the most relevant hosted MDT installation for the dataset. #how can we guide here??#
 * Can't find a relevant MDT installation? Use the https://mdt.gbif.org/[GBIF Conversion MDT].
 
 [[detailed_landing]]
@@ -51,25 +49,22 @@ The Menu Bar contains the following items
 
 In this area users can access the datasets they have uploaded to the MDT.
 
-* Datasets can be opened (eye icon) and the _Browse_ tab allows to visualize the data similar to the review step, _Metadata_ allows inspection of basic dataset information/metadata, _Files available_ gives access to download standardized BIOM and <dwc-a> files of the dataset (if these have been produced).
+* Datasets can be opened (eye icon) and the _Browse_ tab allows to visualize the data similar to the review step, _Metadata_ allows inspection of basic dataset information/metadata, _Files available_ gives access to download a standardized BIOM file and a <<dwc-a>> the dataset (if these have been produced).
 * Datasets can be edited. By clicking the pen icon, the dataset is opened at processing step 1 (Upload data). This allows users to initiate editing of the dataset at any of the processing steps.
 * Datasets can be deleted (trash icon).
 +
 IMPORTANT: Do not delete or start editing a dataset that is already published on GBIF.org unless you are certain that this is needed.
 
+.*My datasets* gives users access to view, edit/update and download previously processed datasets.
 image::img/dg_mydata.png[]
 
 *Help, feedback and other resources*
 
 * The *Neep help?* (fern leaf): Opens an email to contact the Manager of the MDT installation.
 * The *RSS feed*: Lists the most recently updated resources (datasets) available as an RSS feed. This can be used to monitor incoming datasets to the MDT installation.
-* The *Report a bug* and *Request a feature* : Opens a GitHub issue where users can report MDT bugs or request MDT features to be developed.
+* The *Report a bug* and *Request a feature* : Opens a GitHub issue where users can report bugs or request features to be developed.
 
-=== Processing the dataset 
-
-Some repetition from simple quick start guide.
-
-==== Upload data (step 1)
+=== Upload data (step 1)
 
 . Drag and drop the dataset to the upload area, or click and select the file.
 . Give the dataset a nickname (e.g. "my_advanced_test").
@@ -92,7 +87,7 @@ image::img/advanced_upload.png[]
 . Close the viewer by pressing *Back*.
 . Press *Proceed*.
 
-==== Map terms (step 2)
+=== Map terms (step 2)
 
 At this step it is specified how each field corresponds to Darwin Core terms - i.e. mapping. It is possible to adjust the automatic mapping, to include extra fields with global values, and to add non-standardised data as so-called extended measurements or facts.
 
@@ -100,7 +95,7 @@ TIP: Press *how to use this form* to get a guided tour of this page.
 
 TIP: Press *Save mapping* once in a while to make sure that you do not get logged out.
 
-===== Automatic mapping
+==== Automatic mapping
 
 . Inspect the overall structure and information on the page.
 .. The upper section named *Samples* maps our sample data fields to Darwin Core terms (first column), automatically identifying and mapping fields from the *Samples* table (second column) and global fields from the *Study* table (third column) with their identically named Darwin Core counterparts.
@@ -117,7 +112,7 @@ TIP: Press *Save mapping* once in a while to make sure that you do not get logge
 
 image::img/advanced_mapping.png[]
 
-===== Suggested mapping
+==== Suggested mapping
 
 Inspect potential suggested mappings and click to accept and specify them.
 
@@ -130,7 +125,7 @@ Inspect potential suggested mappings and click to accept and specify them.
 . Click on "sequence" to specify that mapping.
 ****
 
-===== Manual mapping 
+==== Manual mapping 
 
 Under *Unmapped fields* (above the *Taxon* section) we may see fields from the uploaded data, that were not automatically identified and mapped to any Darwin Core terms.
 
@@ -170,7 +165,7 @@ NOTE: term:mixs[env_broad_scale] and term:mixs[env_local_scale] were also descri
 . Similarly add the term term:dwc[taxonRank] and map it to _rank_.
 ****
 
-===== Using Extended Measurements Or Facts
+==== Using Extended Measurements Or Facts
 
 For some types of metadata there are no suitable fields in the data standards, but users may still want to include those in the final data. Such data can be accomodated in the *Extended Measurement Or Facts (eMoF)*
 
@@ -199,7 +194,7 @@ Now, the mapping is complete.
 
 . Press *Proceed*.
 
-==== Process data (step 3)
+=== Process data (step 3)
 
 The option *Assign taxonomy* uses the https://www.gbif.org/tools/sequence-id[GBIF Sequence ID tool^] to assign taxonomy to the OTUs by comparing the sequences with a reference database. *This will replace/overwrite any taxonomy provided in the uploaded data*. NB: Often it will be better to do the taxonomic assignment separately – using the GBIF tool or another preferred tool – before uploading, as it is a time consuming step!
 
@@ -222,7 +217,7 @@ image::img/advanced_processing.png[]
 . Inspect the *Dataset stats* and verify that number of samples and taxa are as expected.
 . Press *Proceed*
 
-==== Review (step 4)
+=== Review (step 4)
 
 At this step the processed data can be explored and reviewed to verify that everything is OK, e.g. ensure that control samples are not included as samples, and that the mapping is as expected.
 
@@ -246,7 +241,7 @@ image::img/advanced_review.png[]
 
 . Press *Proceed*.
 
-==== Add metadata (step 5)
+=== Add metadata (step 5)
 
 In this step, dataset information is added, including dataset title, description, persons and affiliations, etc.
 
@@ -268,7 +263,7 @@ _Minimum actions to continue_: select a license and add a contact (minimum: emai
 
 . Press *Proceed*.
 
-==== Export (step 6)
+=== Export (step 6)
 
 At this step, the so-called <<dwc-a>> is produced. The dataset can be published directly to the GBIF [.underline]#TEST ENVIRONMENT# (UAT) in this step. This is a way for users to preview a potential real GBIF.org publication.
 
@@ -290,7 +285,7 @@ image::img/advanced_uat.png[][pdfwidth=20%,scaledwidth=20%]
 . Press on *Publish* (directly in the header with the 7 steps).
 
 [[publishing]]
-==== Publish (processing step 7)
+=== Publish (step 7)
 
 In this step it is possible to do the necessary steps for formally publishing the processed dataset to GBIF.
 
@@ -305,7 +300,7 @@ image::img/dg_publish_publmode.png[width=200]
 image::img/dg_publish_demo2.png[width=200]
 
 [[pub_pub]]
-===== MDT in publishing mode
+==== MDT in publishing mode
 
 MDTs in publishing mode can publish directly to GBIF.
 
@@ -341,7 +336,7 @@ image::img/dg_publish_publish.png[]
 .To publish a dataset to GBIF, the user's institution must be registered as a data publisher, and the user must be associated with the institution in the MDT.
 
 [[pub_con]]
-===== MDT in conversion-only mode
+==== MDT in conversion-only mode
 
 When using a hosted MDT in conversion mode or the GBIF Conversion MDT, the publishing step will require the user to contact the administrator of the MDT by using the link "*Ready to publish a dataset? Reach out to the administrator for assistance*".
 
@@ -350,19 +345,20 @@ NOTE: User that have prepared datasets using the GBIF Conversion MDT should try 
 .Users of MDT installations in conversion-only should use the link "*Ready to publish a dataset? Reach out to the administrator for assistance*". This will start a preformulated email to the manager of the MDT, requesting help.
 image::img/dg_publish_demo2.png[]
 
-=== Publishing through IPT and other means
+=== Publish through IPT
 
-==== Publishing through IPT
+This publishing procedure may be relevant for:
 
-This publishing procedure may be relevant if you (as a data publisher) cannot have your data in a hosted repository, or if you are the manager of a Hosted MDT installation in conversion-only mode.
+* Data publishers that cannot have their data in a hosted repository.
+* Managers of a MDT in conversion-only mode.
 
 The https://www.gbif.org/ipt[Integrated Publishing Toolkit] — commonly referred to as the IPT — is free open-source software developed by GBIF and used by organizations around the world to create and manage repositories for sharing biodiversity datasets. If you have access to an IPT and know how to use it, you can download the <<dwc-a>> produced by the MDT at the Export (step 6) and publish it through an IPT.
 
-By downloading dataset from the MDT and publishing elsewhere, the possibility for easy updating, re-processing and visualization of the dataset in the MDT is lost. Also, archives dowloaded and modified (e.g. in the IPT), will not subsequently be possible to easily modify or update using the MDT.
+MOTE: By downloading dataset from the MDT and publishing elsewhere, the possibility for easy updating, re-processing and visualization of the dataset in the MDT is lost.
 
-The MDT produces fully publishable Darwin Core Archives, with no need for further changes or additions in the IPT. You can validate the produced <<dwc-a>> in the https://www.gbif.org/tool/81281/gbif-data-validator[GBIF data validator].
+The MDT produces a fully publishable <<dwc-a>> with no need for changes or additions. The archive can validate in the https://www.gbif.org/tool/81281/gbif-data-validator[GBIF data validator].
 
-You may run into challenges if you are using older versions of the IPT and/or if the DNA-derived data extension has not been installed. Also there is a known issue that requires the values of the license fields to be set manually.
+Uses may run into challenges if using older versions of the IPT and/or if the DNA-derived data extension has not been installed. Also there is a known issue that requires the values of the license fields to be set manually.
 
 *Publishing an archive from the MDT via IPT*
 
@@ -377,7 +373,7 @@ You may run into challenges if you are using older versions of the IPT and/or if
 * Validate and verify that the data looks as expected.
 * Publish the data as one would normally do in the IPT.
 
-==== Registering an DwC-A hosted elsewhere
+=== Register and host DwC-A elsewhere
 
 A Darwin Core Archive produced with the MDT may be put elsewhere on the web – preferably in a stable repository (e.g. Zenodo, GitHub) – and can then be indexed by GBIF. This requires somebody to register the new resource with GBIF.
 

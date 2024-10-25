@@ -15,6 +15,7 @@ This guide uses a _minimal dummy dataset_ – not to be used as a model for real
 ** *Samples* links sample IDs (from OTU_table) to sample metadata: e.g. spatiotemporal information, protocols etc.
 ** *Study* holds global values for the dataset, such as barcoding region, primer sequences, and primer names.
 
+[discrete]
 === Upload data (step 1)
 
 . Go to https://sandbox-mdt.gbif-uat.org/[MDT Sandbox (Demo Installation)] and log in.
@@ -32,6 +33,7 @@ image::img/simple_upload.png[]
 [start=6]
 . Press *Proceed*
 
+[discrete]
 === Map terms (step 2)
 
 image::img/simple_mapping_header.png[]
@@ -50,6 +52,7 @@ image::img/simple_mapping_taxon.png[]
 
 Press *Proceed* to save mapping and proceed.
 
+[discrete]
 === Process data (step 3)
 
 image::img/simple_processing_header.png[]
@@ -65,6 +68,7 @@ image::img/simple_processing.png[]
 [start=2]
 . Press *Proceed*
 
+[discrete]
 === Review (step 4)
 
 image::img/simple_review_header.png[]
@@ -76,6 +80,7 @@ image::img/simple_review.png[]
 
 Press *Proceed*.
 
+[discrete]
 === Add metadata (step 5)
 
 image::img/simple_metadata_header.png[]
@@ -91,6 +96,7 @@ image::img/simple_metadata.png[]
 . Leave the other fields empty (as this is just a test).
 . Press *Proceed* to save the metadata and proceed.
 
+[discrete]
 === Export (step 6)
 
 image::img/simple_export_header.png[]
@@ -113,6 +119,7 @@ image::img/simple_uat.png[pdfwidth=20%,scaledwidth=20%]
 . Go back to the MDT.
 . Press on *Publish* (directly in the header with the 7 steps).
 
+[discrete]
 === Publish (step 7)
 
 image::img/simple_publish_header.png[]
