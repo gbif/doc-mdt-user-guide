@@ -382,3 +382,5 @@ A Darwin Core Archive produced with the MDT may be put elsewhere on the web – 
 * Register the dataset with the relevant publisher in the GBIF registry (#How is that done ?#).
 ** See e.g. this https://vimeo.com/996575071[video] on sharing to GBIF via APIs.
 ** See this https://data-blog.gbif.org/post/installations-and-hosting-solutions-explained/[blog post] on general possibilities to publish and host datasets.
+
+<<<

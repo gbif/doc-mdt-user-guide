@@ -10,5 +10,3 @@ To Do:
 * Add section on MDT administrator specific actions
 * Add glossary term links throughout the text?
 
-
-<<<

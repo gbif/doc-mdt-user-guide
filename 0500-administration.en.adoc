@@ -1,0 +1,46 @@
+[[admin]]
+== Administration
+
+Only MDT administrators have access to the *Administration* item in the manu bar.
+
+MDT administrators and users can use the MDT right away, and the MDT administrator dooe in principle not need to do anything before prompted by email from a tool user, as described from the user perspective in the <<detailed_guidance>> (see below).
+
+=== Procedure with a new user
+
+* A new user (data holder) has been directed to the hosted MDT, and logs into the MDT with GBIF user account.
+* The user uploads the dataset, and processes and publishes it to the test environment (steps 1 to 6), and in step 7 (Publish), the user either selects:
++
+"_Ask for access to publish under this institution/organisation_"
++ 
+*OR*
++
+"_Ask for help with registering your institution/organisation_"
+* The MDT administrator then recieves an email from the user with relevant information to either:
++
+Add the user to an existing organization.
++
+*OR*
++
+Start the procedure of endorsing a new institution as GBIF publisher (and add the organization to the MDT and associate the user with it).
+* The administrator also recieves a link to the dataset in the MDT and in the test environment (if UAT publication was done), and can thus provide the user with feedback on possible or wanted changes/improvements to the dataset.
+
+NOTE: Returning users can upload and publish datasets under any of the organizations they have been associated with.
+
+=== Datasets tab
+
+.The *All datasets* tab. Datasets processed beyond step 3 (processing) will have hyperlinks (the Taxon and Sample counts) to simple representations of the dataset. Datasets published to the GBIF test environment (UAT) and/or GBIF.org will have links to those representations. Datasets can be sorted and filtered in various ways.
+image::img/admin_datasets.png[]
+
+=== Oranizations tab
+
+.The *Manage organizations* tab. Here the administrator can add new organizations to the MDT. If the MDT is not enabled for publication there will be a yellow box explaining the options and restrictions as in this figure. Organizations can also be deleted. Users (GBIF username) can be associated with organizations by pressing the plus (+) sign under Users. This will enable users to publish datasets under with the organization as publisher.
+image::img/admin_org.png[]
+
+
+.Press *Add new organization* to add organizations to the MDT. Only organizations already registered in GBIF can be added.
+image::img/admin_org_add01.png[]
+
+.The Organization Key is automatically added to the form, when selecting an organization. *Retrieve the Organization shared token to enable publication for the Organization!*. Pressing *Retrieve* will do this automatically IF the administrator has the required rights in the GBIF registry. Alternatively retrieve the token by #XXX#. Users can be associated with the Organization directly in the form or later.
+image::img/admin_org_add02.png[]
+
+<<<
