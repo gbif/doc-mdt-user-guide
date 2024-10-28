@@ -1,12 +1,15 @@
 [[trouble]]
 == Troubleshooting
 
+[discrete]
 === Log in
 
 Make sure you are using GBIF login. (During the earlier development phases, the MDT was using UAT login.)
 
+[discrete]
 === Upload data (step 1)
 
+[discrete]
 ==== Invalid format
 
 After pressing *Start Upload* a green icon will normally indicate a valid file format (tsv or xlsx).
@@ -41,6 +44,7 @@ _For fasta file with sequences_
 * Expected formatting: Text-based format. Each entry begins with a header line with a greater-than symbol (">") and the OTU ID. The line(s) after contain the actual sequence.
 * Can be combined with a set of tabular text files OR one Excel workbook.
 
+[discrete]
 ==== Lacking correspondence
 
 After uploading warnings will indicate missing correspondence of OTU IDs between OTU_table and Taxonomy table and/or Sample IDs between OTU_table and Samples table.
@@ -57,33 +61,41 @@ image::img/dg_no_corresponding.png[width=150]
 * Ensure that the all the samples (Sample IDs) you want included in the final dataset are present in both the *OTU_table* and the *Samples* tables, and similarly for the OTUs (OTU IDs), that they are present in both the *OTU_table* and *Taxonomy* tables.
 * Deleting or leaving out OTUs or Samples (their IDs) from any table means that they will be excluded from the final data. This is thus an easy way of excluding OTUs or Samples – e.g. negative control samples, suspected contaminant species – from the data. There will be warnings during further processing.
 
+[discrete]
 === Map terms (step 2)
 
 If fields in the *Taxonomy* and *Samples* tables in the uploaded dataset are not identified and mapped automatically, it is likely because they are spelled incorrectly. They can be mapped manually.
 
 If fields and their global values in the *Study* table in the uploaded dataset are not identified and mapped automatically, it is likely because they are spelled incorrectly. But terms/fields can be added manually and provided with a global value. (Misspelled terms in the uploaded *Study* table cannot be mapped manually).
 
+[discrete]
 === Process data (step 3)
 
+[discrete]
 === Review (step 4)
 
+[discrete]
 ==== Wrong geographical placement of samples
 
 Ensure that you are only using proper decimal degrees for latitude and longitude.
 
+[discrete]
 ==== The PCoA/MDS looks unexpected
 
 If you have one sample as a clear outlier in the plot and/or most of the samples clumping together, you most likely have one or two samples (or control samples) that have a species/sequence composition that is very different from the other samples. Scrutinizing the sample type/name and the taxonomic composition to judge whether the sample can be considered a normally behaving sample to be included. Otherwise consider deleting the sample from the Samples table and do a new upload. 
 
+[discrete]
 === Export (step 6)
 
+[discrete]
 === Getting logged out
 
 There has been a few instances where Google Chrome users were logged out when pressing *Create DwC*. The exact cause was not identified, but the problem was solved by re-installing Chrome.
 
-[[publishing]]
+[discrete]
 === Publish (processing step 7)
 
+[discrete]
 ==== Problems publishing DwC-A (from MDT) in IPT
 
 These issues seem to arise if:
