@@ -245,18 +245,18 @@ image::img/advanced_review.png[]
 
 In this step, dataset information is added, including dataset title, description, persons and affiliations, etc.
 
-IMPORTANT: For real datasets it is higly recommended to provide rich and detailed information to improve and extend discoverability and reuse, and facilitate the users can better assess fitness for purpose when using the data.
+IMPORTANT: For real-world datasets, it is highly recommended to provide comprehensive and detailed metadata. This enhances discoverability, promotes reusability, and helps data re-users better evaluate the dataset's suitability for their specific purposes.
 
 TIP: Toggle "Show help" to get guidance text for the fields.
 
-.*Edit metadata*. In this section you provide dataset information/metadata in defined sections (left panel): _Basic Metadata, Geographic Coverage, Taxonomic Coverage, etc._ For real datasets it is important to provide rich and detailed information to improve discoverability and reuse. 
+.*Edit metadata*. In this section you provide dataset information/metadata in defined sections (left panel): _Basic Metadata, Geographic Coverage, Taxonomic Coverage, etc._ 
 image::img/advanced_metadata.png[]
 
 The dataset information/metadata is grouped in sections: _Basic Metadata, Geographic Coverage, Taxonomic Coverage, etc_. 
 
 ****
 *Example dataset* +
-Explore the metadata sections to get familiar with options. When working with a real dataset, please refer to the full guidance in this section and to the section on <<preparation_structure>>.
+Explore the metadata sections to get familiar with options. When working with a real dataset, please refer to the full guidance in this section (#not written#) and to the section on <<preparation_structure>>.
 
 _Minimum actions to continue_: select a license and add a contact (minimum: email).
 ****
