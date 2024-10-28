@@ -3,6 +3,8 @@
 
 IMPORTANT: #Both the MDT and this guide are continuously being developed. Even when using the most recent version of the guide, it may be slightly out of sync with the exact appearance and functionality of the MDT.#
 
+IMPORTANT: #The guide refers to a https://sandbox-mdt.gbif-uat.org/[MDT Sandbox (Demo Installation)] and a https://mdt.gbif.org/[GBIF Conversion MDT]. These are not yet online! Use this test installation: https://mdt.gbif-uat.org/ with UAT your user profile for now.#
+
 === Target audiences and scope
 
 This user guide is for anyone interested in learning to use the MDT for formatting and publishing DNA metabarcoding data to GBIF (or OBIS, etc.).
