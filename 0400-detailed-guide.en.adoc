@@ -25,7 +25,7 @@ NOTE: The 160th column of the OTU table corresponds to a negative control sample
 [[detailed_select_mdt]]
 === Select an MDT installation
 
-* Still learning testing? Use the https://sandbox-mdt.gbif-uat.org/[MDT Sandbox (Demo Installation)].
+* Still learning or testing? Use the https://sandbox-mdt.gbif-uat.org/[MDT Sandbox (Demo Installation)].
 * Got a real dataset? Identify and use the most relevant hosted MDT installation for the dataset. #how can we guide here??#
 * Can't find a relevant MDT installation? Use the https://mdt.gbif.org/[GBIF Conversion MDT].
 
