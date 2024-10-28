@@ -25,17 +25,13 @@ What the MDT [.underline]#cannot# do:
 If you are familiar with the basics of DNA metabarcoding data and/or just want to learn the basics of using the MDT:
 
 * Work through the <<simple_quick_start>> using the https://sandbox-mdt.gbif-uat.org/[MDT Sandbox (Demo Installation)].
-* Browse/explore this https://mdt.gbif-uat.org/dataset/3d4e6748-df68-4047-ab04-ac3c3baa7840/review[example dataset 2] in the demo MDT.
-* Upload and process <<example2>> in the https://sandbox-mdt.gbif-uat.org/[MDT Sandbox (Demo Installation)] following the steps in the <<detailed_guidance>>
-** Refer to the <<preparation_structure, preparation instructions>>, the <<detailed_guidance>>, the <<faq>>, and the <<glossary>> as needed.
+* Process the example dataset following the <<detailed_guidance>>. 
+** Refer to the <<preparation_structure, preparation instructions>>, the <<faq>> and the <<glossary>> as needed.
 
-If you know the basics of the MDT and want to prepare your own dataset:
+If you know the basics of the MDT and want to prepare and/or publish a real dataset:
 
-* Select a <<templates, dataset template>> suitable for your data.
-* Adapt your dataset to the template following the (see <<preparation_structure, preparation instructions>>).
-** You may use the <<example2>> as a model of a well-formatted dataset.
-* Identify the most relevant MDT installation (read more here: <<installations>>).
-* Upload and process the data in the MDT, while referring to the <<preparation_structure, preparation instructions>>, the <<detailed_guidance>>, the <<faq>>, and the <<glossary>> as needed.
+* Adapt your dataset to a template following the (see <<preparation_structure, preparation instructions>>) carefully.
+* Process the dataset following the <<detailed_guidance>>, while referreing to the <<preparation_structure, preparation instructions>>, the <<faq>>, and the <<glossary>> as needed.
 
 
 NOTE: The https://doi.org/10.35035/doc-vf1a-nr22[general GBIF DNA guide] has valuable general information on DNA biodiversity data, but is not yet updated with information on the MDT, so when in doubt, follow the information in this MDT user guide.

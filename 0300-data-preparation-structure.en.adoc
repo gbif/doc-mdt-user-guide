@@ -37,9 +37,9 @@ Recommended preparations #I need input here#:
 ** Metadata providers: Potential additional people or organizations who provided documentation and other metadata for this dataset. You can prepare a table of metadata providers using https://mdt.gbif-uat.org/templates/people.xlsx[this template]
 
 [[fit_data]]
-=== The OTU table
+=== The OTU table as a data format
 
-The MDT accepts DNA metabarcoding data in the OTU table format – a format commonly used for such data.
+The MDT accepts DNA metabarcoding data in the OTU table format.
 
 An OTU table is a specialized species/site matrix used in biodiversity and community ecology science, summarizing the presence and abundance of organisms across samples. Each row represents an OTU, each column represents a sample, and cell values indicate the number of sequence read counts of each OTU in each sample.
 
@@ -50,7 +50,7 @@ image::img/OTU_table_all_files.png[]
 
 === Fitting the data into a template
 
-Tables/files are uploaded as separate text files OR as sepate sheets in _one_ Excel Workbook (except the the Seqs.fasta).
+Tables are uploaded as individual tab separated text files OR as sepate sheets in _one_ Excel Workbook.
 
 Select the <<templates, template>> most suitable for your data.
 
@@ -58,9 +58,12 @@ Fit the data to the template following the guidance below. Provide as many of th
 
 TIP: The order (sorting) of rows and columns in the tables is not important. 
 
-*OTU_table*
+==== The *OTU_table* table
 
-* Separate text file (named OTU_table.csv or OTU_table.tsv) OR as sheet (named OTU_table) in Excel Workbook.
+* A tab separated text file (csv/tsv/txt)
++
+*OR* 
+* A sheet (_mandatory name_ *OTU_table*) in Excel Workbook.
 * Format your *OTU_table* with samples as columns and OTUs as rows.
 * Remove non-sample/OTU rows and columns (e.g., totals).
 * Move sample or taxonomy (meta-)data to separate tables.
@@ -69,9 +72,12 @@ TIP: The order (sorting) of rows and columns in the tables is not important.
 * Leave the top-left cell of the table empty.
 
 [[tax_form]]
-*Taxonomy*
+==== The *Taxonomy* table
 
-* Separate text file (named Taxonomy.csv or Taxonomy.tsv) OR as sheet (named Taxonomy) in Excel Workbook.
+* A tab separated text file (csv/tsv/txt)
++
+*OR* 
+* A sheet (_mandatory name_ *Taxonomy*) in Excel Workbook.
 * Format OTU sequence and taxonomy data with OTUs as rows and fields as columns.
 * Label the first column as `id` to match OTU IDs in the *OTU_table*.
 * Include these fields:
@@ -86,9 +92,12 @@ NOTE: Metadata like sequencing platform and primers can go in the *Study* table 
 
 TIP: Exclude unwanted OTUs by removing them from the *Taxonomy* table only.
 
-*Samples*
+==== The *Samples* table
 
-* Separate text file (named Samples.csv or Samples.tsv) OR as sheet (named Samples) in Excel Workbook.
+* A tab separated text file (csv/tsv/txt)
++
+*OR* 
+* A sheet (_mandatory name_ *Samples*) in Excel Workbook.
 * Format sample metadata with Sample IDs as rows and fields as columns.
 * Label the first column `id` to match Sample IDs in the *OTU_table* (used as term:dwc[eventID]).
 * Include specific metadata (e.g., location, date, links to raw data).
@@ -96,29 +105,33 @@ TIP: Exclude unwanted OTUs by removing them from the *Taxonomy* table only.
 
 TIP: Exclude control samples, etc. by removing them from the *Samples* table only.
 
-*Study* (optional)
+==== The *Study* table (optional)
 
 Recommended for metadata applying to the whole dataset (e.g., primer info, platform). Reduces redundancy and minimizes errors.
 
+* A tab separated text file (csv/tsv/txt)
++
+*OR* 
+* A sheet (_mandatory name_ *Study*) in Excel Workbook.
 * Two columns: _term_ and _value_. Use terms from https://dwc.tdwg.org/list/#dwc_Occurrence[Darwin Core Occurrence] and http://rs.gbif.org/terms/1.0/DNADerivedData[DNA derived data extension].
 * Include as many required/recommended fields as possible.
-* Ensure correct term spelling, as manual mapping is not allowed.
+* Correct spelling is required, as manual mapping is not possible.
 
 .The optional *Study* table. A minimalistic with 5 term-value pairs describing metadata relevant for all samples in the dataset.
 image::img/study_table.png[pdfwidth=20%,scaledwidth=20%]
 
-*Seqs.fasta* (optional)
+==== The *Seqs.fasta* file (optional)
 
 The MDT accepts a https://en.wikipedia.org/wiki/FASTA_format[fasta file^] for sequences.
 
-* Always a separate text file named *Seqs.fasta* (to be included if sequences are not in the *Taxonomy* table)
-* Header Line: Begins with ">", followed by an OTU ID matching the *OTU_table*.
-* Sequence Data: Continuous or split lines of nucleotide bases (A, C, T, G).
-* Separate entries by ">" symbols.
+* Always a text file with the "fasta" file extension, e.g. *Seqs.fasta*. To be included if sequences are not in the *Taxonomy* table.
+* For each sequence:
+** Header Line: Begins with ">", followed by an OTU ID matching the *OTU_table*.
+** Sequence Data: Continuous or split lines of nucleotide bases (A, C, T, G).
+* Next sequence starts at the ">" symbol.
 
 .The optional *Seqs.fasta* file. A text file with the DNA sequences associated with the OTUs in fasta format.
 image::img/fasta_file.png[pdfwidth=20%,scaledwidth=20%]
-
 
 [[req_recom]]
 === Required and recommended fields
