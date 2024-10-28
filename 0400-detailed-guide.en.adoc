@@ -106,11 +106,13 @@ TIP: Press *Save mapping* once in a while to make sure that you do not get logge
 ****
 *Example dataset* +
 
-* _Sample section_: the MDT automatically identified and mapped 4 fields from the uploaded Samples table (second column) and 5 global term/values from the Study table (third column) to identically named Darwin Core terms (first colum). +
-* _Taxon section_: the MDT automatically identified and mapped 4 fields from the uploaded Taxonomy table. 
-****
+._Sample section_: the MDT automatically identified and mapped 4 fields from the uploaded Samples table (second column) and 5 global term/values from the Study table (third column) to identically named Darwin Core terms (first colum).
+image::img/advanced_mapping_samp.png[width=400]
 
-image::img/advanced_mapping.png[]
+._Taxon section_: the MDT automatically identified and mapped 4 fields from the uploaded Taxonomy table.
+image::img/advanced_mapping_tax.png[width=400]
+
+****
 
 ==== Suggested mapping
 
@@ -120,9 +122,9 @@ Inspect potential suggested mappings and click to accept and specify them.
 *Example data*
 
 . term:dwc[decimalLatitude] and term:dwc[decimalLatitude] were not mapped automatically, but it is suggested to use _Latitude_ and _Longitude_.
-. Click on _Latitude_ and _Longitude_ to specify that mapping.
-. term:mixs[DNA_sequence] was not mapped automatically, but the MDT suggests using _sequence_.
-. Click on "sequence" to specify that mapping.
+. Click on _Latitude_ to specify that mapping, and the same for _Longitude_.
+. term:mixs[DNA_sequence] was not mapped automatically, but the MDT suggests to use _sequence_.
+. Click on _sequence_ to specify that mapping.
 ****
 
 ==== Manual mapping 
@@ -138,7 +140,7 @@ _Sample_Name, temperature, salinity, Accession_biosamples, lsid, rank_ are liste
 ****
 
 . Try to accomodate as many of unmapped fields by mapping them to relevant Darwin Core terms, by *Add mapping for another sample field*. Use the search function as explained above, consult the section <<req_recom>>, or explore available fields/terms in https://dwc.tdwg.org/list/#dwc_Occurrence[Darwin Core Occurrence] and the http://rs.gbif.org/terms/1.0/DNADerivedData[DNA derived data extension].
-. Also use *Add mapping for another sample field*. to add DwC terms, where you can provide global values that were not provided in the *Study* table of the uploaded data. Provide the global value of an added term in the third column (Default values).
+. Also use *Add mapping for another sample field* to add DwC terms, where you can provide global values that were not provided in the *Study* table of the uploaded data. Provide the global value of an added term in the third column (Default values).
 
 ****
 *Example dataset*
@@ -180,7 +182,7 @@ The section *Unmapped fields* fields that remain unmapped are listed. These can 
 
 As there is no suitable field for _salinity_ in the dataset, this can be added as an extended measurement.
 
-. Click on `salinity` from the row of unmapped fields (in the *Extended Measurement Or Facts* section) and see how it is transferred to the section below as a new entry.
+. Click on _salinity_ from the row of unmapped fields (in the *Extended Measurement Or Facts* section) and see how it is transferred to the section below as a new entry.
 . We know that the measurement unit is _ppt_, so we add that manually.
 
 NB: leave the fields _temperature_ and _Sample_Name_ unmapped.
@@ -278,7 +280,7 @@ A notification will inform you that data ingestion may take a few minutes before
 . Ensure that all information and data is processed and displayed appropriately as you expect.
 
 .Pressing *Dataset at gbif-uat.org* opens the dataset (here the example dataset) in the GBIF test environment (UAT) where users can _preview_ a potential real publication, and verify that the processed dataset contains all the wanted information for real publication. NB: The dataset is not completely indexed immediately and the dataset may e.g. have 0 occurences and no map compared to this figure, until fully indexed. Notice how the hatched/shaded header and the red "TEST" label indicate that it is a test environment. Explore the dataset and notice how the uploaded data and dataset information/description is presented on the website.
-image::img/advanced_uat.png[][pdfwidth=20%,scaledwidth=20%]
+image::img/advanced_uat.png[width=400]
 
 [start=6]
 . Go back to the MDT.
