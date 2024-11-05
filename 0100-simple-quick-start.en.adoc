@@ -3,7 +3,7 @@
 
 A Simple Quick Start Guide with minimal explanation.
 
-IMPORTANT: This guide assumes that you are using the https://sandbox-mdt.gbif-uat.org/[MDT Sandbox (Demo Installation)]. Please note that datasets in this environment are deleted weekly; therefore, avoid uploading important data without a backup.
+IMPORTANT: This guide assumes that you are using the https://mdt.gbif-uat.org/[MDT Sandbox (Demo Installation)]. Please note that datasets in this environment are deleted weekly; therefore, avoid uploading important data without a backup.
 
 This guide uses a _minimal dummy dataset_ – not to be used as a model for real data. The dataset is based on <<template1, template 1>>
 
@@ -18,7 +18,7 @@ This guide uses a _minimal dummy dataset_ – not to be used as a model for real
 [discrete]
 === Upload data (step 1)
 
-. Go to https://sandbox-mdt.gbif-uat.org/[MDT Sandbox (Demo Installation)] and log in.
+. Go to https://mdt.gbif-uat.org/[MDT Sandbox (Demo Installation)] and log in.
 . Press *New Dataset* in the upper part of the page to go to the first step (Upload data).
 
 image::img/general_step_bar.png[]
@@ -101,7 +101,7 @@ image::img/simple_metadata.png[]
 
 image::img/simple_export_header.png[]
 
-At this step, a <<dwc-a>> file is produced, which can be published to GBIF. In the https://sandbox-mdt.gbif-uat.org/[MDT Sandbox (Demo Installation)], the archive can (only!) be published to the GBIF *test* environment (UAT) for users to preview a potential GBIF.org publication.
+At this step, a <<dwc-a>> file is produced, which can be published to GBIF. In the https://mdt.gbif-uat.org/[MDT Sandbox (Demo Installation)], the archive can (only!) be published to the GBIF *test* environment (UAT) for users to preview a potential GBIF.org publication.
 
 . Press *Create Darwin Core Archive*.to generate a <<dwc-a>>.
 . Press *Publish to GBIF test environment (UAT)*.
@@ -126,9 +126,9 @@ image::img/simple_publish_header.png[]
 
 You should now have a basic idea of how the MDT works.
 
-If using this quick start guide as suggested, you will be using the https://sandbox-mdt.gbif-uat.org/[MDT Sandbox (Demo Installation)]. The publishing step (step 7) is *not enabled* for the this MDT, and step 7 will appear as in the figure below. Read about the publishing step in the <<detailed_guidance>>.
+If using this quick start guide as suggested, you will be using the https://mdt.gbif-uat.org/[MDT Sandbox (Demo Installation)]. The publishing step (step 7) is *not enabled* for the this MDT, and step 7 will appear as in the figure below. Read about the publishing step in the <<detailed_guidance>>.
 
-.The *Publish* step is not enabled for the https://sandbox-mdt.gbif-uat.org/[MDT Sandbox (Demo Installation)]. If you by chance prepared a real dataset using the https://sandbox-mdt.gbif-uat.org/[MDT Sandbox (Demo Installation)], it is recommended to redo the processing in a proper MDT installation, unless this would for some reason be too problematic. In that case you can use the link on the page: "Ready to publish a dataset? Reach out to the administrator for assistance".
+.The *Publish* step is not enabled for the https://mdt.gbif-uat.org/[MDT Sandbox (Demo Installation)]. If you by chance prepared a real dataset using the https://mdt.gbif-uat.org/[MDT Sandbox (Demo Installation)], it is recommended to redo the processing in a proper MDT installation, unless this would for some reason be too problematic. In that case you can use the link on the page: "Ready to publish a dataset? Reach out to the administrator for assistance".
 image::img/simple_publish.png[]
  
 

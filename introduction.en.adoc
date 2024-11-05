@@ -3,7 +3,7 @@
 
 IMPORTANT: #Both the MDT and this guide are continuously being developed. Even when using the most recent version of the guide, it may be slightly out of sync with the exact appearance and functionality of the MDT.#
 
-IMPORTANT: #The guide refers to a https://sandbox-mdt.gbif-uat.org/[MDT Sandbox (Demo Installation)] and a https://mdt.gbif.org/[GBIF Conversion MDT]. These are not yet online! Use this test installation: https://mdt.gbif-uat.org/ with UAT your user profile for now.#
+IMPORTANT: #The guide refers to a https://mdt.gbif-uat.org/[MDT Sandbox (Demo Installation)] and a https://mdt.gbif.org/[GBIF Conversion MDT]. These are not yet online! Currently these link to test installation: https://mdt.gbif-uat.org/ that uses UAT LOGIN! (not GBIF login)#
 
 === Target audiences and scope
 
@@ -24,7 +24,7 @@ What the MDT [.underline]#cannot# do:
 
 If you are familiar with the basics of DNA metabarcoding data and/or just want to learn the basics of using the MDT:
 
-* Work through the <<simple_quick_start>> using the https://sandbox-mdt.gbif-uat.org/[MDT Sandbox (Demo Installation)].
+* Work through the <<simple_quick_start>> using the https://mdt.gbif-uat.org/[MDT Sandbox (Demo Installation)].
 * Process the example dataset following the <<detailed_guidance>>. 
 ** Refer to the <<preparation_structure, preparation instructions>>, the <<faq>> and the <<glossary>> as needed.
 
