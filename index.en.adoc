@@ -38,6 +38,8 @@ include::0400-detailed-guide.en.adoc[]
 
 include::0410-troubleshooting.en.adoc[]
 
+include::0500-administration.en.adoc[]
+
 include::0600-dataset-templates.en.adoc[]
 
 include::0800-example-datasets.en.adoc[]
