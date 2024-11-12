@@ -14,7 +14,7 @@ In October 2024, https://www.gbif.org/news/3gm3lJaUQgTKZJRm6TiBff/gbif-nodes-inv
 * *Publishing mode*: MDT users can register datasets for publication through GBIF through the organizations to which they’re associated. This mode functions similarly to an installation of GBIF’s <<ipt>>.
 * *Conversion-only mode*: MDT users can use it to reshape their dataset into a GBIF-ready <<dwc-a>> but must download them for hosting and publication on another repository, such as an IPT.
 
-https://www.gbif.org/composition/7o3nbjPcY92vZxmjo6Z8E2/[Apply to manage an MDT] in the pilot programme (GBIF node managers only).
+https://www.gbif.org/composition/7o3nbjPcY92vZxmjo6Z8E2/[Apply to manage an MDT] in the pilot programme (GBIF node managers primarily).
 
 === GBIF guides
 
@@ -23,11 +23,12 @@ https://www.gbif.org/composition/7o3nbjPcY92vZxmjo6Z8E2/[Apply to manage an MDT]
 NOTE: You may especially benefit from reading the sections https://docs.gbif.org/publishing-dna-derived-data/en/#rationale[Rationale]; https://docs.gbif.org/publishing-dna-derived-data/en/#environmental-dna-as-a-source-for-dna-derived-occurrence-data[Environmental DNA as a source...]; https://docs.gbif.org/publishing-dna-derived-data/en/#dna-metabarcoding-sequence-derived-data[DNA metabarcodin data]; https://docs.gbif.org/publishing-dna-derived-data/en/#introduction-to-biodiversity-publishing[Introduction to publishing]; https://docs.gbif.org/publishing-dna-derived-data/en/#taxonomy-of-sequences[Taxonomy of sequences]; https://docs.gbif.org/publishing-dna-derived-data/en/#taxonomy-of-sequences[Mapping metabarcoding data].
 
 
-=== More context about the MDT and DNA-derived data in GBIF:
+=== More context about the MDT and DNA-derived data in GBIF
 
-* A short https://vimeo.com/912170754[video] on DNA data + GBIF (originally made for the https://www.gbif.org/composition/lKyZFAUnIDv8kpf0CgZsS/technical-support-hour-for-gbif-nodes[Technical support hour for GBIF nodes])
-* A quickly made https://drive.google.com/file/d/1T27BYTxC_ky-Qn89lhvhlR0asRsLnbML/view?usp=sharing[video] with an example use of the MDT.
-* https://www.gbif.org/dsi-statement[GBIF briefing on Digital Sequence Information (DSI)]
+* Recorded GBIF presentation on GBIF and eDNA data and GBIF at the 3rd https://secwww.jhuapl.edu/EventLink/Event/300[National Workshop^] on Marine eDNA, Maryland, USA, 2024 (https://www.youtube.com/watch?v=g9Y7gqR-y-w&list=PLQ_hsjucVlJSX-GhtXagFuloMGIx5tJMN&index=20[video])
+* A recorded presentation on DNA data + GBIF originally made for the https://www.gbif.org/composition/lKyZFAUnIDv8kpf0CgZsS/technical-support-hour-for-gbif-nodes[Technical support hour for GBIF nodes]) (https://vimeo.com/912170754[video])
+* A quickly made example use of the MDT. (https://drive.google.com/file/d/1T27BYTxC_ky-Qn89lhvhlR0asRsLnbML/view?usp=sharing[video])
+* GBIF briefing on Digital Sequence Information (DSI) (https://www.gbif.org/dsi-statement[web page, text])
 
 === Selected short videos on eDNA and DNA metabarcoding
 
