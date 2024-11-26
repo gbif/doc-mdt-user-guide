@@ -25,9 +25,9 @@ NOTE: The 160th column of the OTU table corresponds to a negative control sample
 [[detailed_select_mdt]]
 === Select an MDT installation
 
-* Still learning or testing? Use the https://mdt.gbif-uat.org/[MDT Sandbox (Demo Installation)].
-* Got a real dataset? Identify and use the most relevant hosted MDT installation for the dataset. #how can we guide here??#
-* Can't find a relevant MDT installation? Use the https://mdt.gbif-uat.org/[GBIF Conversion MDT].
+* Still learning or testing? Use the https://mdt.gbif-test.org/[MDT Sandbox (Demo Installation)].
+* Got a real dataset? Identify and use the most relevant hosted MDT installation for the dataset. #how can we guide/link here??#
+* Can't find a relevant MDT installation? Use the https://mdt.gbif.org/[GBIF Conversion MDT].
 
 [[detailed_landing]]
 === Landing page
@@ -348,13 +348,14 @@ image::img/dg_publish_publish.png[]
 [[pub_con]]
 ==== MDT in conversion-only mode
 
-When using a hosted MDT in conversion mode or the GBIF Conversion MDT, the publishing step will require the user to contact the administrator of the MDT by using the link "*Ready to publish a dataset? Reach out to the administrator for assistance*".
+When using a hosted MDT in conversion mode or the https://mdt.gbif.org/[GBIF Conversion MDT], publishing will require the user to contact the administrator of the MDT by using the link "*Ready to publish a dataset? Reach out to the administrator for assistance*".
 
-NOTE: User that have prepared datasets using the GBIF Conversion MDT should investigate whether there is a relevant hosted MDT adminstered by a relevant GBIF node. #how can we guide here?#
+NOTE: Users that have prepared a dataset using the https://mdt.gbif.org/[GBIF Conversion MDT] should investigate whether there is a relevant hosted MDT adminstered by a relevant GBIF node. #how can we guide here?#
 
 .Users of MDT installations in conversion-only should use the link "*Ready to publish a dataset? Reach out to the administrator for assistance*". This will start a preformulated email to the manager of the MDT, requesting help.
 image::img/dg_publish_demo2.png[]
 
+[[pub_ipt]]
 === Publish through IPT
 
 This publishing procedure may be relevant for:

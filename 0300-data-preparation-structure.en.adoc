@@ -33,8 +33,8 @@ Recommended preparations #I need input here#:
 * Scientific papers related to the dataset.
 * Persons that should be associated with and/or credited for the dataset:
 ** Contact: The contact person for this dataset.
-** Creators: All persons that should be accredited when citing the dataset. You can prepare a table of creators using https://mdt.gbif-uat.org/templates/people.xlsx[this template]
-** Metadata providers: Potential additional people or organizations who provided documentation and other metadata for this dataset. You can prepare a table of metadata providers using https://mdt.gbif-uat.org/templates/people.xlsx[this template]
+** Creators: All persons that should be accredited when citing the dataset. You can prepare a table of creators using https://mdt.gbif-test.org/templates/people.xlsx[this template]
+** Metadata providers: Potential additional people or organizations who provided documentation and other metadata for this dataset. You can prepare a table of metadata providers using https://mdt.gbif-test.org/templates/people.xlsx[this template]
 
 [[fit_data]]
 === The OTU table as a data format

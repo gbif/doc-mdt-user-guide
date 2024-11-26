@@ -1,9 +1,7 @@
 [[introduction]]
 == Introduction
 
-IMPORTANT: #Both the MDT and this guide are continuously being developed. Even when using the most recent version of the guide, it may be slightly out of sync with the exact appearance and functionality of the MDT.#
-
-IMPORTANT: #The guide refers to a https://mdt.gbif-uat.org/[MDT Sandbox (Demo Installation)] and a https://mdt.gbif.org/[GBIF Conversion MDT]. These are not yet online! Currently these link to test installation: https://mdt.gbif-uat.org/ that uses UAT LOGIN! (not GBIF login)#
+IMPORTANT: #Both the MDT and this guide are continuously being developed, and the guide may be slightly out of sync with the exact appearance and functionality of the MDT.#
 
 === Target audiences and scope
 
@@ -22,18 +20,33 @@ What the MDT [.underline]#cannot# do:
 
 === Getting started
 
-If you are familiar with the basics of DNA metabarcoding data and/or just want to learn the basics of using the MDT:
+*Getting Started: Learn MDT Basics* +
+_Perfect for first-time users or those who want a quick overview of what the MDT is and how it works._
 
-* Work through the <<simple_quick_start>> using the https://mdt.gbif-uat.org/[MDT Sandbox (Demo Installation)].
-* Process the example dataset following the <<detailed_guidance>>. 
-** Refer to the <<preparation_structure, preparation instructions>>, the <<faq>> and the <<glossary>> as needed.
+* Begin with the <<simple_quick_start>> to get an overview of MDT.
 
-If you know the basics of the MDT and want to prepare and/or publish a real dataset:
+*Learn to Process a Realistic Dataset* +
+_A step-by-step guide for users looking to understand how to handle and process a dataset using the MDT._
 
-* Adapt your dataset to a template following the (see <<preparation_structure, preparation instructions>>) carefully.
-* Process the dataset following the <<detailed_guidance>>, while referreing to the <<preparation_structure, preparation instructions>>, the <<faq>>, and the <<glossary>> as needed.
+* Follow the <<detailed_guidance>> to process the example dataset.  
+** Use the <<preparation_structure, preparation instructions>>, <<faq>>, and <<glossary>> as references whenever needed.
 
+*Prepare Your Own Dataset* +
+_Designed for users already familiar with MDT basics who are ready to prepare their own datasets for publication._
 
-NOTE: The https://doi.org/10.35035/doc-vf1a-nr22[general GBIF DNA guide] has valuable general information on DNA biodiversity data, but is not yet updated with information on the MDT, so when in doubt, follow the information in this MDT user guide.
+* Adapt your dataset to one of the templates by carefully following the <<preparation_structure, preparation instructions>>.  
+* Process your dataset using the <<detailed_guidance>>, referring to the <<preparation_structure, preparation instructions>>, <<faq>>, and <<glossary>> as necessary.
+
+*MDT Administration* +
+_For MDT managers who have a grasp of the basics and need guidance on managing and maintaining the tool effectively._
+
+* Explore the <<admin>> section.
+
+*Learn More / Additional Resources* +
+_For those who wish to have a bit more context on GBIF, DNA-derived biodiversity data, Metabarcoding, environmental DNA, the Metabarcoding Data Programme, etc._
+
+* Explore the <<background_resources>> and <<faq>>.
+
+NOTE: The https://doi.org/10.35035/doc-vf1a-nr22[General GBIF DNA guide] has valuable general information on DNA biodiversity data, but is not yet updated with information on the MDT, so when in doubt, follow the information in this MDT user guide.
 
 <<<

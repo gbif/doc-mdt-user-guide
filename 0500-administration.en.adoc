@@ -1,46 +1,51 @@
 [[admin]]
 == Administration
 
-Only MDT administrators have access to the *Administration* item in the manu bar.
+Both MDT administrators and users can start using a hosted MDT immediately. *NB: Administrators typically do not need to take any action until they receive an email request from a tool user* – this process is explained in detail from the user's perspective in the <<publishing, Publishing Step>> of the <<detailed_guidance>>.
 
-MDT administrators and users can use the MDT right away, and the MDT administrator dooe in principle not need to do anything before prompted by email from a tool user, as described from the user perspective in the <<detailed_guidance>> (see below).
+=== Workflow for new users
 
-=== Procedure with a new user
-
-* A new user (data holder) has been directed to the hosted MDT, and logs into the MDT with GBIF user account.
-* The user uploads the dataset, and processes and publishes it to the test environment (steps 1 to 6), and in step 7 (Publish), the user either selects:
-+
-"_Ask for access to publish under this institution/organisation_"
-+ 
-*OR*
-+
-"_Ask for help with registering your institution/organisation_"
-* The MDT administrator then recieves an email from the user with relevant information to either:
-+
-Add the user to an existing organization.
+* A new user (data holder) logs into the MDT with GBIF user account.
+* The user uploads a dataset, processes it, and (optionally) publishes it to the test environment (steps 1 to 6). In step 7 (Publish), the user selects one of two options, that both initiate an automated email to the MDT administrator:  
+.. "_Ask for access to publish under this institution/organisation_" – in cases where they can find their institution from the drop-down menu. (NB: drop-down pulls from the GBIF Registry).
 +
 *OR*
 +
-Start the procedure of endorsing a new institution as GBIF publisher (and add the organization to the MDT and associate the user with it).
-* The administrator also recieves a link to the dataset in the MDT and in the test environment (if UAT publication was done), and can thus provide the user with feedback on possible or wanted changes/improvements to the dataset.
+.. "_Ask for help with registering your institution/organisation_"  – in cases where they _cannot_ find their institution from the drop-down menu.
+* The MDT administrator recieves an email from the user with relevant information to either:  
+.. Associate the user with the publishing institution/organization in the MDT.  
++
+*OR*
++
+.. Start the procedure of endorsing a new institution/organization as GBIF publisher, and then associate the user with it in the MDT.
+* The administrator also recieves a link to the dataset in the MDT incl a link to the dataset in the test environment if UAT publication was done, and can thus provide the user with feedback on possible or wanted changes/improvements to the dataset.
 
-NOTE: Returning users can upload and publish datasets under any of the organizations they have been associated with.
+NOTE: Returning users can upload and publish datasets under any of the publisning institutions/organizations they have been associated with in the MDT.
 
-=== Datasets tab
+=== Administration (item in the menu bar)
+
+Only MDT administrators have access to the *Administration* section. The Administration section has two tabs:
+
+*All Datasets (tab)*
 
 .The *All datasets* tab. Datasets processed beyond step 3 (processing) will have hyperlinks (the Taxon and Sample counts) to simple representations of the dataset. Datasets published to the GBIF test environment (UAT) and/or GBIF.org will have links to those representations. Datasets can be sorted and filtered in various ways.
 image::img/admin_datasets.png[]
 
-=== Oranizations tab
+*Manage Organizations (tab)*
 
-.The *Manage organizations* tab. Here the administrator can add new organizations to the MDT. If the MDT is not enabled for publication there will be a yellow box explaining the options and restrictions as in this figure. Organizations can also be deleted. Users (GBIF username) can be associated with organizations by pressing the plus (+) sign under Users. This will enable users to publish datasets under with the organization as publisher.
+.The *Manage organizations* tab. Here the administrator can add new organizations to the MDT. If the MDT is not enabled for publication (i.e. conversion-only MDTs) there will be a yellow box explaining the options and restrictions as in this figure. Organizations can also be deleted from the MDT (will not affect the GBIF Registry). Users (GBIF username) can be associated with an organization by pressing the plus (+) sign under Users. This enables users to publish datasets under that organization as publisher.
 image::img/admin_org.png[]
 
-
-.Press *Add new organization* to add organizations to the MDT. Only organizations already registered in GBIF can be added.
+.Press *Add new organization* to add organizations to the MDT. Only organizations already registered (present in the GBIF Registry) in GBIF can be added.
 image::img/admin_org_add01.png[]
 
-.The Organization Key is automatically added to the form, when selecting an organization. *Retrieve the Organization shared token to enable publication for the Organization!*. Pressing *Retrieve* will do this automatically IF the administrator has the required rights in the GBIF registry. Alternatively retrieve the token by #XXX#. Users can be associated with the Organization directly in the form or later.
+.The Organization Key is automatically added to the form when selecting an organization. *Retrieve the Organization shared token to enable publication for the Organization!*. Pressing *Retrieve* will do this automatically IF the administrator has the required rights in the GBIF Registry. Alternatively the MDT Administrator needs to retrieve the token by #XXX (contacting helpdes?)# . Users can be associated with the Organization in the same workflow in the form or be added later (see above).
 image::img/admin_org_add02.png[]
+
+=== Publish through IPT
+
+Managers of MDTs in conversion-only mode, will need to download the <<dwc-a>> from the MDT and publish them through some other channel. This is explained in the section <<pub_ipt>>.
+
+
 
 <<<
