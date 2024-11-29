@@ -112,7 +112,7 @@ image::img/simple_export.png[]
 [start=3]
 . Click on the hyperlink *Dataset at gbif-uat.org*.
 
-.Pressing *Dataset at gbif-uat.org* opens the dataset in the GBIF test environment (UAT) where users can see what a real publication would look like and verify that the processed dataset (<dwc-a>) contains all the wanted information for real publication. NB: The dataset is not completely indexed immediately and the dataset may e.g. have 0 occurences and no map compared to this figure, until fully indexed. Notice how the hatched/shaded header and the red "TEST" label indicate that this is a test environment. Explore the dataset and notice how the uploaded data and dataset information/description is presented on the website.  
+.Pressing *Dataset at gbif-uat.org* opens the dataset in the GBIF test environment (UAT) where users can see what a real publication would look like and verify that the processed dataset (<<dwc-a>>) contains all the wanted information for real publication. NB: The dataset is not indexed immediately and the dataset may e.g. have 0 (zero) occurences and no map compared to this figure, until fully indexed. Notice how the hatched/shaded header and the red "TEST" label indicate that this is a test environment. Explore the dataset and notice how the uploaded data and dataset information/description is presented on the website.  
 image::img/simple_uat.png[role=half-width,scaledwidth=20%]
 
 [start=4]
