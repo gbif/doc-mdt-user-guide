@@ -47,7 +47,7 @@ _Designed for users already familiar with MDT basics who are ready to prepare th
 * Process your dataset using the <<detailed_guidance>>, referring to the <<preparation_structure, preparation instructions>>, <<faq>>, and <<glossary>> as necessary.
 
 *MDT Administration* +
-_For MDT managers who have a grasp of the basics and need guidance on managing and maintaining the tool effectively._
+_For MDT administrators who have a grasp of the basics and need guidance on managing and maintaining the tool effectively._
 
 * Explore the <<admin>> section.
 

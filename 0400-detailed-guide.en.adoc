@@ -43,7 +43,7 @@ The Menu Bar contains the following items
 * <<admin,_Administration_>> (only visible to MDT Administrators)
 * My datasets
 * New dataset: start new data upload
-* Login / User area (user name): links to: logout, My datasets (and Administration for Managers).
+* Login / User area (user name): links to: logout, My datasets
 
 *My datasets*
 
@@ -60,7 +60,7 @@ image::img/dg_mydata.png[]
 
 *Help, feedback and other resources*
 
-* The *Neep help?* (fern leaf): Opens an email to contact the Manager of the MDT installation.
+* The *Neep help?* (fern leaf): Opens an email to contact the Administrator of the MDT installation.
 * The *RSS feed*: Lists the most recently updated resources (datasets) available as an RSS feed. This can be used to monitor incoming datasets to the MDT installation.
 * The *Report a bug* and *Request a feature* : Opens a GitHub issue where users can report bugs or request features to be developed.
 
@@ -321,15 +321,15 @@ image::img/dg_publish_find_institution.png[]
 *Find/register your institution* using the search box to search for your institution.
 
 * If your institution is already registered:
-** Select it, and click on "*Ask for access to publish under this institution/organisation*". This will start a preformulated email to the manager of the MDT, asking to associate you with the institutuion in the MDT.
-** Send the mail, and allow some time for the MDT manager to get back you you.
+** Select it, and click on "*Ask for access to publish under this institution/organisation*". This will start a preformulated email to the administrator of the MDT, asking to associate you with the institutuion in the MDT.
+** Send the mail, and allow some time for the MDT administrator to get back you you.
 * If you can´t find your institution/organisation:
-** Click on "*Ask for help with registering your institution/organisation*". This will start a preformulated email to the manager of the MDT, asking for help with the steps needed in order to get your institution recognized as a GBIF data publisher and to associate you so your dataset can be published.
+** Click on "*Ask for help with registering your institution/organisation*". This will start a preformulated email to the administrator of the MDT, asking for help with the steps needed in order to get your institution recognized as a GBIF data publisher and to associate you so your dataset can be published.
 ** Add the relevant information about your institution in the mail:
 *** INSTITUTION NAME
 *** INSTITUTION ADDRESS
 *** CONTACT EMAIL
-** Send the mail, and allow some time for the MDT manager to get back you you
+** Send the mail, and allow some time for the MDT administrator to get back you you
 
 .If your institution is already registered, select it and request access to publish. If not, ask for help with registering.
 image::img/dg_publish_find_institution_step2.png[]
@@ -352,7 +352,7 @@ When using a hosted MDT in conversion mode or the https://mdt.gbif.org/[GBIF Con
 
 NOTE: Users that have prepared a dataset using the https://mdt.gbif.org/[GBIF Conversion MDT] should investigate whether there is a relevant hosted MDT adminstered by a relevant GBIF node. #how can we guide here?#
 
-.Users of MDT installations in conversion-only should use the link "*Ready to publish a dataset? Reach out to the administrator for assistance*". This will start a preformulated email to the manager of the MDT, requesting help.
+.Users of MDT installations in conversion-only should use the link "*Ready to publish a dataset? Reach out to the administrator for assistance*". This will start a preformulated email to the administrator of the MDT, requesting help.
 image::img/dg_publish_demo2.png[]
 
 

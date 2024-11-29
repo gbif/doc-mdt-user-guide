@@ -119,16 +119,20 @@ image::img/simple_uat.png[role=half-width,scaledwidth=20%]
 . Go back to the MDT.
 . Press on *Publish* (directly in the header with the 7 steps).
 
+
 [discrete]
 === Publish (step 7)
 
-image::img/simple_publish_header.png[]
-
 You should now have a basic idea of how the MDT works.
 
-If using this quick start guide as suggested, you will be using the https://mdt.gbif-test.org/[MDT Sandbox (Demo Installation)]. The publishing step (step 7) is *not enabled* for the this MDT, and step 7 will appear as in the figure below. Read about the publishing step in the <<detailed_guidance>>.
+TIP: The <<detailed_guidance>> is also an advanced quick start guide with an associated example dataset. It is recommended to continue with that as a next step.
 
-.The *Publish* step is not enabled for the https://mdt.gbif-test.org/[MDT Sandbox (Demo Installation)]. If you by chance prepared a real dataset using the https://mdt.gbif-test.org/[MDT Sandbox (Demo Installation)], it is recommended to redo the processing in a proper MDT installation, unless this would for some reason be too problematic. In that case you can use the link on the page: "Ready to publish a dataset? Reach out to the administrator for assistance".
+
+image::img/simple_publish_header.png[]
+
+If using the https://mdt.gbif-test.org/[MDT Sandbox (Demo Installation)] as suggested, the publishing step (step 7) is *not enabled* for the this MDT, and step 7 will appear as in the figure below. Read about the publishing step in the <<detailed_guidance>>.
+
+.The *Publish* step is not enabled for the https://mdt.gbif-test.org/[MDT Sandbox (Demo Installation)]. If you prepared a real dataset using the MDT Sandbox, you should be aware that data is not backed up and deleted regularly, so it is highly recommended to redo the processing in a proper MDT installation.
 image::img/simple_publish.png[]
  
 

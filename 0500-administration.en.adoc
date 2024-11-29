@@ -23,7 +23,7 @@ In step 7 (Publish), the user selects one of two options, that both initiate an 
 The MDT administrator then recieves an email from the user with relevant information to either:  
 
 [upperalpha]
-. Associate the user with the publishing institution/organization in the MDT (see section: <<man_org>>). A link in the email links directluy to the relevant dialogue box for the manager.  
+. Associate the user with the publishing institution/organization in the MDT (see section: <<man_org>>). A link in the email links directluy to the relevant dialogue box for the administrator.  
 +
 *OR*
 +
@@ -36,9 +36,9 @@ NOTE: Returning users can upload and publish datasets under any of the publisnin
 [[wcm]]
 ==== Conversion-only Mode
 
-In step 7 (Publish), the user clicks the link "Ready to publish a dataset? Reach out to the administrator for assistance". This will start a preformulated email to the manager of the MDT, requesting help.
+In step 7 (Publish), the user clicks the link "Ready to publish a dataset? Reach out to the administrator for assistance". This will start a preformulated email to the administrator of the MDT, requesting help.
 
-When receiving the email from the user, the MDT Manager can then start the process of ensuring that the user (and/or dataset) is associated with an endorsed GBIF publisher, that the dataset is suitable for publication, and help publishing the prepared DwC Archive through some other procedure (see: <<pub_ipt>>).
+When receiving the email from the user, the MDT administrator can then start the process of ensuring that the user (and/or dataset) is associated with an endorsed GBIF publisher, that the dataset is suitable for publication, and help publishing the prepared DwC Archive through some other procedure (see: <<pub_ipt>>).
 
 === Administration (section in the menu bar)
 
@@ -65,7 +65,7 @@ image::img/admin_org_add02.png[]
 [[pub_ipt]]
 === Publish through IPT or elsewhere
 
-Managers of MDTs in conversion-only mode, will need to download the <<dwc-a>> from the MDT and publish them through some other channel.
+Administrators of MDTs in conversion-only mode, will need to download the <<dwc-a>> from the MDT and publish them through some other channel.
 
 ==== Publish through IPT
 
@@ -75,7 +75,7 @@ MOTE: By downloading dataset from the MDT and publishing elsewhere, the possibil
 
 The MDT produces a fully publishable <<dwc-a>> with no need for changes or additions. The archive can validate in the https://www.gbif.org/tool/81281/gbif-data-validator[GBIF data validator].
 
-IPT users/managers may run into challenges if using older versions of the IPT and/or if the DNA-derived data extension has not been installed. Also there is a known issue that requires the values of the license fields to be set manually.
+IPT users/administrators may run into challenges if using older versions of the IPT and/or if the DNA-derived data extension has not been installed. Also there is a known issue that requires the values of the license fields to be set manually.
 
 *Publishing an archive from the MDT via IPT*
 
