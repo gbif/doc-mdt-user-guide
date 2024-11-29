@@ -1,7 +1,16 @@
 [[introduction]]
 == Introduction
 
-IMPORTANT: #Both the MDT and this guide are continuously being developed, and the guide may be slightly out of sync with the exact appearance and functionality of the MDT.#
+****
+The MDT and this guide are continuously evolving, so the guide may not fully reflect the current appearance and functionality of the MDT
+****
+
+****
+IMPORTANT: *Use your GBIF login* + 
+All MDTs now use the _same https://www.gbif.org/user/profile[user account] as GBIF.org_.org. +
+Also, you need a *password* for your GBIF account. If you originally signed up with GitHub or Google, click 'Forgot password' on the login page to set up a password. +
+The (test) MDT used UAT user profiles during early development, but this is no longer the case.
+****
 
 === Target audiences and scope
 

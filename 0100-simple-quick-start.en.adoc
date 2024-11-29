@@ -10,7 +10,7 @@ This guide uses a _minimal dummy dataset_ – not to be used as a model for real
 . Download link:../example_data/example_data1.current.en.xlsx[Example Dataset 1].
 . (Optional) Explore the structure of the example data in e.g. Microsoft Excel.
 * The Excel Workbook has four sheets: *OTU_table*, *Taxonomy*, *Samples* and *Study*.
-**  *OTU_table* is the OTU table, with sample IDs as column headers, OTU IDs as row names, and sequence read counts in the cells.
+** *OTU_table* is the OTU table, with sample IDs as column headers, OTU IDs as row names, and sequence read counts in the cells.
 ** *Taxonomy* links OTU IDs (from OTU_table) to sequence and taxonomic info.
 ** *Samples* links sample IDs (from OTU_table) to sample metadata: e.g. spatiotemporal information, protocols etc.
 ** *Study* holds global values for the dataset, such as barcoding region, primer sequences, and primer names.

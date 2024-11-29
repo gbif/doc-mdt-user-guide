@@ -32,7 +32,7 @@ NOTE: The 160th column of the OTU table corresponds to a negative control sample
 [[detailed_landing]]
 === Landing page
 
-. Log in with *GBIF username*
+. Log in with https://www.gbif.org/user/profile[*GBIF account*] (not UAT account as previously!)
 
 The landing page (home) is where users access their datasets, start new uploads, etc.
 
@@ -40,10 +40,10 @@ image::img/dg_landing.png[]
 
 The Menu Bar contains the following items  
 
-* _Administration (only visible to MDT managers)_
+* <<admin,_Administration_>> (only visible to MDT Administrators)
 * My datasets
 * New dataset: start new data upload
-* Login / User area (user name): links to: logout, My datasets and Administration (for Managers).
+* Login / User area (user name): links to: logout, My datasets (and Administration for Managers).
 
 *My datasets*
 
@@ -355,43 +355,5 @@ NOTE: Users that have prepared a dataset using the https://mdt.gbif.org/[GBIF Co
 .Users of MDT installations in conversion-only should use the link "*Ready to publish a dataset? Reach out to the administrator for assistance*". This will start a preformulated email to the manager of the MDT, requesting help.
 image::img/dg_publish_demo2.png[]
 
-[[pub_ipt]]
-=== Publish through IPT
-
-This publishing procedure may be relevant for:
-
-* Data publishers that cannot have their data in a hosted repository.
-* Managers of a MDT in conversion-only mode.
-
-The https://www.gbif.org/ipt[Integrated Publishing Toolkit] — commonly referred to as the IPT — is a free open-source software developed by GBIF and used by organizations around the world to create and manage repositories for sharing biodiversity datasets. If you have access to an IPT and know how to use it, you can download the <<dwc-a>> produced by the MDT at the Export (step 6) and publish it through an IPT.
-
-MOTE: By downloading dataset from the MDT and publishing elsewhere, the possibility for easy updating, re-processing and visualization of the dataset in the MDT is lost.
-
-The MDT produces a fully publishable <<dwc-a>> with no need for changes or additions. The archive can validate in the https://www.gbif.org/tool/81281/gbif-data-validator[GBIF data validator].
-
-Uses may run into challenges if using older versions of the IPT and/or if the DNA-derived data extension has not been installed. Also there is a known issue that requires the values of the license fields to be set manually.
-
-*Publishing an archive from the MDT via IPT*
-
-* Download the DwC-A (archive.zip) from the MDT.
-* login to the IPT.
-* Press *Magage Resources*.
-* Press *Create new*.
-* Give your dataset a *Shortname*.
-* Select _Occurrence_ under *Type*.
-* Choose *Import from an archived resource*. and select the archive on the computer.
-* Press *Create*.
-* Validate and verify that the data looks as expected.
-* Publish the data as one would normally do in the IPT.
-
-=== Register and host DwC-A elsewhere
-
-A Darwin Core Archive produced with the MDT may be put elsewhere on the web – preferably in a stable repository (e.g. Zenodo, GitHub) – and can then be indexed by GBIF. This requires somebody to register the new resource with GBIF.
-
-* Download the DwC-A (archive.zip) from the MDT.
-* Put the archive in a stable repository so you have an URL: www/xxx/archive.zip
-* Register the dataset with the relevant publisher in the GBIF registry (#How is that done ?#).
-** See e.g. this https://vimeo.com/996575071[video] on sharing to GBIF via APIs.
-** See this https://data-blog.gbif.org/post/installations-and-hosting-solutions-explained/[blog post] on general possibilities to publish and host datasets.
 
 <<<
