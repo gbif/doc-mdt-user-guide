@@ -11,20 +11,22 @@ The pilot programme is open to GBIF nodes who wish to administer an MDT. https:/
 
 The GBIF Secretariat will provide each participating node with a hosted installation of the MDT, providing maintenance and updates as new features and versions are introduced. In recognition of the fact that data sovereignty issues may require some nodes host datasets on servers within their national boundaries, installations can be configured to operate in one of two modes:
 
+****
 *Publishing mode*: MDT admins (and users, if given permission) can register datasets for publication through GBIF through the organizations to which they’re associated. Operating in this mode, the MDT functions similarly to an installation of GBIF’s Integrated Publishing Toolkit (IPT) and serves a publishing platform into GBIF.
  
 _Unique features_  
 
-* Direct publication to GBIF.org for admins (and users when/if given permision)
+* Direct dataset publication to GBIF.org by admins (and users when/if given permision)
 * Easy correction, updating and re-publication
 * Extra BIOM endpoints for improved interoperability and visualization purposes.
-
+****
+****
 *Conversion-only mode*: MDT admins and users can use it to reshape their datasets into GBIF-ready Darwin Core Archive (DwC-A) files but must download them for hosting and publication on another repository, such as an IPT. This mode may be most appropriate where nodes or data holders have data sovereignty concerns.
 
 _Unique features_
 
 * Final DwC-A _cannot_ be published directly from the MDT, and needs to be downloaded and hosted elsewhere.
-
+****
 .Features of the MDT modes
 [cols="3,1,1,3", options="header"]
 |===
