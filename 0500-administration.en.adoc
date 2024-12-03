@@ -1,63 +1,68 @@
 [[admin]]
 == Administration
 
-=== Applying and selecting an installation mode
+=== Applying for a Hosted MDT
 
 In October 2024, https://www.gbif.org/news/3gm3lJaUQgTKZJRm6TiBff/gbif-nodes-invited-to-join-pilot-for-metabarcoding-data-on-biodiversity[GBIF launched] a pilot phase for the https://www.gbif.org/metabarcoding-data-programme[Metabarcoding Data programme] intended to improve GBIF’s integration of DNA metabarcoding data on biodiversity.
 
 The pilot programme is open to GBIF nodes who wish to administer an MDT. https://www.gbif.org/composition/7o3nbjPcY92vZxmjo6Z8E2/[*Link*] to application form.
 
-==== Configuration (publishing or conversion-only)
+=== Configuration Modes (publishing or conversion-only)
 
 The GBIF Secretariat will provide each participating node with a hosted installation of the MDT, providing maintenance and updates as new features and versions are introduced. In recognition of the fact that data sovereignty issues may require some nodes host datasets on servers within their national boundaries, installations can be configured to operate in one of two modes:
 
 *Publishing mode*: MDT admins (and users, if given permission) can register datasets for publication through GBIF through the organizations to which they’re associated. Operating in this mode, the MDT functions similarly to an installation of GBIF’s Integrated Publishing Toolkit (IPT) and serves a publishing platform into GBIF.
+ 
+_Unique features_  
+
+* Direct publication to GBIF.org for admins (and users when/if given permision)
+* Easy correction, updating and re-publication
+* Extra BIOM endpoints for improved interoperability and visualization purposes.
 
 *Conversion-only mode*: MDT admins and users can use it to reshape their datasets into GBIF-ready Darwin Core Archive (DwC-A) files but must download them for hosting and publication on another repository, such as an IPT. This mode may be most appropriate where nodes or data holders have data sovereignty concerns.
 
-*Reasons for GBIF nodes to request conversion only MDT*
+_Unique features_
 
+* Final DwC-A _cannot_ be published directly from the MDT, and needs to be downloaded and hosted elsewhere.
 
-
-
-
+.Features of the MDT modes
 [cols="3,1,1,3", options="header"]
 |===
 | Feature | Publishing | Conversion | Comments
 
 | Admins can publish directly to GBIF.org
-| [role="green"]✔
-| [role="red"]✘
+| &#x2705;
+| &#x274C;
 | 
 
 | Users can be given rights to publish to GBIF.org
-| [role="green"]✔*
-| [role="red"]✘
+| &#x2705; *
+| &#x274C;
 | *) Admins can opt to withhold publishing rights from users and manage publications themselves.
 
 | Datasets can be updated from the MDT
-| [role="green"]✔
-| [role="red"]✘*
+| &#x2705;
+| &#x274C; *
 | *) Original input files can be updated, uploaded again, processed, and downloaded as updated DwC. 
 
 | Datasets on GBIF.org contains the extra endpoint type BIOM_2_1 
-| [role="green"]✔
-| [role="red"]✘
+| &#x2705;
+| &#x274C;
 | The BIOM formats ensures better reuse and retains future visualization possibilites. 
 
 | Dataset on GBIF.org contains the extra endpoint type BIOM_1_0 
-| [role="green"]✔
-| [role="red"]✘
+| &#x2705;
+| &#x274C;
 | The BIOM formats ensures better reuse and retains future visualization possibilites.
 
 | Dataset can be downloaded and published elsewhere 
-| [role="green"]✔*
-| [role="green"]✔*
+| &#x2705; *
+| &#x2705; * 
 | *) Difficult to update/correct datasets. No BIOM endpoints. 
 
 | Dataset (endpoint) hosted by GBIF.  
-| [role="green"]✔
-| [role="red"]✘*
+| &#x2705;
+| &#x274C; *
 | *) The produced DwC-A will remain in the GBIF hosted MDT unless deleted.
 
 
