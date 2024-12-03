@@ -1,9 +1,62 @@
 [[admin]]
 == Administration
 
+=== Applying and selecting an installation mode
+
+In October 2024, https://www.gbif.org/news/3gm3lJaUQgTKZJRm6TiBff/gbif-nodes-invited-to-join-pilot-for-metabarcoding-data-on-biodiversity[GBIF launched] a pilot phase for the https://www.gbif.org/metabarcoding-data-programme[Metabarcoding Data programme], intended to improve GBIF’s integration of DNA metabarcoding data on biodiversity. The pilot programme is open to GBIF nodes who wish to administer an MDT.
+
+https://www.gbif.org/composition/7o3nbjPcY92vZxmjo6Z8E2/[Apply to manage an MDT] in the pilot programme (open to GBIF nodes).
+
+==== Configuration (publishing or conversion-only)
+
+The GBIF node manager requests an MDT to be configured in one of two modes: +  
+*Publishing mode*: MDT administrators (and users, if given the rights) can publish (register) datasets to GBIF.org directly from the MDT. This mode functions similarly to an installation of GBIF’s <<ipt>>.  +  
+*Conversion-only mode*: MDT administrator and users can use the MDT to prepare a <<dwc-a>>.
+
+Why select *Publication mode*
+
+[cols="2,1,1,2", options="header"]
+|===
+| Feature | Publishing | Conversion | Comments
+
+| Admins can publish directly to GBIF.org
+| [role="green"]✔
+| [role="red"]✘
+| 
+
+| Users can be given rights to publish to GBIF.org
+| [role="green"]✔ *
+| [role="red"]✘
+| *) Admins can opt to withhold publishing rights from users and manage publications themselves.
+
+| Datasets can be updated from the MDT
+| [role="green"]✔
+| [role="red"]✘ *
+| *) Original input files can be updated, uploaded again, processed, and downloaded as updated DwC. 
+
+| Dataset on GBIF.org contains the extra endpoint type BIOM_2_1 
+| [role="green"]✔
+| [role="red"]✘
+| The BIOM formats ensures better reuse and retains future visualization possibilites. 
+
+| Dataset on GBIF.org contains the extra endpoint type BIOM_1_0 
+| [role="green"]✔
+| [role="red"]✘
+| The BIOM formats ensures better reuse and retains future visualization possibilites.
+
+| Dataset can be downloaded and published elsewhere 
+| [role="green"]✔
+| [role="green"]✔
+| 
+
+
+|===
+
+=== Workflows 
+
 Both MDT administrators (and users) can start using a hosted MDT immediately. *NB: Administrators typically do not need to take any action until they receive an email from an user of the MDT* – this process (automatic email generation) is explained in detail from the user's perspective in the <<publishing, Publishing Step>> of the <<detailed_guidance>>.
 
-=== Basic workflow with new users 
+*Basic workflow with a new user*
 
 * A new user (data holder) logs into the MDT with GBIF user account.
 * The user uploads a dataset, processes it, and (optionally) publishes it to the test environment (steps 1 to 6). In step 7 (Publish), the workflow is different for MDTs in <<wpm>> and MDTs in <<wcm>>:
