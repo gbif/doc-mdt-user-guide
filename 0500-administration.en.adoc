@@ -13,6 +13,8 @@ The GBIF node manager requests an MDT to be configured in one of two modes: +
 *Publishing mode*: MDT administrators (and users, if given the rights) can publish (register) datasets to GBIF.org directly from the MDT. This mode functions similarly to an installation of GBIF’s <<ipt>>.  +  
 *Conversion-only mode*: MDT administrator and users can use the MDT to prepare a <<dwc-a>>.
 
+////
+
 Why select *Publication mode*
 
 [cols="2,1,1,2", options="header"]
@@ -51,6 +53,8 @@ Why select *Publication mode*
 
 
 |===
+
+////
 
 === Workflows 
 
