@@ -9,7 +9,7 @@ The pilot programme is open to GBIF nodes who wish to administer an MDT. https:/
 
 === Configuration Modes (publishing or conversion-only)
 
-The GBIF Secretariat will provide each participating node with a hosted installation of the MDT, providing maintenance and updates as new features and versions are introduced. In recognition of the fact that data sovereignty issues may require some nodes host datasets on servers within their national boundaries, installations can be configured to operate in one of two modes:
+The GBIF Secretariat will provide each participating node with a hosted installation of the MDT, providing maintenance and updates as new features and versions are introduced. Installations can be configured to operate in one of two modes. The selection is based on wanted features and potential restrictions on data hosting.
 
 ****
 *Publishing mode*: MDT admins (and users, if given permission) can register datasets for publication through GBIF through the organizations to which they’re associated. Operating in this mode, the MDT functions similarly to an installation of GBIF’s Integrated Publishing Toolkit (IPT) and serves a publishing platform into GBIF.
@@ -21,7 +21,7 @@ _Unique features_
 * Extra BIOM endpoints for improved interoperability and visualization purposes.
 ****
 ****
-*Conversion-only mode*: MDT admins and users can use it to reshape their datasets into GBIF-ready Darwin Core Archive (DwC-A) files but must download them for hosting and publication on another repository, such as an IPT. This mode may be most appropriate where nodes or data holders have data sovereignty concerns. Unfortunately, this "download-and-publish-elsewhere" procedure, "breaks" most of the user-friendly features of the MDT (see table below). 
+*Conversion-only mode*: MDT admins and users can use it to reshape their datasets into GBIF-ready Darwin Core Archive (DwC-A) files but must download them for hosting and publication on another repository, such as an IPT. This mode may be most appropriate where nodes or data holders have data sovereignty concerns. This mode is offered in recognition of the fact that data sovereignty issues may require that some nodes host datasets on servers within their national boundaries. Unfortunately, this "download-and-publish-elsewhere" procedure, disables most of the user-friendly features of the MDT (see table below). 
 
 _Unique features_
 
@@ -41,12 +41,12 @@ _Unique features_
 | Users can be given rights to publish to GBIF.org
 | &#x2705; *
 | &#x274C;
-| *) Admins can opt to withhold publishing rights from users and manage publications themselves
+| *) Admins can opt to withhold publishing rights from users, and manage all publication themselves
 
 | Datasets can be updated from the MDT
 | &#x2705;
 | &#x274C; *
-| *) For conversion MDTs original input files could be updated, uploaded again, processed, and downloaded as updated DwC-A to replace the previous endpoint wherever it is hosted 
+| *) For conversion MDT original input files could be updated, uploaded again, processed, and downloaded as updated DwC-A to replace the previous endpoint wherever it is hosted 
 
 | Datasets on GBIF.org contains the extra endpoint type BIOM_2_1 
 | &#x2705;
@@ -59,12 +59,16 @@ _Unique features_
 | The BIOM formats ensures better reuse and retains future visualization possibilites
 
 | Retain unmappable fields for potential future re-mapping     
-| &#x2705; *
+| &#x2705;
 | &#x274C;
 | The BIOM format holds all uploaded data fields (incl unmapped fields), and the mapping can thus be extended e.g. when new DwC terms are available
 
+| Dataset _has to be_ downloaded and published elsewhere 
+| &#x274C;
+| &#x2705;
+| 
 
-| Dataset can be downloaded and published elsewhere 
+| Dataset _can be_ downloaded and published elsewhere 
 | &#x2705; *
 | &#x2705; * 
 | *) Difficult to update/correct datasets. No BIOM endpoints
@@ -72,9 +76,7 @@ _Unique features_
 | Dataset (endpoint) hosted by GBIF
 | &#x2705;
 | &#x274C; *
-| *) The produced DwC-A will remain in the GBIF hosted MDT unless deleted
-
-
+| *) The entire dataset will remain in the hosted MDT unless deleted from there
 
 |===
 
