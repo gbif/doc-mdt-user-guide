@@ -31,7 +31,7 @@ _Unique features_
 .Features of the MDT modes
 [cols="3,1,1,3", options="header"]
 |===
-| Feature | Publishing | Conversion | Comments
+| Feature | Publishing | Conversion-only | Comments
 
 | Admins can publish directly to GBIF.org
 | &#x2705;
@@ -46,7 +46,7 @@ _Unique features_
 | Datasets can be updated from the MDT
 | &#x2705;
 | &#x274C; *
-| *) For conversion MDT original input files could be updated, uploaded again, processed, and downloaded as updated DwC-A to replace the previous endpoint wherever it is hosted 
+| *) For conversion-only MDT original input files could be updated, uploaded again, processed, and downloaded as updated DwC-A to replace the previous endpoint wherever it is hosted 
 
 | Datasets on GBIF.org contains the extra endpoint type BIOM_2_1 
 | &#x2705;

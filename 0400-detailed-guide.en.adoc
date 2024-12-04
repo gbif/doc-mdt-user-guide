@@ -348,7 +348,7 @@ image::img/dg_publish_publish.png[]
 [[pub_con]]
 ==== MDT in conversion-only mode
 
-When using a hosted MDT in conversion mode or the https://mdt.gbif.org/[GBIF Conversion MDT], publishing will require the user to contact the administrator of the MDT by using the link "*Ready to publish a dataset? Reach out to the administrator for assistance*".
+When using a hosted MDT in -only mode or the https://mdt.gbif.org/[GBIF Conversion MDT], publishing will require the user to contact the administrator of the MDT by using the link "*Ready to publish a dataset? Reach out to the administrator for assistance*".
 
 NOTE: Users that have prepared a dataset using the https://mdt.gbif.org/[GBIF Conversion MDT] should investigate whether there is a relevant hosted MDT adminstered by a relevant GBIF node. #how can we guide here?#
 
