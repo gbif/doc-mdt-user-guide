@@ -1,5 +1,5 @@
 [[background_resources]]
-== Background material and resources
+== Background Material and Resources
 
 === GBIF and DNA
 

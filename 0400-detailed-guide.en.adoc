@@ -1,5 +1,5 @@
 [[detailed_guidance]]
-== Detailed user guide
+== Detailed User Guide
 
 This section provides a section-wise guide to using the MDT including a step-wise processing guide
 

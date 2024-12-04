@@ -1,5 +1,5 @@
 [[example_data]]
-== Example datasets
+== Example Datasets
 
 [[example1,Example Dataset 1]]
 === Example dataset 1: ITS fungi – fictional minimal dataset
