@@ -41,7 +41,7 @@ include::0600-dataset-templates.en.adoc[]
 
 include::0800-example-datasets.en.adoc[]
 
-include::0830-tips_and_tricks.en.adoc
+include::0830-tips_and_tricks.en.adoc[]
 
 include::0850-background_resources.en.adoc[]
 
