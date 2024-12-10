@@ -5,7 +5,7 @@ A Simple Quick Start Guide with minimal explanation.
 
 IMPORTANT: This guide assumes that you are using the https://mdt.gbif-test.org/[MDT Sandbox (Demo Installation)]. Please note that datasets in this environment are deleted weekly; therefore, avoid uploading important data without a backup.
 
-This guide uses a _minimal dummy dataset_ – not to be used as a model for real data. The dataset is based on <<template1, template 1>>
+This guide uses a _minimal dummy dataset_ – not to be used as a model for real data. The dataset is based on <<template1, template 1>>.
 
 . Download link:../example_data/example_data1.current.en.xlsx[Example Dataset 1].
 . (Optional) Explore the structure of the example data in e.g. Microsoft Excel.
