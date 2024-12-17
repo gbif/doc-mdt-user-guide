@@ -11,6 +11,78 @@ TIP: The MDT will not include samples that are not present in both the *Samples*
 
 Some users have data in an already structured system and may want to build a publication pipeline that runs the MDT using API. This https://github.com/gbif/metabarcoding-data-toolkit-backend?tab=readme-ov-file#api[section in the MDT backend GitHub^] describes the API methods needed to run a dataset through the MDT, from raw data files to a Darwin Core Archive, published to GBIF.org. When running the MDT with APIs, it is possible to review the dataset through the UI at any step during the API interaction.
 
+=== Exporting a PhyloSeq object for the MDT
+
+Users analysing their metabarcoding data in the r-package PhyloSeq may use these simple functions to save the data as MDT compatible files. (NB: unless the PhyloSeq data already includes all the recommended fields for GBIF publishing and uses DwC terms for fields, further preparations will be needed (see <<preparation_structure>>). 
+
+==== From PhyloSeq to Excel
+
+[source,r]
+----
+# Load necessary libraries
+library(phyloseq)
+library(openxlsx)
+
+# Function to save Excel workbook
+phyloseq_to_MDT_excel <- function(physeq, filename = "Phyloseq_Tables.xlsx") {
+  # Create a new Excel workbook
+  wb <- createWorkbook()
+  
+  # Save OTU Table
+  otu_table_df <- data.frame(otu_table(physeq))
+  addWorksheet(wb, "OTU_table")
+  writeData(wb, "OTU_table", cbind(id = rownames(otu_table_df), otu_table_df))
+  
+  # Save Sample Data
+  sample_data_df <- data.frame(sample_data(physeq))
+  addWorksheet(wb, "Samples")
+  writeData(wb, "Samples", cbind(id = rownames(sample_data_df), sample_data_df))
+  
+  # Save Taxonomy Table
+  tax_table_df <- data.frame(tax_table(physeq))
+  addWorksheet(wb, "Taxonomy")
+  writeData(wb, "Taxonomy", cbind(id = rownames(tax_table_df), tax_table_df))
+  
+  # Save the workbook
+  saveWorkbook(wb, filename, overwrite = TRUE)
+}
+
+# Example usage
+# Replace 'your_phyloseq_object' with your actual phyloseq object
+# phyloseq_to_MDT_excel(your_phyloseq_object)
+----
+
+==== From PhyloSeq to tsv
+
+
+[source,r]
+----
+# Load necessary libraries
+library(phyloseq)
+
+# Function to save phyloseq tables as TSV files
+phyloseq_to_MDT_tsv <- function(physeq){
+  # Save OTU Table
+  otu_table_df <- data.frame(otu_table(physeq))
+  write.table(otu_table_df, file = "OTU_table.tsv", sep = "\t", quote = FALSE, row.names = TRUE, col.names = NA)
+  
+  # Save Sample Data
+  sample_data_df <- data.frame(sample_data(physeq))
+  write.table(cbind(id = rownames(sample_data_df), sample_data_df), 
+              file = "Samples.tsv", sep = "\t", quote = FALSE, row.names = TRUE, col.names = NA)
+  
+  # Save Taxonomy Table
+  tax_table_df <- data.frame(tax_table(physeq))
+  write.table(cbind(id = rownames(tax_table_df), tax_table_df), 
+              file = "Taxonomy.tsv", sep = "\t", quote = FALSE, row.names = TRUE, col.names = NA)
+}
+
+# Example usage
+# Replace 'your_phyloseq_object' with your actual phyloseq object
+# phyloseq_to_MDT_tsv(your_phyloseq_object)
+----
+
+
 ////
 === Getting the taxonomy into shape
 ////
