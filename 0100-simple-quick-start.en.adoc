@@ -135,13 +135,5 @@ If using the https://mdt.gbif-test.org/[MDT Sandbox (Demo Installation)] as sugg
 .The *Publish* step is not enabled for the https://mdt.gbif-test.org/[MDT Sandbox (Demo Installation)]. If you prepared a real dataset using the MDT Sandbox, you should be aware that data is not backed up and deleted regularly, so it is highly recommended to redo the processing in a proper MDT installation.
 image::img/simple_publish.png[]
  
- ```mermaid
-  graph TD;
-      A-->B;
-      A-->C;
-      B-->D;  
-      C-->D;  
-
-```
-
+ 
 <<<
