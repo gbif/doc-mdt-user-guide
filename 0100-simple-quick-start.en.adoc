@@ -139,8 +139,9 @@ image::img/simple_publish.png[]
   graph TD;
       A-->B;
       A-->C;
-      B-->D;
-      C-->D;
+      B-->D;  
+      C-->D;  
+
 ```
 
 <<<
