@@ -285,6 +285,8 @@ A notification will inform you that data ingestion may take a few minutes before
 . Click on the link *Dataset at gbif-uat.org*.
 . Explore the dataset in the GBIF test environment (UAT).
 . Ensure that all information and data is processed and displayed appropriately as you expect.
++
+IMPORTANT: Indexing/processing is not instantaneous. The dataset may e.g. have zero occurences and no map until fully indexed (usually ~15 minutes). _If_ corrections are needed, go back to the relevant step (Upload, Mapping, Metadata), perform the needed adjustments, go through all the following steps, do a new export and test publication, until the dataset is as expected.
 
 .Pressing *Dataset at gbif-uat.org* opens the dataset (here the example dataset) in the GBIF test environment (UAT) where users can _preview_ a potential real publication, and verify that the processed dataset contains all the wanted information for real publication. NB: The dataset is not completely indexed immediately and the dataset may e.g. have 0 occurences and no map compared to this figure, until fully indexed. Notice how the hatched/shaded header and the red "TEST" label indicate that it is a test environment. Explore the dataset and notice how the uploaded data and dataset information/description is presented on the website.
 image::img/advanced_uat.png[width=400]
