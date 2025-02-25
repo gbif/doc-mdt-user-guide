@@ -7,8 +7,8 @@ The MDT and this guide are continuously evolving, so the guide may not fully ref
 
 ****
 IMPORTANT: *Use your GBIF login* + 
-All MDTs now use the _same https://www.gbif.org/user/profile[user account] as GBIF.org_.org. +
-Also, you need a *password* for your GBIF account. If you originally signed up with GitHub or Google, click 'Forgot password' on the login page to set up a password. +
+All MDTs use the _same https://www.gbif.org/user/profile[user account] as GBIF.org_. +
+You need a *password* for your GBIF account. If you signed up with GitHub or Google, click 'Forgot password' on the login page to set up a password. +
 The (test) MDT used UAT user profiles during early development, but this is no longer the case.
 ****
 
@@ -19,11 +19,10 @@ This user guide is for anyone interested in learning to use the MDT for formatti
 What the Metabarcoding Data Toolkit can do:
 
 * Handle *DNA metabarcoding datasets* – specifically OTU tables and their associated metadata.
-* Accept dataset uploads in a few supported template formats.
 
 What the MDT [.underline]#cannot# do:
 
-* Bioinformatic processing/analysis of raw sequencing data (Fastq files, etc.). Use dedicated bioinformatic tools and pipelines for that (dada2, Qiime2, Vsearch, Usearch, etc.).
+* Bioinformatic processing/analysis of raw sequencing data (Fastq files, etc.).
 * Handle DNA metagenomic datasets (e.g., shotgun sequencing) - 
 * Handle other DNA-associated biodiversity data types (e.g., specimen barcodes, qPCR).
 
@@ -37,14 +36,14 @@ _Perfect for first-time users or those who want a quick overview of what the MDT
 *Learn to Process a Realistic Dataset* +
 _A step-by-step guide for users looking to understand how to handle and process a dataset using the MDT._
 
-* Follow the <<detailed_guidance>> to process the example dataset.  
-** Use the <<preparation_structure, preparation instructions>>, <<faq>>, and <<glossary>> as references whenever needed.
+* Follow the <<detailed_guidance>> to process the provided example dataset.  
+** Use the <<preparation instructions>>, <<faq>>, and <<glossary>> as references whenever needed.
 
 *Prepare Your Own Dataset* +
 _Designed for users already familiar with MDT basics who are ready to prepare their own datasets for publication._
 
-* Adapt your dataset to one of the templates by carefully following the <<preparation_structure, preparation instructions>>.  
-* Process your dataset using the <<detailed_guidance>>, referring to the <<preparation_structure, preparation instructions>>, <<faq>>, and <<glossary>> as necessary.
+* Adapt your dataset to one of the templates by carefully following the <<preparation instructions>>.  
+* Process your dataset using the <<detailed_guidance>>, referring to the <<preparation_structure, <<faq>>, and <<glossary>> as necessary.
 
 *MDT Administration* +
 _For MDT administrators who have a grasp of the basics and need guidance on managing and maintaining the tool effectively._

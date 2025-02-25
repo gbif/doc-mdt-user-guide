@@ -1,5 +1,5 @@
 [[preparation_structure]]
-== Dataset Preparation and Structure
+== Dataset Preparation
 
 This section contains detailed information and best practices on how to prepare and structure DNA metabarcoding datasets before uploading to the MDT.
 

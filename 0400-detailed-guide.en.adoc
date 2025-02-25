@@ -1,38 +1,84 @@
 [[detailed_guidance]]
 == Detailed User Guide
 
-This section provides a section-wise guide to using the MDT including a step-wise processing guide
+*User with prepared dataset?*: skip to: <<detailed_select_mdt>>.
 
-*Users with prepared datasets ready to process*: skip this section and go to: <<detailed_select_mdt>>.
-
-*Users without prepared datasets*: use e.g. the provided example dataset (see below). 
+*Users without a dataset*: use the provided example dataset (see below). 
 
 ****
-*Example dataset* +
+*The example dataset* +
 
-This example dataset is a real metabarcoding dataset of surface seawater metazoan communities, that has been modified to better illustrate some features of the MDT.
+A real metabarcoding dataset of surface seawater metazoan communities – slightly modified.
 
 . Download link:../example_data/example_data2.current.en.xlsx[example_dataset_2].
-. Explore the structure of the example data.
+. Explore the structure of the example dataset.
 ** The *OTU_table*. Column headers (_CO1_A1.1006.a.S1.L001, etc._) are IDs of the 159(160) samples. Row names (_merged_CO1_1, etc._) are IDs of the 24.744 OTUs.
 ** The *Taxonomy* table contains OTU IDs correspoding to those (rownames) in the *OTU_table*, the sequence, and taxonomic information.
 ** The *Samples* table contains IDs correspoding to those (column names) in the *OTU_table*, and sample metadata: spatiotemporal data, date, etc. NB: Some fields are already using DwC terms; others are not yet standardized and will need manual mapping.
 ** The *Study* table with information/data that is the same across all samples (and/or OTUs) in the whole dataset. All fields (the term column) are already using exact Darwin Core terms as needed for this table.
 
-NOTE: The 160th column of the OTU table corresponds to a negative control sample (NEG), which should be excluded from the final dataset. The MDT will automatically remove any samples that are not present in both the *Samples* and *OTU_table* tables. Since the negative control has already been removed from the *Samples* table, it will not be included in the final dataset.
+NOTE: The 160th column of the OTU table corresponds to a negative control sample (NEG), and the corresponding detections should not be included as occurrences in the GBIF dataet. However, the MDT will automatically remove samples that are not present in _both_ the *OTU_table* and *Samples* tables. Here, the negative control has already been removed from the *Samples* table.
 ****
 
 [[detailed_select_mdt]]
 === Select an MDT installation
 
-* Still learning or testing? Use the https://mdt.gbif-test.org/[MDT Sandbox (Demo Installation)].
-* Got a real dataset? Identify and use the most relevant hosted MDT installation for the dataset. #how can we guide/link here??#
-* Can't find a relevant MDT installation? Use the https://mdt.gbif.org/[GBIF Conversion MDT].
+*A. Still learning or testing?* 
+
+Use the https://mdt.gbif-test.org/[GBIF MDT Sandbox (Demo Installation)]!
+
+*B. Got a real dataset?*
+
+Identify and use the most relevant MDT installation for the user/dataset.
+
+GBIF node MDTs: 
+
+[.underline]#Africa#
+
+* https://tg.mdt.gbif.org/[Togo]
+
+[.underline]#Asia#
+
+[.underline]#Europe and Central Asia#  
+
+* https://mdt.biodiversity.be/[Belgium]  
+* https://dk.mdt.gbif.org/[Denmark]
+* https://metabarcoding.laji.fi/[Finland]
+* https://mdt.gbif.fr/[France]
+* https://mdt.gbif.mnhn.lu/[Luxembourg]
+* https://mdt.gbif.no/[Norway]
+* https://mdt.gbif.pl/[Poland]
+* https://mdt-gbif.nbnatlas.org/[United Kingdom of Great Britain and Northern Ireland]
+
+[.underline]#Latin America and the Caribbean#  
+
+* https://mdt.sibbr.gov.br/[Brazil]
+* https://edna.biodiversidad.co/[Colombia]
+
+[.underline]#North America#  
+
+* https://mdt.gbif.us/[United States of America]
+
+[.underline]#Oceania#
+
+[.underline]#Regional MDTs#  
+
+* https://eca.mdt.gbif.org/[Europe and Central Asia]
+* https://lac.mdt.gbif.org/[Latin America and the Caribbean]
+
+[.underline]#Other MDTs#  
+
+* https://mdt.obis.org/[OBIS]
+
+
+*Can't find a relevant MDT installation?*
+
+Use the https://mdt.gbif.org/[GBIF Conversion MDT].
 
 [[detailed_landing]]
 === Landing page
 
-. Log in with https://www.gbif.org/user/profile[*GBIF account*] (not UAT account as previously!)
+. Log in with https://www.gbif.org/user/profile[*GBIF account*]
 
 The landing page (home) is where users access their datasets, start new uploads, etc.
 
@@ -73,7 +119,7 @@ image::img/dg_mydata.png[]
 A green icon will indicate if a valid file format is detected.
 
 ****
-*Example dataset* + 
+*The example dataset* + 
 
 * A green XLSX icon will indicate that this valid file format is detected.
 * A warning will inform that one of the columns in the OTU_table does not have a corresponding row in the Sample table. We knew that, and it is OK, as we wanted that sample to be removed in the final data (see above).
@@ -83,7 +129,7 @@ image::img/advanced_upload.png[]
 
 [start=4]
 . Open the data viewer by clicking on the eye icon next to the uploaded dataset.
-. View and verify the structure and content of the tables - e.g. corresponding to the four sheets in the uploaded Excel Workbook for the example data.
+. View and verify the structure and content of the tables - e.g. corresponding to the four sheets in the uploaded Excel Workbook for the example dataset.
 . Close the viewer by pressing *Back*.
 . Press *Proceed*.
 
@@ -104,7 +150,7 @@ TIP: Press *Save mapping* once in a while to make sure that you do not get logge
 . Press *Save Mapping* and notice how you get a warning if some essential fields have not been mapped.
 
 ****
-*Example dataset* +
+*The example dataset* +
 
 ._Sample section_: the MDT automatically identified and mapped 6 fields from the uploaded Samples table (second column) and approx. 20 global term/values from the Study table (third column) to identically named Darwin Core terms (first colum).
 image::img/advanced_mapping_samp.png[width=400]
@@ -120,7 +166,7 @@ image::img/advanced_mapping_tax.png[width=400]
 . Inspect potential suggested mappings and click to accept and specify them.
 
 ****
-*Example data* +
+*The example dataset* +
 
 image::img/advanced_lat_map.png[width=300]
 
@@ -145,7 +191,7 @@ We expect that Darwin Core may accomodate several of these un-mapped fields, and
 . Also use *Add mapping for another sample field* to add DwC terms, where you can provide global values that were not provided in the *Study* table of the uploaded data. Provide the global value of an added term in the third column (Default values).
 
 ****
-*Example dataset* +
+*The example dataset* +
 _Sample_Name, temperature, salinity, Accession_biosamples, lsid, rank_ are listed under *Unmapped fields*, as these fields in the uploaded data were not automatically identified and mapped to Darwin Core terms.
 
 . One of the unmapped fields is called _Accession_biosamples_ and contains links to  Biosample records in INSDC (SRA/ENA). We want to map that field to the recommended Darwin Core term term:dwc[materialSampleID] for that.
@@ -182,7 +228,7 @@ The section *Unmapped fields* fields that remain unmapped are listed. These can 
 . Repeat for all fields you wish to include as *eMoF*
 
 ****
-*Example dataset*
+*The example dataset*
 
 As there is no suitable field for _salinity_ in the dataset, this can be added as an extended measurement.
 
@@ -206,7 +252,7 @@ Now, the mapping is complete.
 The option *Assign taxonomy* uses the https://www.gbif.org/tools/sequence-id[GBIF Sequence ID tool^] to assign taxonomy to the OTUs by comparing the sequences with a reference database. *This will replace/overwrite any taxonomy provided in the uploaded data*. NB: Often it will be better to do the taxonomic assignment separately – using the GBIF tool or another preferred tool – before uploading, as it is a time consuming step!
 
 ****
-*Example dataset* +
+*The example dataset* +
 We recommend not to use *assign taxonomy* for the example dataset. It will take a long time. _If_ using it, it will be evident that the current CO1 reference database (BOLD BINs) cannot assign taxonomy to a number of the sequences in this dataset. The rest of the guide assumes that you used the taxonomy in the uploaded data for the example dataset.
 ****
 
@@ -215,7 +261,7 @@ We recommend not to use *assign taxonomy* for the example dataset. It will take 
 the MDT goes through a series of steps which will be indicated as succesful with a green tick-mark, and produces standardized BIOM files, which the MDT uses as an intermediate file format.
 
 ****
-*Example dataset* +
+*The example dataset* +
 A warning will indicate that "NEG in the OTU table are not present in the SAMPLE table". We already knew that (see above).
 ****
 
@@ -240,7 +286,7 @@ image::img/advanced_review.png[]
 ** Explore the "Most frequent OTUs" and "Least frequent OTUs".
 
 ****
-*Example dataset*
+*The example dataset*
 
 * _Map_: Pillar Point, Half Moon Bay, California, USA.
 * _Ordination plots_: Try color _salinity_ or _temperature_. _temperature_ was not mapped to any DwC term, but such unmapped fields are included in the BIOM files facilitating these visualizations.
@@ -264,7 +310,7 @@ image::img/advanced_metadata.png[]
 The dataset information/metadata is grouped in sections: _Basic Metadata, Geographic Coverage, Taxonomic Coverage, etc_. 
 
 ****
-*Example dataset* +
+*The example dataset* +
 Explore the metadata sections to get familiar with options. When working with a real dataset, please refer to the full guidance in this section (#not written#) and to the section on <<preparation_structure>>.
 
 _Minimum actions to continue_: select a license and add a contact (minimum: email).
@@ -302,7 +348,7 @@ In this step it is possible to do the necessary steps for formally publishing th
 
 IMPORTANT: Users still learning/testing with example datasets should not actively use any options from this step.
 
-MDTs can either be in *publishing mode* or *conversion-only mode*. Go to the relevant section based on what MDT you are using:
+MDTs can either be in *publishing mode* or *conversion-only mode*. Go to the relevant section depending on which MDT is being used:
 
 .MDTs in <<pub_pub, *publishing mode*>>.
 image::img/dg_publish_publmode.png[width=200]

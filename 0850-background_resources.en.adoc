@@ -38,10 +38,13 @@ NOTE: You may especially benefit from reading the sections https://docs.gbif.org
 * Environmental DNA - World Wildlife Fund. (https://www.youtube.com/watch?v=4YXfZvEvUgc[video])
 * Environmental DNA - Towards Next-Generation Biomonitoring - LeeseLab. (https://www.youtube.com/watch?v=cdV5BFaek_A[video])
 
-
 === Podcasts on eDNA and DNA metabarcoding
 
 * What is Environmental DNA (eDNA) and How Can it Help? - A Conversation with Dr Shaun Wilkinson – Dr Adam Forbes. (https://www.youtube.com/watch?v=Se41PcD6H0g[podcast])
+
+=== Various resources
+
+* https://edna.dnabarcoding101.org/ - An introductory knowledge base to eDNA experiments  
 
 === Essential terms
 
