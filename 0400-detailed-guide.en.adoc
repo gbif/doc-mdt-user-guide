@@ -21,58 +21,53 @@ NOTE: The 160th column of the OTU table corresponds to a negative control sample
 ****
 
 [[detailed_select_mdt]]
-=== Select an MDT installation
+=== Select an MDT Installation
 
-*A. Still learning or testing?* 
-
+[discrete]
+=== A. Still learning or testing?
 Use the https://mdt.gbif-test.org/[GBIF MDT Sandbox (Demo Installation)]!
 
-*B. Got a real dataset?*
+[discrete]
+=== B. Got a real dataset?
+Find the most relevant MDT installation for your dataset:
 
-Identify and use the most relevant MDT installation for the user/dataset.
+**GBIF Node MDTs**
 
-GBIF node MDTs: 
+*Africa*  
+- https://tg.mdt.gbif.org/[Togo]
 
-[.underline]#Africa#
+*Asia*  
+*(No installations listed)*  
 
-* https://tg.mdt.gbif.org/[Togo]
+*Europe & Central Asia*  
+- https://mdt.biodiversity.be/[Belgium]  
+- https://dk.mdt.gbif.org/[Denmark]  
+- https://metabarcoding.laji.fi/[Finland]  
+- https://mdt.gbif.fr/[France]  
+- https://mdt.gbif.mnhn.lu/[Luxembourg]  
+- https://mdt.gbif.no/[Norway]  
+- https://mdt.gbif.pl/[Poland]  
+- https://mdt-gbif.nbnatlas.org/[United Kingdom]  
 
-[.underline]#Asia#
+*Latin America & the Caribbean*  
+- https://mdt.sibbr.gov.br/[Brazil]  
+- https://edna.biodiversidad.co/[Colombia]  
 
-[.underline]#Europe and Central Asia#  
+*North America*  
+- https://mdt.gbif.us/[United States]  
 
-* https://mdt.biodiversity.be/[Belgium]  
-* https://dk.mdt.gbif.org/[Denmark]
-* https://metabarcoding.laji.fi/[Finland]
-* https://mdt.gbif.fr/[France]
-* https://mdt.gbif.mnhn.lu/[Luxembourg]
-* https://mdt.gbif.no/[Norway]
-* https://mdt.gbif.pl/[Poland]
-* https://mdt-gbif.nbnatlas.org/[United Kingdom of Great Britain and Northern Ireland]
+*Oceania*  
+*(No installations listed)*  
 
-[.underline]#Latin America and the Caribbean#  
+**Regional MDTs**  
+- https://eca.mdt.gbif.org/[Europe & Central Asia]  
+- https://lac.mdt.gbif.org/[Latin America & the Caribbean]  
 
-* https://mdt.sibbr.gov.br/[Brazil]
-* https://edna.biodiversidad.co/[Colombia]
+**Other MDTs**  
+- https://mdt.obis.org/[OBIS]  
 
-[.underline]#North America#  
-
-* https://mdt.gbif.us/[United States of America]
-
-[.underline]#Oceania#
-
-[.underline]#Regional MDTs#  
-
-* https://eca.mdt.gbif.org/[Europe and Central Asia]
-* https://lac.mdt.gbif.org/[Latin America and the Caribbean]
-
-[.underline]#Other MDTs#  
-
-* https://mdt.obis.org/[OBIS]
-
-
-*Can't find a relevant MDT installation?*
-
+[discrete]
+=== C. Can't find a relevant MDT installation?
 Use the https://mdt.gbif.org/[GBIF Conversion MDT].
 
 [[detailed_landing]]
@@ -364,7 +359,7 @@ MDTs in publishing mode can publish directly to GBIF.
 When publishing their *first dataset*, users will not yet have been associated with a publishing organization. In order to publish a dataset to GBIF, the user's institution/organisation must be registered as a data publisher in GBIF.
 
 .To publish the first dataset on GBIF, a user's institution must be registered as a data publisher, and the user must be associated with the institution in the MDT.
-image::img/dg_publish_find_institution.png[]
+image::img/dg_publish_find_institution.png[width=400]
 
 *Find/register your institution* using the search box to search for your institution.
 
@@ -380,7 +375,7 @@ image::img/dg_publish_find_institution.png[]
 ** Send the mail, and allow some time for the MDT administrator to get back you you
 
 .If your institution is already registered, select it and request access to publish. If not, ask for help with registering.
-image::img/dg_publish_find_institution_step2.png[]
+image::img/dg_publish_find_institution_step2.png[witdh=600]
 
 When associated with a publishing organization in the MDT, the user can publish datasets to GBIF.org:
 
@@ -391,7 +386,7 @@ When associated with a publishing organization in the MDT, the user can publish 
 . That's it.
 
 .Users that have been associated with one or more publishing organization by the MDT administrator, can publish datasets to GBIF. Confirm the data sharing agreements, and select a Network if relevant, and publish.
-image::img/dg_publish_publish.png[]
+image::img/dg_publish_publish.png[width=600]
 
 [[pub_con]]
 ==== MDT in conversion-only mode
@@ -401,7 +396,9 @@ When using a hosted MDT in -only mode or the https://mdt.gbif.org/[GBIF Conversi
 NOTE: Users that have prepared a dataset using the https://mdt.gbif.org/[GBIF Conversion MDT] should investigate whether there is a relevant hosted MDT adminstered by a relevant GBIF node. #how can we guide here?#
 
 .Users of MDT installations in conversion-only should use the link "*Ready to publish a dataset? Reach out to the administrator for assistance*". This will start a preformulated email to the administrator of the MDT, requesting help.
-image::img/dg_publish_demo2.png[]
+image::img/dg_publish_demo2.png[width=600]
+
+[[detailed_guidance]]
 
 
 <<<

@@ -5,16 +5,9 @@
 The MDT and this guide are continuously evolving, so the guide may not fully reflect the current appearance and functionality of the MDT
 ****
 
-****
-IMPORTANT: *Use your GBIF login* + 
-All MDTs use the _same https://www.gbif.org/user/profile[user account] as GBIF.org_. +
-You need a *password* for your GBIF account. If you signed up with GitHub or Google, click 'Forgot password' on the login page to set up a password. +
-The (test) MDT used UAT user profiles during early development, but this is no longer the case.
-****
-
 === Target audiences and scope
 
-This user guide is for anyone interested in learning to use the MDT for formatting and publishing DNA metabarcoding data to GBIF (or OBIS, etc.).
+Anyone interested in learning to use the MDT for formatting and publishing DNA metabarcoding data to GBIF (or OBIS, etc.).
 
 What the Metabarcoding Data Toolkit can do:
 
@@ -28,19 +21,19 @@ What the MDT [.underline]#cannot# do:
 
 === Getting started
 
-*Getting Started: Learn MDT Basics* +
-_Perfect for first-time users or those who want a quick overview of what the MDT is and how it works._
+*Learn MDT Basics* +
+_For first-time users or those who want a quick overview of what the MDT is and how it works._
 
 * Begin with the <<simple_quick_start>> to get an overview of MDT.
 
 *Learn to Process a Realistic Dataset* +
-_A step-by-step guide for users looking to understand how to handle and process a dataset using the MDT._
+_For users looking to understand how to handle and process a dataset using the MDT._
 
 * Follow the <<detailed_guidance>> to process the provided example dataset.  
 ** Use the <<preparation instructions>>, <<faq>>, and <<glossary>> as references whenever needed.
 
 *Prepare Your Own Dataset* +
-_Designed for users already familiar with MDT basics who are ready to prepare their own datasets for publication._
+_For users already familiar with MDT basics who are ready to prepare their own datasets for publication._
 
 * Adapt your dataset to one of the templates by carefully following the <<preparation instructions>>.  
 * Process your dataset using the <<detailed_guidance>>, referring to the <<preparation_structure, <<faq>>, and <<glossary>> as necessary.

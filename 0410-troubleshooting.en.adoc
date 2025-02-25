@@ -1,10 +1,13 @@
 [[trouble]]
 == Troubleshooting
 
+This section provides guidance on how to solve common issues that may arise when using the MDT.
+
 [discrete]
 === Log in
 
-Make sure you are using GBIF login. (During the earlier development phases, the MDT was using UAT login.)
+All MDTs use the _same https://www.gbif.org/user/profile[user account] as GBIF.org_. +
+You need a *password* for your GBIF account. If you signed up with GitHub or Google, click 'Forgot password' on the login page to set up a password.
 
 [discrete]
 === Upload data (step 1)
@@ -16,7 +19,7 @@ After pressing *Start Upload* a green icon will normally indicate a valid file f
 
 image::img/ts_xlsx.png[width=100]
 
-Contrarily, a red check means that the uploaded files are somehow not as expected.
+Contrarily, a red check means that the uploaded file formats are not as expected.
 
 image::img/dg_invalid_format.png[width=100]
 
@@ -49,17 +52,18 @@ _For fasta file with sequences_
 
 After uploading warnings will indicate missing correspondence of OTU IDs between OTU_table and Taxonomy table and/or Sample IDs between OTU_table and Samples table.
 
+NOTE: Missing OTUs or Samples (their IDs) from any table means that they (sample or OTU) will be excluded from the final data. This is an easy way of excluding OTUs or Samples – e.g. negative control samples, suspected contaminant species – from the data deliberately.
+
 image::img/dg_no_corresponding.png[width=150]
 
 *Potential checks, solutions and explanations*
 
-* If all the IDs is a dataset lack correspondence between two table: 
+* If all the IDs in a dataset lack correspondence between two tables: 
 ** The field with IDs in the Taxonomy and Samples tables can only be labelled `id`.
 ** Ensure that your Sample IDs or OTU IDs do not systematically have an appendix or suffix in one of the tables where they occur.
 
-* If only a few of the IDs is a dataset lack correspondence between two table: 
+* If only a few of the IDs in a dataset lack correspondence between two tables: 
 * Ensure that the all the samples (Sample IDs) you want included in the final dataset are present in both the *OTU_table* and the *Samples* tables, and similarly for the OTUs (OTU IDs), that they are present in both the *OTU_table* and *Taxonomy* tables.
-* Deleting or leaving out OTUs or Samples (their IDs) from any table means that they will be excluded from the final data. This is thus an easy way of excluding OTUs or Samples – e.g. negative control samples, suspected contaminant species – from the data. There will be warnings during further processing.
 
 [discrete]
 === Map terms (step 2)
