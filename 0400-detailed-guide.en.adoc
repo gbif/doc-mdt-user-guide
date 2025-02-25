@@ -54,6 +54,7 @@ Find the most relevant MDT installation for your dataset:
 - https://edna.biodiversidad.co/[Colombia]  
 
 *North America*  
+- https://data.canadensys.net/mdt/[Canada]  
 - https://mdt.gbif.us/[United States]  
 
 *Oceania*  
@@ -359,7 +360,7 @@ MDTs in publishing mode can publish directly to GBIF.
 When publishing their *first dataset*, users will not yet have been associated with a publishing organization. In order to publish a dataset to GBIF, the user's institution/organisation must be registered as a data publisher in GBIF.
 
 .To publish the first dataset on GBIF, a user's institution must be registered as a data publisher, and the user must be associated with the institution in the MDT.
-image::img/dg_publish_find_institution.png[width=400]
+image::img/dg_publish_find_institution.png[width=600]
 
 *Find/register your institution* using the search box to search for your institution.
 
@@ -375,7 +376,7 @@ image::img/dg_publish_find_institution.png[width=400]
 ** Send the mail, and allow some time for the MDT administrator to get back you you
 
 .If your institution is already registered, select it and request access to publish. If not, ask for help with registering.
-image::img/dg_publish_find_institution_step2.png[witdh=600]
+image::img/dg_publish_find_institution_step2.png[width=600]
 
 When associated with a publishing organization in the MDT, the user can publish datasets to GBIF.org:
 
