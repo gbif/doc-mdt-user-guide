@@ -50,4 +50,44 @@ _For those who wish to have a bit more context on GBIF, DNA-derived biodiversity
 
 NOTE: The https://doi.org/10.35035/doc-vf1a-nr22[General GBIF DNA guide] has valuable general information on DNA biodiversity data, but is not yet updated with information on the MDT, so when in doubt, follow the information in this MDT user guide.
 
+[[mdt_installations]]
+=== MDT Installations
+
+Users should choose the most relevant MDT based on their affiliation, region, project, or dataset. Prefer a GBIF node installation if available; otherwise, use a regional, thematic, or the general (GBIF conversion only) MDT. Use the MDT Sandbox for training/testing.
+
+**GBIF Node MDTs**
+
+* Africa: https://tg.mdt.gbif.org/[Togo]
+* Asia: (No installations)
+* Europe & Central Asia: 
+**  https://mdt.biodiversity.be/[Belgium] 
+**  https://dk.mdt.gbif.org/[Denmark] 
+**  https://metabarcoding.laji.fi/[Finland] 
+**  https://mdt.gbif.fr/[France] 
+**  https://mdt.gbif.mnhn.lu/[Luxembourg] 
+**  https://mdt.gbif.no/[Norway] 
+**  https://mdt.gbif.pl/[Poland] 
+**  https://mdt-gbif.nbnatlas.org/[United Kingdom]
+* Latin America & the Caribbean: 
+**  https://mdt.sibbr.gov.br/[Brazil] 
+**  https://edna.biodiversidad.co/[Colombia]
+* North America: 
+**  https://data.canadensys.net/mdt/[Canada] 
+**  https://mdt.gbif.us/[United States]
+* Oceania: (No installations)
+
+**Regional MDTs**  
+
+* https://eca.mdt.gbif.org/[Europe & Central Asia]    
+* https://lac.mdt.gbif.org/[Latin America & the Caribbean]  
+
+**General MDTs**  
+
+* https://mdt.gbif.org/[GBIF conversion only]  
+* https://mdt.gbif-test.org/[MDT Sandbox (Demo Installation)]
+
+**Thematic MDTs**  
+
+https://mdt.obis.org/[OBIS]
+
 <<<

@@ -29,47 +29,7 @@ Use the https://mdt.gbif-test.org/[GBIF MDT Sandbox (Demo Installation)]!
 
 [discrete]
 === B. Got a real dataset?
-Find the most relevant MDT installation for your dataset:
-
-**GBIF Node MDTs**
-
-*Africa*  
-- https://tg.mdt.gbif.org/[Togo]
-
-*Asia*  
-*(No installations listed)*  
-
-*Europe & Central Asia*  
-- https://mdt.biodiversity.be/[Belgium]  
-- https://dk.mdt.gbif.org/[Denmark]  
-- https://metabarcoding.laji.fi/[Finland]  
-- https://mdt.gbif.fr/[France]  
-- https://mdt.gbif.mnhn.lu/[Luxembourg]  
-- https://mdt.gbif.no/[Norway]  
-- https://mdt.gbif.pl/[Poland]  
-- https://mdt-gbif.nbnatlas.org/[United Kingdom]  
-
-*Latin America & the Caribbean*  
-- https://mdt.sibbr.gov.br/[Brazil]  
-- https://edna.biodiversidad.co/[Colombia]  
-
-*North America*  
-- https://data.canadensys.net/mdt/[Canada]  
-- https://mdt.gbif.us/[United States]  
-
-*Oceania*  
-*(No installations listed)*  
-
-**Regional MDTs**  
-- https://eca.mdt.gbif.org/[Europe & Central Asia]  
-- https://lac.mdt.gbif.org/[Latin America & the Caribbean]  
-
-**Other MDTs**  
-- https://mdt.obis.org/[OBIS]  
-
-[discrete]
-=== C. Can't find a relevant MDT installation?
-Use the https://mdt.gbif.org/[GBIF Conversion MDT].
+Use the most relevant MDT installation for your dataset: <<mdt_installations>>.
 
 [[detailed_landing]]
 === Landing page
