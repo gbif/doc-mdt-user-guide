@@ -57,7 +57,8 @@ Users should choose the most relevant MDT based on their affiliation, region, pr
 
 **GBIF Node MDTs**
 
-* Africa: https://tg.mdt.gbif.org/[Togo]
+* Africa:   
+** https://tg.mdt.gbif.org/[Togo]
 * Asia: (No installations)
 * Europe & Central Asia: 
 **  https://mdt.biodiversity.be/[Belgium] 
@@ -88,6 +89,6 @@ Users should choose the most relevant MDT based on their affiliation, region, pr
 
 **Thematic MDTs**  
 
-https://mdt.obis.org/[OBIS]
+** https://mdt.obis.org/[OBIS]
 
 <<<
