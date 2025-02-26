@@ -72,7 +72,7 @@ Users should choose the most relevant MDT based on their affiliation, region, pr
 **  https://mdt.sibbr.gov.br/[Brazil] 
 **  https://edna.biodiversidad.co/[Colombia]
 * North America: 
-**  https://data.canadensys.net/mdt/[Canada] 
+**  https://mdt.canadensys.net/[Canada] 
 **  https://mdt.gbif.us/[United States]
 * Oceania: (No installations)
 
