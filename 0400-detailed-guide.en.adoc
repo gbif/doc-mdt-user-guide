@@ -312,9 +312,9 @@ When associated with a publishing organization in the MDT, the user can publish 
 
 . Select the correct publishing institution if associated with more than one.
 . Confirm in the checkbox that you have read and understood the data sharing agreement.
-. If relevant (users will usually know), select the Network that the dataset should be associated with. NB: selecting "OBIS" will notify OBIS that the dataset is available so they can index it. (#is that how this works?#)
 . Press *Publish to gbif.org*
 . That's it.
+. If relevant – users will usually know if that is the case – you can now (after publishing) select the Network that the dataset should be associated with. NB: selecting "OBIS" will notify OBIS that the dataset is available so they can index it.
 
 .Users that have been associated with one or more publishing organization by the MDT administrator, can publish datasets to GBIF. Confirm the data sharing agreements, and select a Network if relevant, and publish.
 image::img/dg_publish_publish.png[width=600]
