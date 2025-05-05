@@ -1,7 +1,7 @@
 [[detailed_guidance]]
 == Detailed User Guide
 
-*User with prepared dataset?*: skip to: <<detailed_select_mdt>>.
+*Users with prepared dataset*: skip to: <<detailed_select_mdt>>.
 
 *Users without a dataset*: use the provided example dataset (see below). 
 
@@ -31,43 +31,13 @@ Use the https://mdt.gbif-test.org/[GBIF MDT Sandbox (Demo Installation)]!
 === B. Got a real dataset?
 Use the most relevant MDT installation for your dataset: <<mdt_installations>>.
 
-[[detailed_landing]]
-=== Landing page
+. Log into the selected MDT with your https://www.gbif.org/user/profile[*GBIF account*]
 
-. Log in with https://www.gbif.org/user/profile[*GBIF account*]
-
-The landing page (home) is where users access their datasets, start new uploads, etc.
-
-image::img/dg_landing.png[]
-
-The Menu Bar contains the following items  
-
-* <<admin,_Administration_>> (only visible to MDT Administrators)
-* My datasets
-* New dataset: start new data upload
-* Login / User area (user name): links to: logout, My datasets
-
-*My datasets*
-
-In this area users can access the datasets they have uploaded to the MDT.
-
-* Datasets can be opened (eye icon) and the _Browse_ tab allows to visualize the data similar to the review step, _Metadata_ allows inspection of basic dataset information/metadata, _Files available_ gives access to download a standardized BIOM file and a <<dwc-a>> the dataset (if these have been produced).
-* Datasets can be edited. By clicking the pen icon, the dataset is opened at processing step 1 (Upload data). This allows users to initiate editing of the dataset at any of the processing steps.
-* Datasets can be deleted (trash icon).
-+
-IMPORTANT: Do not delete or start editing a dataset that is already published on GBIF.org unless you are certain that this is needed.
-
-.*My datasets* gives users access to view, edit/update and download previously processed datasets.
-image::img/dg_mydata.png[]
-
-*Help, feedback and other resources*
-
-* The *Neep help?* (fern leaf): Opens an email to contact the Administrator of the MDT installation.
-* The *RSS feed*: Lists the most recently updated resources (datasets) available as an RSS feed. This can be used to monitor incoming datasets to the MDT installation.
-* The *Report a bug* and *Request a feature* : Opens a GitHub issue where users can report bugs or request features to be developed.
+From the landing page users can access datasets, start new uploads, etc. (see more here: <<detailed_landing>>).
 
 === Upload data (step 1)
 
+. Press *New Dataset* in the upper part of the page to go to the first step (Upload data).
 . Drag and drop the dataset to the upload area, or click and select the file.
 . Give the dataset a nickname (e.g. "my_advanced_test").
 . Press *Start Upload*.
@@ -357,4 +327,39 @@ When using a hosted MDT in conversion-only mode or the https://mdt.gbif.org/[GBI
 .Users of MDT installations in conversion-only should use the link "*Ready to publish a dataset? Reach out to the administrator for assistance*". This will start a preformulated email to the administrator of the MDT, requesting help.
 image::img/dg_publish_demo2.png[width=600]
 
+
+[[detailed_landing]]
+=== Landing page
+
+. Log in with https://www.gbif.org/user/profile[*GBIF account*]
+
+The landing page (home) is where users access their datasets, start new uploads, etc.
+
+image::img/dg_landing.png[]
+
+The Menu Bar contains the following items  
+
+* <<admin,_Administration_>> (only visible to MDT Administrators)
+* My datasets
+* New dataset: start new data upload
+* Login / User area (user name): links to: logout, My datasets
+
+*My datasets*
+
+In this area users can access the datasets they have uploaded to the MDT.
+
+* Datasets can be opened (eye icon) and the _Browse_ tab allows to visualize the data similar to the review step, _Metadata_ allows inspection of basic dataset information/metadata, _Files available_ gives access to download a standardized BIOM file and a <<dwc-a>> the dataset (if these have been produced).
+* Datasets can be edited. By clicking the pen icon, the dataset is opened at processing step 1 (Upload data). This allows users to initiate editing of the dataset at any of the processing steps.
+* Datasets can be deleted (trash icon).
++
+IMPORTANT: Do not delete or start editing a dataset that is already published on GBIF.org unless you are certain that this is needed.
+
+.*My datasets* gives users access to view, edit/update and download previously processed datasets.
+image::img/dg_mydata.png[]
+
+*Help, feedback and other resources*
+
+* The *Neep help?* (fern leaf): Opens an email to contact the Administrator of the MDT installation.
+* The *RSS feed*: Lists the most recently updated resources (datasets) available as an RSS feed. This can be used to monitor incoming datasets to the MDT installation.
+* The *Report a bug* and *Request a feature* : Opens a GitHub issue where users can report bugs or request features to be developed.
 <<<

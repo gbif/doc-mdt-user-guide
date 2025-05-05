@@ -11,34 +11,32 @@ Anyone interested in learning to use the MDT for formatting and publishing DNA m
 
 The Metabarcoding Data Toolkit can handle *DNA metabarcoding datasets* (aka amplicon sequence data) – specifically OTU tables and their associated metadata.
 
-The MDT [.underline]#cannot# perform bioinformatic processing of raw sequencing data (Fastq files, etc.)., metagenomic/shotgun datasets, or other types of DNA data (e.g., specimen barcodes, qPCR).
+The MDT [.underline]#cannot# handle/process raw sequencing data (Fastq files, etc.)., metagenomic/shotgun datasets, or other types of DNA data (e.g., specimen barcodes, qPCR).
 
 === Getting started
 
-*Learn MDT Basics* +
-_For first-time users or those who want a quick overview of what the MDT is and how it works._
+==== Learn MDT Basics
 
 * Begin with the <<simple_quick_start>> to get an overview of MDT.
 * Supplement with the <<faq>> and <<glossary>>.
 
-*Learn to Process a Realistic Dataset* +
-_For users looking to understand how to handle and process a dataset using the MDT._
+==== Learn to Process a Realistic Dataset
 
 * Follow the <<detailed_guidance>> to process the provided example dataset.  
-** Use the <<preparation instructions>>, <<faq>>, and <<glossary>> as references whenever needed.
+** Use the <<preparation_structure>>, <<faq>>, and <<glossary>> as references whenever needed.
 
-*Prepare Your Own Dataset* +
-_For users already familiar with MDT basics who are ready to prepare their own datasets for publication._
+==== Prepare and Process Your Own Dataset
+_For users already familiar with the MDT usage (see above) looking to process their own datasets for publication._
 
-* Adapt your dataset to one of the templates by carefully following the <<preparation instructions>>.  
-* Process your dataset using the <<detailed_guidance>>, referring to the <<preparation_structure, <<faq>>, and <<glossary>> as necessary.
+* Prepare your dataset by carefully following the <<preparation_structure>>.  
+* Process your dataset using the <<detailed_guidance>>, referring to the <<preparation_structure>>, <<faq>>, and <<glossary>> as necessary.
 
-*MDT Administration* +
-_For MDT administrators who have a grasp of the basics and need guidance on managing and maintaining the tool effectively._
+==== MDT Administration
+_For MDT administrators_
 
 * Explore the <<admin>> section.
 
-*Learn More / Additional Resources* +
+==== Learn More / Additional Resources
 _For those who wish to have a bit more context on GBIF, DNA-derived biodiversity data, Metabarcoding, environmental DNA, the Metabarcoding Data Programme, etc._
 
 * Explore the <<background_resources>> and <<faq>>.
