@@ -13,6 +13,9 @@ ifdef::backend-html5[]
 languageLinks:combined[]
 endif::backend-html5[]
 
+:stylesheet: custom.css
+:linkcss:
+
 ////
 
 IMPORTANT: This document is under development and may contain errors and unfinished sections. Feedback and input from testers/users is very welcome.
