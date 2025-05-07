@@ -19,7 +19,7 @@ Comments
 
 A real dataset with COI metabarcoding of DNA extracted from sea water. The dataset has rich metadata and is a good example of a well-documented dataset. This example version has been modified slightly from the https://www.gbif.org/dataset/9358fbd7-cfd0-4eab-99fa-0934396a0529[original dataset]. It is based on template 1.
 
-Download file(s): link:../example_data/example_data2current.en.xlsx[Example Dataset 2].
+Download file(s): link:../example_data/example_data2.current.en.xlsx[Example Dataset 2].
 
 Comments
 
