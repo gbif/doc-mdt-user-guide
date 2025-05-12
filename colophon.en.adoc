@@ -16,7 +16,7 @@ https://orcid.org/0000-0002-3530-013X[Tobias Guldberg Frøslev] (GBIF Secretaria
 
 The document _Metabarcoding Data Toolkit – user guide_ is licensed under https://creativecommons.org/licenses/by-sa/4.0[Creative Commons Attribution-ShareAlike 4.0 Unported License].
 
-== Acknowledgements
+=== Acknowledgements
 
 Thanks to the following people for providing substantial feedback or input to this guide material: Christiane Hassenrück.
 
