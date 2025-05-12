@@ -54,6 +54,4 @@ include::faq.en.adoc[]
 
 include::glossary.en.adoc[]
 
-include::acknowledgements.en.adoc[]
-
 include::changelog.en.adoc[]
