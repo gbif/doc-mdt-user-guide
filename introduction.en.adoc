@@ -59,7 +59,8 @@ Users should choose the most relevant MDT based on their affiliation, region, pr
 | (No installations)
 
 | Europe & Central Asia 
-| Belgium (https://mdt.biodiversity.be/) +
+| Regional MDT (see below) +
+Belgium (https://mdt.biodiversity.be/) +
 Denmark (https://dk.mdt.gbif.org/) +
 Estonia (https://mdt.plutof.ut.ee/) +
 Finland (https://metabarcoding.laji.fi/) +
@@ -70,7 +71,8 @@ Poland (https://mdt.gbif.pl/) +
 United Kingdom (https://mdt-gbif.nbnatlas.org/)
 
 | Latin America & the Caribbean 
-| Brazil (https://mdt.sibbr.gov.br/) +
+| Regional MDT (see below) +
+Brazil (https://mdt.sibbr.gov.br/) +
 Colombia (https://edna.biodiversidad.co/)
 
 | North America 
@@ -78,11 +80,12 @@ Colombia (https://edna.biodiversidad.co/)
 United States (https://mdt.gbif.us/)
 
 | Oceania 
-| (No installations)
+| Regional MDT (see below)
 
 | Regional MDTs 
 | Europe & Central Asia (https://eca.mdt.gbif.org/) +
-Latin America & the Caribbean (https://lac.mdt.gbif.org/)
+Latin America & the Caribbean (https://lac.mdt.gbif.org/) +
+Oceania (https://oceania.mdt.gbif.org/)
 
 | General MDTs 
 | GBIF conversion only (https://mdt.gbif.org/) +
