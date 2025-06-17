@@ -84,7 +84,7 @@ phyloseq_to_MDT_tsv <- function(physeq){
 ----
 
 [extract_examples]
-=== Extracting dataset tables from MDT-Formatted GBIF Datasets
+=== Gererating templates from existing datasets in GBIF.org
 
 How to generate ready-to-upload formatted files from metabarcoding datasets published through the *GBIF Metabarcoding Data Toolkit* – to use as templates or example data.
 

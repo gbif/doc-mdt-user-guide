@@ -1,6 +1,10 @@
 [[example_data]]
 == Example Datasets
 
+Some example datasets are provided to illustrate the different templates and how to use them. The datasets are fictional or modified versions of real datasets, and they can e.g. be used to practice the steps in the <<quick_start>> and the <<detailed_guidance>> and as templates for your own datasets.
+
++NOTE: see also the guide to download formatted upload files for existing MDT datasets on GBIF.org: <<extract_examples>>
+
 [[example1,Example Dataset 1]]
 === Example dataset 1: ITS fungi – fictional minimal dataset
 
