@@ -168,7 +168,7 @@ IPT users/administrators may run into challenges if using older versions of the 
 
 * Download the DwC-A (archive.zip) from the MDT.
 * login to the IPT.
-* Press *Magage Resources*.
+* Press *Manage Resources*.
 * Press *Create new*.
 * Give your dataset a *Shortname*.
 * Select _Occurrence_ under *Type*.
