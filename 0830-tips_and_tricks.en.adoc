@@ -80,7 +80,81 @@ phyloseq_to_MDT_tsv <- function(physeq){
 # Example usage
 # Replace 'your_phyloseq_object' with your actual phyloseq object
 # phyloseq_to_MDT_tsv(your_phyloseq_object)
+
 ----
+
+=== Extracting Data Tables from MDT-Formatted GBIF Datasets
+
+This guide explains how to generate ready-to-upload formatted files from a metabarcoding dataset published in through the *GBIF Metabarcoding Data Toolkit* to use as templates or example data.
+
+==== Step 1: Find and Download an MDT Dataset
+
+. Use e.g. this proxy search to see a list of MDT datasets on GBIF:  
+  https://www.gbif.org/dataset/search?q=MDT
+
+. Click on a dataset of interest. On the dataset page, scroll to the bottom to find the *GBIF registration* section.
+
+. Download the two relevant files:
+  * *Darwin Core Archive*: `archive.zip`
+  * *BIOM 2.1* file: `data.biom.h5`
+
+These typically have URLs like:
+
+----
+https://hosted-datasets.gbif.org/metabarcoding/.../archive.zip
+https://hosted-datasets.gbif.org/metabarcoding/.../data.biom.h5
+----
+
+. Place both files in a folder of your choice, e.g. `my_dataset_folder`.
+
+==== Step 2: Download the Processing Script
+
+. Download the script link:../example_data/process_biom_and_meta.py[`process_biom_and_meta.py`] and save it in a convenient location, such as your home directory or a `scripts/` folder.
+
+==== Step 3: Set Up Your Python Environment
+
+If you don’t already have the required packages installed, set up a virtual environment:
+
+[source,shell]
+----
+python3 -m venv .venv
+source .venv/bin/activate   # Use .venv\Scripts\activate on Windows
+
+pip install pandas biom-format requests
+----
+
+==== Step 4: Run the Script
+
+Make sure you are in the folder where you saved the script, and run:
+
+[source,shell]
+----
+python3 process_biom_and_meta.py /path/to/my_dataset_folder
+----
+
+Replace `/path/to/my_dataset_folder` with the path to the folder containing both `data.biom.h5` and `archive.zip` (or an unzipped `archive/` folder containing `meta.xml`).
+
+Example:
+
+[source,shell]
+----
+python3 process_biom_and_meta.py test
+----
+
+==== Step 5: Output Files
+
+The script will create the following files in the same folder:
+
+[cols="1,3", options="header"]
+|===
+| File Name       | Description
+| OTU_table.csv   | OTU/ASV abundance matrix (rows = taxa)
+| Samples.csv     | Sample metadata extracted from the BIOM file
+| Taxonomy.csv    | Taxonomic information for OTUs/ASVs
+| Study.tsv       | Study-level metadata extracted from `meta.xml`
+|===
+
+These files correspond more or less to the files uploaded to the MDT by the publisher, with all terms/fields  mapped. Use the files as templates for your own datasets or as examples for training.
 
 
 ////
