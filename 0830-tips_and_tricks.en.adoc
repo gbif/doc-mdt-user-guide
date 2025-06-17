@@ -83,13 +83,15 @@ phyloseq_to_MDT_tsv <- function(physeq){
 
 ----
 
-=== Extracting Data Tables from MDT-Formatted GBIF Datasets
+[extract_examples]
+=== Extracting dataset tables from MDT-Formatted GBIF Datasets
 
-This guide explains how to generate ready-to-upload formatted files from a metabarcoding dataset published in through the *GBIF Metabarcoding Data Toolkit* to use as templates or example data.
+How to generate ready-to-upload formatted files from metabarcoding datasets published through the *GBIF Metabarcoding Data Toolkit* – to use as templates or example data.
 
-==== Step 1: Find and Download an MDT Dataset
+[discrete]
+==== Step 1: Find and download an MDT dataset
 
-. Use e.g. this proxy search to see a list of MDT datasets on GBIF:  
+. Use e.g. this proxy search to see a list of some of the MDT datasets on GBIF:  
   https://www.gbif.org/dataset/search?q=MDT
 
 . Click on a dataset of interest. On the dataset page, scroll to the bottom to find the *GBIF registration* section.
@@ -107,11 +109,13 @@ https://hosted-datasets.gbif.org/metabarcoding/.../data.biom.h5
 
 . Place both files in a folder of your choice, e.g. `my_dataset_folder`.
 
-==== Step 2: Download the Processing Script
+[discrete]
+==== Step 2: Download the processing script
 
 . Download the script link:../example_data/process_biom_and_meta.py[`process_biom_and_meta.py`] and save it in a convenient location, such as your home directory or a `scripts/` folder.
 
-==== Step 3: Set Up Your Python Environment
+[discrete]
+==== Step 3: Set up your Python environment
 
 If you don’t already have the required packages installed, set up a virtual environment:
 
@@ -123,7 +127,8 @@ source .venv/bin/activate   # Use .venv\Scripts\activate on Windows
 pip install pandas biom-format requests
 ----
 
-==== Step 4: Run the Script
+[discrete]
+==== Step 4: Run the script
 
 Make sure you are in the folder where you saved the script, and run:
 
@@ -141,7 +146,8 @@ Example:
 python3 process_biom_and_meta.py test
 ----
 
-==== Step 5: Output Files
+[discrete]
+==== Step 5: Output files
 
 The script will create the following files in the same folder:
 
