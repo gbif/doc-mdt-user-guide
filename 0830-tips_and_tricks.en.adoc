@@ -154,13 +154,13 @@ The script will create the following files in the same folder:
 [cols="1,3", options="header"]
 |===
 | File Name       | Description
-| OTU_table.csv   | OTU/ASV abundance matrix (rows = taxa)
-| Samples.csv     | Sample metadata extracted from the BIOM file
-| Taxonomy.csv    | Taxonomic information for OTUs/ASVs
-| Study.tsv       | Study-level metadata extracted from `meta.xml`
+| OTU_table.csv   | OTU Table (rows = taxa) (extracted from the BIOM file)
+| Samples.csv     | Sample metadata (extracted from the BIOM file)
+| Taxonomy.csv    | Sequences and taxonomic information (extracted from the BIOM file)
+| Study.tsv       | Default/global values for various terms (extracted from `meta.xml`)
 |===
 
-These files correspond more or less to the files uploaded to the MDT by the publisher, with all terms/fields  mapped. Use the files as templates for your own datasets or as examples for training.
+These files correspond more or less to the files uploaded to the MDT by the publisher, with all terms/fields  mapped. The files can e.g. be used as templates for your own datasets or as example data for training.
 
 
 ////
