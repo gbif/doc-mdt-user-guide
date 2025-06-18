@@ -2,7 +2,7 @@
 == Introduction
 
 ****
-The MDT and this guide are continuously evolving, so the guide may not fully reflect the current appearance and functionality of the MDT
+The MDT and this guide are part of a two-year https://www.gbif.org/metabarcoding-data-programme[pilot programme] launched in September 2024. Both the MDT format and this guide are under active development, so parts of the guide may not fully reflect the latest appearance or functionality of the MDT.
 ****
 
 === Target audiences and scope
@@ -15,21 +15,24 @@ The MDT [.underline]#cannot# handle/process raw sequencing data (Fastq files, et
 
 === Getting started
 
-==== Learn MDT Basics
+TIP: Check out <<faq>> !
+
+==== Learn MDT basics
 
 * Begin with the <<simple_quick_start>> to get an overview of MDT.
-* Supplement with the <<faq>> and <<glossary>>.
+* Use <<faq>> and <<glossary>> as needed.
 
-==== Learn to Process a Realistic Dataset
+==== Process a realistic dataset
 
 * Follow the <<detailed_guidance>> to process the provided example dataset.  
-** Use the <<preparation_structure>>, <<faq>>, and <<glossary>> as references whenever needed.
+* Use the <<preparation_structure>>, <<faq>>, and <<glossary>> as needed.
 
 ==== Prepare and Process Your Own Dataset
-_For users already familiar with the MDT usage (see above) looking to process their own datasets for publication._
 
+* Consider going through at least the <<simple_quick_start>> first to get an overview of MDT.
 * Prepare your dataset by carefully following the <<preparation_structure>>.  
-* Process your dataset using the <<detailed_guidance>>, referring to the <<preparation_structure>>, <<faq>>, and <<glossary>> as necessary.
+* Process your dataset using the <<detailed_guidance>>  
+* Use the <<faq>> and <<glossary>> as needed.
 
 ==== MDT Administration
 _For MDT administrators_
@@ -41,7 +44,7 @@ _For those who wish to have a bit more context on GBIF, DNA-derived biodiversity
 
 * Explore the <<background_resources>> and <<faq>>.
 
-NOTE: The https://doi.org/10.35035/doc-vf1a-nr22[General GBIF DNA guide] has valuable general information on DNA biodiversity data, but is not yet updated with information on the MDT, so when in doubt, follow the information in this MDT user guide.
+NOTE: The https://doi.org/10.35035/doc-vf1a-nr22[General GBIF DNA guide] provides useful background but has only limited updates on the MDT. When in doubt, rely on this MDT user guide.
 
 [[mdt_installations]]
 === MDT Installations
@@ -59,7 +62,7 @@ Users should choose the most relevant MDT based on their affiliation, region, pr
 | (No installations)
 
 | Europe & Central Asia 
-| Europe & Central Asia (https://eca.mdt.gbif.org/) – Regional MDT +
+| Europe & Central Asia (https://eca.mdt.gbif.org/) – *Regional* MDT +
 Belgium (https://mdt.biodiversity.be/) +
 Denmark (https://dk.mdt.gbif.org/) +
 Estonia (https://mdt.plutof.ut.ee/) +
@@ -71,7 +74,7 @@ Poland (https://mdt.gbif.pl/) +
 United Kingdom (https://mdt-gbif.nbnatlas.org/)
 
 | Latin America & the Caribbean 
-| Latin America & the Caribbean (https://lac.mdt.gbif.org/) – Regional MDT +
+| Latin America & the Caribbean (https://lac.mdt.gbif.org/) – *Regional* MDT +
 Brazil (https://mdt.sibbr.gov.br/) +
 Colombia (https://edna.biodiversidad.co/)
 
@@ -79,7 +82,7 @@ Colombia (https://edna.biodiversidad.co/)
 | Canada (https://mdt.canadensys.net/) +
 United States (https://mdt.gbif.us/)
 
-| Oceania 
+| *Oceania* 
 | Oceania (https://oceania.mdt.gbif.org/) – Regional MDT
 
 | General MDTs 

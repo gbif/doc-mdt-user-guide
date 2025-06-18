@@ -38,7 +38,7 @@ This guide aims to help anyone interested in learning to use the Metabarcoding D
 
 v0.1.2, Feb 2025
 
-The guide will be developed and improved dynamically during the pilot phase https://www.gbif.org/metabarcoding-data-programme[Metabarcoding data programme] with no version control as such. Important changes to the MDT and/or this guide will be listed in the section <<changes>>. 
+The guide is will be updated as needed during the pilot phase https://www.gbif.org/metabarcoding-data-programme[Metabarcoding data programme] with no version control as such. Important changes to the MDT and/or this guide will be listed in the section <<changes>>. 
 
 Input and feedback is very welcome.
 
