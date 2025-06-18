@@ -82,7 +82,7 @@ phyloseq_to_MDT_tsv <- function(physeq){
 # phyloseq_to_MDT_tsv(your_phyloseq_object)
 ----
 
-[extract_examples]
+[[extract_examples]]
 === Generating examples/templates from existing datasets in GBIF.org  
 
 This section describes how to generate example files from existing metabarcoding datasets published through the *GBIF Metabarcoding Data Toolkit* (MDT). These files can be used as templates or example data for training purposes.
