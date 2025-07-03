@@ -126,14 +126,16 @@ When receiving the email from the user, the MDT administrator can then start the
 
 Only MDT administrators have access to the *Administration* section. The Administration section has two tabs:
 
-*All Datasets (tab)*
+[discrete]
+==== All Datasets (tab)
 
 .The *All datasets* tab. Datasets processed beyond step 3 (processing) will have hyperlinks (the Taxon and Sample counts) to simple representations of the dataset. Datasets published to the GBIF test environment (UAT) and/or GBIF.org will have links to those representations. Datasets can be sorted and filtered in various ways.
 [.text-center]
 image::img/admin_datasets.png[scaledwidth=50%,align=center]
 
+[discrete]
 [[man_org]]
-*Manage Organizations (tab)*
+==== Manage Organizations (tab)
 
 Here the administrator can add new organizations to the MDT. Organizations can also be deleted from the MDT (will not affect the GBIF Registry). Users (GBIF username) can be associated with an organization by pressing the plus (+) sign under Users. This enables users to publish datasets under that organization as publisher.
 
@@ -146,7 +148,7 @@ Organizations already registered in GBIF can be added to the MDT by the admin.
 .Press *Add new organization* to add organizations to the MDT. Only organizations already registered (present in the GBIF Registry) in GBIF can be added.
 image::img/admin_org_add01.png[]
 
-.The Organization Key is automatically added to the form when selecting an organization. *Retrieve the Organization shared token to enable publication for the Organization!*. Pressing *Retrieve* will do this automatically IF the administrator has the required rights in the GBIF Registry. Alternatively, the MDT Administrator needs to retrieve the token by #XXX (contacting helpdesk?)# . Users can be associated with the Organization in the same workflow in the form, or they can be added later (see above).
+.The Organization Key is automatically added to the form when selecting an organization. *Retrieve the Organization shared token to enable publication for the Organization!*. Pressing *Retrieve* will do this automatically IF the administrator has the required rights in the GBIF Registry. Alternatively, the MDT Administrator can retrieve the token by contacting mailto:helpdesk@gbif.org[GBIF helpdesk]. Users can be associated with the Organization in the same workflow in the form, or they can be added later (see above).
 image::img/admin_org_add02.png[]
 
 [[pub_ipt]]
