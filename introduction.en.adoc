@@ -77,7 +77,7 @@ United Kingdom (https://mdt-gbif.nbnatlas.org/)
 | *Latin America & the Caribbean* 
 | Latin America & the Caribbean (https://lac.mdt.gbif.org/) – *Regional* MDT +
 Brazil (https://mdt.sibbr.gov.br/) +
-Colombia (https://edna.biodiversidad.co/)
+Colombia (https://edna.biodiversidad.co/) +
 Guatemala (_in process_) +
 
 | *North America* 
