@@ -55,10 +55,10 @@ Users should choose the most relevant MDT based on their affiliation, region, pr
 |===
 | Region | MDT Installations
 
-| Africa 
+| *Africa* 
 | Togo (https://tg.mdt.gbif.org/)
 
-| Asia 
+| *Asia* 
 | (No installations)
 
 | Europe & Central Asia 
@@ -71,24 +71,26 @@ France (https://mdt.gbif.fr/) +
 Luxembourg (https://mdt.gbif.mnhn.lu/) +
 Norway (https://mdt.gbif.no/) +
 Poland (https://mdt.gbif.pl/) +
+Portugal (_in process_) +
 United Kingdom (https://mdt-gbif.nbnatlas.org/)
 
-| Latin America & the Caribbean 
+| *Latin America & the Caribbean* 
 | Latin America & the Caribbean (https://lac.mdt.gbif.org/) – *Regional* MDT +
 Brazil (https://mdt.sibbr.gov.br/) +
 Colombia (https://edna.biodiversidad.co/)
+Guatemala (_in process_) +
 
-| North America 
+| *North America* 
 | Canada (https://mdt.canadensys.net/) +
 United States (https://mdt.gbif.us/)
 
 | *Oceania* 
 | Oceania (https://oceania.mdt.gbif.org/) – Regional MDT
 
-| General MDTs 
+| *General MDTs* 
 | GBIF conversion only (https://mdt.gbif.org/) +
 MDT Sandbox (Demo Installation) (https://mdt.gbif-test.org/)
 
-| Thematic MDTs 
+| *Thematic MDTs* 
 | OBIS (https://mdt.obis.org/)
 |===
