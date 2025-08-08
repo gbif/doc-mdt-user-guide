@@ -121,7 +121,7 @@ https://hosted-datasets.gbif.org/metabarcoding/.../data.biom.h5
 [discrete]
 ==== Step 2: Download the processing script
 
-. Download the script link:../example_data/process_biom_and_meta.py[`process_biom_and_meta.py`] and save it in a convenient location, such as your home directory or a `scripts/` folder.
+. Download the script link:../scripts/process_biom_and_meta.py[`process_biom_and_meta.py`] and save it in a convenient location, such as your home directory or a `scripts/` folder.
 
 [discrete]
 ==== Step 3: Set up your Python environment
@@ -170,6 +170,81 @@ The script will create the following files in the same folder:
 |===
 
 These files correspond more or less to the files uploaded to the MDT by the publisher, with all terms/fields  mapped. The files can e.g. be used as templates for your own datasets or as example data for training.
+
+
+=== Transposing very large OTU tables locally
+
+The MDT requires OTU tables to have OTUs in rows and samples in columns. However, many datasets are provided with OTUs in columns and samples in rows. Although, the MDT can transpose such tables during processing, it is not fully tested and supported. Thus, it is recommended to transpose such tables before uploading them to the MDT.
+
+For very large OTU/sample tables (tens of millions of cells or more), standard scripts and spreadsheet software will quickly run out of memory. The provided Python script `transpose_otu_table.py` lets you **transpose such tables efficiently** on your own computer by converting them into a sparse matrix, transposing it, and writing the result back to disk — without ever holding the entire dense matrix in memory.
+
+[discrete]
+==== Requirements
+* Python 3.8 or newer
+* `numpy` and `scipy` installed  
+  (Install with: `pip install numpy scipy`)
+* Download the script: link:../scripts/transpose_otu_table.py[transpose_otu_table.py]
+
+[discrete]
+==== Input format
+* Tab-separated (`.tsv`) or gzipped tab-separated (`.tsv.gz`) file
+* **First row** = header with OTU IDs (columns)  
+* **First column** = sample IDs (rows)  
+* Values are integers or floats; empty/zero values should be `"0"` or `"0.0"`
+
+[discrete]
+==== Usage
+From a terminal, run:
+
+----
+python transpose_otu_table.py <input.tsv[.gz]>
+----
+
+Example:
+
+----
+python transpose_otu_table.py my_OTU_table.tsv.gz
+----
+
+This will produce:
+
+* `my_OTU_table_transposed.tsv.gz` (default output name)
+* Same format as input, but with OTUs in rows and samples in columns
+
+[discrete]
+==== Optional flags
+* `--keep-triplets`  
+  Keeps the **intermediate “triplet” file** (row, column, value format) generated during processing.  
+  This can be useful if you want to inspect or reuse the sparse representation without recomputing it.
+
+Example:
+
+----
+python transpose_sparse_triplets.py my_OTU_table.tsv.gz --keep-triplets
+----
+
+[discrete]
+==== Performance notes
+* Progress updates are printed during reading and writing
+* Handles **very large, sparse tables** efficiently — memory usage scales with number of *non-zero* entries, not the full matrix size
+* Works best from a local SSD for faster temporary file handling
+
+[discrete]
+==== Output naming
+If no output name is given, the script will:
+* Replace `.tsv` or `.tsv.gz` with `_transposed.tsv` or `_transposed.tsv.gz`
+* You can edit the script if you want a different naming pattern
+
+[discrete]
+==== Troubleshooting
+* If you get a `ValueError` about unexpected columns, check that:
+** Header contains OTU IDs (no empty cells)
+** All rows have the same number of columns
+* If you run out of disk space, make sure you have space for:
+** Input file
+** Output file
+** Intermediate triplet file (can be large if the table is not sparse)
+
 
 
 ////
