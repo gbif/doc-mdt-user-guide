@@ -18,19 +18,20 @@ https://www.gbif.org/composition/7o3nbjPcY92vZxmjo6Z8E2/[Apply to manage an MDT]
 
 === GBIF guides
 
-* The general guide – https://doi.org/10.35035/doc-vf1a-nr22[Publishing DNA-derived data through biodiversity data platforms] – was released in 2021 and has valuable supplementary in-depth information on publishing DNA-derived biodiversity data. The general guide specifies data preparation, etc, but the MDT will handle a lot of these things automatically/interactively. As the general guide is not yet updated with information on the MDT, follow the information in the MDT user guide, so when in doubt.
+* https://doi.org/10.35035/doc-vf1a-nr22[Publishing DNA-derived data through biodiversity data platforms] – was released in 2021 and has valuable supplementary in-depth information on publishing DNA-derived biodiversity data. As the MDT will handle several data preparation steps automatically, it is advisable to follow the information in the MDT user guide when in doubt.
 
-NOTE: You may especially benefit from reading the sections https://docs.gbif.org/publishing-dna-derived-data/en/#rationale[Rationale]; https://docs.gbif.org/publishing-dna-derived-data/en/#environmental-dna-as-a-source-for-dna-derived-occurrence-data[Environmental DNA as a source...]; https://docs.gbif.org/publishing-dna-derived-data/en/#dna-metabarcoding-sequence-derived-data[DNA metabarcodin data]; https://docs.gbif.org/publishing-dna-derived-data/en/#introduction-to-biodiversity-publishing[Introduction to publishing]; https://docs.gbif.org/publishing-dna-derived-data/en/#taxonomy-of-sequences[Taxonomy of sequences]; https://docs.gbif.org/publishing-dna-derived-data/en/#taxonomy-of-sequences[Mapping metabarcoding data].
+NOTE: sections of central relevance: https://docs.gbif.org/publishing-dna-derived-data/en/#rationale[Rationale]; https://docs.gbif.org/publishing-dna-derived-data/en/#environmental-dna-as-a-source-for-dna-derived-occurrence-data[Environmental DNA as a source...]; https://docs.gbif.org/publishing-dna-derived-data/en/#dna-metabarcoding-sequence-derived-data[DNA metabarcodin data]; https://docs.gbif.org/publishing-dna-derived-data/en/#introduction-to-biodiversity-publishing[Introduction to publishing]; https://docs.gbif.org/publishing-dna-derived-data/en/#taxonomy-of-sequences[Taxonomy of sequences]; https://docs.gbif.org/publishing-dna-derived-data/en/#taxonomy-of-sequences[Mapping metabarcoding data].
 
 
 === More context about the MDT and DNA-derived data in GBIF
 
-* Recorded GBIF presentation on GBIF and eDNA data and GBIF at the 3rd https://secwww.jhuapl.edu/EventLink/Event/300[National Workshop^] on Marine eDNA, Maryland, USA, 2024 (https://www.youtube.com/watch?v=g9Y7gqR-y-w&list=PLQ_hsjucVlJSX-GhtXagFuloMGIx5tJMN&index=20[video])
-* A recorded presentation on DNA data + GBIF originally made for the https://www.gbif.org/composition/lKyZFAUnIDv8kpf0CgZsS/technical-support-hour-for-gbif-nodes[Technical support hour for GBIF nodes]) (https://vimeo.com/912170754[video])
-* A quickly made example use of the MDT. (https://drive.google.com/file/d/1T27BYTxC_ky-Qn89lhvhlR0asRsLnbML/view?usp=sharing[video])
+* Technical support hour for GBIF nodes: August 2025 (topic: MDT) (https://www.gbif.org/event/1GjkWCU2h24hoq2iV7X9wJ/technical-support-hour-for-gbif-nodes-august-2025[page+video])  
+* Technical support hour for GBIF nodes: February 2024 (topic: DNA data publishing) (https://www.gbif.org/event/2vtOYk4ymZsLxQah4mfErG/[page+video])  
+* eDNA data and GBIF at the 3rd https://secwww.jhuapl.edu/EventLink/Event/300[National Workshop^] on Marine eDNA, Maryland, USA, 2024 (https://www.youtube.com/watch?v=g9Y7gqR-y-w&list=PLQ_hsjucVlJSX-GhtXagFuloMGIx5tJMN&index=20[video])
+* A quickly made example use of the MDT (old). (https://drive.google.com/file/d/1T27BYTxC_ky-Qn89lhvhlR0asRsLnbML/view?usp=sharing[video])
 * GBIF briefing on Digital Sequence Information (DSI) (https://www.gbif.org/dsi-statement[web page, text])
 
-=== Selected short videos on eDNA and DNA metabarcoding
+=== Selected short general videos on eDNA and DNA metabarcoding
 
 * How we can detect pretty much anything - Hélène Morlon and Anna Papadopoulou - TED-Ed. (https://www.youtube.com/watch?v=bdwU_ZPk1cY[video])
 * Biomonitoring using eDNA (environmental DNA) - Henrik's Lab. (https://www.youtube.com/watch?v=lxw6QvL1g70[video])
