@@ -71,14 +71,13 @@ France (https://mdt.gbif.fr/) +
 Luxembourg (https://mdt.gbif.mnhn.lu/) +
 Norway (https://mdt.gbif.no/) +
 Poland (https://mdt.gbif.pl/) +
-Portugal (_in process_) +
+Portugal (https://mdt.gbif.pt/) +
 United Kingdom (https://mdt-gbif.nbnatlas.org/)
 
 | *Latin America & the Caribbean* 
 | Latin America & the Caribbean (https://lac.mdt.gbif.org/) – *Regional* MDT +
 Brazil (https://mdt.sibbr.gov.br/) +
 Colombia (https://edna.biodiversidad.co/) +
-Guatemala (_in process_) +
 
 | *North America* 
 | Canada (https://mdt.canadensys.net/) +
