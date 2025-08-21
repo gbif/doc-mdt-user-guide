@@ -78,11 +78,17 @@ TIP: Press *Save mapping* once in a while to make sure that you do not get logge
 ****
 *The example dataset* +
 
-._Sample section_: the MDT automatically identified and mapped 6 fields from the uploaded Samples table (second column) and approx. 20 global term/values from the Study table (third column) to identically named Darwin Core terms (first colum).
-image::img/advanced_mapping_samp.png[width=400]
+image::img/advanced_mapping_samp1.png[width=400]
+
+
+
+._Sample section (truncated)_: the MDT automatically identified and mapped 6 fields from the uploaded Samples table (second column) and approx. 20 global term/values from the Study table (third column) to identically named Darwin Core terms (first colum).
+image::img/advanced_mapping_samp2.png[width=400]
+
+image::img/advanced_mapping_tax1.png[width=400]
 
 ._Taxon section_: the MDT automatically identified and mapped 10 fields from the uploaded Taxonomy table.
-image::img/advanced_mapping_tax.png[width=400]
+image::img/advanced_mapping_tax2.png[width=400]
 
 ****
 
@@ -106,19 +112,26 @@ image::img/advanced_seq_map.png[width=300]
 . Click on _sequence_ to specify that mapping.
 ****
 
-==== Manual mapping 
+==== Manual mapping and global values
 
 Under *Unmapped fields* (above the *Taxon* section) we may see fields from the uploaded data, that were not automatically identified and mapped to any Darwin Core terms.
 
 We expect that Darwin Core may accomodate several of these un-mapped fields, and we may also want to modify and extend the uploaded data a bit.
 
+image::img/advanced_mapping_samp2_add.png[width=300]
+
 [start=4]
-. Try to accomodate as many of unmapped fields by mapping them to relevant Darwin Core terms, by *Add mapping for another sample field*. Use the search function as explained above, consult the section <<req_recom>>, or explore available fields/terms in https://dwc.tdwg.org/list/#dwc_Occurrence[Darwin Core Occurrence] and the http://rs.gbif.org/terms/1.0/DNADerivedData[DNA derived data extension].
-. Also use *Add mapping for another sample field* to add DwC terms, where you can provide global values that were not provided in the *Study* table of the uploaded data. Provide the global value of an added term in the third column (Default values).
+. Include unmapped fields by mapping them to relevant Darwin Core terms by clicking *Add mapping for another sample field*. Add a relevant darwin core term, and map it to one of the unmapped fields, by selecting that field from the dropdown menu. Consult the section <<req_recom>> and explore available fields/terms in https://dwc.tdwg.org/list/#dwc_Occurrence[Darwin Core Occurrence] and the http://rs.gbif.org/terms/1.0/DNADerivedData[DNA derived data extension].
+. *Add mapping for another sample field* can also be used to add DwC terms where you manually enter global values - similar to providing them in the *Study* table in the uploaded data. Provide the global value of a term in the third column (Default values).  
+
+NOTE: For environmental data, using the terms term:mixs[env_medium], term:mixs[env_local_scale] and term:mixs[env_broad_scale], it is recommended to use the Environmental Ontology (ENVO) to provide values in the format: `value [ENVO:000XXXX]` (e.g. `coastal sea water [ENVO:00002150]`, see below).
 
 ****
 *The example dataset* +
-_Sample_Name, temperature, salinity, Accession_biosamples, lsid, rank_ are listed under *Unmapped fields*, as these fields in the uploaded data were not automatically identified and mapped to Darwin Core terms.
+
+._Sample_Name, temperature, salinity, Accession_biosamples, lsid, rank_ are listed under *Unmapped fields*, as these fields in the uploaded data were not automatically identified and mapped to Darwin Core terms.
+image::img/advanced_mapping_samp2_unmapped.png[width=400]
+
 
 . One of the unmapped fields is called _Accession_biosamples_ and contains links to  Biosample records in INSDC (SRA/ENA). We want to map that field to the recommended Darwin Core term term:dwc[materialSampleID] for that.
 . Go to the last part of the *Sample* section. 
