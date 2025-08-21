@@ -169,7 +169,7 @@ The section *Unmapped fields* fields that remain unmapped are listed. These can 
 ****
 *The example dataset*
 
-As there is no suitable field for _salinity_ in the dataset, this can be added as an extended measurement.
+There is no suitable field for _salinity_ in the DwC standard, but the measurements can be added as an *Extended Measurement or Fact*.
 
 . Click on _salinity_ from the row of unmapped fields (in the *Extended Measurement Or Facts* section) and see how it is transferred to the section below as a new entry.
 . We know that the measurement unit is _ppt_, so we add that manually.
@@ -179,7 +179,7 @@ NB: leave the fields _temperature_ and _Sample_Name_ unmapped.
 
 TIP: All available terms/fields from https://dwc.tdwg.org/list/#dwc_Occurrence[Darwin Core Occurrence] and the http://rs.gbif.org/terms/1.0/DNADerivedData[DNA derived data extension] can be included in the upload files, and – if spelled correctly – no manual mapping is needed.
 
-NOTE: Unmapped fields will be retained MDT, also in the standardized BIOM file, and will only be absent from the produced <<dwc-a>>. They can be mapped/added later by revising the mapping if needed.
+NOTE: Unmapped fields will be retained in the MDT and in the BIOM files, but absent from the final <<dwc-a>>. They can be mapped/added later by revising the mapping if needed.
 
 Now, the mapping is complete.
 
