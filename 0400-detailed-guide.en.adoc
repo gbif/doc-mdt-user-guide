@@ -220,7 +220,7 @@ image::img/advanced_review.png[]
 ** Inspect the map and verify that the samples are placed geographically where expected.
 ** Inspect the taxonomic bar-chart to ensure that taxonomic composition is as expected.
 *** Try some of the other options for the bar-chart (e.g. Absolute read abundance).
-** Inspect PCoA/MDS ordination plots (visualization of compositional differences between samples) for outliers, e.g. to see if there any control samples that should have been excluded. Try to color the ordination plot by some numerical.
+** Inspect PCoA/MDS ordination plots (visualization of compositional differences between samples) for outliers, e.g. to see if there are control samples that should have been excluded. Try to color the ordination plot by some numerical variable in the data.
 ** Select single samples from the map, from charts or from the dropdown, and explore their metadata and taxonomy in the panel to the right.
 ** Explore the "Most frequent OTUs" and "Least frequent OTUs".
 

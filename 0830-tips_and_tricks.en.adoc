@@ -246,6 +246,44 @@ If no output name is given, the script will:
 ** Intermediate triplet file (can be large if the table is not sparse)
 
 
+=== Comparing sample and OTU IDs (`check_ids.py`)
+
+This script compares the identifiers found in three tabular files:
+
+- An OTU contingency table (TSV/CSV, optionally transposed)
+- A sample metadata table (first column = sample IDs)
+- A taxonomy table (first column = OTU IDs)
+
+It reports how many sample and OTU IDs are shared or unique across the files.
+
+==== Basic usage
+
+Run the script with:
+
+[source, bash]
+----
+python3 check_ids.py --otu OTU_table.tsv --samples samples.tsv --taxonomy taxonomy.tsv
+----
+
+If your OTU table is transposed (i.e., OTU IDs are column headers and sample IDs are row names), add:
+
+[source, bash]
+----
+--otu-transposed
+----
+
+==== Optional output
+
+To write lists of non-matching IDs to files:
+
+[source, bash]
+----
+--outdir mismatches/
+----
+
+This will produce up to four files in the specified directory, listing unique sample or OTU IDs from each source.
+
+
 
 ////
 === Getting the taxonomy into shape

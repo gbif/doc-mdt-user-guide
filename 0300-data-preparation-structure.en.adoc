@@ -50,7 +50,7 @@ image::img/OTU_table_all_files.png[]
 
 === Fitting the data into a template
 
-Tables are uploaded as individual tab separated text files OR as sepate sheets in _one_ Excel Workbook.
+Tables are uploaded as individual tab separated text files OR as separate sheets in _one_ Excel Workbook.
 
 Select the <<templates, template>> most suitable for your data.
 
