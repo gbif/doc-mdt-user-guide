@@ -110,7 +110,7 @@ These issues seem to arise if:
 You may need to take the following steps manually (even with an up-to-date IPT):
 
 * Set the basisOfRecord field to "Material Sample."
-* Manually select the appropriate license.
+* Manually select the appropriate licence.
 
 The <<dwc-a>> produced in the MDT can always be validated in the https://www.gbif.org/tools/data-validator[GBIF data validator] to check if the problem is with the archive itself.
 

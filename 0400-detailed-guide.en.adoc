@@ -252,7 +252,7 @@ The dataset information/metadata is grouped in sections: _Basic Metadata, Geogra
 *The example dataset* +
 Explore the metadata sections to get familiar with options. When working with a real dataset, please refer to the full guidance in this section (#not written#) and to the section on <<preparation_structure>>.
 
-_Minimum actions to continue_: select a license and add a contact (minimum: email).
+_Minimum actions to continue_: select a licence and add a contact (minimum: email).
 ****
 
 . Press *Proceed*.

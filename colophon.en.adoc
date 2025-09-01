@@ -12,9 +12,9 @@ GBIF Secretariat (2024) Metabarcoding Data Toolkit – user guide. Copenhagen: G
 
 https://orcid.org/0000-0002-3530-013X[Tobias Guldberg Frøslev] (GBIF Secretariat).
 
-=== License
+=== Licence
 
-The document _Metabarcoding Data Toolkit – user guide_ is licensed under https://creativecommons.org/licenses/by-sa/4.0[Creative Commons Attribution-ShareAlike 4.0 Unported License].
+The document _Metabarcoding Data Toolkit – user guide_ is licensed under https://creativecommons.org/licenses/by-sa/4.0[Creative Commons Attribution-ShareAlike 4.0 Unported Licence].
 
 === Acknowledgements
 

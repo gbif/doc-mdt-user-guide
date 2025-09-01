@@ -164,7 +164,7 @@ NOTE: By downloading dataset from the MDT and publishing elsewhere, the possibil
 
 The MDT produces a fully publishable <<dwc-a>> with no need for changes or additions. The archive can validate in the https://www.gbif.org/tool/81281/gbif-data-validator[GBIF data validator].
 
-IPT users/administrators may run into challenges if using older versions of the IPT and/or if the DNA-derived data extension has not been installed. Also there is a known issue that requires the values of the license fields to be set manually.
+IPT users/administrators may run into challenges if using older versions of the IPT and/or if the DNA-derived data extension has not been installed. Also there is a known issue that requires the values of the licence fields to be set manually.
 
 *Publishing an archive from the MDT via IPT*
 

@@ -6,7 +6,7 @@ GBIF Secretariat <DNA@gbif.org>
 :revnumber: {git-metadata-sha-short}
 :revdate: {git-metadata-date} {git-metadata-time} {git-metadata-timezone}
 :title-page-background-image: image::img/web/dna-cover.png[position=top center]
-:license: https://creativecommons.org/licenses/by-sa/4.0/
+:licence: https://creativecommons.org/licenses/by-sa/4.0/
 :docinfo: shared-head
 
 ifdef::backend-html5[]
