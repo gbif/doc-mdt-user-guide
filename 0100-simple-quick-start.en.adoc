@@ -91,7 +91,7 @@ At this step, information on the dataset is provided.
 image::img/simple_metadata.png[]
 
 . Add a title to replace nickname – e.g. “my first simple test dataset”.
-. Select a licence.
+. Select a license.
 . Add contact information - minimum: email.
 . Leave the other fields empty (as this is just a test).
 . Press *Proceed* to save the metadata and proceed.

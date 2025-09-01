@@ -22,19 +22,14 @@ Before uploading and processing a dataset, it's recommended to prepare the so-ca
 
 Recommended preparations #I need input here#:
 
-* A dataset title. Choose something descriptive. Examples:
-** COI data from: Environmental DNA metabarcoding differentiates between micro-habitats within the rocky intertidal.
-** eDNA from water column to characterise fish and invertebrate communities from 30 sites in the Belgian Part of the North Sea -12S
-* A dataset description:
-** What is the dataset about?
-** For what purpose was it produced/collected?
-** How was the samples collected, and how was the data produced?
-** See e.g. this https://www.gbif.org/dataset/9358fbd7-cfd0-4eab-99fa-0934396a0529[dataset], where these things have been described in different sections:Description, Purpose, Methodology (with sub-headers)
+* A dataset title. Choose something descriptive. Examples: _COI data from: Environmental DNA metabarcoding differentiates between micro-habitats within the rocky intertidal_ and _eDNA from water column to characterise fish and invertebrate communities from 30 sites in the Belgian Part of the North Sea -12S_  
+* A dataset description. What is the dataset about? For what purpose was it produced/collected? How were the samples collected, and how was the data produced? See e.g. this https://www.gbif.org/dataset/9358fbd7-cfd0-4eab-99fa-0934396a0529[dataset] with information in sections: Description, Purpose, Methodology (with sub-headers)
 * Scientific papers related to the dataset.
-* Persons that should be associated with and/or credited for the dataset:
+* All persons that should be associated with and/or credited for the dataset:
 ** Contact: The contact person for this dataset.
 ** Creators: All persons that should be accredited when citing the dataset. You can prepare a table of creators using https://mdt.gbif-test.org/templates/people.xlsx[this template]
 ** Metadata providers: Potential additional people or organizations who provided documentation and other metadata for this dataset. You can prepare a table of metadata providers using https://mdt.gbif-test.org/templates/people.xlsx[this template]
+* Think about what license the dataset should have: CC0, CC-BY, or CC-BY-NC (see more https://www.gbif.org/terms[here] and https://ipt.gbif.org/manual/en/ipt/latest/applying-license[here]). 
 
 [[fit_data]]
 === The OTU table as a data format
