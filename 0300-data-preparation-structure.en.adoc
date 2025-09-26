@@ -40,7 +40,7 @@ An OTU table is a specialized species/site matrix used in biodiversity and commu
 
 Note: The MDT expects the OTU table to only contain read counts, with taxonomic and sample metadata provided in separate tables.
 
-.An example OTU_table with OTU IDs linked to the Taxonomy table and Sample IDs linke to the Samples table. *OTU_table*: sequence read counts of each OTU per sample; *Taxonomy*: DNA sequences and taxonomy per OTU; *Samples* Sample metadata per sample; *Study* (optional): Metadata values applying to all samples and OTUs; *Seqs.fasta (optional)* OTU sequences in fasta format.
+.An example OTU_table with OTU IDs linked to the Taxonomy table and Sample IDs linked to the Samples table. *OTU_table*: sequence read counts of each OTU per sample; *Taxonomy*: DNA sequences and taxonomy per OTU; *Samples* Sample metadata per sample; *Study* (optional): Metadata values applying to all samples and OTUs; *Seqs.fasta (optional)* OTU sequences in fasta format.
 image::img/OTU_table_all_files.png[]
 
 === Fitting the data into a template
@@ -80,7 +80,7 @@ TIP: The order (sorting) of rows and columns in the tables is not important.
 ** Taxonomic information (assignment of each OTU) – progressively detailed. (NB: none is required, at least term:dwc[scientificName is highly recommended):
 *** Use term:dwc[scientificName] for the most specific taxonomic identity. GBIF accepts BOLD BINs/UNITE SH codes here also.
 *** Add term:dwc[kingdom] (from the GBIF taxonomic backbone) to guide the interpretation of the term:dwc[scientificName]
-*** Add other taxonomic ranks (term:dwc[phylum], term:dwc[class], term:dwc[order], term:dwc[family], term:dwc[genus], term:dwc[specificEpithet]) if they are compativle with the GBIF taxonomy.
+*** Add other taxonomic ranks (term:dwc[phylum], term:dwc[class], term:dwc[order], term:dwc[family], term:dwc[genus], term:dwc[specificEpithet]) if they are compatible with the GBIF taxonomy.
 *** Add term:dwc[taxonRank] to indicate the actual taxonomic rank of each term:dwc[scientificName]
 
 NOTE: Metadata like sequencing platform and primers can go in the *Study* table if identical across all OTUs. Mixed datasets (e.g., different primer sets used for the same set of samples) should be published separately.
@@ -145,7 +145,7 @@ This sections details the usage of required and recommended fields.
 
 *Fields automatically handled/filled by the MDT*
 
-* Some required or recommended fields are *automatically handled* by the MDT and do not require any input from the user: term:dwc[basisOfRecord], term:dwc[occurrenceID], term:dwc[organismQuantity], term:dwc[organismQuantityType], term:dwc[sampleSizeValue], term:dwc[sampleSizeUnit], term:dwc[taxonID], (term:dwc[eventID] – the MDT uses the proveded sample IDs by default).
+* Some required or recommended fields are *automatically handled* by the MDT and do not require any input from the user: term:dwc[basisOfRecord], term:dwc[occurrenceID], term:dwc[organismQuantity], term:dwc[organismQuantityType], term:dwc[sampleSizeValue], term:dwc[sampleSizeUnit], term:dwc[taxonID], (term:dwc[eventID] – the MDT uses the provided sample IDs by default).
 
 ==== Detailed reference on required and recommended fields
 
@@ -206,7 +206,7 @@ When using the MDT, it's not essential to distinguish between Darwin Core Occurr
 | _Automated in MDT_
 
 | term:dwc[sampleSizeValue]
-| _This field is automatically calculated as the total sequeunce read sum of the sample_
+| _This field is automatically calculated as the total sequence read sum of the sample_
 | Total number of reads in the sample. This is important since it allows calculating the relative abundance of each OTU or ASV within the sample.
 | Highly recommended
 | _Automated in MDT_

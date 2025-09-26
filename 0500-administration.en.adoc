@@ -16,7 +16,7 @@ The GBIF Secretariat will provide each participating node with a hosted installa
  
 _Unique features_  
 
-* Direct dataset publication to GBIF.org by admins (and users when/if given permision).
+* Direct dataset publication to GBIF.org by admins (and users when/if given permission).
 * Easy correction, updating, re-mapping, re-annotation of sequences, etc, followed by publication (update).
 * Extra BIOM endpoints for improved interoperability and visualization purposes.
 ****
@@ -83,7 +83,7 @@ _Unique features_
 
 === Workflows 
 
-Both MDT administrators (and users) can start using a hosted MDT immediately. *NB: Administrators typically do not need to take any action until they receive an email from an user of the MDT* – this process (automatic email generation) is explained in detail from the user's perspective in the <<publishing, Publishing Step>> of the <<detailed_guidance>>.
+Both MDT administrators (and users) can start using a hosted MDT immediately. *NB: Administrators typically do not need to take any action until they receive an email from a user of the MDT* – this process (automatic email generation) is explained in detail from the user's perspective in the <<publishing, Publishing Step>> of the <<detailed_guidance>>.
 
 *Basic workflow with a new user*
 
@@ -102,10 +102,10 @@ In step 7 (Publish), the user selects one of two options, that both initiate an 
 +
 . "_Ask for help with registering your institution/organisation_"  – in cases where they _cannot_ find their institution from the drop-down menu.
 
-The MDT administrator then recieves an email from the user with relevant information to either:  
+The MDT administrator then receives an email from the user with relevant information to either:  
 
 [upperalpha]
-. Associate the user with the publishing institution/organization in the MDT (see section: <<man_org>>). A link in the email links directluy to the relevant dialogue box for the administrator.  
+. Associate the user with the publishing institution/organization in the MDT (see section: <<man_org>>). A link in the email links directly to the relevant dialogue box for the administrator.  
 +
 *OR*
 +
@@ -113,7 +113,7 @@ The MDT administrator then recieves an email from the user with relevant informa
 
 In the mail there is a link to the dataset in the MDT as well as a link to the dataset in the test environment if UAT publication was done.
 
-NOTE: Returning users can upload and publish datasets under any of the publisning institutions/organizations they have been associated with in the MDT.
+NOTE: Returning users can upload and publish datasets under any of the publishing institutions/organizations they have been associated with in the MDT.
 
 [[wcm]]
 ==== Conversion-only Mode

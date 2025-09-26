@@ -17,7 +17,7 @@ A real metabarcoding dataset of surface seawater metazoan communities – slight
 ** The *Samples* table contains IDs correspoding to those (column names) in the *OTU_table*, and sample metadata: spatiotemporal data, date, etc. NB: Some fields are already using DwC terms; others are not yet standardized and will need manual mapping.
 ** The *Study* table with information/data that is the same across all samples (and/or OTUs) in the whole dataset. All fields (the term column) are already using exact Darwin Core terms as needed for this table.
 
-NOTE: The 160th column of the OTU table corresponds to a negative control sample (NEG), and the corresponding detections should not be included as occurrences in the GBIF dataet. However, the MDT will automatically remove samples that are not present in _both_ the *OTU_table* and *Samples* tables. Here, the negative control has already been removed from the *Samples* table.
+NOTE: The 160th column of the OTU table corresponds to a negative control sample (NEG), and the corresponding detections should not be included as occurrences in the GBIF dataset. However, the MDT will automatically remove samples that are not present in _both_ the *OTU_table* and *Samples* tables. Here, the negative control has already been removed from the *Samples* table.
 ****
 
 [[detailed_select_mdt]]
@@ -82,7 +82,7 @@ image::img/advanced_mapping_samp1.png[width=400]
 
 
 
-._Sample section (truncated)_: the MDT automatically identified and mapped 6 fields from the uploaded Samples table (second column) and approx. 20 global term/values from the Study table (third column) to identically named Darwin Core terms (first colum).
+._Sample section (truncated)_: the MDT automatically identified and mapped 6 fields from the uploaded Samples table (second column) and approx. 20 global term/values from the Study table (third column) to identically named Darwin Core terms (first column).
 image::img/advanced_mapping_samp2.png[width=400]
 
 image::img/advanced_mapping_tax1.png[width=400]
@@ -116,7 +116,7 @@ image::img/advanced_seq_map.png[width=300]
 
 Under *Unmapped fields* (above the *Taxon* section) we may see fields from the uploaded data, that were not automatically identified and mapped to any Darwin Core terms.
 
-We expect that Darwin Core may accomodate several of these un-mapped fields, and we may also want to modify and extend the uploaded data a bit.
+We expect that Darwin Core may accommodate several of these un-mapped fields, and we may also want to modify and extend the uploaded data a bit.
 
 image::img/advanced_mapping_samp2_add.png[width=300]
 
@@ -157,7 +157,7 @@ NOTE: term:mixs[env_broad_scale] and term:mixs[env_local_scale] were also descri
 
 ==== Using Extended Measurements Or Facts
 
-For some types of metadata there are no suitable fields in the data standards, but users may still want to include those in the final data. Such data can be accomodated in the *Extended Measurement Or Facts (eMoF)*
+For some types of metadata there are no suitable fields in the data standards, but users may still want to include those in the final data. Such data can be accommodated in the *Extended Measurement Or Facts (eMoF)*
 
 The section *Unmapped fields* fields that remain unmapped are listed. These can be added as extended measurements/facts.
 
@@ -271,9 +271,9 @@ A notification will inform you that data ingestion may take a few minutes before
 . Explore the dataset in the GBIF test environment (UAT).
 . Ensure that all information and data is processed and displayed appropriately as you expect.
 +
-IMPORTANT: Indexing/processing is not instantaneous. The dataset may e.g. have zero occurences and no map until fully indexed (usually ~15 minutes). _If_ corrections are needed, go back to the relevant step (Upload, Mapping, Metadata), perform the needed adjustments, go through all the following steps, do a new export and test publication, until the dataset is as expected.
+IMPORTANT: Indexing/processing is not instantaneous. The dataset may e.g. have zero occurrences and no map until fully indexed (usually ~15 minutes). _If_ corrections are needed, go back to the relevant step (Upload, Mapping, Metadata), perform the needed adjustments, go through all the following steps, do a new export and test publication, until the dataset is as expected.
 
-.Pressing *Dataset at gbif-uat.org* opens the dataset (here the example dataset) in the GBIF test environment (UAT) where users can _preview_ a potential real publication, and verify that the processed dataset contains all the wanted information for real publication. NB: The dataset is not completely indexed immediately and the dataset may e.g. have 0 occurences and no map compared to this figure, until fully indexed. Notice how the hatched/shaded header and the red "TEST" label indicate that it is a test environment. Explore the dataset and notice how the uploaded data and dataset information/description is presented on the website.
+.Pressing *Dataset at gbif-uat.org* opens the dataset (here the example dataset) in the GBIF test environment (UAT) where users can _preview_ a potential real publication, and verify that the processed dataset contains all the wanted information for real publication. NB: The dataset is not completely indexed immediately and the dataset may e.g. have 0 occurrences and no map compared to this figure, until fully indexed. Notice how the hatched/shaded header and the red "TEST" label indicate that it is a test environment. Explore the dataset and notice how the uploaded data and dataset information/description is presented on the website.
 image::img/advanced_uat.png[width=400]
 
 [start=6]
@@ -308,7 +308,7 @@ image::img/dg_publish_find_institution.png[width=600]
 *Find/register your institution* using the search box to search for your institution.
 
 * If your institution is already registered:
-** Select it, and click on "*Ask for access to publish under this institution/organisation*". This will start a preformulated email to the administrator of the MDT, asking to associate you with the institutuion in the MDT.
+** Select it, and click on "*Ask for access to publish under this institution/organisation*". This will start a preformulated email to the administrator of the MDT, asking to associate you with the institution in the MDT.
 ** Send the mail, and allow some time for the MDT administrator to get back you you.
 * If you can´t find your institution/organisation:
 ** Click on "*Ask for help with registering your institution/organisation*". This will start a preformulated email to the administrator of the MDT, asking for help with the steps needed in order to get your institution recognized as a GBIF data publisher and to associate you so your dataset can be published.
@@ -372,7 +372,7 @@ image::img/dg_mydata.png[]
 
 *Help, feedback and other resources*
 
-* The *Neep help?* (fern leaf): Opens an email to contact the Administrator of the MDT installation.
+* The *Need help?* (fern leaf): Opens an email to contact the Administrator of the MDT installation.
 * The *RSS feed*: Lists the most recently updated resources (datasets) available as an RSS feed. This can be used to monitor incoming datasets to the MDT installation.
 * The *Report a bug* and *Request a feature* : Opens a GitHub issue where users can report bugs or request features to be developed.
 <<<

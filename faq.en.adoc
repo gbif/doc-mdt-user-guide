@@ -11,7 +11,7 @@
 
 *Q. What does the MDT do?*
 
-*A.* The MDT reshapes and formats a DNA metabarcoding dataset for publication on GBIF.org – transforming the familar broad OTU table (with associated sample info & taxonomic/sequence informantion) into a DarwinCore Archive. These are in principle formatting steps that can be done manually following the guidelines in the guide https://doi.org/10.35035/doc-vf1a-nr22[Publishing DNA-derived data through biodiversity data platforms], but the MDT automates this and makes it easier. 
+*A.* The MDT reshapes and formats a DNA metabarcoding dataset for publication on GBIF.org – transforming the familiar broad OTU table (with associated sample info & taxonomic/sequence information) into a DarwinCore Archive. These are in principle formatting steps that can be done manually following the guidelines in the guide https://doi.org/10.35035/doc-vf1a-nr22[Publishing DNA-derived data through biodiversity data platforms], but the MDT automates this and makes it easier. 
 
 *Q. Are there data templates?*
 
@@ -19,11 +19,11 @@
 
 *Q. What kind of data can be published using the MDT?*
 
-*A.* DNA metabarcoding dataset in the shape on an OTU table, i.e. a table of amplified sequences (ASVs/OTUs) and their abundance across a set of samples, with each sample corresponding to e.g. environmental or bulk sample (air, soil, water, faeces, insect trap homogenate, gut contents, ...).
+*A.* DNA metabarcoding dataset in the shape of an OTU table, i.e. a table of amplified sequences (ASVs/OTUs) and their abundance across a set of samples, with each sample corresponding to e.g. environmental or bulk sample (air, soil, water, faeces, insect trap homogenate, gut contents, ...).
 
 *Q. Can the MDT be used for metagenomic datasets?*
 
-*A.* No. BUT: There is often confusion between the terms 'metagenomic' and 'metabarcoding.' Here we define *metagenomics* as involving sequencing of all genetic material in an environmental sample, typically using shotgun sequencing _without_ a PCR step to target specific genetic (barcode) regions. In contrast, *metabarcoding* involves PCR amplification of specific DNA regions (e.g., CO1, ITS, 18S, 16S), often referred to as barcoding regions. Thus, "16S amplicon" data – although often referred to as "metaganomics" in some communities – is metabarcoding data and can be processed in the MDT. 
+*A.* No. BUT: There is often confusion between the terms 'metagenomic' and 'metabarcoding.' Here we define *metagenomics* as involving sequencing of all genetic material in an environmental sample, typically using shotgun sequencing _without_ a PCR step to target specific genetic (barcode) regions. In contrast, *metabarcoding* involves PCR amplification of specific DNA regions (e.g., CO1, ITS, 18S, 16S), often referred to as barcoding regions. Thus, "16S amplicon" data – although often referred to as "metagenomics" in some communities – is metabarcoding data and can be processed in the MDT. 
 
 *Q. Which sample types are acceptable to publish on GBIF.org?*
 
@@ -39,7 +39,7 @@
 
 *Q. Should sequences be clustered into OTUs?*
 
-*A.* Some compression of data is needed. 100% identical sequences should always be collapsed (dereplicated), and shorter 100% identical sequences should prefereably also be merged with their identical, longer counterparts. Additional clustering, denoising and compression may be relevant depending on sequencing platform and bioinformatic tools used. Unclustered amplicon sequence variants (ASVs) – e.g. Illumina sequences processed with the dada2 – is compatible/interoperable with data from similar studies, whereas clustering into broader (e.g. 97% similarity) OTUs may result in incompatible picking of representative sequences of similar OTUs.
+*A.* Some compression of data is needed. 100% identical sequences should always be collapsed (dereplicated), and shorter 100% identical sequences should preferably also be merged with their identical, longer counterparts. Additional clustering, denoising and compression may be relevant depending on sequencing platform and bioinformatic tools used. Unclustered amplicon sequence variants (ASVs) – e.g. Illumina sequences processed with the dada2 – is compatible/interoperable with data from similar studies, whereas clustering into broader (e.g. 97% similarity) OTUs may result in incompatible picking of representative sequences of similar OTUs.
 
 *Q. Should sequence read abundance be converted to relative abundance?*
 
@@ -67,7 +67,7 @@
 
 *Q. Should data from suspected contaminants be removed?*
 
-*A.* Yes. Some sequences/OTUs may be suspected contamination (e.g. DNA from humans, pets, classical food items like tomato, potato, chicken, etc.). We recommend to remove these if they can be identified. Excluding suspected contaminats can be done by deleting those from the *Taxon* table.
+*A.* Yes. Some sequences/OTUs may be suspected contamination (e.g. DNA from humans, pets, classical food items like tomato, potato, chicken, etc.). We recommend to remove these if they can be identified. Excluding suspected contaminants can be done by deleting those from the *Taxon* table.
 
 *Q. Should non-target sequences be removed?*
 
@@ -87,11 +87,11 @@
 
 *Q. Should I share sequences that cannot be taxonomically identified?*
 
-*A.* Yes. All OTUs/ASVs should be shared. Sequences that cannot be reliably identified to species level (or to genus, or any taxonomic level at all) generally reflect the fact that DNA reference databases are incomplete. However, reference databases are continuously improved, and many currently un-identifyable sequences will be possible to identify in the future. So please provide all OTUs/sequences.
+*A.* Yes. All OTUs/ASVs should be shared. Sequences that cannot be reliably identified to species level (or to genus, or any taxonomic level at all) generally reflect the fact that DNA reference databases are incomplete. However, reference databases are continuously improved, and many currently un-identifiable sequences will be possible to identify in the future. So please provide all OTUs/sequences.
 
 *Q. Will GBIF make sure that the taxonomy is updated?*
 
-*A.* This is an often heard question from DNA data publishers and users. For many barcoding regions and taxonomic groups, reference databases are incomplete and partially incorrect. However, reference databases are continuously improved, and many currently un-identifyable sequences will be possible to identify in the future. Whether GBIF will provide such service is currently not known.
+*A.* This is an often heard question from DNA data publishers and users. For many barcoding regions and taxonomic groups, reference databases are incomplete and partially incorrect. However, reference databases are continuously improved, and many currently un-identifiable sequences will be possible to identify in the future. Whether GBIF will provide such service is currently not known.
 
 *Q. How does GBIF ensure fitness for reuse and interoperability of data?*
 
