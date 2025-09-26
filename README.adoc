@@ -1,5 +1,5 @@
 https://docs.gbif.org/documentation-guidelines/[image:https://docs.gbif.org/documentation-guidelines/gbif-document-shield.svg[GBIF Document]]
-// https://doi.org/10.35035/doc-wkpc-m352[image:https://zenodo.org/badge/DOI/10.35035/doc-wkpc-m352.svg[doi:10.35035/doc-wkpc-m352]]
+https://doi.org/10.35035/doc-wkpc-m352[image:https://zenodo.org/badge/DOI/10.35035/doc-wkpc-m352.svg[doi:10.35035/doc-wkpc-m352]]
 // License badge
 https://creativecommons.org/licenses/by-sa/4.0/[image:https://img.shields.io/badge/License-CC%20BY%2D-SA%204.0-lightgrey.svg[CC BY-SA 4.0]]
 https://builds.gbif.org/job/doc-mdt-user-guide/lastBuild/console[image:https://builds.gbif.org/job/doc-mdt-user-guide/badge/icon[Build status]]
