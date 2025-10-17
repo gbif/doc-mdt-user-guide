@@ -76,7 +76,7 @@ TIP: The order (sorting) of rows and columns in the tables is not important.
 * Format OTU sequence and taxonomy data with OTUs as rows and fields as columns.
 * Label the first column as `id` to match OTU IDs in the *OTU_table*.
 * Include these fields:
-** term:dwc[DNA_sequence] for each OTU, unless provided in a fasta file.
+** term:mixs[DNA_sequence] for each OTU, unless provided in a fasta file.
 ** Taxonomic information (assignment of each OTU) – progressively detailed. (NB: none is required, at least term:dwc[scientificName is highly recommended):
 *** Use term:dwc[scientificName] for the most specific taxonomic identity. GBIF accepts BOLD BINs/UNITE SH codes here also.
 *** Add term:dwc[kingdom] (from the GBIF taxonomic backbone) to guide the interpretation of the term:dwc[scientificName]
