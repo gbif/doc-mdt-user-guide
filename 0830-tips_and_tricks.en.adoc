@@ -1,11 +1,31 @@
 [[tips_tricks]]
 == Tips/Tricks and Advanced Usage 
 
-=== Exclude samples and/or OTUs
+=== Control samples and unwanted taxa
 
-Datasets most often include control samples (negative coltrols, blanks, positive controls, etc.). Such control samples do not represent relevant biodiversity and should be removed, as only real biological/environmental samples producing data that seems trustworthy should be shared. Likewise some sequences/OTUs may be suspected contamination (e.g. DNA from humans, pets, classical food items like tomato, potato, chicken, etc.). These should also be removed if possible.
+Datasets often include various types of control samples (e.g., negative controls, blanks, positive controls). 
+Such samples do not represent actual biodiversity and should be removed, as only genuine biological or environmental 
+samples leading to inferred occurrences should be shared.  
 
-TIP: The MDT will not include samples that are not present in both the *Samples* and *OTU_table*, and will not include OTUs that are not present in both the *Taxonomy* and *OTU_table* tables. Deleting (rows or IDs) of unwanted OTUs or Samples from the Taxonomy or Samples table means that they will be excluded from the final data although they are present in the OTU_table. This is thus an easy way of excluding OTUs or Samples – e.g. negative control samples, suspected contaminant species – from the data. NB: There will be warnings about the imperfect overlap of IDs during processing.
+Similarly, some sequences or OTUs may represent suspected systematic contaminations across all samples (e.g., DNA from humans, pets, or common food items such as tomato, potato, or chicken). These should also be removed whenever possible.
+
+[discrete]
+==== Effect of excluding samples or OTUs
+
+In the final Darwin Core Archive, the MDT will only include:
+
+* *Samples (Sample IDs)* that appear in both the _Samples table_ and the _OTU table_.
+* *OTUs (OTU IDs)* that appear in both the _Taxonomy table_ and the _OTU table_.
+
+Removing an entire row (or column) corresponding to an unwanted OTU from the _Taxonomy table_ 
+will exclude that OTU from the final dataset, even if it is still present in the _OTU table_. 
+Likewise, deleting rows representing control or failed samples from the _Samples table_ 
+will exclude those samples from the final output.
+
+Removing a sample or OTU directly from the _OTU table_ has the same effect. 
+This provides a straightforward way to exclude undesired samples or OTUs.
+
+NOTE: During processing, the MDT will issue warnings if there are mismatches or incomplete overlaps among Sample or OTU IDs across tables.
 
 === Using MDT through API
 
