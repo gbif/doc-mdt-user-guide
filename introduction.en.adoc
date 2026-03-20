@@ -59,7 +59,7 @@ Users should choose the most relevant MDT based on their affiliation, region, pr
 | Togo (https://tg.mdt.gbif.org/)
 
 | *Asia* 
-| (No installations)
+| Taiwan (https://mdt.taibif.tw/)
 
 | Europe & Central Asia 
 | Europe & Central Asia (https://eca.mdt.gbif.org/) – *Regional* MDT +
