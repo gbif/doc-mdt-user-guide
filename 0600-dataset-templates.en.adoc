@@ -8,26 +8,28 @@ Refer to the section <<preparation_structure>> – specifically the section <<fi
 [[template1]]
 === OTU table template 1 – Excel workbook
 
-A workbook with three/four sheets: *OTU_table*, *Taxonomy*, *Samples* and (optionally) *Study*. The latter (*Study*) contains study-wide global values. The *OTU_table* must have samples as columns and OTUs as rows.
+A workbook with three/four sheets: *OTU_table*, *Taxonomy*, *Samples* and (optionally) *Study*. The latter (*Study*) contains study-wide global values. The *OTU_table* must have samples as columns and OTUs as rows. A spanish version of this template is also available.
 
-link:../templates/otutable_template1_excel.current.en.xlsx[Template 1].
+* link:../templates/otutable_template1_excel.current.en.xlsx[Template 1, English].  
+* link:../templates/otutable_template1_excel.current.es.xlsx[Template 1, Spanish].
+
 
 === OTU table template 2 – Excel workbook with fasta file
 
 A workbook with three/four sheets: *OTU_table*, *Taxonomy*, *Samples* and (optionally) *Study*. The latter (*Study*) contains study-wide global values. Instead of having the sequences in the *Taxonomy* sheet, a fasta file (*seqs.fasta*) is provided. The *OTU_table* must have samples as columns and OTUs as rows. The fasta file must have fasta headers corresponding to the OTU IDs used in the *OTU_table* sheet and in the *Taxonomy* sheet.
 
-link:../templates/otutable_template2_excel_w_fasta.current.en.zip[Template 2].
+* link:../templates/otutable_template2_excel_w_fasta.current.en.zip[Template 2].
 
 === OTU table template 3 – TSV format
 
 Three/four tsv (or csv) files *OTU_table.tsv*, *Taxonomy.tsv*, *Samples.tsv*, and (optionally) *Study.tsv* containing study-wide global values. The OTU table can have samples as either columns or rows.
 
-link:../templates/otutable_template3_tsv_files.current.en.zip[Template 3].
+* link:../templates/otutable_template3_tsv_files.current.en.zip[Template 3].
 
 === OTU table template 4 – TSV format with fasta file
 
 Three/four tsv (or csv) files *OTU_table.tsv*, *Taxonomy.tsv*, *Samples.tsv*, and (optionally) *Study.tsv* containing study-wide global values. Instead of having the sequences in the *Taxonomy.tsv*, a fasta file (*seqs.fasta*) is provided. The *OTU_table.tsv* can have samples as either columns or rows. The fasta file must have fasta headers corresponding to the OTU IDs used in the *OTU_table.tsv* and in the *Taxonomy.tsv*.
 
-link:../templates/otutable_template4_tsv_files_w_fasta.current.en.zip[Template 4].
+* link:../templates/otutable_template4_tsv_files_w_fasta.current.en.zip[Template 4].
 
 <<<
