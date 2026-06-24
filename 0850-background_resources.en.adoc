@@ -30,6 +30,8 @@ NOTE: sections of central relevance: https://docs.gbif.org/publishing-dna-derive
 * eDNA data and GBIF at the 3rd https://secwww.jhuapl.edu/EventLink/Event/300[National Workshop^] on Marine eDNA, Maryland, USA, 2024 (https://www.youtube.com/watch?v=g9Y7gqR-y-w&list=PLQ_hsjucVlJSX-GhtXagFuloMGIx5tJMN&index=20[video])
 * A quickly made example use of the MDT (old). (https://drive.google.com/file/d/1T27BYTxC_ky-Qn89lhvhlR0asRsLnbML/view?usp=sharing[video])
 * GBIF briefing on Digital Sequence Information (DSI) (https://www.gbif.org/dsi-statement[web page, text])
+* MDT administration and main differences with an IPT (https://vimeo.com/1200409964[video])
+
 
 === Selected short general videos on eDNA and DNA metabarcoding
 
