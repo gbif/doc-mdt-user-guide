@@ -1,6 +1,8 @@
 [[admin]]
 == Administration
 
+TIP: https://vimeo.com/1200409964[Watch the video: *MDT administration and main differences with an IPT*]  
+
 === Applying for a Hosted MDT
 
 In October 2024, https://www.gbif.org/news/3gm3lJaUQgTKZJRm6TiBff/gbif-nodes-invited-to-join-pilot-for-metabarcoding-data-on-biodiversity[GBIF launched] a pilot phase for the https://www.gbif.org/metabarcoding-data-programme[Metabarcoding Data programme] intended to improve GBIF’s integration of DNA metabarcoding data on biodiversity.
@@ -123,6 +125,8 @@ In step 7 (Publish), the user clicks the link "Ready to publish a dataset? Reach
 When receiving the email from the user, the MDT administrator can then start the process of ensuring that the user (and/or dataset) is associated with an endorsed GBIF publisher, that the dataset is suitable for publication, and help publishing the prepared DwC Archive through some other procedure (see: <<pub_ipt>>).
 
 === Administration (section in the menu bar)
+
+TIP: https://vimeo.com/1200409964[Watch the video: *MDT administration and main differences with an IPT*]  
 
 Only MDT administrators have access to the *Administration* section. The Administration section has two tabs:
 
