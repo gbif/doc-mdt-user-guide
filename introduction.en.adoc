@@ -57,7 +57,7 @@ Users should choose the most relevant MDT based on their affiliation, region, pr
 
 | *Africa* 
 | South Africa (https://mdt.sanbi-gbif.org/) +
-| Togo (https://tg.mdt.gbif.org/)
+Togo (https://tg.mdt.gbif.org/)
 
 | *Asia* 
 | Taiwan (https://mdt.taibif.tw/)
