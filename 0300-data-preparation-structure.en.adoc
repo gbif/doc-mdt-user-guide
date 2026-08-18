@@ -20,7 +20,7 @@ Ensure the following applies to the dataset:
 
 Before uploading and processing a dataset, it's recommended to prepare the so-called dataset metadata, i.e.: the description of the dataset, and information about contributors/authors, etc. This information will be entered during the 5th processing step (*Add Metadata*) in the MDT.
 
-Recommended preparations #I need input here#:
+Recommended preparations:
 
 * A dataset title. Choose something descriptive. Examples: _COI data from: Environmental DNA metabarcoding differentiates between micro-habitats within the rocky intertidal_ and _eDNA from water column to characterise fish and invertebrate communities from 30 sites in the Belgian Part of the North Sea -12S_  
 * A dataset description. What is the dataset about? For what purpose was it produced/collected? How were the samples collected, and how was the data produced? See e.g. this https://www.gbif.org/dataset/9358fbd7-cfd0-4eab-99fa-0934396a0529[dataset] with information in sections: Description, Purpose, Methodology (with sub-headers)
