@@ -86,7 +86,8 @@ Guatemala (https://mdt.conap.gob.gt/) +
 United States (https://mdt.gbif.us/)
 
 | *Oceania* 
-| Oceania (https://oceania.mdt.gbif.org/) – *Regional* MDT
+| Oceania (https://oceania.mdt.gbif.org/) – *Regional* MDT +
+New Zealand (https://mdt.gbif.org.nz/)
 
 | *General MDTs* 
 | GBIF conversion only (https://mdt.gbif.org/) +
