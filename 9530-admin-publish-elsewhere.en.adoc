@@ -1,0 +1,24 @@
+[[pub_ipt]]
+=== Publish archives outside the MDT
+
+In conversion-only mode, you download the Darwin Core Archive from the MDT (step 6) and publish it another way. The archive needs no changes. Datasets published this way cannot be updated or reprocessed from the MDT.
+
+[[admin_ipt]]
+==== Through an IPT
+
+. Download the archive (archive.zip) from the MDT.
+. Log in to your https://www.gbif.org/ipt[IPT] and click *Manage Resources*, then *Create new*.
+. Enter a *Shortname* and select _Occurrence_ under *Type*.
+. Choose *Import from an archived resource*, select the archive and click *Create*.
+. Check the data, then publish as usual in the IPT.
+
+Problems can occur if the IPT is not the latest version or if the DNA derived data extension is not installed. Even with an up-to-date IPT, you may need to set term:dwc[basisOfRecord] to "Material Sample" and select the licence manually. To check whether a problem lies in the archive itself, validate it in the https://www.gbif.org/tools/data-validator[GBIF data validator].
+
+[[admin_elsewhere]]
+==== Through another repository
+
+. Download the archive (archive.zip) from the MDT.
+. Put it in a stable repository, such as Zenodo, so that it has a permanent web address.
+. Register the dataset with its publisher in the GBIF Registry. See the https://vimeo.com/996575071[video on sharing to GBIF through the API] and the blog post https://data-blog.gbif.org/post/installations-and-hosting-solutions-explained/[Installations and hosting solutions explained].
+
+<<<

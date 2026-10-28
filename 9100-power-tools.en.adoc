@@ -1,0 +1,69 @@
+[appendix]
+[[tips_tricks]]
+== Tools for power users
+
+Optional tools for people who work in R or Python, run many datasets, or have very large tables.
+
+=== Run the MDT through its API
+
+If your data is already in a structured system, a script can take a dataset through the MDT, from the raw files to a Darwin Core Archive published on GBIF.org. You can still review the dataset in the MDT at any step. See the https://github.com/gbif/metabarcoding-data-toolkit-backend?tab=readme-ov-file#api[API description in the MDT backend repository].
+
+=== Export a phyloseq object
+
+If you analyse your data with the R package phyloseq, the function in link:../scripts/phyloseq_to_MDT.R[phyloseq_to_MDT.R] saves it as upload files for the MDT, with OTUs as rows: one Excel workbook (needs the package openxlsx) or, with `format = "tsv"`, one text file per table. You will usually still need to rename columns to Darwin Core terms and add missing fields (see <<preparation_structure>>).
+
+[source,r]
+----
+source("phyloseq_to_MDT.R")
+phyloseq_to_MDT(my_phyloseq_object)                  # MDT_upload.xlsx
+phyloseq_to_MDT(my_phyloseq_object, format = "tsv")  # OTU_table.tsv, Taxonomy.tsv, Samples.tsv
+----
+
+[[extract_examples]]
+=== Get the upload files of a published MDT dataset
+
+Any dataset published through the MDT can serve as an example or template. This Python script rebuilds its upload files, with all columns already mapped.
+
+. On GBIF.org, find a dataset published through the MDT, for example with the search https://www.gbif.org/dataset/search?q=MDT[MDT].
+. At the bottom of the dataset page, under *GBIF registration*, download the Darwin Core Archive (`archive.zip`) and the BIOM 2.1 file (`data.biom.h5`) into one folder.
+. Download link:../scripts/process_biom_and_meta.py[process_biom_and_meta.py].
+. Install the Python packages it needs, once:
++
+[source,bash]
+----
+pip install pandas biom-format requests
+----
+. Run the script on the folder:
++
+[source,bash]
+----
+python3 process_biom_and_meta.py /path/to/my_dataset_folder
+----
+
+The script writes `OTU_table.csv`, `Samples.csv` and `Taxonomy.csv` (from the BIOM file) and `Study.tsv` (from the archive's metadata) into the same folder.
+
+=== Transpose a very large OTU table
+
+The MDT expects OTUs as rows and samples as columns. It also accepts the transposed table (samples as rows), but this is not fully tested. Spreadsheet software and ordinary scripts run out of memory on tables with tens of millions of cells; this script does not, because it only holds the non-zero cells in memory.
+
+Download link:../scripts/transpose_otu_table.py[transpose_otu_table.py]. It needs Python 3.8 or newer with `numpy` and `scipy` (`pip install numpy scipy`). The input is a tab-separated file (`.tsv` or `.tsv.gz`) with samples as rows and OTU IDs in the first row. Run:
+
+[source,bash]
+----
+python3 transpose_otu_table.py my_OTU_table.tsv.gz
+----
+
+The result is `my_OTU_table_transposed.tsv.gz`. The script needs free disk space for a temporary file; add `--keep-triplets` to keep that file. If you get a `ValueError`, check that the first row has no empty cells and that all rows have the same number of columns.
+
+=== Check that the IDs match across your tables
+
+This script compares the sample and OTU IDs in your OTU table, Samples table and Taxonomy table, and reports how many match. Download link:../scripts/check_ids.py[check_ids.py] and run:
+
+[source,bash]
+----
+python3 check_ids.py --otu OTU_table.tsv --samples Samples.tsv --taxonomy Taxonomy.tsv
+----
+
+Add `--otu-transposed` if your OTU table has samples as rows, and `--outdir mismatches/` to save the non-matching IDs as lists.
+
+<<<

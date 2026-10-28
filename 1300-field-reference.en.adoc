@@ -1,0 +1,131 @@
+[[req_recom]]
+=== Field reference
+
+The tables below list the most important fields, grouped by the table they go in. Click a field name to see its official definition. Use the field name as your column header: the MDT then maps it automatically.
+
+Which table a field goes in depends on how its value varies:
+
+* It differs between samples: a column in the *Samples* table.
+* It differs between OTUs: a column in the *Taxonomy* table.
+* It is the same for the whole dataset: a row in the *Study* table, or a default value in step 2 (see <<map_defaults>>).
+
+The tables below show each field where it most often goes. Put each field in one table only (see <<file_rules>>).
+
+The *Level* column shows how important each field is. The levels follow GBIF's https://techdocs.gbif.org/en/data-publishing/data-quality-recommendations#data-quality-requirements-for-occurrences[data quality requirements for occurrences]. For some fields this guide is stricter than GBIF, never looser.
+
+* *Required:* GBIF or the MDT will not process your data without it.
+* *Strongly recommended:* makes your data much more useful, for example through better name matching and more precise locations.
+* *Share if available:* adds value if you have it.
+
+[[all_terms]]
+==== Other fields you can add
+
+The templates and the tables below contain only the most important fields. You can add any other term from the following lists, as an extra column in your Samples or Taxonomy table, as a value in the Study table, or in step 2 (see <<map_terms>>):
+
+* Darwin Core terms for occurrences and sampling events, listed with their definitions in GBIF's https://rs.gbif.org/core/dwc_occurrence_2025-07-10.xml[Occurrence core] and https://rs.gbif.org/core/dwc_event_2025-07-10.xml[Event core]. The Event terms describe the sample, for example term:dwc[samplingEffort], term:dwc[habitat], term:dwc[locality] or term:dwc[minimumDepthInMeters]. See also the https://dwc.tdwg.org/terms/[Darwin Core quick reference guide].
+* DNA terms from GBIF's https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2024-07-11.xml[DNA derived data extension]. Most of them come from https://genomicsstandardsconsortium.github.io/mixs/[MIxS], the checklists of the Genomic Standards Consortium, which the nucleotide archives GenBank, ENA and DDBJ (see <<insdc>>) also use to describe samples. Using these terms means your samples are described the same way on GBIF and in the archives. Examples: term:mixs[samp_vol_we_dna_ext] (volume of water filtered) and term:mixs[nucl_acid_ext] (DNA extraction method).
+
+Measurements that have no term, such as salinity or temperature, can be published as measurements in step 2 (see <<map_terms>>).
+
+[[stable_ids]]
+==== Filled in by the MDT
+
+The MDT makes one occurrence for each OTU in each sample where it has at least one read (zero reads are *not* treated as absence).
+
+[NOTE]
+====
+*You do not supply these fields.* The MDT automatically adds them to every occurrence. Examples are from the practice dataset (see <<example_data>>).
+
+* term:dwc[occurrenceID]: constructed from the sample ID, a colon, and OTU ID. Example: `120_2022-04-20:MiFish_UE-asv0001`
+* term:dwc[eventID]: constructed from the sample ID. Example: `120_2022-04-20`
+* term:dwc[basisOfRecord]: automatically set as `MATERIAL_SAMPLE`, because each record is based on DNA from a physical sample (such as water or soil), not on an observed or collected organism
+* term:dwc[organismQuantity]: number of reads of the OTU in the sample. Example: `384076`
+* term:dwc[organismQuantityType]: automatically set as `DNA sequence reads`
+* term:dwc[sampleSizeValue]: automatically calculated (and added) as total number of reads in the sample (all OTUs). Example: `1897112`
+* term:dwc[sampleSizeUnit]: automatically set as `DNA sequence reads`
+* term:dwc[taxonID]: constructed as `ASV:` and the MD5 checksum of the sequence. Example: `ASV:b68f65a31a69fb168c1e27439a4456e2`
+====
+
+This covers GBIF's required term occurrenceID and the strongly recommended basisOfRecord, organismQuantity and organismQuantityType.
+
+[[table-01]]
+==== Samples table: one row per sample
+
+[cols="3,2,3,4",options="header"]
+|===
+| Field | Level | Example | Note
+
+| term:dwc[countryCode] | Required | BE | Two-letter https://www.iso.org/iso-3166-country-codes.html[ISO 3166-1] code. GBIF requires the country for records based on DNA, if it is known. You can add term:dwc[country] (the name) as well.
+| term:dwc[eventDate] | Required | 2022-04-20 | ISO 8601 format, such as YYYY-MM-DD. The MDT asks for it (GBIF: strongly recommended).
+| term:dwc[eventTime] | Share if available | 10:15:00Z | ISO 8601 format, with the time zone.
+| term:dwc[decimalLatitude] | Required | 51.3333 | Decimal degrees. South is negative. The MDT asks for it (GBIF: strongly recommended).
+| term:dwc[decimalLongitude] | Required | 2.5 | Decimal degrees. West is negative. The MDT asks for it (GBIF: strongly recommended).
+| term:dwc[geodeticDatum] | Strongly recommended | WGS84 | The coordinate system, usually WGS84 (the GPS standard). Write `unknown` if you do not know it.
+| term:dwc[coordinateUncertaintyInMeters] | Strongly recommended | 2 | How precise the coordinates are, in metres. Leave empty if unknown; never use 0.
+| term:dwc[dataGeneralizations] | Share if available | Coordinates rounded to 0.1 degree | Must be filled in if you made the coordinates less precise, for example to protect sensitive species (see <<before_you_start>>).
+| term:dwc[informationWithheld] | Share if available | Exact location available on request | What you left out and how to get it.
+| term:dwc[recordedBy] | Strongly recommended | Aino Virtanen \| John Smith | Separate names with " \| ".
+| term:dwc[materialSampleID] | Strongly recommended | https://www.ncbi.nlm.nih.gov/biosample/SAMN_EXAMPLE_001 | The BioSample ID, if the sample is registered in a nucleotide archive.
+| term:dwc[associatedSequences] | Share if available | https://www.ncbi.nlm.nih.gov/sra/?term=SRR_EXAMPLE_001 | Link to the raw reads in a public archive.
+| term:mixs[env_broad_scale] | Share if available | marine biome [ENVO:00000447] | ENVO term. Can be picked in step 2.
+| term:mixs[env_local_scale] | Share if available | marine neritic pelagic zone biome [ENVO:01000032] | ENVO term. Can be picked in step 2.
+| term:mixs[env_medium] | Share if available | coastal seawater [ENVO:00002150] | ENVO term. Can be picked in step 2.
+| term:mixs[lib_layout] | Share if available | paired | Single or paired reads.
+|===
+
+[[table-02]]
+==== Taxonomy table: one row per OTU
+
+[[which_name]]
+*Which name to give:* share every OTU, and give it the most specific identification you trust in term:dwc[scientificName].
+
+* Identified to species: the species name, for example _Sprattus sprattus_.
+* Identified only to a higher rank: the name at that rank, for example the family Ammodytidae. Do this even if you only know the kingdom (Animalia) or the domain (Bacteria). Give the rank in term:dwc[taxonRank].
+* Not identified at all: leave term:dwc[scientificName] empty. Do not write "unknown", "unidentified" or "NA".
+
+[cols="3,2,3,4",options="header"]
+|===
+| Field | Level | Example | Note
+
+| term:mixs[DNA_sequence] | Required | CACCGCGGTTATACGAGAG… | Or provide the sequences in a fasta file.
+| term:dwc[scientificName] | Strongly recommended | _Sprattus sprattus_ | The most specific identification, at any rank (see above), with authorship if you have it, or a BOLD BIN or UNITE SH code. No working names or qualifiers such as cf. or sp.
+| term:dwc[kingdom] | Strongly recommended | Animalia | For eukaryotes, the kingdom: Animalia, Plantae, Fungi, Chromista or Protozoa. For bacteria and archaea, the domain: Bacteria or Archaea (there is no separate field for the domain). Helps GBIF match names that exist in more than one group.
+| term:dwc[taxonRank] | Strongly recommended | species | The rank of the scientific name: domain, kingdom, phylum, class, order, family, genus or species.
+| term:dwc[phylum], term:dwc[class], term:dwc[order], term:dwc[family], term:dwc[genus] | Share if available | Chordata, Actinopteri, Clupeiformes, Clupeidae, _Sprattus_ | One column per rank, if they follow the <<gbif-taxonomy,GBIF taxonomy>>.
+| term:dwc[verbatimIdentification] | Share if available | uncultured bacterium | The name from your reference database, if it is not a proper scientific name.
+| term:dwc[scientificNameID] | Share if available | urn:lsid:marinespecies.org:taxname:137090 | For OBIS: the WoRMS identifier of the name.
+| term:dwc[taxonConceptID] | Share if available | NCBI:txid9771 | For OBIS: the ID from your reference database, such as an NCBI taxon ID or a BOLD BIN.
+|===
+
+[[obis_data,names and identifiers for OBIS]]*Marine data for OBIS:* OBIS uses the WoRMS taxonomy, so add term:dwc[scientificNameID] and term:dwc[taxonConceptID] if your data should also reach OBIS (see the https://docs.gbif.org/publishing-dna-derived-data/en/#marine-datasets-and-the-ocean-biodiversity-information-system-obis[OBIS recommendations]). Two special cases:
+
+* Sequences with no name at all: OBIS asks for the scientific name `Biota incertae sedis` with `urn:lsid:marinespecies.org:taxname:12` instead of an empty name. Do this only for data that should reach OBIS. GBIF reads it the same as an empty name.
+* Names not in WoRMS, such as terrestrial species: give the name in term:dwc[scientificName] and leave term:dwc[scientificNameID] empty. GBIF matches the name as usual; OBIS cannot link it to WoRMS.
+
+[[table-03]]
+==== Study table: one value for the whole dataset
+
+Every field below can instead be a column in the Samples table if its value differs between samples. The exceptions are identificationRemarks and identificationReferences: if they differ between OTUs, make them columns in the Taxonomy table.
+
+[cols="3,2,3,4",options="header"]
+|===
+| Field | Level | Example | Note
+
+| term:mixs[target_gene] | Required | 12S | The marker, as a term from GBIF's https://registry.gbif.org/vocabulary/target_gene[target_gene vocabulary]. You can write a common short form such as COI, ITS2, 12S or 18S: the MDT records it as the vocabulary term, for example `SSU_rRNA_12S_mitochondrial` for 12S (see <<upload>>). For 16S, write `16Spro` (prokaryotic 16S) or `16Smt` (mitochondrial 16S); plain 16S is recorded as prokaryotic 16S. The MDT asks for it.
+| term:mixs[target_subfragment] | Strongly recommended |  | For example V4 for 16Spro. Leave it empty if the marker has no named region, as for 12S with MiFish primers.
+| term:mixs[pcr_primer_forward] | Strongly recommended | GTYGGTAAAWCTCGTGCCAGC |
+| term:mixs[pcr_primer_reverse] | Strongly recommended | CATAGTGGGGTATCTAATCCYAGTTTG |
+| term:mixs[pcr_primer_name_forward] | Strongly recommended | MiFish_U/E_F |
+| term:mixs[pcr_primer_name_reverse] | Strongly recommended | MiFish_U/E_R |
+| term:mixs[pcr_primer_reference] | Strongly recommended | https://doi.org/10.1098/rsos.150088 | The paper describing the primers.
+| term:mixs[seq_meth] | Strongly recommended | Illumina NovaSeq | Sequencing platform.
+| term:mixs[otu_class_appr] | Strongly recommended | DADA2 v1.26.0; ASV | Tool, version and clustering level used to define OTUs or ASVs.
+| term:mixs[otu_seq_comp_appr] | Strongly recommended | RDP as embedded in DADA2 v1.10.1; BLAST+ v2.12.0 | Tool and thresholds used to assign names.
+| term:mixs[otu_db] | Strongly recommended | custom 12S database; GenBank nt 2023-08 | Reference database and version.
+| term:mixs[sop] | Share if available | https://doi.org/10.1098/rsos.150088 | Link to the protocol.
+| term:dwc[samplingProtocol] | Share if available | Niskin bottles | How the samples were taken.
+| term:dwc[identificationRemarks] | Share if available | RDP Classifier against a custom 12S database | How the names were assigned. If it differs between OTUs: a column in the Taxonomy table.
+| term:dwc[identificationReferences] | Share if available | https://doi.org/10.5281/zenodo.13861942 | Tools or papers used for naming. If it differs between OTUs: a column in the Taxonomy table.
+|===
+
+<<<

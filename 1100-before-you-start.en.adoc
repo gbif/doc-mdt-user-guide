@@ -1,0 +1,63 @@
+[[before_you_start]]
+=== Before you start
+
+Make these decisions before you fill in the templates. They decide how useful your data will be to others.
+
+==== Check your data
+
+* It is DNA metabarcoding (amplicon) data. "16S amplicon" data counts as metabarcoding, even though it is often called metagenomics.
+* You have permission to share it.
+* You have the read counts per OTU and sample, the OTU sequences, and at least the location and date of each sample.
+* It covers one marker (primer set). Data from several markers goes into separate datasets.
+
+==== Decide what to share
+
+[cols="2,3",options="header"]
+|===
+| Question | Recommendation
+
+| Should primers, adapters and tags be removed from the sequences?
+| Yes, always. Further trimming, such as the 5.8S and 28S ends of ITS2 sequences, is optional.
+
+| Should sequences be clustered?
+| Merge identical sequences, but do not cluster ASVs if you can avoid it. Unclustered ASVs are the easiest to compare across studies; broad clusters (for example 97%) are harder to compare.
+
+| Should read counts be converted to relative abundance?
+| No. Share the raw read counts. GBIF calculates relative abundance itself.
+
+| Should samples be rarefied to an even sequencing depth?
+| No. Rarefying loses data; users can do it themselves if they need to.
+
+| Should controls, blanks and failed samples be removed?
+| Yes. Only real biological or environmental samples should be published. Remove them from the Samples table or the OTU table (see <<file_rules>>).
+
+| Should contaminants be removed (for example DNA from humans, pets or food)?
+| Yes, if you can identify them. Remove them from the Taxonomy table or the OTU table.
+
+| Should non-target sequences be removed?
+| Usually not: they may be useful to others, and removing them distorts the relative abundances. Remove them only if they are clearly contamination or suspected technical artefacts (for example tag-jumps).
+
+| Should singletons and low-abundance detections be removed?
+| Not necessarily. Remove them if you suspect them to be contaminants or analytical artefacts.
+
+| Should replicates be merged?
+| Merge them if the replication was only meant to reduce random variation. Otherwise, do what makes the data most useful for reuse.
+
+| There are several versions of the OTU table. Which one should be shared?
+| Only one: the version most relevant from a biodiversity point of view.
+
+| The same samples were sequenced with several markers (primer sets). What now?
+| Publish one dataset per marker. You can use the same Samples table, with the same sample IDs, for all of them. To show that the datasets belong together, give them similar titles with the marker at the end (for example "… North Sea – 12S" and "… North Sea – COI"), and enter the same *Project Identifier* on the *Project Data* tab in step 5.
+
+| Should/can sequences that cannot be identified be shared?
+| Yes, share all of them. Reference databases improve, so the sequences can be identified later. Give each OTU the most specific name you can, even if that is only the kingdom or domain, and leave the name empty if there is no identification (see <<which_name,Which name to give>>).
+
+| How should taxonomy be assigned?
+| GBIF does not require a particular tool or reference database; use what suits your marker. You can also let the MDT do it in step 3 (see <<process_data>>) or use the https://www.gbif.org/tools/sequence-id[GBIF Sequence ID tool].
+
+| Which sample types can be published?
+| Environmental samples (such as soil, water, air, moss or surface substrates), bulk samples (for example malaise traps) and gut contents. Heavily manipulated samples (experiments) may not reflect real biodiversity; use your judgement.
+
+| Some samples contain sensitive species, such as threatened species that could be collected or disturbed. What now?
+| As the publisher, you are responsible for protecting them. Make the locations of those samples less precise, for example by rounding the coordinates, and describe what you did in term:dwc[dataGeneralizations]. Coordinates belong to the sample, so this affects all records from it. See https://doi.org/10.15468/doc-5jp4-5g10[Current best practices for generalizing sensitive species occurrence data].
+|===

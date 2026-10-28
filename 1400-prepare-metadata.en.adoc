@@ -1,0 +1,47 @@
+[[prepare_metadata]]
+=== Prepare your metadata
+
+The metadata describes your dataset: what it is, who made it and how. You enter it in step 5 (<<add_metadata>>), but it is easier to prepare the text beforehand.
+
+Good metadata matters: the title and the creators become the dataset's citation, and the description decides whether others can find your data and trust it. You do not need a DOI: GBIF gives your dataset one when it is published.
+
+[cols="1,3",options="header"]
+|===
+| What to prepare | How to do it well
+
+| *Title*
+| Say what, where and which marker. For example: _"eDNA from water column to characterise fish and invertebrate communities from 30 sites in the Belgian Part of the North Sea – 12S"_ or _"COI data from: Environmental DNA metabarcoding differentiates between micro-habitats within the rocky intertidal"_.
+
+| *Description*
+| What the dataset contains, why it was collected, and how the samples were taken and processed. See this https://www.gbif.org/dataset/9358fbd7-cfd0-4eab-99fa-0934396a0529[well-described dataset on GBIF.org] for an example.
+
+| *People*
+a| * *Contact:* the person to ask about the dataset, with an email address.
+* *Creators:* everyone who should be credited, in the order they should appear in the citation. Add ORCIDs where possible: GBIF registers the dataset's DOI with DataCite together with the creators' ORCIDs. If a creator has allowed DataCite to update their ORCID record, the dataset then appears automatically as a work in their ORCID profile.
+* *Metadata providers:* people who wrote the documentation, if they are not creators.
+
+To enter many people at once, fill in the https://mdt.gbif-test.org/templates/people.xlsx[people template] and upload it in step 5.
+
+| *Licence*
+a| * *CC0*: anyone may use the data without conditions.
+* *CC-BY*: users must credit you.
+* *CC-BY-NC*: users must credit you and may not use the data commercially. This limits reuse.
+
+See https://www.gbif.org/terms[GBIF's data licences] and the https://ipt.gbif.org/manual/en/ipt/latest/applying-license[IPT guide to choosing a licence].
+
+| *Methods*
+| Sampling, sample preservation, DNA extraction, PCR and primers, sequencing platform, and bioinformatics: pipeline, denoising or clustering, and the reference database (with version) used for taxonomy.
+
+| *Keywords*
+| Words that help others find the dataset, for example the habitat, the target group and "eDNA".
+
+| *Project*
+| Project title and funding, and a website for the dataset or project, if any.
+
+| *Citations*
+| Papers based on the dataset. You can add papers that come out later by updating the dataset (see <<update>>).
+|===
+
+The MDT fills in the geographic, taxonomic and temporal coverage from your data. You only need to check it and tick the box that includes it in the metadata (see <<add_metadata>>).
+
+<<<

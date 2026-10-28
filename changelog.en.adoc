@@ -1,10 +1,13 @@
 [[changes]]
 == Important changes/updates
 
+* 2026-10-26 (v1.0): Complete revision of the guide. Main changes:
+** New structure: *Start here*, then three parts (Prepare, Process, Publish) with one page per MDT step. The Quick Start and the second walkthrough were removed.
+** All file rules in one place (<<file_rules>>), with updated templates and a new example dataset (12S eDNA from the Belgian part of the North Sea).
+** New field reference (<<req_recom>>) grouped by upload table, with levels that follow GBIF's data quality recommendations.
+** New sections: preparing metadata, updating a published dataset, advice for data that should also reach OBIS, a worked mapping example and a decision table for data curation.
+** Labels and messages checked against the current MDT, with new screenshots and a table of warnings on each step page.
+** Shorter FAQ and glossary. Troubleshooting is now an index by problem or message. Administration and tools for power users moved to appendices.
 * 2024-11-06 Administration section added, and several more updates.
 * 2024-10-22 (v0.1.1, October 2024): NB: Some sections are still in progress and do not yet have complete draft text. Some major rearrangements and simplifications have been carried out.
 * 2024-10-03: NB: Some sections are still in progress and do not yet have complete draft text.
-
-To Do:
-
-* Add glossary term links throughout the text?

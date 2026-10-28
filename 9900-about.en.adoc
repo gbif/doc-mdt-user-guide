@@ -1,0 +1,23 @@
+[[about]]
+== About this guide
+
+=== Acknowledgements
+
+Thanks to the following people for providing substantial feedback or input to this guide material: Christiane Hassenrück.
+
+Thanks to Marianne Lolivier, Jonas Mortelmans and Sofie Derycke (ILVO) for allowing us to use their dataset as the example dataset for this guide.
+
+Thanks to Adrien Taudiere for suggesting improvements to the r-scripts for PhyloSeq objects. 
+
+Thanks to the following to provide valuable test data, user feedback, comments and other input during the development of the MDT and this guide: Alexandria B. Boehm, Andrew Bissett, Birgit Gemeinholzer, Bruce Deagle, Carole Sinou, Cathryn Abbott, Cecilie Svenningsen, Christiane Hassenrück, Christina Pavloudi, Clara Baringo Fonseca, Dag Endresen, Daniel Swan, David Bloom, Dimitri Brossens, Esteban Marentes Herrera, Fatima Parker-Allie, Isabel Calabuig, Isolde Cornelis, James Macklin, Joana Pauperio, Luke Earl Holman, Luke Jimu, Matthew C. Smith, Marion Chevrinais, Meghan Shea, Meredith Mckay, Mike Bunce, Miwa Takahashi, Neha Acharya-Patel, Niels Raes, Pedro G. Retamal, Peggy Newman, Philipp Bayer, Rachel Meyer, Ricardo Ortíz Gallego, Rukaya Sarah Johaadien, Sachit Rajbhandari, Sarah Bourlat, Shaun Wilkinson, Sofie Derycke, Steve Formel, Urmas Kõljalg, Veronika A. Johansson, Victor Chocho Sánchez.
+
+_Metabarcoding Data Toolkit – user guide_ was produced under the https://biodt.eu/[BioDT project], which received funding from the European Union’s Horizon Europe research and innovation programme under https://doi.org/10.3030/101057437[grant agreement No 101057437].
+
+=== About GBIF
+
+GBIF—the Global Biodiversity Information Facility—is an international network and data infrastructure funded by the world’s governments and aimed at providing anyone, anywhere, open access to data about all types of life on Earth. Coordinated through its Secretariat in Copenhagen, the GBIF network of participating countries and organizations, working through participant nodes, provides data-holding institutions around the world with common standards and open-source tools that enable them to share information about where and when species have been recorded. For more information, visit https://www.gbif.org; for DNA specifically: https://www.gbif.org/dna
+
+=== Cover image
+
+Graphic by Javier Andrés Gamboa Martínez, Communications Officer, GBIF Secretariat.
+

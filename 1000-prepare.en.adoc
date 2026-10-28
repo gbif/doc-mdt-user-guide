@@ -1,0 +1,8 @@
+[[preparation_structure]]
+== Prepare your data
+
+Prepare your data and metadata before you open the MDT. Most problems in the MDT start with how the files were prepared.
+
+. Make the decisions in <<before_you_start>>.
+. Put your data into the tables described in <<file_rules>>, using the fields in <<req_recom>>.
+. Prepare and write your dataset description, etc. as described in <<prepare_metadata>>.
