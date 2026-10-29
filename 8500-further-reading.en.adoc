@@ -1,0 +1,15 @@
+[[background_resources]]
+== Further reading
+
+=== GBIF guides
+
+* https://doi.org/10.35035/doc-vf1a-nr22[Publishing DNA-derived data through biodiversity data platforms] (2021): in-depth background on publishing DNA-derived data, for example on https://docs.gbif.org/publishing-dna-derived-data/en/#dna-metabarcoding-sequence-derived-data[metabarcoding data] and on https://docs.gbif.org/publishing-dna-derived-data/en/#mapping-metabarcoding-edna-and-barcoding-data[mapping metabarcoding data to Darwin Core]. Where it differs from this guide on the MDT, follow this guide.
+
+=== Talks and videos
+
+* Technical support hour for GBIF nodes, August 2025: the MDT (https://www.gbif.org/event/1GjkWCU2h24hoq2iV7X9wJ/technical-support-hour-for-gbif-nodes-august-2025[page and video])
+* Technical support hour for GBIF nodes, February 2024: publishing DNA data (https://www.gbif.org/event/2vtOYk4ymZsLxQah4mfErG/[page and video])
+* eDNA data and GBIF, 3rd National Workshop on Marine eDNA, Maryland, USA, 2024 (https://www.youtube.com/watch?v=g9Y7gqR-y-w&list=PLQ_hsjucVlJSX-GhtXagFuloMGIx5tJMN&index=20[video])
+* GBIF's statement on Digital Sequence Information (https://www.gbif.org/dsi-statement[web page])
+
+<<<

@@ -1,0 +1,41 @@
+[[trouble]]
+== Troubleshooting
+
+Find your problem or the message you see, and follow the link to the fix.
+
+[cols="3,2",options="header"]
+|===
+| Problem or message | Fix
+
+| You cannot log in to the MDT
+| All MDTs use your https://www.gbif.org/user/profile[GBIF account], which needs a password. If you signed up with GitHub or Google, click *Forgot password* on the login page to set one.
+
+| "Invalid format", "Unsupported file format", "Could not identify the data type", "Attention: … sample IDs … has no matching row", "… is present in both the sample and taxon file", "No id column found", "This dataset contains multiple assays"
+| <<upload>>
+
+| "You have no field named …", "You have no 'id' field …", "Waiting for validation to finish", "The field names of your files are not available", "Ouch - Something went wrong, the mapping was not saved", a Study table term is not mapped
+| <<map_terms>>
+
+| "… are not present in the SAMPLE table" (or "… in the OTU table", "… in the TAXONOMY"), "This data matrix has out of bounds value", "There is no 'id' column …"
+| <<process_data>>
+
+| Samples in the wrong place on the map, an unexpected ordination plot, missing plots or charts
+| <<review>>
+
+| "Please input dataset title", "Please select a license", "You must enter a contact person …", "You must enter at least one creator …", "Please input a valid orcid", "You have unsaved changes"
+| <<add_metadata>>
+
+| "The metadata is not complete", logged out when creating the archive, 0 occurrences on the test page
+| <<export>>
+
+| You cannot publish because you are not associated with a publishing institution
+| <<pub_pub>>
+
+| Problems importing an MDT archive into an IPT
+| <<pub_ipt>>
+
+| Anything else
+| Click *Need help?* on the MDT home page to email the administrator, or *Report a bug* at the bottom of any page to report a problem with the MDT itself.
+|===
+
+<<<

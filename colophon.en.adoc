@@ -6,7 +6,7 @@ endif::backend-html5[]
 
 === Suggested citation
 
-GBIF Secretariat (2024) Metabarcoding Data Toolkit – user guide. Copenhagen: Global Biodiversity Facility. https://doi.org/10.35035/doc-wkpc-m352
+GBIF Secretariat (2026) Metabarcoding Data Toolkit – user guide. Copenhagen: Global Biodiversity Information Facility. https://doi.org/10.35035/doc-wkpc-m352
 
 === Editors
 
@@ -16,40 +16,16 @@ https://orcid.org/0000-0002-3530-013X[Tobias Guldberg Frøslev] (GBIF Secretaria
 
 The document _Metabarcoding Data Toolkit – user guide_ is licensed under https://creativecommons.org/licenses/by-sa/4.0[Creative Commons Attribution-ShareAlike 4.0 Unported Licence].
 
-=== Acknowledgements
-
-Thanks to the following people for providing substantial feedback or input to this guide material: Christiane Hassenrück.
-
-Thanks to the following people for allowing to use their datasets as example datasets for this guide: Isolde Cornelis, Sofie Derycke, Meghan M. Shea and Alexandria B. Boehm.
-
-Thanks to Adrien Taudiere for suggesting improvements to the r-scripts for PhyloSeq objects. 
-
-Thanks to the following to provide valuable test data, user feedback, comments and other input during the development of the MDT and this guide: Andrew Bissett, Birgit Gemeinholzer, Bruce Deagle, Carole Sinou, Cathryn Abbott, Cecilie Svenningsen, Christiane Hassenrück, Christina Pavloudi, Clara Baringo Fonseca, Dag Endresen, Daniel Swan, David Bloom, Dimitri Brossens, Esteban Marentes Herrera, Esteban Marentes Herrera, Fatima Parker-Allie, Isabel Calabuig, Isolde Cornelis, James Macklin, Joana Pauperio, Luke Earl Holman, Luke Jimu, Matthew C. Smith, Marion Chevrinais, Meghan Shea, Meredith Mckay, Mike Bunce, Miwa Takahashi, Neha Acharya-Patel, Niels Raes, Pedro G. Retamal, Peggy Newman, Philipp Bayer, Rachel Meyer, Ricardo Ortíz Gallego, Rukaya Sarah Johaadien, Sachit Rajbhandari, Sarah Bourlat, Shaun Wilkinson, Sofie Derycke, Steve Formel, Urmas Kõljalg, Veronika A. Johansson, Victor Chocho Sánchez.
-
-_Metabarcoding Data Toolkit – user guide_ was produced under the https://biodt.eu/[BioDT project], which received funding from the European Union’s Horizon Europe research and innovation programme under https://doi.org/10.3030/101057437[grant agreement No 101057437].
-
 === Persistent URI
 
 https://doi.org/10.35035/doc-wkpc-m352
 
-=== Abstract
-
-This guide aims to help anyone interested in learning to use the Metabarcoding Data Toolkit (MDT) for formatting and sharing DNA metabarcoding data freely and openly in standardized, accessible and interoperable formats through the Global Biodiversity Information Facility (GBIF) or OBIS, etc. The MDT is a user friendly tool that aims to make the data formatting and publishing procedure as easy as possible for researchers and similar data holders. The MDT accepts DNA Metabarcoding datasets in the shape of OTU tables, utilizes the BIOM file format, and outputs fully indexable/publishable Darwin Core Archives. An MDT installation can operate in two modes: Publishing mode, where users can publish dataset through GBIF; and Conversion-only mode, where users convert datasets into Darwin Core Archive (DwC-A) files for external hosting and publication.
-
 === Document control
 
-v0.1.2, Feb 2025
+v1.0, October 2026. Changes are listed in <<changes>>. Feedback is welcome at mailto:DNA@gbif.org[DNA@gbif.org].
 
-The guide will be updated as needed during the pilot phase https://www.gbif.org/metabarcoding-data-programme[Metabarcoding data programme] with no version control as such. Important changes to the MDT and/or this guide will be listed in the section <<changes>>. 
+=== Abstract
 
-Input and feedback is very welcome.
-
-=== About GBIF
-
-GBIF—the Global Biodiversity Information Facility—is an international network and data infrastructure funded by the world’s governments and aimed at providing anyone, anywhere, open access to data about all types of life on Earth. Coordinated through its Secretariat in Copenhagen, the GBIF network of participating countries and organizations, working through participant nodes, provides data-holding institutions around the world with common standards and open-source tools that enable them to share information about where and when species have been recorded. For more information, visit https://www.gbif.org; for DNA specifically: https://www.gbif.org/dna
-
-=== Cover image
-
-Graphic by Javier Andrés Gamboa Martínez, Communications Officer, GBIF Secretariat.
+The Metabarcoding Data Toolkit (MDT) is a web tool that converts DNA metabarcoding data (OTU tables with sample and taxonomy information) into Darwin Core Archives and publishes them through GBIF and OBIS. This guide explains, step by step, how to prepare your data, process it in the MDT and publish it.
 
 <<<

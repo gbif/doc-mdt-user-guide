@@ -1,0 +1,110 @@
+[[introduction]]
+== Start here
+
+The Metabarcoding Data Toolkit (MDT) turns your DNA metabarcoding data into a dataset on https://www.gbif.org[GBIF.org], where others can find, use and cite it. Each published dataset gets its own DOI.
+
+This guide is for researchers and data managers who want to share their own metabarcoding dataset. You do not need to know GBIF beforehand. If you run an MDT installation, see <<admin>>.
+
+NOTE: The MDT is part of a https://www.gbif.org/metabarcoding-data-programme[pilot programme] (September 2024 to the end of 2027) and is still changing, so some screens may differ from this guide.
+
+[[scope]]
+=== What the MDT can and cannot handle
+
+*Can handle:* OTU or ASV tables from amplicon sequencing (DNA metabarcoding), with information about the samples and the taxonomy of each OTU.
+
+In this guide, _OTU_ means any sequence unit in your table: an <<asv,ASV>> (exact sequence variant), a zOTU or a clustered <<otu,OTU>>.
+
+An _OTU table_ is similar to a species-by-site matrix: one row per OTU, one column per sample, and in each cell the number of reads of that OTU in that sample. A _sample_ is one sequenced unit of DNA, such as one water filter, soil core or trap catch, taken at one place and time. On GBIF, each sample becomes a sampling event, and each OTU found in it becomes an occurrence.
+
+*Cannot handle:* raw sequencing reads (FASTQ files), metagenomic (shotgun) data, specimen barcodes or qPCR data.
+
+[[what_you_need]]
+=== What you need
+
+* A free https://www.gbif.org/user/profile[GBIF account] with a password. The MDT does not accept login with Google or GitHub.
+* Your data as three tables – an OTU table, a sample table and a taxonomy table – or as BIOM or FAIRe files. See <<file_rules>>.
+* A title and description for your dataset, and the names of the people to credit. See <<prepare_metadata>>.
+* To publish: an institution registered as a GBIF data publisher. If yours is not, start early: click *Need help?* on the home page of your MDT and ask to be able to publish to GBIF, or see https://www.gbif.org/become-a-publisher[Become a publisher].
+
+[[how_it_works]]
+=== How it works
+
+. Prepare your data and metadata as files (<<preparation_structure>>).
+. Go through the seven steps in the MDT:
+.. <<upload,Upload>> your files.
+.. <<map_terms,Map>> your column names to standard Darwin Core terms.
+.. <<process_data,Process>> the data.
+.. <<review,Review>> maps and charts to check the result.
+.. <<add_metadata,Add metadata>>: title, description, people and licence.
+.. <<export,Export>> a <<dwc-a,Darwin Core Archive>> and preview it in GBIF's test environment.
+.. <<publishing,Publish>> it on GBIF.org.
+
+[[mdt_installations]]
+=== Choose an MDT installation
+
+[[detailed_select_mdt]]Several GBIF nodes run their own MDT. Use the first one that applies to you:
+
+. The MDT of your country's GBIF node (the national GBIF organisation).
+. The MDT of your region, or a thematic MDT such as OBIS.
+. The https://mdt.gbif.org/[GBIF conversion-only MDT].
+
+Then log in with your GBIF account.
+
+[cols="1,2", options="header"]
+|===
+| Region | MDT Installations
+
+| *Africa*
+| South Africa (https://mdt.sanbi-gbif.org/) +
+Togo (https://tg.mdt.gbif.org/)
+
+| *Asia*
+| Taiwan (https://mdt.taibif.tw/)
+
+| *Europe & Central Asia*
+| Europe & Central Asia (https://eca.mdt.gbif.org/) – *Regional* MDT +
+Belgium (https://mdt.biodiversity.be/) +
+Denmark (https://dk.mdt.gbif.org/) +
+Estonia (https://mdt.plutof.ut.ee/) +
+Finland (https://metabarcoding.laji.fi/) +
+France (https://mdt.gbif.fr/) +
+Luxembourg (https://mdt.gbif.mnhn.lu/) +
+Norway (https://mdt.gbif.no/) +
+Poland (https://mdt.gbif.pl/) +
+Portugal (https://mdt.gbif.pt/) +
+United Kingdom (https://mdt-gbif.nbnatlas.org/)
+
+| *Latin America & the Caribbean*
+| Latin America & the Caribbean (https://lac.mdt.gbif.org/) – *Regional* MDT +
+Brazil (https://mdt.sibbr.gov.br/) +
+Colombia (https://edna.biodiversidad.co/) +
+Guatemala (https://mdt.conap.gob.gt/)
+
+| *North America*
+| Canada (https://mdt.canadensys.net/) +
+United States (https://mdt.gbif.us/)
+
+| *Oceania*
+| Oceania (https://oceania.mdt.gbif.org/) – *Regional* MDT +
+New Zealand (https://mdt.gbif.org.nz/)
+
+| *General MDTs*
+| GBIF conversion only (https://mdt.gbif.org/) +
+MDT Sandbox, for practice only (https://mdt.gbif-test.org/)
+
+| *Thematic MDTs*
+| OBIS (https://mdt.obis.org/)
+|===
+
+[[simple_quick_start]]
+=== Practise first (optional)
+
+Want to try the MDT before using your own data? Practise in the MDT Sandbox with an example dataset.
+
+. Download the practice version of the link:../example_data/example_data_12S.current.en.xlsx[example dataset] (Excel file; see <<example_data>>).
+. Log in to the https://mdt.gbif-test.org/[MDT Sandbox] with your GBIF account.
+. Follow <<detailed_guidance>> with the example file. In step 2, use <<map_example>>.
+
+IMPORTANT: The Sandbox deletes all datasets every week and cannot publish to GBIF.org. Do not use it for real data.
+
+<<<

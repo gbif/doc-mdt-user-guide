@@ -8,6 +8,9 @@ GBIF Secretariat <DNA@gbif.org>
 :title-page-background-image: image::img/web/dna-cover.png[position=top center]
 :licence: https://creativecommons.org/licenses/by-sa/4.0/
 :docinfo: shared-head
+:description: How to prepare, convert and publish DNA metabarcoding (eDNA) data – OTU tables with sample and taxonomy data – to GBIF and OBIS with the Metabarcoding Data Toolkit (MDT).
+:keywords: metabarcoding, eDNA, environmental DNA, OTU table, ASV, amplicon sequencing, Darwin Core, DwC-A, GBIF, OBIS, publish data, Metabarcoding Data Toolkit, MDT
+:icons: font
 
 ifdef::backend-html5[]
 languageLinks:combined[]
@@ -26,32 +29,56 @@ IMPORTANT: This document is under development and may contain errors and unfinis
 
 include::colophon.en.adoc[]
 
-include::introduction.en.adoc[]
+include::0000-start-here.en.adoc[]
 
 :sectnums:
 
-include::0100-simple-quick-start.en.adoc[]
+include::1000-prepare.en.adoc[]
 
-include::0300-data-preparation-structure.en.adoc[]
+include::1100-before-you-start.en.adoc[]
 
-include::0400-detailed-guide.en.adoc[]
+include::1200-file-rules.en.adoc[]
 
-include::0410-troubleshooting.en.adoc[]
+include::1300-field-reference.en.adoc[]
 
-include::0500-administration.en.adoc[]
+include::1400-prepare-metadata.en.adoc[]
 
-include::0600-dataset-templates.en.adoc[]
+include::2000-process.en.adoc[]
 
-include::0800-example-datasets.en.adoc[]
+include::2100-upload.en.adoc[]
 
-include::0830-tips_and_tricks.en.adoc[]
+include::2200-map-terms.en.adoc[]
 
-include::0850-background_resources.en.adoc[]
+include::2300-process-data.en.adoc[]
+
+include::2400-review.en.adoc[]
+
+include::2500-add-metadata.en.adoc[]
+
+include::2600-export.en.adoc[]
+
+include::3000-publish.en.adoc[]
 
 :sectnums!:
+
+include::8100-troubleshooting.en.adoc[]
 
 include::faq.en.adoc[]
 
 include::glossary.en.adoc[]
+
+include::8500-further-reading.en.adoc[]
+
+include::9100-power-tools.en.adoc[]
+
+include::9500-admin-intro.en.adoc[]
+
+include::9510-admin-requests.en.adoc[]
+
+include::9520-admin-menu.en.adoc[]
+
+include::9530-admin-publish-elsewhere.en.adoc[]
+
+include::9900-about.en.adoc[]
 
 include::changelog.en.adoc[]

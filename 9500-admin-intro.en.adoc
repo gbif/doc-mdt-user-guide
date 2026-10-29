@@ -1,0 +1,38 @@
+[appendix]
+[[admin]]
+== MDT administration
+
+This part is for GBIF node staff and others who run an MDT installation. It covers the two modes an installation can have, how to handle requests from users, the administration pages, and how to publish archives outside the MDT.
+
+TIP: https://vimeo.com/1200409964[Watch the video: MDT administration and main differences with an IPT].
+
+[[admin_apply]]
+=== Apply for a hosted MDT
+
+GBIF nodes can apply for an MDT hosted and maintained by the GBIF Secretariat, as part of the https://www.gbif.org/metabarcoding-data-programme[Metabarcoding Data Programme]. Use the https://www.gbif.org/composition/7o3nbjPcY92vZxmjo6Z8E2/[application form].
+
+[[admin_modes]]
+=== Publishing mode or conversion-only mode
+
+Each installation runs in one of two modes:
+
+* *Publishing mode:* datasets are published to GBIF.org directly from the MDT, by the administrators or by users they give permission to. The MDT then works like an IPT.
+* *Conversion-only mode:* the MDT converts datasets to Darwin Core Archives, which must be downloaded and published elsewhere, for example through an IPT. This mode suits nodes that must host data on national servers, but most of the MDT's convenience features are lost.
+
+.Features of the two modes
+[cols="3,1,1,3",options="header"]
+|===
+| Feature | Publishing | Conversion-only | Comment
+
+| Publish to GBIF.org from the MDT
+| Yes, by administrators, and by users they allow | No |
+
+| Where the published dataset is hosted
+| GBIF | Elsewhere, for example an IPT | In both modes you can also download the archive and publish it elsewhere.
+
+| Update a published dataset from the MDT
+| Yes | No | In conversion-only mode, download the corrected archive and replace the hosted copy.
+
+| BIOM files on GBIF.org
+| Yes (BIOM 1.0 and 2.1) | No | BIOM files keep all uploaded columns, including unmapped ones.
+|===

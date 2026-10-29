@@ -1,0 +1,25 @@
+[[admin_requests]]
+=== Handle requests from users
+
+Users can start using an installation straight away. You usually do not need to act until a user emails you from step 7 (Publish). What users see is described in <<publishing>>.
+
+[[wpm]]
+==== Publishing mode
+
+A user who wants to publish emails you in one of two ways:
+
+* *"Ask for access to publish under this institution/organisation":* the user's institution is already a GBIF publisher. Associate the user with it on the *Manage organizations and users* tab (see <<man_org>>). The email contains a direct link.
+* *"Can´t find your institution/organisation?":* the institution is not yet registered. Find out whether it is registered under another name, or start the endorsement of a new GBIF publisher. When that is done, add the organisation to the MDT and associate the user with it (see <<man_org>>).
+
+The email also links to the dataset in the MDT and, if the user made a test publication, to the dataset in the GBIF test environment.
+
+Users who have been associated with one or more institutions can publish under any of them in future.
+
+[[wcm]]
+==== Conversion-only mode
+
+The user clicks *Reach out to the administrator for assistance* in step 7, which emails you. Then:
+
+. Make sure the dataset is associated with an endorsed GBIF publisher.
+. Check that the dataset is suitable for publication.
+. Publish the archive outside the MDT (see <<pub_ipt>>).
