@@ -61,7 +61,7 @@ This covers GBIF's required term occurrenceID and the strongly recommended basis
 | term:dwc[decimalLatitude] | Required | 51.3333 | Decimal degrees. South is negative.
 | term:dwc[decimalLongitude] | Required | 2.5 | Decimal degrees. West is negative.
 | term:dwc[geodeticDatum] | Strongly recommended | WGS84 | The coordinate system, usually WGS84 (the GPS standard). Write `unknown` if you do not know it.
-| term:dwc[coordinateUncertaintyInMeters] | Strongly recommended | 2 | How precise the coordinates are, in metres. Leave empty if unknown; never use 0.
+| term:dwc[coordinateUncertaintyInMeters] | Strongly recommended | 30 | How precise the coordinates are, in metres. Leave empty if unknown; never use 0.
 | term:dwc[dataGeneralizations] | Share if available | Coordinates rounded to 0.1 degree | Must be filled in if you made the coordinates less precise, for example to protect sensitive species (see <<before_you_start>>).
 | term:dwc[informationWithheld] | Share if available | Exact location available on request | What you left out and how to get it.
 | term:dwc[recordedBy] | Strongly recommended | Aino Virtanen \| John Smith | Separate names with " \| ".
