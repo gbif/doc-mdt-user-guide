@@ -56,10 +56,10 @@ This covers GBIF's required term occurrenceID and the strongly recommended basis
 | Field | Level | Example | Note
 
 | term:dwc[countryCode] | Required | BE | Two-letter https://www.iso.org/iso-3166-country-codes.html[ISO 3166-1] code. GBIF requires the country for records based on DNA, if it is known. You can add term:dwc[country] (the name) as well.
-| term:dwc[eventDate] | Required | 2022-04-20 | ISO 8601 format, such as YYYY-MM-DD. The MDT asks for it (GBIF: strongly recommended).
+| term:dwc[eventDate] | Required | 2022-04-20 | ISO 8601 format, such as YYYY-MM-DD.
 | term:dwc[eventTime] | Share if available | 10:15:00Z | ISO 8601 format, with the time zone.
-| term:dwc[decimalLatitude] | Required | 51.3333 | Decimal degrees. South is negative. The MDT asks for it (GBIF: strongly recommended).
-| term:dwc[decimalLongitude] | Required | 2.5 | Decimal degrees. West is negative. The MDT asks for it (GBIF: strongly recommended).
+| term:dwc[decimalLatitude] | Required | 51.3333 | Decimal degrees. South is negative.
+| term:dwc[decimalLongitude] | Required | 2.5 | Decimal degrees. West is negative.
 | term:dwc[geodeticDatum] | Strongly recommended | WGS84 | The coordinate system, usually WGS84 (the GPS standard). Write `unknown` if you do not know it.
 | term:dwc[coordinateUncertaintyInMeters] | Strongly recommended | 2 | How precise the coordinates are, in metres. Leave empty if unknown; never use 0.
 | term:dwc[dataGeneralizations] | Share if available | Coordinates rounded to 0.1 degree | Must be filled in if you made the coordinates less precise, for example to protect sensitive species (see <<before_you_start>>).
