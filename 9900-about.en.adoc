@@ -3,7 +3,7 @@
 
 === Acknowledgements
 
-Thanks to the following people for providing substantial feedback or input to this guide material: Christiane Hassenrück, Esteban Marentes Herrera.
+Thanks to the following people for providing substantial feedback or input to this guide material: Christiane Hassenrück, Esteban Marentes Herrera, Brandon Samuel Whitley.
 
 Thanks to Marianne Lolivier, Jonas Mortelmans and Sofie Derycke (ILVO) for allowing us to use their dataset as the example dataset for this guide.
 
