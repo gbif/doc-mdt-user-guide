@@ -9,6 +9,5 @@
 
 * Technical support hour for GBIF nodes, August 2025: the MDT (https://www.gbif.org/event/1GjkWCU2h24hoq2iV7X9wJ/technical-support-hour-for-gbif-nodes-august-2025[page and video])
 * Technical support hour for GBIF nodes, February 2024: publishing DNA data (https://www.gbif.org/event/2vtOYk4ymZsLxQah4mfErG/[page and video])
-* GBIF's statement on Digital Sequence Information (https://www.gbif.org/dsi-statement[web page])
 
 <<<
